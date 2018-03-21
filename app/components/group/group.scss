@@ -1,0 +1,21 @@
+@import "../../public/styles/global";
+
+.group {
+  &--component {
+    > *:not(:last-child) {
+      padding-bottom: 10px;
+    }
+  }
+
+  &-heading {
+    @extend %group-heading;
+  }
+
+  &-copy {
+    @extend %group-copy;
+  }
+
+  &-cta-anchor {
+    @extend %secondary-link;
+  }
+}

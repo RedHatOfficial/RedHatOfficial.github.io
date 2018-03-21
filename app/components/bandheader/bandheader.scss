@@ -1,0 +1,13 @@
+@import "../../public/styles/global";
+
+.band-header {
+  &-title {
+    @extend %band-title;
+  }
+  &-heading {
+    @extend %band-heading;
+  }
+  &-summary {
+    @extend %band-summary;
+  }
+}

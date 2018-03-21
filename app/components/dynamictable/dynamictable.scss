@@ -1,0 +1,74 @@
+@import '../../public/styles/global';
+
+.table {
+  &--component {
+    > *:not(:last-child) {
+      padding-bottom: 30px;
+    }
+  }
+
+  &-filters {
+    display: grid;
+    grid-auto-rows: 1fr;
+    grid-gap: 30px;
+    grid-template-columns: 8fr 4fr;
+  }
+
+  &-search {
+    display: grid;
+    grid-auto-rows: 1fr;
+    grid-gap: 0;
+    grid-template-columns: 7fr 1fr;
+
+    &-input {
+      @include make-input();
+    }
+
+    &-button {
+      @include make-button($btn-color: $brand-primary);
+    }
+  }
+
+  &-dropdown {
+    align-items: center;
+    display: grid;
+    grid-auto-rows: 1fr;
+    grid-gap: 10px;
+    grid-template-columns: 1fr 3fr;
+
+    &-label {
+      @extend %dropdown-label;
+    }
+
+    &-select {
+      height: 100%;
+    }
+  }
+
+  &-main {
+    border-collapse: collapse;
+    overflow: scroll;
+    width: 100%;
+
+    thead tr,
+    tbody tr:nth-child(even) {
+      background-color: $mercury;
+    }
+
+    tbody tr:nth-child(odd) {
+      background-color: $white;
+    }
+
+    td,
+    th {
+      @extend %group-copy;
+      background-color: transparent;
+      padding: 10px;
+      text-align: left;
+    }
+
+    a {
+      @extend %subtle-link-underline;
+    }
+  }
+}

@@ -1,0 +1,49 @@
+@import "../../public/styles/global";
+
+.card {
+  &--component {
+    @extend %default--card;
+  }
+  &-header {
+    &-img {
+      display: block;
+      margin: 0 auto;
+      padding: 0 10px;
+    }
+  }
+  &-body {
+    > *:not(:last-child) {
+      padding-bottom: 20px;
+    }
+    &-headline {
+      @extend %card-heading;
+    }
+    &-copy {
+      @extend %card-copy;
+    }
+  }
+  &-footer {
+    padding: 0 40px;
+    &[data-layout="2-up"] {
+      display: grid;
+      grid-template-columns: repeat(2, 50%);
+      grid-auto-rows: 1fr;
+      grid-gap: 10px;
+    }
+    &[data-layout="center"] {
+      display: flex;
+      flex-flow: row nowrap;
+      align-items: center;
+      justify-content: center;
+    }
+    [data-layout="2-up"] &-content:last-child {
+      border-left: 2px solid $iron;
+    }
+    &-link {
+      @extend %subtle-link;
+    }
+    &-icon {
+      @extend %link-icon;
+    }
+  }
+}

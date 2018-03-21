@@ -1,0 +1,36 @@
+@import "../../public/styles/global";
+
+.band {
+  &--layout {
+    @extend %default--band;
+    &[data-background="gray"] {
+      background-color: $gallery;
+    }
+  }
+  &-container {
+    @extend %default-container;
+    &[data-layout="stack"] {
+      &:not(:last-child) {
+        padding-bottom: 15px;
+      }
+    }
+    &[data-layout="3-up"] {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-auto-rows: 1fr;
+      grid-gap: 15px;
+      > * {
+        display: grid;
+      }
+    }
+    &[data-layout="2-up"] {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-auto-rows: 1fr;
+      grid-gap: 15px;
+      > * {
+        display: grid;
+      }
+    }
+  }
+}

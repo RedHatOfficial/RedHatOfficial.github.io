@@ -1,0 +1,23 @@
+<div class="card--component" ng-show="$ctrl.feature.name" ng-attr-data-background="{{ $ctrl.background ? $ctrl.background : 'white' }}">
+  <div class="card-header" ng-show="$ctrl.feature.logo">
+      <img class="card-header-img" ng-src="{{ $ctrl.feature.logo }}">
+  </div>
+  <div class="card-body" data-align="center">
+      <h3 class="card-body-headline">{{ $ctrl.feature.name }}</h3>
+      <p class="card-body-copy">{{ $ctrl.feature.description }}</p>
+  </div>
+  <div class="card-footer" ng-attr-data-layout="{{ $ctrl.feature.website && $ctrl.feature.repo ? '2-up' : 'center' }}" ng-show="$ctrl.feature.website || $ctrl.feature.repo">
+      <div class="card-footer-content" data-align="right" ng-show="$ctrl.feature.website">
+        <a class="card-footer-link" href="{{ $ctrl.feature.website }}">
+          <i class="card-footer-icon fa fa-fw fa-globe"></i>
+          Website
+        </a>
+      </div>
+      <div class="card-footer-content" data-align="left" ng-show="$ctrl.feature.repo">
+        <a class="card-footer-link" href="{{ $ctrl.feature.repo }}">
+          <i class="card-footer-icon fab fa-github"></i>
+          Repo
+        </a>
+      </div>
+  </div>
+</div>

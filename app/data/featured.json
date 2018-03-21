@@ -1,0 +1,34 @@
+[{
+  "name": "abrt",
+  "logo": "http://via.placeholder.com/40x40",
+  "github": "https://github.com/abrt",
+  "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum id illum."
+},{
+  "name": "Almighty",
+  "logo": "http://via.placeholder.com/40x40",
+  "github": "https://github.com/almighty/",
+  "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum id illum."
+},{
+  "name": "anaconda",
+  "logo": "http://via.placeholder.com/40x40",
+  "github": "https://github.com/rhinstaller/anaconda",
+  "website": "http://fedoraproject.org/wiki/Anaconda",
+  "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum id illum."
+},{
+  "name": "Ansible",
+  "logo": "http://via.placeholder.com/40x40",
+  "github": "https://github.com/ansible",
+  "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum id illum."
+},{
+  "name": "Arquillian",
+  "logo": "http://via.placeholder.com/40x40",
+  "description": "An Innovative Testing Platform for the JVM",
+  "github": "https://github.com/arquillian",
+  "website": "http://arquillian.org",
+  "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum id illum."
+},{
+  "name": "asciibinder",
+  "logo": "http://via.placeholder.com/40x40",
+  "github": "https://github.com/redhataccess/ascii_binder",
+  "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum id illum."
+}]

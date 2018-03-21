@@ -1,0 +1,25 @@
+<nav class="navigation--component" aria-labelledby="mainMenuLabel" data-collapse="both">
+ <h2 id="mainMenuLabel" data-visibility="hidden">Main menu</h2>
+ <div class="navigation-container">
+   <div class="navigation-group">
+  	 <h1 class="navigation-label">Red Hat on GitHub</h1>
+  	 <div class="navigation-links">
+  		 <span class="navigation-link" ng-repeat="nav in navigation">
+  			 <a class="navigation-link-anchor"
+  					title="{{ nav.link.title }}"
+  					href="{{ nav.link.href}}">
+  					{{ nav.label }}
+  				</a>
+  				<i ng-show="nav.link.external" class="navigation-link-icon fas fa-external-link-alt"></i>
+  			</span>
+  		</div>
+    </div>
+		<div class="navigation-group">
+			<a href="https://www.redhat.com">
+        <img class="navigation-logo"
+        ng-src="{{ logo }}"
+        alt="Red Hat Logo"/>
+      </a>
+		</div>
+	</div>
+</nav>
