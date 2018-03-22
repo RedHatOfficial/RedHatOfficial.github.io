@@ -3,7 +3,7 @@
       <img class="card-header-img" ng-src="{{ $ctrl.logos[ $ctrl.feature.logo ] }}">
   </div>
   <div class="card-body" data-align="center">
-      <h3 class="card-body-headline">{{ $ctrl.feature.name }}</h3>
+      <h3 class="card-body-headline"><a href="{{ $ctrl.feature.github }}">{{ $ctrl.feature.name }}</a></h3>
       <p class="card-body-copy">{{ $ctrl.feature.description }}</p>
   </div>
   <div class="card-footer" ng-attr-data-layout="{{ $ctrl.feature.website && $ctrl.feature.github ? '2-up' : 'center' }}" ng-show="$ctrl.feature.website || $ctrl.feature.github">

@@ -58,6 +58,7 @@
 }
 
 %band-title {
+    color: $rich-black;
     font-family: $base-font-family;
     font-size: 22px;
     font-weight: 800;
@@ -66,7 +67,7 @@
 }
 
 %band-heading {
-    color: $black;
+    color: $rich-black;
     font-family: $base-font-family;
     font-size: 32px;
     font-weight: 800;
@@ -83,6 +84,7 @@
 }
 
 %band-summary {
+    color: $rich-black;
     font-family: $base-font-family;
     font-size: 22px;
     font-weight: 400;
@@ -90,13 +92,19 @@
 }
 
 %card-heading {
+    color: $rich-black;
     font-family: $base-font-family;
     font-size: 22px;
     font-weight: 400;
     line-height: 1.18;
+    a {
+        color: $rich-black;
+        text-decoration: none;
+    }
 }
 
 %card-copy {
+    color: $rich-black;
     font-family: $base-font-family;
     font-size: 16px;
     font-weight: 100;
@@ -121,6 +129,7 @@
 
 %link {
     color: $denim-blue;
+    font-family: $base-font-family;
     text-decoration: none;
 
     &:active,
@@ -135,6 +144,7 @@
 
 %subtle-link {
     color: $black;
+    font-family: $base-font-family;
     text-decoration: none;
 
     &:active,
@@ -149,6 +159,7 @@
 
 %subtle-link-underline {
     color: $black;
+    font-family: $base-font-family;
 
     &:active,
     &:hover {
