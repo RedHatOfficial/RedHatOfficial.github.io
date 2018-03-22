@@ -3,7 +3,7 @@
  <div class="navigation-container">
    <div class="navigation-group">
   	 <h1 class="navigation-label">Red Hat on GitHub</h1>
-  	 <div class="navigation-links">
+  	 <div class="navigation-links" ng-show="navigation.length > 0">
   		 <span class="navigation-link" ng-repeat="nav in navigation">
   			 <a class="navigation-link-anchor"
   					title="{{ nav.link.title }}"

@@ -65,6 +65,19 @@
       background-color: transparent;
       padding: 10px;
       text-align: left;
+      &:nth-child(1) {
+        width: 60%;
+      }
+      &:nth-child(2) {
+        width: 20%;
+      }
+      &:nth-child(3) {
+        width: 20%;
+      }
+    }
+
+    th {
+      font-weight: 600;
     }
 
     a {

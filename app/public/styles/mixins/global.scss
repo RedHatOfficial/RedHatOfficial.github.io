@@ -1,9 +1,10 @@
 @mixin accessibility-focus($color: $denim-blue) {
-  outline-offset: 1px;
-  outline-style: dotted;
-  outline-width: 1px;
-  text-decoration: none !important;
-  outline-color: $color;
+    outline-offset: 1px;
+    outline-style: dotted;
+    outline-width: 1px;
+    //scss-lint:disable ImportantRule
+    text-decoration: none !important;
+    outline-color: $color;
 }
 
 @mixin make-button(
@@ -19,53 +20,56 @@
     $text-weight: bold
     ) {
 
-  display: block;
-  font-family: $base-font-family;
-  border-width: 1px;
-  border-style: solid;
-  font-size: $text-size;
-  line-height: 1.44;
-  padding: $padding;
-  font-weight: $text-weight;
-  text-decoration: none;
-  text-transform: uppercase;
-  text-align: center;
-  border-radius: 0;
-  background-color: $btn-color;
-  border-color: $border-color;
-  color: $btn-text-color;
-  @if $disabled {
-    cursor: default;
+    display: block;
+    font-family: $base-font-family;
+    border-width: 1px;
+    border-style: solid;
+    font-size: $text-size;
+    line-height: 1.44;
+    padding: $padding;
+    font-weight: $text-weight;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    border-radius: 0;
+    background-color: $btn-color;
+    border-color: $border-color;
+    color: $btn-text-color;
+    @if $disabled {
+        cursor: default;
 
-    &:hover {
-      text-decoration: none;
+        &:hover {
+            text-decoration: none;
+        }
     }
-  } @else {
-    cursor: pointer;
-    transition: background .3s ease-in;
+    @else {
+        cursor: pointer;
+        transition: background .3s ease-in;
 
-    &:hover {
-      text-decoration: none;
-      // Set hover background color for the button
-      @if $btn-color-hover == null {
-        background-color: darken($btn-color, 6%);
-      } @else {
-        background-color: $btn-color-hover;
-      }
-      // Set hover border color for the button
-      @if $border-color-hover != null {
-        border-color: $border-color-hover;
-      }
-      // Set hover text color for the button
-      @if $btn-text-color-hover != null {
-        color: $btn-text-color-hover;
-      } @else {
-        color: $btn-text-color;
-      }
+        &:hover {
+            text-decoration: none;
+            // Set hover background color for the button
+            @if $btn-color-hover == null {
+                background-color: darken($btn-color, 6%);
+            }
+            @else {
+                background-color: $btn-color-hover;
+            }
+            // Set hover border color for the button
+            @if $border-color-hover != null {
+                border-color: $border-color-hover;
+            }
+            // Set hover text color for the button
+            @if $btn-text-color-hover != null {
+                color: $btn-text-color-hover;
+            }
+            @else {
+                color: $btn-text-color;
+            }
+        }
     }
-  }
 }
 
 @mixin make-input() {
-  border-radius: 0;
+    border-radius: 0;
 }

@@ -14,13 +14,10 @@
       ng-show="{{ categories.length > 0 }}">
       <label for="category" class="table-dropdown-label">Categories</label>
       <select class="table-dropdown-select"
+        ng-options="category as category for category in categories track by category"
         name="category"
         ng-model="searchCategory">
-        <option selected="selected"></option>
-        <option value="{{ category }}"
-          ng-repeat="category in categories">
-          {{ category }}
-        </option>
+        <option value="">-- Filter by category --</option>
       </select>
     </div>
   </div>
@@ -30,16 +27,14 @@
       <tr>
         <th>Project name</th>
         <th>Project website</th>
-        <th>Project repository</th>
         <th>Category</th>
       </tr>
     </thead>
     <tbody class="table-body">
       <tr class="table-row"
         ng-repeat="project in projects | orderBy:'+projectName' | filter:{category:searchCategory} | filter:{name:searchQuery}:startsWith">
-        <td>{{ project.projectName }}</td>
+        <td><a href="{{ project.projectRepository }}">{{ project.projectName }}</a></td>
         <td><a href="{{ project.projectWebsite }}">{{ project.projectWebsite }}</a></td>
-        <td><a href="{{ project.projectRepository }}">{{ project.projectRepository }}</a></td>
         <td>{{ project.category }}</td>
       </tr>
     </tbody>

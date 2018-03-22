@@ -1,48 +1,48 @@
 @import "../../public/styles/global";
 
 .navigation {
-  &--component {
-    @extend %default--band;
-    padding: 25px 0;
-    [data-visibility="hidden"] {
-      position: absolute !important;
-      left: -1000px;
-      clip: rect(1px, 1px, 1px, 1px);
+    &--component {
+        @extend %default--band;
+        [data-visibility="hidden"] {
+            //scss-lint:disable ImportantRule
+            position: absolute !important;
+            left: -1000px;
+            clip: rect(1px, 1px, 1px, 1px);
+        }
     }
-  }
-  &-container {
-    @extend %default-container;
-    display: flex;
-    flex-flow: row nowrap;
-    align-items: center;
-    justify-content: space-between;
-  }
-  &-group:first-child {
-    flex-grow: 1;
-    display: flex;
-    flex-flow: row nowrap;
-    align-items: center;
-    justify-content: flex-start;
-    margin-right: 20px;
-  }
-  &-label {
-    @extend %nav-label;
-  }
-  &-links {
-    flex-grow: 1;
-  }
-  &-link {
-    display: inline-block;
-    padding: 10px 15px;
-    &-anchor {
-      @extend %nav-link;
+    &-container {
+        @extend %default-container;
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        justify-content: space-between;
     }
-    &-icon {
-      @extend %nav-icon;
+    &-group:first-child {
+        flex-grow: 1;
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        justify-content: flex-start;
+        margin-right: 20px;
     }
-  }
-  &-logo {
-    @extend %logo-link;
-    max-height: 3em;
-  }
+    &-label {
+        @extend %nav-label;
+    }
+    &-links {
+        flex-grow: 1;
+    }
+    &-link {
+        display: inline-block;
+        padding: 10px 15px;
+        &-anchor {
+            @extend %nav-link;
+        }
+        &-icon {
+            @extend %nav-icon;
+        }
+    }
+    &-logo {
+        @extend %logo-link;
+        max-height: 3em;
+    }
 }

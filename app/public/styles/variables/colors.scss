@@ -1,0 +1,38 @@
+/*doc
+---
+title: Colors
+
+Name that color tool: http://chir.ag/projects/name-that-color/#F0F0F0
+Use this tool to determine the name of your new color.
+*/
+
+// PRIMARY COLORS
+$white: #fff;
+$black: #252527;
+$rich-black: #1a1a1a;
+$brand-primary: #c00;  // "Red Hat red"
+$red: $brand-primary;
+$blue: #4444ff;
+
+// GRAY: lightest to darkest
+$gallery: #f0f0f0; // mainly used as band background
+$cloud: #eee;      // mainly used for colorful backgrounds where white has too much contrast
+$mercury: #e2e2e2; // gray card background (visible on $gallery)
+$iron: #d2d3d5;    // mainly used as disabled buttons
+$misty: #ccc;      // WAS #dcdcdc; suggested update in styleguide for link underlines
+$silver: #aaa;     // visible against white, black, & mercury, used for icon hover
+$fog: #8a8a8a;     // mainly used as lighter gray on dark bg
+$stone: #646464;   // mainly used as copy
+
+//NEW TEALS
+$teal: #004153;
+$accent-teal-medium: #10565c;
+$accent-teal-dark: #033d43;
+$accent-teal: #007a87;
+
+// NEW BLUES
+$denim-blue: #06c; // link on light background
+$steel-blue: #004080; // Link Hover state on light background
+$midnight-blue: #73bcf7; // link on dark background
+$unc-blue: #2b9af3; // link hover on dark background
+$medium-blue: #497cb7; // Background color for cards and bands

@@ -1,7 +1,14 @@
+body {
+  margin: 0;
+}
+
 @import "fonts/fonts";
-//@import "icon-fonts/icons";
 
 @import "variables/base";
+@import "variables/colors";
+@import "variables/breakpoints";
+
 @import "mixins/global";
+
 @import "extends/copy";
 @import "extends/block";

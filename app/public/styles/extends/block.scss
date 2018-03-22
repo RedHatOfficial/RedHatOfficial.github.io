@@ -1,19 +1,23 @@
 %default--band {
-    position: relative;
-    padding-top: $band-padding;
     padding-bottom: $band-padding;
+    padding-top: $band-padding;
+    position: relative;
+
     &[data-background="gray"] {
-      background-color: $gallery;
+        background-color: $gallery;
     }
+
     &[data-collapse="top"] {
-      padding-top: $band-padding / 2;
+        padding-top: $band-padding / 2;
     }
+
     &[data-collapse="bottom"] {
-      padding-bottom: $band-padding / 2;
+        padding-bottom: $band-padding / 2;
     }
+
     &[data-collapse="both"] {
-      padding-top: $band-padding / 2;
-      padding-bottom: $band-padding / 2;
+        padding-top: $band-padding / 6;
+        padding-bottom: $band-padding / 6;
     }
 }
 
@@ -21,76 +25,52 @@
     padding: 0 $mobile-edge;
     margin-right: auto;
     margin-left: auto;
+
     &[data-align="left"] {
         text-align: left;
     }
+
     &[data-align="center"] {
         text-align: center;
     }
+
     &[data-align="right"] {
         text-align: right;
     }
+
     @media screen and (min-width: $breakpoint-sm-min) {
-        //@include container;
         width: 750px;
         padding: 0;
     }
+
     @media screen and (min-width: $breakpoint-md-min) {
         width: 970px;
     }
+
     @media screen and (min-width: $breakpoint-lg-min) {
         width: 1170px;
     }
 }
 
 %default--card {
-  display: flex;
-  flex-flow: column nowrap;
-  padding: $box-padding;
-  border-top: 5px solid $red;
-  &[data-background="white"] {
-    background-color: $white;
-  }
-  > *:not(:last-child) {
-    padding-bottom: 30px;
-  }
-  [data-align="left"] {
-    text-align: left;
-  }
-  [data-align="center"] {
-    text-align: center;
-  }
-  [data-align="right"] {
-    text-align: right;
-  }
-}
+    border-top: 5px solid $red;
+    display: flex;
+    flex-flow: column nowrap;
+    padding: $box-padding;
 
-%list-flush {
-    margin: 0;  // because FF 40 adds its own margins
-
-    // Autoprefixer not working on list margin/padding
-    margin-before: 0;
-    -webkit-margin-before: 0;
-    -moz-margin-before: 0;
-    margin-start: 0;
-    margin-block-start: 0;
-    -moz-margin-after: 0;
-    //
-    margin-block-end: 0;
-    margin-after: 0;
-    -webkit-margin-after: 0;
-    -moz-margin-after: 0;
-    margin-end: 0;
-    -webkit-margin-end: 0;
-    //
-    padding-left: 0; // For IE
-    padding-inline-start: 0;
-    padding-start: 0;
-    -webkit-padding-start: 0;
-    -moz-padding-start: 0;
-}
-
-%list-flush-no-styles {
-    list-style-type: none;
-    @extend %list-flush;
+    &[data-background="white"] {
+        background-color: $white;
+    }
+    > *:not(:last-child) {
+        padding-bottom: 30px;
+    }
+    [data-align="left"] {
+        text-align: left;
+    }
+    [data-align="center"] {
+        text-align: center;
+    }
+    [data-align="right"] {
+        text-align: right;
+    }
 }

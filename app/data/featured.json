@@ -1,34 +1,31 @@
 [{
-  "name": "abrt",
-  "logo": "http://via.placeholder.com/40x40",
-  "github": "https://github.com/abrt",
-  "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum id illum."
+  "name": "Ceph",
+  "logo": "ceph",
+  "github": "https://github.com/ceph",
+  "website": "http://ceph.com/",
+  "description": "Block storage platform."
 },{
-  "name": "Almighty",
-  "logo": "http://via.placeholder.com/40x40",
-  "github": "https://github.com/almighty/",
-  "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum id illum."
+  "name": "ManageIQ",
+  "logo": "manageiq",
+  "github": "https://github.com/ManageIQ/",
+  "website": "http://manageiq.org",
+  "description": "Management platform."
 },{
-  "name": "anaconda",
-  "logo": "http://via.placeholder.com/40x40",
-  "github": "https://github.com/rhinstaller/anaconda",
-  "website": "http://fedoraproject.org/wiki/Anaconda",
-  "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum id illum."
+  "name": "oVirt",
+  "logo": "ovirt",
+  "github": "https://github.com/ovirt",
+  "website": "http://ovirt.org",
+  "description": "Open virtual datacenter."
 },{
-  "name": "Ansible",
-  "logo": "http://via.placeholder.com/40x40",
-  "github": "https://github.com/ansible",
-  "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum id illum."
+  "name": "Project Atomic",
+  "logo": "projectatomic",
+  "github": "https://github.com/projectatomic/",
+  "website": "http://www.projectatomic.io/",
+  "description": "Use immutable infrastructure to deploy and scale your containerized applications."
 },{
-  "name": "Arquillian",
-  "logo": "http://via.placeholder.com/40x40",
-  "description": "An Innovative Testing Platform for the JVM",
-  "github": "https://github.com/arquillian",
-  "website": "http://arquillian.org",
-  "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum id illum."
-},{
-  "name": "asciibinder",
-  "logo": "http://via.placeholder.com/40x40",
-  "github": "https://github.com/redhataccess/ascii_binder",
-  "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum id illum."
+  "name": "PatternFly",
+  "logo": "patternfly",
+  "github": "https://github.com/patternfly",
+  "website": "https://www.patternfly.org",
+  "description": "Created to promote design commonality and improved user experience across enterprise IT products and applications."
 }]

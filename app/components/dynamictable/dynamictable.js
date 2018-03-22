@@ -15,6 +15,7 @@ export default angular.module("rhGitHub.dynamictable", [])
         // Initial
         $scope.searchQuery = "";
         $scope.projects = projects;
+
         // Get unique category lists
         let flags = [];
         $scope.categories = [];
@@ -24,8 +25,8 @@ export default angular.module("rhGitHub.dynamictable", [])
           if (projects[i].category) {
             $scope.categories.push( projects[i].category );
           }
-
         }
+        
         // Search the table
         $scope.searchTable = () => {
             $scope.searchQuery = $scope.searchInputValue;

@@ -4,7 +4,7 @@ import angular from "angular";
 import styles from "./navigation.scss";
 
 // Data
-import navigation from "../../data/navigation";
+//import navigation from "../../data/navigation";
 
 // Images
 import logo from "../../public/img/redhat-logo-retina.png";
@@ -18,5 +18,5 @@ export default angular.module("rhGitHub.navigation", [])
         controller: "navigationCtrl"
     }).controller("navigationCtrl", ["$scope", function($scope) {
         $scope.logo = logo;
-        $scope.navigation = navigation;
+        //$scope.navigation = navigation;
     }]);

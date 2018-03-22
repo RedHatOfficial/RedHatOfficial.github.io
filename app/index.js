@@ -5,9 +5,6 @@ import ngSanitize from "angular-sanitize";
 // Styles
 import styles from "./public/styles/global.scss";
 
-// Interactions
-import smoothScroll from "./public/interactions/smooth-scroll.js";
-
 // Pages
 import main from "./pages/main/main.js";
 

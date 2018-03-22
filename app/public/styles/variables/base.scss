@@ -4,59 +4,7 @@ $base-font-px: 18;
 // Base Font Family
 $base-font-family: "Overpass", Overpass, Helvetica, helvetica, arial, sans-serif;
 
-/*doc
----
-title: Colors
-category: Global - Colors
-
-Name that color tool: http://chir.ag/projects/name-that-color/#F0F0F0
-Use this tool to determine the name of your new color!
-*/
-
-// CRAYOLA COLORS
-$white: #fff;
-$black: #252527;
-$rich-black: #1a1a1a;
-$brand-primary: #c00;  // "Red Hat red"
-$red: $brand-primary;
-$blue: #4444ff;
-// Colors
-
-// GRAY: lightest to darkest
-$gallery: #f0f0f0; // mainly used as band background
-$cloud: #eee;      // mainly used for colorful backgrounds where white has too much contrast
-$mercury: #e2e2e2; // gray card background (visible on $gallery)
-$iron: #d2d3d5;    // mainly used as disabled buttons
-$misty: #ccc;      // WAS #dcdcdc; suggested update in styleguide for link underlines
-$silver: #aaa;     // visible against white, black, & mercury, used for icon hover
-$fog: #8a8a8a;     // mainly used as lighter gray on dark bg
-$stone: #646464;   // mainly used as copy
-
-//NEW TEALS
-$teal: #004153;
-$accent-teal-medium: #10565c;
-$accent-teal-dark: #033d43;
-$accent-teal: #007a87;
-
-// NEW BLUES
-$denim-blue: #06c; // link on light background
-$steel-blue: #004080; // Link Hover state on light background
-$midnight-blue: #73bcf7; // link on dark background
-$unc-blue: #2b9af3; // link hover on dark background
-$medium-blue: #497cb7; // Background color for cards and bands
-
 // Margin Padding
 $band-padding: 60px;
 $box-padding: 30px;
 $mobile-edge: 9px;
-
-$breakpoint-zero: 0;
-$breakpoint-xs-min: 480px;
-$breakpoint-sm-min: 768px;
-$breakpoint-md-min: 992px;
-$breakpoint-lg-min: 1200px;
-
-$breakpoint-xxs-max: $breakpoint-xs-min - 1;
-$breakpoint-xs-max: $breakpoint-sm-min - 1;
-$breakpoint-sm-max: $breakpoint-md-min - 1;
-$breakpoint-md-max: $breakpoint-lg-min - 1;

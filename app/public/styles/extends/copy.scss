@@ -1,262 +1,262 @@
 %nav-label {
-  color: $black;
-  font-family: $base-font-family;
-  font-size: 34px;
-  font-weight: 400;
-  line-height: 1.18;
-  text-transform: uppercase;
+    color: $black;
+    font-family: $base-font-family;
+    font-size: 34px;
+    font-weight: 400;
+    line-height: 1.18;
+    text-transform: uppercase;
 
-  &:not(:only-child) {
-    border-right: 3px solid $fog;
-    margin-right: 5px;
-    padding-right: 20px;
-  }
+    /* &:not(:only-child) {
+        border-right: 3px solid $fog;
+        margin-right: 5px;
+        padding-right: 20px;
+    } */
 }
 
 %hero-heading {
-  color: $rich-black;
-  font-family: $base-font-family;
-  font-size: 35px;
-  font-weight: 400;
-  line-height: 1.18;
+    color: $rich-black;
+    font-family: $base-font-family;
+    font-size: 35px;
+    font-weight: 400;
+    line-height: 1.18;
 
-  &:not(:last-child) {
-    padding-bottom: 40px;
-  }
+    &:not(:last-child) {
+        padding-bottom: 20px;
+    }
 
-  @media screen and (min-width: $breakpoint-md-min) {
-    font-size: 36px;
-  }
+    @media screen and (min-width: $breakpoint-md-min) {
+        font-size: 36px;
+    }
 
-  @media screen and (min-width: $breakpoint-lg-min) {
-    font-size: 38px;
-  }
+    @media screen and (min-width: $breakpoint-lg-min) {
+        font-size: 38px;
+    }
 }
 
 %hero-copy {
-  color: $rich-black;
-  font-family: $base-font-family;
-  font-size: 20px;
-  font-weight: 100;
-  line-height: 1.44;
-  margin: auto;
-  max-width: 75%;
+    color: $rich-black;
+    font-family: $base-font-family;
+    font-size: 20px;
+    font-weight: 100;
+    line-height: 1.44;
+    margin: auto;
+    max-width: 75%;
 
-  &:not(:last-child) {
-    padding-bottom: 15px;
-  }
+    &:not(:last-child) {
+        padding-bottom: 15px;
+    }
 
-  a {
-    color: $midnight-blue;
+    a {
+        color: $midnight-blue;
+        text-decoration: none;
+
+        &:active,
+        &:hover {
+            color: $unc-blue;
+        }
+    }
+}
+
+%band-title {
+    font-family: $base-font-family;
+    font-size: 22px;
+    font-weight: 800;
+    line-height: 1.18;
+    text-transform: uppercase;
+}
+
+%band-heading {
+    color: $black;
+    font-family: $base-font-family;
+    font-size: 32px;
+    font-weight: 800;
+    line-height: 1.1;
+    text-transform: none;
+
+    @media screen and (min-width: $breakpoint-md-min) {
+        font-size: 36px;
+    }
+
+    @media screen and (min-width: $breakpoint-lg-min) {
+        font-size: 38px;
+    }
+}
+
+%band-summary {
+    font-family: $base-font-family;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 1.44;
+}
+
+%card-heading {
+    font-family: $base-font-family;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 1.18;
+}
+
+%card-copy {
+    font-family: $base-font-family;
+    font-size: 16px;
+    font-weight: 100;
+    line-height: 1.44;
+}
+
+%group-heading {
+    color: $stone;
+    font-family: $base-font-family;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 1.18;
+}
+
+%group-copy {
+    color: $stone;
+    font-family: $base-font-family;
+    font-size: 18px;
+    font-weight: 100;
+    line-height: 1.44;
+}
+
+%link {
+    color: $denim-blue;
     text-decoration: none;
 
     &:active,
     &:hover {
-      color: $unc-blue;
+        color: $steel-blue;
     }
-  }
-}
 
-%band-title {
-  font-family: $base-font-family;
-  font-size: 22px;
-  font-weight: 800;
-  line-height: 1.18;
-  text-transform: uppercase;
-}
-
-%band-heading {
-  color: $black;
-  font-family: $base-font-family;
-  font-size: 32px;
-  font-weight: 800;
-  line-height: 1.1;
-  text-transform: none;
-
-  @media screen and (min-width: $breakpoint-md-min) {
-    font-size: 36px;
-  }
-
-  @media screen and (min-width: $breakpoint-lg-min) {
-    font-size: 38px;
-  }
-}
-
-%band-summary {
-  font-family: $base-font-family;
-  font-size: 22px;
-  font-weight: 400;
-  line-height: 1.44;
-}
-
-%card-heading {
-  font-family: $base-font-family;
-  font-size: 22px;
-  font-weight: 400;
-  line-height: 1.18;
-}
-
-%card-copy {
-  font-family: $base-font-family;
-  font-size: 16px;
-  font-weight: 100;
-  line-height: 1.44;
-}
-
-%group-heading {
-  color: $stone;
-  font-family: $base-font-family;
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 1.18;
-}
-
-%group-copy {
-  color: $black;
-  font-family: $base-font-family;
-  font-size: 18px;
-  font-weight: 100;
-  line-height: 1.44;
-}
-
-%link {
-  color: $denim-blue;
-  text-decoration: none;
-
-  &:active,
-  &:hover {
-    color: $steel-blue;
-  }
-
-  &:focus {
-    @include accessibility-focus();
-  }
+    &:focus {
+        @include accessibility-focus();
+    }
 }
 
 %subtle-link {
-  color: $black;
-  text-decoration: none;
+    color: $black;
+    text-decoration: none;
 
-  &:active,
-  &:hover {
-    color: $steel-blue;
-  }
+    &:active,
+    &:hover {
+        color: $steel-blue;
+    }
 
-  &:focus {
-    @include accessibility-focus();
-  }
+    &:focus {
+        @include accessibility-focus();
+    }
 }
 
 %subtle-link-underline {
-  color: $black;
+    color: $black;
 
-  &:active,
-  &:hover {
-    color: $steel-blue;
-  }
+    &:active,
+    &:hover {
+        color: $steel-blue;
+    }
 
-  &:focus {
-    @include accessibility-focus();
-  }
+    &:focus {
+        @include accessibility-focus();
+    }
 }
 
 %secondary-link {
-  color: $denim-blue;
-  font-family: $base-font-family;
-  font-size: 16px;
-  text-decoration: none;
+    color: $denim-blue;
+    font-family: $base-font-family;
+    font-size: 16px;
+    text-decoration: none;
 
-  &::after {
-    content: '>';
-    font-size: .7em;
-    padding-left: 5px;
-    vertical-align: baseline;
-  }
+    &::after {
+        content: ">";
+        font-size: .7em;
+        padding-left: 5px;
+        vertical-align: baseline;
+    }
 
-  &:active,
-  &:hover {
-    color: $steel-blue;
-  }
+    &:active,
+    &:hover {
+        color: $steel-blue;
+    }
 
-  &:focus {
-    @include accessibility-focus();
-  }
+    &:focus {
+        @include accessibility-focus();
+    }
 }
 
 %link-icon {
-  font-size: .7em;
-  vertical-align: baseline;
+    font-size: .7em;
+    vertical-align: baseline;
 }
 
 %nav-link {
-  color: $black;
-  font-family: $base-font-family;
-  font-size: 24px;
-  font-weight: 600;
-  line-height: 1.18;
-  position: relative;
-  text-decoration: none;
+    color: $black;
+    font-family: $base-font-family;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.18;
+    position: relative;
+    text-decoration: none;
 
-  &:hover::after,
-  &:active::after {
-    background: $red;
-    bottom: -8px;
-    content: ' ';
-    height: 4px;
-    left: 0;
-    position: absolute;
-    width: 30px;
-  }
+    &:hover::after,
+    &:active::after {
+        background: $red;
+        bottom: -8px;
+        content: " ";
+        height: 4px;
+        left: 0;
+        position: absolute;
+        width: 30px;
+    }
 
-  &:focus {
-    @include accessibility-focus();
-  }
+    &:focus {
+        @include accessibility-focus();
+    }
 }
 
 %nav-icon {
-  color: $stone;
-  font-size: .7em;
-  vertical-align: text-top;
+    color: $stone;
+    font-size: .7em;
+    vertical-align: text-top;
 }
 
 %dropdown-label {
-  color: $black;
-  font-family: $base-font-family;
-  font-size: 18px;
-  font-weight: 600;
-  line-height: 1.18;
+    color: $black;
+    font-family: $base-font-family;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.18;
 }
 
 %footer-text {
-  color: $stone;
-  font-family: $base-font-family;
-  font-size: 12px;
-  line-height: 1.18;
+    color: $stone;
+    font-family: $base-font-family;
+    font-size: 12px;
+    line-height: 1.18;
 }
 
 %footer-link {
-  color: $stone;
-  font-family: $base-font-family;
-  font-size: 12px;
-  line-height: 1.18;
+    color: $stone;
+    font-family: $base-font-family;
+    font-size: 12px;
+    line-height: 1.18;
 
-  &:active,
-  &:hover {
-    color: $iron;
-  }
+    &:active,
+    &:hover {
+        color: $iron;
+    }
 
-  &:focus {
-    @include accessibility-focus();
-  }
+    &:focus {
+        @include accessibility-focus();
+    }
 }
 
 %logo-link {
-  &:active,
-  &:hover {
-    filter: drop-shadow(2px 3px 2px $stone);
-  }
+    &:active,
+    &:hover {
+        filter: drop-shadow(2px 3px 2px $stone);
+    }
 
-  &:focus {
-    @include accessibility-focus();
-  }
+    &:focus {
+        @include accessibility-focus();
+    }
 }

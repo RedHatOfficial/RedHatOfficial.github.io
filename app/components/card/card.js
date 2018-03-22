@@ -7,6 +7,7 @@ export default angular.module("rhGitHub.card", [])
   .component("card", {
     template: require("./card.html"),
     bindings: {
-        feature: "="
+        feature: "=",
+        logos: "="
     }
   });
