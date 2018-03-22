@@ -64,39 +64,31 @@
     }
 
     &-main {
-        border-collapse: collapse;
-        overflow: scroll;
-        width: 100%;
+      border-collapse: collapse;
+      overflow: scroll;
+      width: 100%;
 
-        thead tr,
-        tbody tr:nth-child(even) {
-            background-color: $mercury;
-        }
+      thead tr {
+        background-color: $iron;
+      }
 
-        tbody tr:nth-child(odd) {
-            background-color: $white;
-        }
+      th {
+        @extend %table-head;
+        padding: 10px;
+      }
 
-        td,
-        th {
-            @extend %group-copy;
-            background-color: transparent;
-            padding: 10px;
-            text-align: left;
-            &:nth-child(1) {
-                width: 60%;
-            }
-            &:nth-child(2) {
-                width: 20%;
-            }
-            &:nth-child(3) {
-                width: 20%;
-            }
-        }
+      tbody tr:nth-child(even) {
+        background-color: $mercury;
+      }
 
-        th {
-            font-weight: 600;
-        }
+      tbody tr:nth-child(odd) {
+        background-color: $white;
+      }
+
+      td {
+        @extend %table-row;
+        padding: 10px;
+      }
     }
 
     &-no-results {

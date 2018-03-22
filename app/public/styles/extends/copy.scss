@@ -14,7 +14,7 @@
 }
 
 %hero-heading {
-    color: $rich-black;
+    color: $black;
     font-family: $base-font-family;
     font-size: 35px;
     font-weight: 400;
@@ -34,7 +34,7 @@
 }
 
 %hero-copy {
-    color: $rich-black;
+    color: $black;
     font-family: $base-font-family;
     font-size: 20px;
     font-weight: 100;
@@ -58,7 +58,7 @@
 }
 
 %band-title {
-    color: $rich-black;
+    color: $black;
     font-family: $base-font-family;
     font-size: 22px;
     font-weight: 800;
@@ -67,7 +67,7 @@
 }
 
 %band-heading {
-    color: $rich-black;
+    color: $black;
     font-family: $base-font-family;
     font-size: 32px;
     font-weight: 800;
@@ -84,7 +84,7 @@
 }
 
 %band-summary {
-    color: $rich-black;
+    color: $black;
     font-family: $base-font-family;
     font-size: 22px;
     font-weight: 400;
@@ -92,13 +92,13 @@
 }
 
 %card-heading {
-    color: $rich-black;
+    color: $black;
     font-family: $base-font-family;
     font-size: 22px;
     font-weight: 400;
     line-height: 1.18;
     a {
-        color: $rich-black;
+        color: $black;
         text-decoration: none;
         &:active,
         &:hover {
@@ -108,7 +108,7 @@
 }
 
 %card-copy {
-    color: $rich-black;
+    color: $black;
     font-family: $base-font-family;
     font-size: 16px;
     font-weight: 100;
@@ -130,7 +130,49 @@
     font-weight: 100;
     line-height: 1.44;
     a {
-      color: $stone;
+      color: $denim-blue;
+
+      &:active,
+      &:hover {
+          color: $steel-blue;
+      }
+
+      &:focus {
+        @include accessibility-focus();
+      }
+    }
+}
+
+%table-head {
+    color: $black;
+    font-family: $base-font-family;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.44;
+    text-align: left;
+    a {
+      color: $denim-blue;
+
+      &:active,
+      &:hover {
+          color: $steel-blue;
+      }
+
+      &:focus {
+        @include accessibility-focus();
+      }
+    }
+}
+
+%table-row {
+    color: $stone;
+    font-family: $base-font-family;
+    font-size: 18px;
+    font-weight: 100;
+    line-height: 1.44;
+    text-align: left;
+    a {
+      color: $denim-blue;
 
       &:active,
       &:hover {
@@ -173,8 +215,8 @@
     }
 }
 
-%subtle-link-underline {
-    color: $black;
+%link-underline {
+    color: $denim-blue;
     font-family: $base-font-family;
 
     &:active,
@@ -254,21 +296,21 @@
 }
 
 %footer-text {
-    color: $stone;
+    color: $fog;
     font-family: $base-font-family;
-    font-size: 12px;
+    font-size: 14px;
     line-height: 1.18;
 }
 
 %footer-link {
-    color: $stone;
+    color: $fog;
     font-family: $base-font-family;
-    font-size: 12px;
+    font-size: 14px;
     line-height: 1.18;
 
     &:active,
     &:hover {
-        color: $iron;
+        color: $white;
     }
 
     &:focus {
@@ -290,7 +332,7 @@
 %logo-link-dark {
     &:active,
     &:hover {
-        filter: drop-shadow(0 2px 3px darken($rich-black, 10%));
+        filter: drop-shadow(0 2px 3px darken($black, 10%));
     }
 
     &:focus {

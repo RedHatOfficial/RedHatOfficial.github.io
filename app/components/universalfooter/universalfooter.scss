@@ -15,7 +15,12 @@
   }
   &-logo {
     @extend %logo-link-dark;
-    height: 45px;
+    height: 44px;
+    min-width: 138px;
+    &:last-child {
+      height: 35px;
+      min-width: 74px;
+    }
   }
   &-copyright {
     @extend %footer-text;

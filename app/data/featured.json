@@ -9,7 +9,7 @@
   "logo": "ceph",
   "github": "https://github.com/ceph",
   "website": "http://ceph.com/",
-  "description": "Ceph is an open source and freely available distributed object store and file system that relies upon the RADOS (Reliable Autonomic Distributed Object Store) foundation."
+  "description": "An open source and freely available distributed object store and file system that relies on Reliable Autonomic Distributed Object Store (RADOS)."
 },{
   "name": "ManageIQ",
   "logo": "manageiq",
@@ -21,7 +21,7 @@
   "logo": "ovirt",
   "github": "https://github.com/ovirt",
   "website": "http://ovirt.org",
-  "description": "A virtualization platform with an easy-to-use web interface that manages virtual machines, storage, and networks."
+  "description": "An open source virtualization platform powered by KVM on Linux<sup>&reg;</sup> with an easy-to-use web interface that manages virtual machines, storage, and networks."
 },{
   "name": "Project Atomic",
   "logo": "projectatomic",

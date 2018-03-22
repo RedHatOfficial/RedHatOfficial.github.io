@@ -1,7 +1,9 @@
 
 # Red Hat on GitHub
 
-You can view the rendered site at [https://redhatofficial.github.io](https://redhatofficial.github.io), where you'll find a listing of open source projects by Red Hatters.
+We’ve put together a comprehensive list of the projects in which Red Hat employees are actively involved. Given the large scope of our open source work, we recognize that we might have missed some projects or gotten a listing wrong. As time passes, more projects will need to be added to the list. These circumstances, and others we can’t currently foresee, may mean you’ll want to make changes to this list. So, how do you do that?
+
+## Built with
 
 This site was created using [Angular](https://angularjs.org/), [webpack](https://webpack.js.org/), [NPM](https://www.npmjs.com/), [Babel](https://babeljs.io/), and [Sass](https://sass-lang.com/).
 
@@ -18,12 +20,14 @@ All projects are stored in the `/app/data` directory in the `projects.json` file
   "projectName": "Foo Project",
   "projectDescription": "Lorem ipsum.",
   "projectRepository": "https://github.com/foo",
-  "projectWebsite": "http://foo.githug.io",
+  "projectWebsite": "http://foo.github.io",
   "category": "Development"
 }
 ```
 
-Be sure to include at **LEAST** the `projectName`, `projectRepository`, and `category`.  Current categories include: 
+Be sure to include at _least_ the `projectName`, `projectRepository`, and `category`.
+
+Current categories include:
 
 - Development
 - Documentation
@@ -36,3 +40,7 @@ Be sure to include at **LEAST** the `projectName`, `projectRepository`, and `cat
 ### Criteria for adding projects to the page
 
 At this time, only projects that Red Hat employees are required to work on as part of their job will be listed. There are so many amazing projects that Red Hatters work on as enthusiasts, too many to recognize in one place. This criteria may be subject to change as the page evolves.
+
+## Updating the copy
+
+If yo
