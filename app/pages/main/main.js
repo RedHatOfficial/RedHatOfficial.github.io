@@ -9,6 +9,7 @@ import featured from "../../data/featured";
 import content from "../../data/content";
 
 // Images
+import ansible from "../../public/img/logo-ansible.png";
 import ceph from "../../public/img/logo-ceph.png";
 import manageiq from "../../public/img/logo-manageiq.jpg";
 import ovirt from "../../public/img/logo-ovirt.png";
@@ -42,6 +43,7 @@ export default angular.module("rhGitHub.main", [
     this.heroDetail = heroDetail;
     this.featured = featured;
     this.logos = {
+      ansible: ansible,
       ceph: ceph,
       manageiq: manageiq,
       ovirt: ovirt,
