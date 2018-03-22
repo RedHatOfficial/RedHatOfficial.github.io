@@ -5,8 +5,6 @@
         @extend %default--card;
     }
     &-header {
-        min-height: 80px;
-        flex-grow: 1;
         display: flex;
         justify-content: center;
         flex-flow: column nowrap;
@@ -15,12 +13,13 @@
             margin: 0 auto;
             padding: 0 10px;
             max-width: 80%;
-            max-height: 100px;
+            max-height: 50px;
         }
     }
     &-body {
+        flex-grow: 1;
         > *:not(:last-child) {
-            padding-bottom: 20px;
+            padding-bottom: 10px;
         }
         &-headline {
             @extend %card-heading;

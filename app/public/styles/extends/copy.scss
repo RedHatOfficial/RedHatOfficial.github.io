@@ -100,6 +100,10 @@
     a {
         color: $rich-black;
         text-decoration: none;
+        &:active,
+        &:hover {
+          color: $steel-blue;
+        }
     }
 }
 
@@ -125,6 +129,18 @@
     font-size: 18px;
     font-weight: 100;
     line-height: 1.44;
+    a {
+      color: $stone;
+
+      &:active,
+      &:hover {
+          color: $steel-blue;
+      }
+
+      &:focus {
+        @include accessibility-focus();
+      }
+    }
 }
 
 %link {
@@ -143,7 +159,7 @@
 }
 
 %subtle-link {
-    color: $black;
+    color: $stone;
     font-family: $base-font-family;
     text-decoration: none;
 

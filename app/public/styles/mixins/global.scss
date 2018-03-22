@@ -71,5 +71,7 @@
 }
 
 @mixin make-input() {
+    font-family: $base-font-family;
     border-radius: 0;
+    padding: 5px;
 }

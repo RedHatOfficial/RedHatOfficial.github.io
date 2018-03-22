@@ -1,10 +1,10 @@
 @import "../../public/styles/global";
 
 .group {
-  &--component {
-    > *:not(:last-child) {
-      padding-bottom: 10px;
-    }
+  &-container {
+      > *:not(:last-child) {
+        padding-bottom: 15px;
+      }
   }
 
   &-heading {
