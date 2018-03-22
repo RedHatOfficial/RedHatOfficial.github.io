@@ -1,21 +1,27 @@
 [{
+  "name": "Ansible",
+  "logo": "ansible",
+  "github": "https://github.com/ansible",
+  "website": "https://www.ansible.com/",
+  "description": "App deployment, configuration management and orchestration - all from one system."
+},{
   "name": "Ceph",
   "logo": "ceph",
   "github": "https://github.com/ceph",
   "website": "http://ceph.com/",
-  "description": "Block storage platform."
+  "description": "Ceph is an open source and freely available distributed object store and file system that relies upon the RADOS (Reliable Autonomic Distributed Object Store) foundation."
 },{
   "name": "ManageIQ",
   "logo": "manageiq",
   "github": "https://github.com/ManageIQ/",
   "website": "http://manageiq.org",
-  "description": "Management platform."
+  "description": "Manage containers, virtual machines, networks, and storage from a single platform."
 },{
   "name": "oVirt",
   "logo": "ovirt",
   "github": "https://github.com/ovirt",
   "website": "http://ovirt.org",
-  "description": "Open virtual datacenter."
+  "description": "A virtualization platform with an easy-to-use web interface that manages virtual machines, storage, and networks."
 },{
   "name": "Project Atomic",
   "logo": "projectatomic",
