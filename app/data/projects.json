@@ -534,7 +534,7 @@
   },
   {
     "projectName": "Ansible",
-    "projectDescription": "IT automation platform that makes your applications and systems easier to deplo",
+    "projectDescription": "IT automation platform that makes your applications and systems easier to deploy",
     "projectRepository": "https://github.com/ansible",
     "projectWebsite": "http://ansible.com",
     "category": "Operations"

@@ -19,10 +19,11 @@
         ng-model="searchCategory">
         <option value="">-- Filter by category --</option>
       </select>
+      <i class="fas fa-caret-down"></i>
     </div>
   </div>
 
-  <table class="table-main">
+  <table class="table-main" ng-hide="filtered.length < 1">
     <thead class="table-header">
       <tr>
         <th>Project name</th>
@@ -32,11 +33,15 @@
     </thead>
     <tbody class="table-body">
       <tr class="table-row"
-        ng-repeat="project in projects | orderBy:'+projectName' | filter:{projectName:searchQuery}:startsWith | filter:{category:searchCategory}">
+        ng-repeat="project in projects | orderBy:'+projectName' | filter:{projectName:searchQuery}:startsWith | filter:{category:searchCategory || ''} as filtered">
         <td><a href="{{ project.projectRepository }}">{{ project.projectName }}</a></td>
         <td><a href="{{ project.projectWebsite }}">{{ project.projectWebsite }}</a></td>
         <td>{{ project.category }}</td>
       </tr>
     </tbody>
   </table>
+
+  <div class="table-no-results" ng-show="filtered.length < 1">
+    <p class="table-no-results-message">There appear to be no results for your search. <a href="" ng-click="searchClear()">Clear filters</a></p>
+  </div>
 </div>

@@ -211,7 +211,6 @@
 }
 
 %link-icon {
-    font-size: .7em;
     vertical-align: baseline;
 }
 
@@ -280,7 +279,18 @@
 %logo-link {
     &:active,
     &:hover {
-        filter: drop-shadow(2px 3px 2px $stone);
+        filter: drop-shadow(0 2px 3px $gallery);
+    }
+
+    &:focus {
+        @include accessibility-focus();
+    }
+}
+
+%logo-link-dark {
+    &:active,
+    &:hover {
+        filter: drop-shadow(0 2px 3px darken($rich-black, 10%));
     }
 
     &:focus {

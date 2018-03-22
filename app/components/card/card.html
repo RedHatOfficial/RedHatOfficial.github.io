@@ -1,6 +1,6 @@
 <div class="card--component" ng-show="$ctrl.feature.name" ng-attr-data-background="{{ $ctrl.background ? $ctrl.background : 'white' }}">
   <div class="card-header" ng-show="$ctrl.feature.logo">
-      <img class="card-header-img" ng-src="{{ $ctrl.logos[ $ctrl.feature.logo ] }}">
+      <a href="{{ $ctrl.feature.github }}"><img class="card-header-img" ng-src="{{ $ctrl.logos[ $ctrl.feature.logo ] }}"></a>
   </div>
   <div class="card-body" data-align="center">
       <h3 class="card-body-headline"><a href="{{ $ctrl.feature.github }}">{{ $ctrl.feature.name }}</a></h3>

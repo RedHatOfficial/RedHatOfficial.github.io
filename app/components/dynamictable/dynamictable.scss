@@ -1,84 +1,108 @@
 @import '../../public/styles/global';
 
 .table {
-  &--component {
-    > *:not(:last-child) {
-      padding-bottom: 30px;
-    }
-  }
-
-  &-filters {
-    display: grid;
-    grid-auto-rows: 1fr;
-    grid-gap: 30px;
-    grid-template-columns: 8fr 4fr;
-  }
-
-  &-search {
-    display: grid;
-    grid-auto-rows: 1fr;
-    grid-gap: 0;
-    grid-template-columns: 7fr 1fr;
-
-    &-input {
-      @include make-input();
+    &--component {
+        > *:not(:last-child) {
+            padding-bottom: 30px;
+        }
     }
 
-    &-button {
-      @include make-button($btn-color: $brand-primary);
-    }
-  }
-
-  &-dropdown {
-    font-family: $base-font-family;
-    align-items: center;
-    display: grid;
-    grid-auto-rows: 1fr;
-    grid-gap: 10px;
-    grid-template-columns: 1fr 3fr;
-
-    &-label {
-      @extend %dropdown-label;
+    &-filters {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-gap: 30px;
+        grid-template-columns: 8fr 4fr;
     }
 
-    &-select {
-      height: 100%;
-    }
-  }
+    &-search {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-gap: 0;
+        grid-template-columns: 7fr 1fr;
 
-  &-main {
-    border-collapse: collapse;
-    overflow: scroll;
-    width: 100%;
+        &-input {
+            @include make-input();
+        }
 
-    thead tr,
-    tbody tr:nth-child(even) {
-      background-color: $mercury;
-    }
-
-    tbody tr:nth-child(odd) {
-      background-color: $white;
+        &-button {
+            @include make-button($btn-color: $brand-primary);
+        }
     }
 
-    td,
-    th {
+    &-dropdown {
+        font-family: $base-font-family;
+        align-items: center;
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-gap: 10px;
+        grid-template-columns: 1fr 3fr;
+        position: relative;
+
+        &-label {
+            @extend %dropdown-label;
+        }
+
+        &-select {
+            background-color: $white;
+            color: $stone;
+            height: 100%;
+            -webkit-appearance: none;
+            border-radius: 0;
+            padding: 5px 30px 5px 10px;
+
+            + i {
+                color: $stone;
+                position: absolute;
+                top: calc(50% - .55em);
+                right: 10px;
+            }
+
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+
+    &-main {
+        border-collapse: collapse;
+        overflow: scroll;
+        width: 100%;
+
+        thead tr,
+        tbody tr:nth-child(even) {
+            background-color: $mercury;
+        }
+
+        tbody tr:nth-child(odd) {
+            background-color: $white;
+        }
+
+        td,
+        th {
+            @extend %group-copy;
+            background-color: transparent;
+            padding: 10px;
+            text-align: left;
+            &:nth-child(1) {
+                width: 60%;
+            }
+            &:nth-child(2) {
+                width: 20%;
+            }
+            &:nth-child(3) {
+                width: 20%;
+            }
+        }
+
+        th {
+            font-weight: 600;
+        }
+    }
+
+    &-no-results {
       @extend %group-copy;
-      background-color: transparent;
-      padding: 10px;
-      text-align: left;
-      &:nth-child(1) {
-        width: 60%;
-      }
-      &:nth-child(2) {
-        width: 20%;
-      }
-      &:nth-child(3) {
-        width: 20%;
+      a {
+        @extend %secondary-link;
       }
     }
-
-    th {
-      font-weight: 600;
-    }
-  }
 }

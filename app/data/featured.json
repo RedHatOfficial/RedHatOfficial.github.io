@@ -1,6 +1,6 @@
 [{
   "name": "Ansible",
-  "logo": "ansible",
+  "logo": "",
   "github": "https://github.com/ansible",
   "website": "https://www.ansible.com/",
   "description": "App deployment, configuration management and orchestration - all from one system."
