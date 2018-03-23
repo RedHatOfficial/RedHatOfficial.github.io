@@ -9,8 +9,6 @@ This site was created using [Angular](https://angularjs.org/), [webpack](https:/
 
 ## Adding a project
 
-We have worked to put together a comprehensive list of all projects hosted on GitHub in which Red Hat employees are actively involved. But we also recognize that, given the large scope of our open source work, we may have missed some projects, or gotten some listing wrong. Plus, as time goes by, more Red Hat projects will need to be added to this list.
-
 To add or modify projects to the list on [https://redhatofficial.github.io](https://redhatofficial.github.io), either submit a pull request or create an issue in the [repo](https://github.com/RedHatOfficial/RedHatOfficial.github.io). Upon review, the site maintainers will merge the PR or change the content as requested. No direct merges will be accepted.
 
 All projects are stored in the `/app/data` directory in the `projects.json` file within the dev branch of this repo.  Try to add your project alphabetically (just to make the file easier to search) and create a new object in the JSON that has:
