@@ -169,6 +169,12 @@
     "category": "Development"
   },
   {
+    "projectName": "python-hwdata",
+    "projectDescription": "Python bindings to hwdata",
+    "projectRepository": "https://github.com/xsuchy/python-hwdata",
+    "category": "Development"
+  },
+  {
     "projectName": "radanalyticsio",
     "projectDescription": "Empowering intelligent application development on the OpenShift platform",
     "projectRepository": "https://github.com/radanalyticsio",
@@ -235,6 +241,13 @@
     "projectDescription": "Everything related to documentation tooling/writing for community projects",
     "projectRepository": "https://github.com/pressgang",
     "projectWebsite": "http://pressgang.jboss.org/",
+    "category": "Documentation"
+  },
+  {
+    "projectName": "RPM Packaging Guide",
+    "projectDescription": "Comprehensive guide to RPM packaging",
+    "projectRepository": "https://github.com/redhat-developer/rpm-packaging-guide/",
+    "projectWebsite": "https://rpm-packaging-guide.github.io/",
     "category": "Documentation"
   },
   {
