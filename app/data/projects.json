@@ -399,6 +399,13 @@
     "category": "Middleware"
   },
   {
+    "projectName": "KubeVirt",
+    "projectDescription": "Enables developers to  bring existing virtual machines into their applications running on Kubernetes and OpenShift clusters",
+    "projectRepository": "https://github.com/kubevirt",
+    "projectWebsite": "http://kubevirt.github.io",
+    "category": "Development"
+  },
+  {
     "projectName": "mod_cluster",
     "projectDescription": "An httpd-based load balancer",
     "projectRepository": "https://github.com/modcluster",
