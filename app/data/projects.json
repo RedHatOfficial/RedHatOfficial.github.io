@@ -920,6 +920,12 @@
     "category": "Operations"
   },
   {
+    "projectName": "PythonGSSAPI",
+    "projectDescription": "Python libraries to work with GSSAPI",
+    "projectRepository": "https://github.com/pythongssapi",
+    "category": "Operations"
+  },
+  {
     "projectName": "Red Hat Kontinuity",
     "projectDescription": "Continuous Delivery for Application Developers Using Red Hat",
     "projectRepository": "https://github.com/redhat-kontinuity",
