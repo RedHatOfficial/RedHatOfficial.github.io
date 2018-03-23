@@ -792,7 +792,7 @@
     "projectName": "OpenShift Origin",
     "projectDescription": "Platform as a Service",
     "projectRepository": "https://github.com/openshift",
-    "projectWebsite": "https://www.openshift.com",
+    "projectWebsite": "https://www.openshift.org",
     "category": "Operations"
   },
   {
