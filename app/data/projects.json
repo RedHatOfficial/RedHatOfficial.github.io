@@ -1044,6 +1044,7 @@
     "projectName": "firewalld",
     "projectDescription": "Firewall daemon with D-Bus interface",
     "projectRepository": "https://github.com/firewalld",
+    "projectWebsite": "http://firewalld.org",
     "category": "Platform"
   },
   {
