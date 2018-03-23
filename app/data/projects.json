@@ -86,6 +86,13 @@
     "category": "Development"
   },
   {
+    "projectName": "Eclipse Web Tools Project",
+    "projectDescription": "Eclipse plugins for Web, JavaEE development",
+    "projectRepository": "https://github.com/eclipse?q=webtools",
+    "projectWebsite": "https://www.eclipse.org/webtools/",
+    "category": "Development"
+  },
+  {
     "projectName": "Errai Framework",
     "projectDescription": "Build web applications",
     "projectRepository": "https://github.com/errai",
@@ -118,6 +125,13 @@
     "projectDescription": "An implementation of the Java EE Connector Architecture 1.7 specification",
     "projectRepository": "https://github.com/oloake/IronJacamar",
     "projectWebsite": "http://www.ironjacamar.org/",
+    "category": "Development"
+  }, 
+  {
+    "projectName": "JBoss Tools",
+    "projectDescription": "Eclipse plugins for JBoss, Fuse, OpenShift",
+    "projectRepository": "https://github.com/jbosstools",
+    "projectWebsite": "http://tools.jboss.org/",
     "category": "Development"
   },
   {
@@ -159,6 +173,13 @@
     "projectDescription": "Tooling to develop Apache Camel and Red Hat Fuse integration projects",
     "projectRepository": "https://github.com/jbosstools/jbosstools-fuse",
     "projectWebsite": "https://tools.jboss.org/features/fusetools.html",
+    "category": "Development"
+  },
+  {
+    "projectName": "Red Hat JBoss Developer Studio",
+    "projectDescription": "Eclipse plugins for JBoss, Fuse, OpenShift",
+    "projectRepository": "https://github.com/jbdevstudio",
+    "projectWebsite": "https://developers.redhat.com/products/devstudio/",
     "category": "Development"
   },
   {
@@ -343,13 +364,6 @@
     "projectDescription": "A general purpose framework for symmetric and asymmetric communication over a network",
     "projectRepository": "https://github.com/jboss-remoting",
     "projectWebsite": "http://jbossremoting.jboss.org/",
-    "category": "Middleware"
-  },
-  {
-    "projectName": "JBoss Tools",
-    "projectDescription": "Eclipse plugins for JBoss",
-    "projectRepository": "https://github.com/jbosstools",
-    "projectWebsite": "http://tools.jboss.org/",
     "category": "Middleware"
   },
   {
