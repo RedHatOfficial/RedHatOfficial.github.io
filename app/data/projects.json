@@ -196,6 +196,13 @@
     "category": "Development"
   },
   {
+    "projectName": "RadarGun",
+    "projectDescription": "Distributed systems benchmark framework with focus on key-value IMDBs",
+    "projectRepository": "https://github.com/radargun",
+    "projectWebsite": "http://radargun.github.io/",
+    "category": "Development"
+  },
+  {
     "projectName": "rh-messaging",
     "projectDescription": "Messaging tools for developers",
     "projectRepository": "https://github.com/rh-messaging",
