@@ -142,6 +142,13 @@
     "category": "Development"
   },
   {
+    "projectName": "Python",
+    "projectDescription": "The Python programming language",
+    "projectRepository": "https://github.com/picketlink",
+    "projectWebsite": "https://www.python.org/",
+    "category": "Development"
+  },
+  {
     "projectName": "radanalyticsio",
     "projectDescription": "Empowering intelligent application development on the OpenShift platform",
     "projectRepository": "https://github.com/radanalyticsio",
