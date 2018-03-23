@@ -831,6 +831,13 @@
     "category": "Operations"
   },
   {
+    "projectName": "Prometheus",
+    "projectDescription": "A monitoring system and time series database",
+    "projectRepository": "https://github.com/prometheus",
+    "projectWebsite": "https://prometheus.io/",
+    "category": "Operations"
+  },
+  {
     "projectName": "pulp",
     "projectDescription": "Pulp is a platform for managing repositories of software packages",
     "projectRepository": "https://github.com/pulp",
