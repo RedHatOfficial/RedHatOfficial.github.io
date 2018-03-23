@@ -20,12 +20,6 @@
     "category": "Development"
   },
   {
-    "projectName": "Almighty",
-    "projectDescription": "Fabric8 toolset",
-    "projectRepository": "https://github.com/almighty/",
-    "category": "Development"
-  },
-  {
     "projectName": "Apache Camel",
     "projectDescription": "Camel empowers you to define routing and mediation rules in a variety of domain-specific languages",
     "projectRepository": "https://github.com/apache/camel",
