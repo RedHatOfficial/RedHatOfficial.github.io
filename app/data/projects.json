@@ -407,6 +407,13 @@
     "category": "Middleware"
   },
   {
+    "projectName": "OptaPlanner",
+    "projectDescription": "A lightweight, embeddable planning engine",
+    "projectRepository": "https://github.com/kiegroup/optaplanner",
+    "projectWebsite": "https://www.optaplanner.org/",
+    "category": "Middleware"
+  },
+  {
     "projectName": "Pbench",
     "projectDescription": "A Benchmarking and Performance Analysis Framework",
     "projectRepository": "https://github.com/distributed-system-analysis/pbench",
