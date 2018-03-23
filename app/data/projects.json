@@ -1047,6 +1047,20 @@
     "category": "Platform"
   },
   {
+    "projectName": "GNOME",
+    "projectDescription": "An easy and elegant way to use your computer and get things done.",
+    "projectRepository": "https://github.com/gnome",
+    "projectWebsite": "https://gnome.org/",
+    "category": "Platform"
+  },
+  {
+    "projectName": "LibreOffice",
+    "projectDescription": "An integrated office suite based on copyleft licenses.",
+    "projectRepository": "https://github.com/libreoffice",
+    "projectWebsite": "https://libreoffice.org/",
+    "category": "Platform"
+  },
+  {
     "projectName": "Mock",
     "projectDescription": "Mock is a tool for a reproducible build of RPM packages",
     "projectRepository": "https://github.com/rpm-software-management/mock",
