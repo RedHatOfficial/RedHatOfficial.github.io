@@ -93,6 +93,13 @@
     "category": "Development"
   },
   {
+    "projectName": "dumpet",
+    "projectDescription": "Tool for debugging and verifying El Torito boot data on CD-like images",
+    "projectRepository": "https://github.com/rhboot/dumpet",
+    "projectWebsite": "https://github.com/rhboot/dumpet",
+    "category": "Development"
+  },
+  {
     "projectName": "Errai Framework",
     "projectDescription": "Build web applications",
     "projectRepository": "https://github.com/errai",
@@ -1137,6 +1144,27 @@
     "category": "Platform"
   },
   {
+    "projectName": "dbxtool",
+    "projectDescription": "Tool for UEFI Secure Boot DBX updates",
+    "projectRepository": "https://github.com/rhboot/dbxtool",
+    "projectWebsite": "https://github.com/rhboot/dbxtool",
+    "category": "Platform"
+  },
+  {
+    "projectName": "efibootmgr",
+    "projectDescription": "The efibootmgr tool for configuring UEFI boot parameters",
+    "projectRepository": "https://github.com/rhboot/efibootmgr",
+    "projectWebsite": "https://github.com/rhboot/efibootmgr",
+    "category": "Platform"
+  },
+  {
+    "projectName": "efivar",
+    "projectDescription": "Tools and libraries to work with UEFI variables",
+    "projectRepository": "https://github.com/rhboot/efivar",
+    "projectWebsite": "https://github.com/rhboot/efivar",
+    "category": "Platform"
+  },
+  {
     "projectName": "Fedora LiveCD Tools",
     "projectDescription": "Tools for building live CDs using DNF",
     "projectRepository": "https://github.com/livecd-tools",
@@ -1163,10 +1191,31 @@
     "category": "Platform"
   },
   {
+    "projectName": "fwupd",
+    "projectDescription": "A simple daemon to allow session software to update firmware",
+    "projectRepository": "https://github.com/hughsie/fwupd",
+    "projectWebsite": "https://fwupd.org",
+    "category": "Platform"
+  },
+  {
+    "projectName": "fwupdate",
+    "projectDescription": "System firmware update support for UEFI machines",
+    "projectRepository": "https://github.com/rhboot/fwupdate",
+    "projectWebsite": "https://fwupd.org",
+    "category": "Platform"
+  },
+  {
     "projectName": "Mock",
     "projectDescription": "Mock is a tool for a reproducible build of RPM packages",
     "projectRepository": "https://github.com/rpm-software-management/mock",
     "projectWebsite": "https://github.com/rpm-software-management/mock/wiki",
+    "category": "Platform"
+  },
+  {
+    "projectName": "pesign",
+    "projectDescription": "Linux tools for signed PE-COFF binaries",
+    "projectRepository": "https://github.com/rhboot/pesign",
+    "projectWebsite": "https://github.com/rhboot/pesign",
     "category": "Platform"
   },
   {
@@ -1188,6 +1237,13 @@
     "projectDescription": "Package creation and management",
     "projectRepository": "https://github.com/rpm-software-management",
     "projectWebsite": "http://rpm.org/",
+    "category": "Platform"
+  },
+  {
+    "projectName": "shim",
+    "projectDescription": "shim: the UEFI first stage bootloader for Secure Boot",
+    "projectRepository": "https://github.com/rhboot/shim",
+    "projectWebsite": "https://github.com/rhboot/shim",
     "category": "Platform"
   },
   {
