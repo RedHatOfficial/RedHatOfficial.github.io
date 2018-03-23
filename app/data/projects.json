@@ -683,6 +683,13 @@
     "category": "Operations"
   },
   {
+    "projectName": "Citellus",
+    "projectDescription": "Framework to validate configuration and log files with bash, python, ruby and others",
+    "projectRepository": "https://github.com/zerodayz/citellus",
+    "projectWebsite": "https://github.com/zerodayz/citellus",
+    "category": "Operations"
+  },
+  {
     "projectName": "Cinch",
     "projectDescription": "Jenkins CI master/slave configuration",
     "projectRepository": "https://github.com/RedHatQE/cinch",
