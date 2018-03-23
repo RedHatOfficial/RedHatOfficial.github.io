@@ -429,7 +429,7 @@
   },
   {
     "projectName": "Red Hat Application Migration Toolkit",
-    "projectDescription": "Red Hat Application Migration Toolkit is an assembly of open source tools that enables large-scale application migrations and modernizations",
+    "projectDescription": "An assembly of open source tools that enables large-scale application migrations and modernizations",
     "projectRepository": "https://github.com/windup",
     "projectWebsite": "https://developers.redhat.com/products/rhamt/overview/",
     "category": "Middleware"
