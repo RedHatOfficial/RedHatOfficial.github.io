@@ -372,6 +372,13 @@
     "category": "Middleware"
   },
   {
+    "projectName": "jbossws",
+    "projectDescription": "Web Services framework and tools for WildFly and JBoss EAP",
+    "projectRepository": "https://github.com/jbossws",
+    "projectWebsite": "http://jbossws.jboss.org/",
+    "category": "Middleware"
+  },
+  {
     "projectName": "JSFUnit",
     "projectDescription": "Test Framework for JSF Applications",
     "projectRepository": "https://github.com/jsfunit",
