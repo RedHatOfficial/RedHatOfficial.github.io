@@ -1095,6 +1095,20 @@
     "category": "Storage"
   },
   {
+    "projectName": "Cinch",
+    "projectDescription": "Jenkins CI master/slave configuration",
+    "projectRepository": "https://github.com/RedHatQE/cinch",
+    "projectWebsite": "http://redhatqe-cinch.readthedocs.io/en/latest/",
+    "category": "Operations"
+  },
+  {
+    "projectName": "Linchpin",
+    "projectDescription": "Ansible-based cloud orchestration for CI",
+    "projectRepository": "https://github.com/CentOS-PaaS-SiG/linchpin",
+    "projectWebsite": "http://linchpin.readthedocs.io/en/develop/",
+    "category": "Operations"
+  },
+  {
     "projectName": "skyrings",
     "projectDescription": "A modern, extensible web-based storage management platform",
     "projectRepository": "https://github.com/skyrings",
