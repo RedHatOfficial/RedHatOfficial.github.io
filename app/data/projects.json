@@ -1113,5 +1113,13 @@
     "projectRepository": "https://github.com/Tendrl",
     "projectWebsite": "http://tendrl.org/",
     "category": "Storage"
+  },
+  {
+    "projectName": "sarstats",
+    "projectDescription": "Creates a PDF report out of sar files",
+    "projectRepository": "https://github.com/mbaldessari/sarstats",
+    "projectWebsite": "https://github.com/mbaldessari/sarstats",
+    "category": "Operations"
   }
+  
 ]
