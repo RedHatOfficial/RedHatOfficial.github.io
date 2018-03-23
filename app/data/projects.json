@@ -74,6 +74,13 @@
     "category": "Development"
   },
   {
+    "projectName": "CRI-O",
+    "projectDescription": "Open Container Initiative-based implementation of Kubernetes Container Runtime Interface",
+    "projectRepository": "https://github.com/kubernetes-incubator/cri-o",
+    "projectWebsite": "http://cri-o.io",
+    "category": "Operations"
+  },
+  {
     "projectName": "DBuildService",
     "projectDescription": "Python library for parsing Dockerfile files.",
     "projectRepository": "https://github.com/DBuildService",
