@@ -1047,6 +1047,13 @@
     "category": "Platform"
   },
   {
+    "projectName": "Linux",
+    "projectDescription": "A (free) operating system (just a hobby, won’t be big and professional like gnu)",
+    "projectRepository": "https://github.com/torvalds/linux",
+    "projectWebsite": "http://kernel.org",
+    "category": "Platform"
+  },
+  {
     "projectName": "Mock",
     "projectDescription": "Mock is a tool for a reproducible build of RPM packages",
     "projectRepository": "https://github.com/rpm-software-management/mock",
