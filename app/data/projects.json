@@ -47,6 +47,13 @@
     "category": "Development"
   },
   {
++    "projectName": "Apache Tomcat",
++    "projectDescription": "An open source implementation of the Java Servlet, JavaServer Pages, Java Expression Language and Java WebSocket technologies",
++    "projectRepository": "https://github.com/apache/tomcat",
++    "projectWebsite": "https://tomcat.apache.org/",
++    "category": "Development"
++  },
+  {
     "projectName": "awestruct",
     "projectDescription": "Static site baking and deployment tool written in Ruby",
     "projectRepository": "https://github.com/awestruct",
