@@ -1196,6 +1196,13 @@
     "projectRepository": "https://github.com/dgoodwin/tito",
     "category": "Platform"
   },
+   {
+    "projectName": "Tuned",
+    "projectDescription": "Tuning profile delivery mechanism for Linux",
+    "projectRepository": "https://github.com/redhat-performance/tuned",
+    "projectWebsite": "http://www.tuned-project.org/",
+    "category": "Platform"
+  },
   {
     "projectName": "Ceph",
     "projectDescription": "Block storage platform",
