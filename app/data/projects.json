@@ -80,6 +80,13 @@
     "category": "Development"
   },
   {
+    "projectName": "Eclipse Che",
+    "projectDescription": "Eclipse Che: Next-generation Eclipse IDE. Open source workspace server and cloud IDE.",
+    "projectRepository": "https://github.com/eclipse/che",
+    "projectWebsite": "http://eclipse.org/che",
+    "category": "Development"
+  }, 
+  {
     "projectName": "Errai Framework",
     "projectDescription": "Build web applications",
     "projectRepository": "https://github.com/errai",
