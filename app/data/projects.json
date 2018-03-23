@@ -1113,5 +1113,12 @@
     "projectRepository": "https://github.com/Tendrl",
     "projectWebsite": "http://tendrl.org/",
     "category": "Storage"
+  },
+  {
+    "projectName": "Red Hat Fuse Tooling",
+    "projectDescription": "Tooling to develop Apache Camel and Red Hat Fuse integration projects",
+    "projectRepository": "https://github.com/jbosstools/jbosstools-fuse",
+    "projectWebsite": "https://tools.jboss.org/features/fusetools.html",
+    "category": "Development"
   }
 ]
