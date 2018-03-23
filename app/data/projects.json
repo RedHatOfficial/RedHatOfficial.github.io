@@ -128,6 +128,13 @@
     "category": "Development"
   }, 
   {
+    "projectName": "Jaeger",
+    "projectDescription": "CNCF OpenTracing compliant distributed tracing system",
+    "projectRepository": "https://github.com/jaegertracing",
+    "projectWebsite": "http://jaegertracing.io/",
+    "category": "Development"
+  },
+  {
     "projectName": "JBoss Tools",
     "projectDescription": "Eclipse plugins for JBoss, Fuse, OpenShift",
     "projectRepository": "https://github.com/jbosstools",
@@ -152,6 +159,12 @@
     "projectDescription": "Management Spins platform",
     "projectRepository": "https://github.com/ManageIQ-Exchange/",
     "projectWebsite": "https://manageiq-exchange.github.io/manageiq-exchange/",
+  },
+  {
+    "projectName": "OpenTracing",
+    "projectDescription": "CNCF OpenTracing API for distributed tracing",
+    "projectRepository": "https://github.com/opentracing",
+    "projectWebsite": "http://opentracing.io/",
     "category": "Development"
   },
   {
