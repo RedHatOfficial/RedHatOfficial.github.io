@@ -891,6 +891,13 @@
     "category": "Operations"
   },
   {
+    "projectName": "OpenShift.io",
+    "projectDescription": "Open online development environment for planning, creating and deploying hybrid cloud services",
+    "projectRepository": "https://github.com/openshiftio",
+    "projectWebsite": "https://openshift.io/",
+    "category": "Development"
+  },
+  {
     "projectName": "ophicleide",
     "projectDescription": "The Ophicleide Word2vec application",
     "projectRepository": "https://github.com/ophicleide",
