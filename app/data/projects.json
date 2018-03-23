@@ -629,6 +629,13 @@
     "category": "Operations"
   },
   {
+    "projectName": "Cinch",
+    "projectDescription": "Jenkins CI master/slave configuration",
+    "projectRepository": "https://github.com/RedHatQE/cinch",
+    "projectWebsite": "http://redhatqe-cinch.readthedocs.io/en/latest/",
+    "category": "Operations"
+  },
+  {
     "projectName": "cobbler",
     "projectDescription": "Versatile Linux deployment server",
     "projectRepository": "https://github.com/cobbler/cobbler",
@@ -768,6 +775,13 @@
     "projectDescription": "Virtual host management toolkit",
     "projectRepository": "https://github.com/libvirt",
     "projectWebsite": "http://libvirt.org/",
+    "category": "Operations"
+  },
+   {
+    "projectName": "Linchpin",
+    "projectDescription": "Ansible-based cloud orchestration for CI",
+    "projectRepository": "https://github.com/CentOS-PaaS-SiG/linchpin",
+    "projectWebsite": "http://linchpin.readthedocs.io/en/develop/",
     "category": "Operations"
   },
   {
