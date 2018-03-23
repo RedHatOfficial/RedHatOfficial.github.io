@@ -398,7 +398,7 @@
     "projectRepository": "https://github.com/kubevirt",
     "projectWebsite": "http://kubevirt.github.io",
     "category": "Development"
-  }
+  },
   {
     "projectName": "mod_cluster",
     "projectDescription": "An httpd-based load balancer",
