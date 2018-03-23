@@ -388,8 +388,14 @@
     "category": "Middleware"
   },
   {
-    "projectName": "jboss-logging",
-    "projectDescription": "JBoss log manager",
+    "projectName": "JBoss Logging",
+    "projectDescription": "JBoss Logging API including i18n/l10n support",
+    "projectRepository": "https://github.com/jboss-logging",
+    "category": "Middleware"
+  },
+  {
+    "projectName": "JBoss LogManager",
+    "projectDescription": "JBoss implementation of standard Java logging, with many powerful enhancements",
     "projectRepository": "https://github.com/jboss-logging",
     "category": "Middleware"
   },
@@ -401,8 +407,8 @@
     "category": "Middleware"
   },
   {
-    "projectName": "jbossas",
-    "projectDescription": "JBoss application server",
+    "projectName": "JBoss Application Server (now WildFly)",
+    "projectDescription": "JBoss Application Server - note that many subprojects have moved to the WildFly organization (see below)",
     "projectRepository": "https://github.com/jbossas",
     "category": "Middleware"
   },
@@ -580,14 +586,21 @@
     "category": "Middleware"
   },
   {
-    "projectName": "wildfly",
+    "projectName": "WildFly",
     "projectDescription": "WildFly is a flexible, lightweight, managed application runtime that helps you build applications.",
     "projectRepository": "https://github.com/wildfly",
     "projectWebsite": "http://wildfly.org",
     "category": "Middleware"
   },
   {
-    "projectName": "xnio",
+    "projectName": "WildFly Elytron",
+    "projectDescription": "A powerful security framework for Java applications",
+    "projectRepository": "https://github.com/wildfly-security",
+    "projectWebsite": "http://wildfly.org",
+    "category": "Middleware"
+  },
+  {
+    "projectName": "XNIO",
     "projectDescription": "XNIO is a simplified low-level I/O layer which can be used anywhere you are using NIO today",
     "projectRepository": "https://github.com/xnio",
     "projectWebsite": "http://xnio.jboss.org/",
