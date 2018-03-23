@@ -13,7 +13,7 @@ We have worked to put together a comprehensive list of all projects in which Red
 
 To add or modify projects to the list on [https://redhatofficial.github.io](https://redhatofficial.github.io), either submit a pull request or create an issue in the [repo](https://github.com/RedHatOfficial/RedHatOfficial.github.io). Upon review, the site maintainers will merge the PR or change the content as requested. No direct merges will be accepted.
 
-All projects are stored in the `/app/data` directory in the `projects.json` file.  Try to add your project alphabetically (just to make the file easier to search) and create a new object in the JSON that has:
+All projects are stored in the `/app/data` directory in the `projects.json` file within the dev branch of this repo.  Try to add your project alphabetically (just to make the file easier to search) and create a new object in the JSON that has:
 
 ```js
 {
