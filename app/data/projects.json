@@ -1114,4 +1114,11 @@
     "projectWebsite": "http://tendrl.org/",
     "category": "Storage"
   }
+  {
+    "projectName": "dm-vdo",
+    "projectDescription": "Virtual Data Optimizer",
+    "projectRepository": "https://github.com/dm-vdo",
+    "projectWebsite": "http://github.com/dm-vdo/kvdo",
+    "category": "Storage"
+  }
 ]
