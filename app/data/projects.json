@@ -1167,5 +1167,48 @@
     "projectRepository": "https://github.com/Tendrl",
     "projectWebsite": "http://tendrl.org/",
     "category": "Storage"
+  },
+  {
+    "projectName": "widgetastic",
+    "projectDescription": "Python based WebUI testing library",
+    "projectRepository": "https://github.com/RedHatQE/widgetastic.core",
+    "category": "Development"
+  },
+  {
+    "projectName": "widgetastic.patternfly",
+    "projectDescription": "Python based WebUI testing library for patternfly",
+    "projectRepository": "https://github.com/RedHatQE/widgetastic.patternfly",
+    "category": "Development"
+  },
+  {
+    "projectName": "navmazing",
+    "projectDescription": "Python based navigation library for UIs",
+    "projectRepository": "https://github.com/RedHatQE/navmazing/",
+    "category": "Development"
+  },
+  {
+    "projectName": "wait_for",
+    "projectDescription": "Python based library for waiting for things",
+    "projectRepository": "https://github.com/RedHatQE/wait_for/",
+    "category": "Development"
+  },
+  {
+    "projectName": "Sentaku",
+    "projectDescription": "Python based library for contextual method choice",
+    "projectRepository": "https://github.com/RedHatQE/Sentaku/",
+    "category": "Development"
+  },
+  {
+    "projectName": "wrapanapi",
+    "projectDescription": "Python based library for provider communication abstraction",
+    "projectRepository": "https://github.com/ManageIQ/wrapanapi",
+    "category": "Development"
+  },
+  {
+    "projectName": "Tendrl",
+    "projectDescription": "Unified Storage Manager",
+    "projectRepository": "https://github.com/Tendrl",
+    "projectWebsite": "http://tendrl.org/",
+    "category": "Storage"
   }
 ]
