@@ -203,6 +203,13 @@
     "category": "Documentation"
   },
   {
+    "projectName": "RPM Packaging Guide",
+    "projectDescription": "Comprehensive guide to RPM packaging",
+    "projectRepository": "https://github.com/redhat-developer/rpm-packaging-guide/",
+    "projectWebsite": "https://rpm-packaging-guide.github.io/",
+    "category": "Documentation"
+  }
+  {
     "projectName": "Zanata",
     "projectDescription": "Web-based system for translators to translate documentation and software online ",
     "projectRepository": "https://github.com/zanata",
