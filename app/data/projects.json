@@ -905,6 +905,13 @@
     "category": "Operations"
   },
   {
+    "projectName": "OpenStack",
+    "projectDescription": "Software for creating Private and Public Clouds",
+    "projectRepository": "https://github.com/openstack",
+    "projectWebsite": "https://www.openstack.org",
+    "category": "Operations"
+  },
+  {
     "projectName": "ophicleide",
     "projectDescription": "The Ophicleide Word2vec application",
     "projectRepository": "https://github.com/ophicleide",
