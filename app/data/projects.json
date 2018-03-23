@@ -1075,6 +1075,14 @@
     "category": "Platform"
   },
   {
+    "projectName": "Simple Signed Certificate Generator",
+    "projectDescription": "Simple SSL certificate generator",
+    "projectRepository": "https://github.com/sgallagher/sscg",
+    "projectWebsite": "https://github.com/sgallagher/sscg",
+    "category": "Platform"
+
+  },
+  {
     "projectName": "System Security Services Daemon",
     "projectDescription": "System daemon providing identity and access-control",
     "projectRepository": "https://github.com/SSSD",
