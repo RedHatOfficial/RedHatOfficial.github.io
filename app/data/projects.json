@@ -1001,6 +1001,13 @@
     "category": "Platform"
   },
   {
+    "projectName": "crash",
+    "projectDescription": "The Linux kernel crash utility",
+    "projectRepository": "https://github.com/crash-utility",
+    "projectWebsite": "http://people.redhat.com/anderson/crash",
+    "category": "Development"
+  },
+  {
     "projectName": "Cygwin",
     "projectDescription": "A collection of Open Source tools providing functionality similar to a Linux distribution on Windows.",
     "projectRepository": "https://github.com/cygwin",
