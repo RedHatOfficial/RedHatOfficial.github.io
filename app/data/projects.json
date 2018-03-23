@@ -67,11 +67,29 @@
     "category": "Development"
   },
   {
+    "projectName": "buildah",
+    "projectDescription": "A tool for building OCI container images",
+    "projectRepository": "https://github.com/projectatomic/buildah/",
+    "category": "Development"
+  },
+  {
     "projectName": "Ceylon",
     "projectDescription": "A language for writing large programs in teams.",
     "projectRepository": "https://github.com/ceylon",
     "projectWebsite": "https://ceylon-lang.org/",
     "category": "Development"
+  },
+  {
+    "projectName": "containers/image",
+    "projectDescription": "A library for working with container images",
+    "projectRepository": "https://github.com/containers/image",
+    "category": "Development"
+  },
+  {
+    "projectName": "containers/storage",
+    "projectDescription": "A library for storing and mounting container images",
+    "projectRepository": "https://github.com/containers/storage",
+    "category": "Development",
   },
   {
     "projectName": "DBuildService",
@@ -124,6 +142,12 @@
     "projectName": "kpatch",
     "projectDescription": "A Linux dynamic kernel patching infrastructure",
     "projectRepository": "https://github.com/dynup/kpatch",
+    "category": "Development"
+  },
+  {
+    "projectName": "libpod",
+    "projectDescription": "Library for creating, running, and managing Linux containers",
+    "projectRepository": "https://github.com/projectatomic/libpod/",
     "category": "Development"
   },
   {
@@ -636,6 +660,13 @@
     "category": "Operations"
   },
   {
+    "projectName": "CRI-O",
+    "projectDescription": "Container runtime for Kubernetes clusters",
+    "projectRepository": "https://github.com/kubernetes-incubator/cri-o/",
+    "projectWebsite": "http://cri-o.io/",
+    "category": "Operations"
+  },
+  {
     "projectName": "Dashbuilder",
     "projectDescription": "A full-featured web application which allows non-technical users to visually create business dashboards",
     "projectRepository": "https://github.com/dashbuilder",
@@ -882,6 +913,12 @@
     "projectDescription": "SELinux is a security enhancement to Linux which allows users and administrators more control over access control",
     "projectRepository": "https://github.com/SELinuxProject",
     "projectWebsite": "http://selinuxproject.org/",
+    "category": "Operations"
+  },
+  {
+    "projectName": "Skopeo",
+    "projectDescription": "Tool for moving and signing container images",
+    "projectRepository": "https://github.com/projectatomic/skopeo",
     "category": "Operations"
   },
   {
