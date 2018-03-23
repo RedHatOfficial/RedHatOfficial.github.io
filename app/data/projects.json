@@ -126,7 +126,7 @@
     "projectRepository": "https://github.com/oloake/IronJacamar",
     "projectWebsite": "http://www.ironjacamar.org/",
     "category": "Development"
-  }, 
+  },
   {
     "projectName": "JBoss Tools",
     "projectDescription": "Eclipse plugins for JBoss, Fuse, OpenShift",
@@ -1101,6 +1101,13 @@
     "projectRepository": "https://github.com/RHInception",
     "projectWebsite": "http://release-engine.readthedocs.io/en/latest/",
     "category": "Organizations"
+  },
+  {
+    "projectName": "Red Hat Open Innovation Labs",
+    "projectDescription": "Red Hat Open Innovation Labs Team",
+    "projectRepository": "https://github.com/rht-labs",
+    "projectWebsite": "https://www.redhat.com/en/services/consulting/open-innovation-labs",
+    "category": "Organization"
   },
   {
     "projectName": "anaconda",
