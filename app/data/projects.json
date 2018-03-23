@@ -74,6 +74,12 @@
     "category": "Development"
   },
   {
+    "projectName": "Debezium",
+    "projectDescription": "Distributed open source platform for change data capture",
+    "projectRepository": "https://github.com/debezium",
+    "category": "Development"
+  },
+  {
     "projectName": "dmpy",
     "projectDescription": "Device-mapper Python bindings",
     "projectRepository": "https://github.com/bmr-cymru/dmpy",
