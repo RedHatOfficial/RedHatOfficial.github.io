@@ -1,0 +1,100 @@
+@import '../../public/styles/global';
+
+.table {
+    &--component {
+        > *:not(:last-child) {
+            padding-bottom: 30px;
+        }
+    }
+
+    &-filters {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-gap: 30px;
+        grid-template-columns: 8fr 4fr;
+    }
+
+    &-search {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-gap: 0;
+        grid-template-columns: 7fr 1fr;
+
+        &-input {
+            @include make-input();
+        }
+
+        &-button {
+            @include make-button($btn-color: $brand-primary);
+        }
+    }
+
+    &-dropdown {
+        font-family: $base-font-family;
+        align-items: center;
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-gap: 10px;
+        grid-template-columns: 1fr 3fr;
+        position: relative;
+
+        &-label {
+            @extend %dropdown-label;
+        }
+
+        &-select {
+            background-color: $white;
+            color: $stone;
+            height: 100%;
+            -webkit-appearance: none;
+            border-radius: 0;
+            padding: 5px 30px 5px 10px;
+
+            + i {
+                color: $stone;
+                position: absolute;
+                top: calc(50% - .55em);
+                right: 10px;
+            }
+
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+
+    &-main {
+      border-collapse: collapse;
+      overflow: scroll;
+      width: 100%;
+
+      thead tr {
+        background-color: $iron;
+      }
+
+      th {
+        @extend %table-head;
+        padding: 10px;
+      }
+
+      tbody tr:nth-child(even) {
+        background-color: $mercury;
+      }
+
+      tbody tr:nth-child(odd) {
+        background-color: $white;
+      }
+
+      td {
+        @extend %table-row;
+        padding: 10px;
+      }
+    }
+
+    &-no-results {
+      @extend %group-copy;
+      a {
+        @extend %secondary-link;
+      }
+    }
+}

@@ -1,0 +1,33 @@
+[{
+  "heading": "Want to contribute?",
+  "copy": "<p>We know groups can accomplish more than individuals. That’s why our mission is to be the catalyst in communities of customers, contributors, and partners creating better technology the open source way.</p>",
+  "cta": {
+    "text": "Join our community",
+    "href": "https://community.redhat.com/",
+    "title": "Learn about joining the Red Hat developer community."
+  }
+}, {
+  "heading": "Community to enterprise",
+  "copy": "<p>Our development model starts with upstream communities like these, and results in stable, enterprise-ready solutions.</p>",
+  "cta": {
+    "text": "Learn how we work",
+    "href": "https://www.redhat.com/en/about/development-model",
+    "title": "Learn more about the Red Hat's development model'."
+  }
+}, {
+  "heading": "Join the Red Hat Developer Program",
+  "copy": "<p>Build here. Go anywhere.</p><p>The Red Hat<sup>&reg;</sup> Developer Program brings developers together to learn and create extraordinary things, faster.</p>",
+  "cta": {
+    "text": "Learn before you commit",
+    "href": "https://developers.redhat.com/",
+    "title": "Learn more about the Red Hat Developer Program."
+  }
+}, {
+  "heading": "Work at Red Hat",
+  "copy": "<p>It’s never just a job here. Red Hat is full of passionate people making a difference.</p>",
+  "cta": {
+    "text": "Start something new",
+    "href": "https://www.redhat.com/en/jobs",
+    "title": "Search for jobs and learn more about working at Red Hat."
+  }
+}]

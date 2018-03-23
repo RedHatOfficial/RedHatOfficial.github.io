@@ -1,0 +1,16 @@
+/*doc
+---
+title: Breakpoints
+
+*/
+
+$breakpoint-zero: 0;
+$breakpoint-xs-min: 480px;
+$breakpoint-sm-min: 768px;
+$breakpoint-md-min: 992px;
+$breakpoint-lg-min: 1200px;
+
+$breakpoint-xxs-max: $breakpoint-xs-min - 1;
+$breakpoint-xs-max: $breakpoint-sm-min - 1;
+$breakpoint-sm-max: $breakpoint-md-min - 1;
+$breakpoint-md-max: $breakpoint-lg-min - 1;

@@ -1,0 +1,16 @@
+<footer class="footer--component" xmlns:dc="http://purl.org/dc/elements/1.1/" data-collapse="both">
+  <div class="footer-container">
+    <a href="https://www.redhat.com"><img class="footer-logo" src="{{ logo }}" /></a>
+    <p class="footer-copyright" property="dc:rights">Copyright &copy;<span property="dc:dateCopyrighted">2018</span> <span property="dc:publisher">Red Hat, Inc.</span></p>
+    <div class="footer-links">
+      <span class="footer-link" ng-repeat="link in links">
+        <a class="footer-link-anchor"
+          href="{{ link.href }}"
+          title="{{ link.title }}">
+          {{ link.text }}
+        </a>
+      </span>
+    </div>
+    <a href="https://www.redhat.com/summit"><img class="footer-logo" src="{{ summit }}" /></a>
+  </div>
+</footer>
