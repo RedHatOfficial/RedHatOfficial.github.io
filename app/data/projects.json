@@ -393,6 +393,12 @@
     "category": "Middleware"
   },
   {
+    "projectName": "Kiali",
+    "projectDescription": "Service Mesh Observability",
+    "projectRepository": "https://github.com/kiali",
+    "category": "Middleware"
+  },
+  {
     "projectName": "mod_cluster",
     "projectDescription": "An httpd-based load balancer",
     "projectRepository": "https://github.com/modcluster",
