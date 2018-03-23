@@ -386,6 +386,12 @@
     "category": "Middleware"
   },
   {
+    "projectName": "kiali",
+    "projectDescription": "Kiali Istio Observability Project.",
+    "projectRepository": "https://github.com/kiali",
+    "category": "Development"
+  }
+  {
     "projectName": "KIE",
     "projectDescription": "Code of the Drools rule engine, OptaPlanner constraint solver and jBPM workflow engine.",
     "projectRepository": "https://github.com/kiegroup",
