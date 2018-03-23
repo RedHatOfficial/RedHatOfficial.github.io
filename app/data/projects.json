@@ -429,7 +429,7 @@
   },
   {
     "projectName": "Red Hat Application Migration Toolkit",
-    "projectDescription": "Generate reports that shows how much effort will be needed to migrate your current applications to Red Hat JBoss EAP",
+    "projectDescription": "Red Hat Application Migration Toolkit is an assembly of open source tools that enables large-scale application migrations and modernizations",
     "projectRepository": "https://github.com/windup",
     "projectWebsite": "https://developers.redhat.com/products/rhamt/overview/",
     "category": "Middleware"
