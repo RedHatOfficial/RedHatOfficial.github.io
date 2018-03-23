@@ -596,6 +596,13 @@
     "category": "Operations"
   },
   {
+    "projectName": "Citellus",
+    "projectDescription": "Framework to validate configuration and log files with bash, python, ruby and others",
+    "projectRepository": "https://github.com/zerodayz/citellus",
+    "projectWebsite": "https://github.com/zerodayz/citellus",
+    "category": "Operations"
+  },
+  {
     "projectName": "cobbler",
     "projectDescription": "Versatile Linux deployment server",
     "projectRepository": "https://github.com/cobbler/cobbler",
@@ -1113,12 +1120,5 @@
     "projectRepository": "https://github.com/Tendrl",
     "projectWebsite": "http://tendrl.org/",
     "category": "Storage"
-  },
-  {
-    "projectName": "Citellus",
-    "projectDescription": "Framework to validate configuration and log files with bash, python, ruby and others",
-    "projectRepository": "https://github.com/zerodayz/citellus",
-    "projectWebsite": "https://github.com/zerodayz/citellus",
-    "category": "Operations"
   }
 ]
