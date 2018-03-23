@@ -745,6 +745,13 @@
     "category": "Operations"
   },
   {
+    "projectName": "ManageIQ-Exchange",
+    "projectDescription": "Management Spins platform",
+    "projectRepository": "https://github.com/ManageIQ-Exchange/",
+    "projectWebsite": "https://manageiq-exchange.github.io/manageiq-exchange/",
+    "category": "Development"
+  },
+  {
     "projectName": "minishift",
     "projectDescription": "Run Openshift Locally",
     "projectRepository": "https://github.com/minishift",
