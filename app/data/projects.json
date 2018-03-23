@@ -441,6 +441,13 @@
     "category": "Middleware"
   },
   {
+  "projectName": "Red Hat Documentation",
+  "projectDescription": "The location for fully open-sourced, freely accessible content on standards and conventions that relate to Red Hat's product documentation.",
+  "projectRepository": "https://github.com/redhat-documentation",
+  "projectWebsite": "https://redhat-documentation.github.io/",
+  "category": "Documentation"
+  },
+  {
     "projectName": "RESTEasy",
     "projectDescription": "Provides various frameworks to help you build RESTful Web Services and RESTful Java applications",
     "projectRepository": "https://github.com/resteasy",
