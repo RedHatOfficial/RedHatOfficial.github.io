@@ -321,7 +321,7 @@
 %logo-link {
     &:active,
     &:hover {
-        filter: drop-shadow(0 2px 3px $gallery);
+        //filter: drop-shadow(0 2px 3px $gallery);
     }
 
     &:focus {
@@ -332,7 +332,7 @@
 %logo-link-dark {
     &:active,
     &:hover {
-        filter: drop-shadow(0 2px 3px darken($black, 10%));
+        //filter: drop-shadow(0 2px 3px darken($black, 10%));
     }
 
     &:focus {

@@ -40,7 +40,3 @@ Current categories include:
 ### Criteria for adding projects to the page
 
 At this time, only projects that Red Hat employees are required to work on as part of their job will be listed. There are so many amazing projects that Red Hatters work on as enthusiasts, too many to recognize in one place. This criteria may be subject to change as the page evolves.
-
-## Updating the copy
-
-If yo
