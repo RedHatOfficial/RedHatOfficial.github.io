@@ -1061,6 +1061,13 @@
     "category": "Platform"
   },
   {
+    "projectName": "rebase-helper",
+    "projectDescription": "Tool aiming to help package maintainers rebase their packages",
+    "projectRepository": "https://github.com/rebase-helper",
+    "projectWebsite": "https://rebase-helper.readthedocs.io",
+    "category": "Platform"
+  },
+  {
     "projectName": "redhat-imaging",
     "projectDescription": "imagefactory builds images for a variety of operating system/cloud combinations",
     "projectRepository": "https://github.com/redhat-imaging",
