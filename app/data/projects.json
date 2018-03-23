@@ -683,6 +683,13 @@
     "category": "Operations"
   },
   {
+    "projectName": "Booth",
+    "projectDescription": "Ticket manager for geographically dispersed high-availability clustering",
+    "projectRepository": "https://github.com/ClusterLabs/booth",
+    "projectWebsite": "https://clusterlabs.org/",
+    "category": "Operations"
+  },
+  {
     "projectName": "Candlepin",
     "projectDescription": "Subscription and entitlement management",
     "projectRepository": "https://github.com/candlepin",
@@ -715,6 +722,13 @@
     "projectDescription": "Server manager that makes it easy to administer your GNU/Linux servers via browser.",
     "projectRepository": "https://github.com/cockpit-project",
     "projectWebsite": "http://cockpit-project.org/",
+    "category": "Operations"
+  },
+  {
+    "projectName": "Corosync",
+    "projectDescription": "High-availability cluster communication system",
+    "projectRepository": "https://github.com/corosync/corosync",
+    "projectWebsite": "https://corosync.github.io/corosync/",
     "category": "Operations"
   },
   {
@@ -761,6 +775,20 @@
     "projectName": "fedora-selinux",
     "projectDescription": "SELinux policies for Fedora",
     "projectRepository": "https://github.com/fedora-selinux",
+    "category": "Operations"
+  },
+  {
+    "projectName": "fence-agents",
+    "projectDescription": "Common fencing agents for high-availability clustering",
+    "projectRepository": "https://github.com/ClusterLabs/fence-agents",
+    "projectWebsite": "https://clusterlabs.org/",
+    "category": "Operations"
+  },
+  {
+    "projectName": "fence-virt",
+    "projectDescription": "Fence agents for virtual machines in high-availability clusters",
+    "projectRepository": "https://github.com/ClusterLabs/fence-virt",
+    "projectWebsite": "https://clusterlabs.org/",
     "category": "Operations"
   },
   {
@@ -832,10 +860,24 @@
     "category": "Operations"
   },
   {
+    "projectName": "Kronosnet",
+    "projectDescription": "Reliable, resilient, scalable, configurable, secure, and simple network abstraction layer",
+    "projectRepository": "https://github.com/kronosnet/kronosnet",
+    "projectWebsite": "http://www.kronosnet.org/",
+    "category": "Operations"
+  },
+  {
     "projectName": "latchset",
     "projectDescription": "Encryption framework tools",
     "projectRepository": "https://github.com/latchset",
     "projectWebsite": "https://latchset.github.io/",
+    "category": "Operations"
+  },
+  {
+    "projectName": "libqb",
+    "projectDescription": "Library providing high-performance features for client-server applications",
+    "projectRepository": "https://github.com/ClusterLabs/libqb",
+    "projectWebsite": "https://clusterlabs.github.io/libqb/",
     "category": "Operations"
   },
   {
@@ -898,6 +940,13 @@
     "category": "Operations"
   },
   {
+    "projectName": "OCF-spec",
+    "projectDescription": "Open Cluster Framework standards for high-availability clustering",
+    "projectRepository": "https://github.com/ClusterLabs/OCF-spec",
+    "projectWebsite": "https://clusterlabs.org/",
+    "category": "Operations"
+  },
+  {
     "projectName": "OpenSCAP",
     "projectDescription": "Open Source Security Compliance Solution",
     "projectRepository": "http://github.com/OpenSCAP",
@@ -930,6 +979,20 @@
     "projectDescription": "Open virtual datacenter",
     "projectRepository": "https://github.com/ovirt",
     "projectWebsite": "http://ovirt.org",
+    "category": "Operations"
+  },
+  {
+    "projectName": "Pacemaker",
+    "projectDescription": "Advanced, scalabale high-availability cluster resource manager",
+    "projectRepository": "https://github.com/ClusterLabs/pacemaker",
+    "projectWebsite": "https://clusterlabs.org/",
+    "category": "Operations"
+  },
+  {
+    "projectName": "pcs",
+    "projectDescription": "Unified interface for high-availability cluster configuration",
+    "projectRepository": "https://github.com/ClusterLabs/pcs",
+    "projectWebsite": "https://clusterlabs.org/",
     "category": "Operations"
   },
   {
@@ -971,6 +1034,20 @@
     "projectName": "redhatanalytics",
     "projectDescription": "Analytics for OpenShift",
     "projectRepository": "https://github.com/redhatanalytics",
+    "category": "Operations"
+  },
+  {
+    "projectName": "resource-agents",
+    "projectDescription": "Common OCF resource agents for high-availability clustering",
+    "projectRepository": "https://github.com/ClusterLabs/resource-agents",
+    "projectWebsite": "https://clusterlabs.org/",
+    "category": "Operations"
+  },
+  {
+    "projectName": "SBD",
+    "projectDescription": "Shared-storage- and watchdog-based fencing for high-availability clusters",
+    "projectRepository": "https://github.com/ClusterLabs/sbd",
+    "projectWebsite": "https://clusterlabs.org/",
     "category": "Operations"
   },
   {
