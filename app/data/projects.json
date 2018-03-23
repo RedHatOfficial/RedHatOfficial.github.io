@@ -808,6 +808,13 @@
     "category": "Operations"
   },
   {
+    "projectName": "Moby Project",
+    "projectDescription": "A collaborative project for the container ecosystem to assemble container-based systems",
+    "projectRepository": "https://github.com/moby/moby/",
+    "projectWebsite": "https://mobyproject.org/",
+    "category": "Operations"
+  },
+  {
     "projectName": "modauthgssapi",
     "projectDescription": "GSSAPI Negotiate module for Apache",
     "projectRepository": "https://github.com/modauthgssapi/",
