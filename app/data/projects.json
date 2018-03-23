@@ -144,7 +144,7 @@
   {
     "projectName": "Python",
     "projectDescription": "The Python programming language",
-    "projectRepository": "https://github.com/picketlink",
+    "projectRepository": "https://github.com/python/cpython",
     "projectWebsite": "https://www.python.org/",
     "category": "Development"
   },
