@@ -333,11 +333,25 @@
     "category": "Middleware"
   },
   {
+    "projectName": "Eclipse Web Tools Project",
+    "projectDescription": "Eclipse plugins for Web, JavaEE development",
+    "projectRepository": "https://github.com/eclipse?q=webtools",
+    "projectWebsite": "https://www.eclipse.org/webtools/",
+    "category": "Development"
+  },
+  {
     "projectName": "JBoss Tools",
-    "projectDescription": "Eclipse plugins for JBoss",
+    "projectDescription": "Eclipse plugins for JBoss, Fuse, OpenShift",
     "projectRepository": "https://github.com/jbosstools",
     "projectWebsite": "http://tools.jboss.org/",
-    "category": "Middleware"
+    "category": "Development"
+  },
+  {
+    "projectName": "Red Hat JBoss Developer Studio",
+    "projectDescription": "Eclipse plugins for JBoss, Fuse, OpenShift",
+    "projectRepository": "https://github.com/jbdevstudio",
+    "projectWebsite": "https://developers.redhat.com/products/devstudio/",
+    "category": "Development"
   },
   {
     "projectName": "JBoss Wise",
