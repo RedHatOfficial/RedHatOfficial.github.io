@@ -61,6 +61,12 @@
     "category": "Development"
   },
   {
+    "projectName": "Bucharest Gold",
+    "projectDescription": "Red Hat Middleware Node.js projects and research",
+    "projectRepository": "https://github.com/bucharest-gold",
+    "category": "Development"
+  },
+  {
     "projectName": "Ceylon",
     "projectDescription": "A language for writing large programs in teams.",
     "projectRepository": "https://github.com/ceylon",
