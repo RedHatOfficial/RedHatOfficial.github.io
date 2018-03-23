@@ -763,6 +763,13 @@
     "category": "Operations"
   },
   {
+    "projectName": "Nexus",
+    "projectDescription": "Centralized WebUI for Citellus",
+    "projectRepository": "https://github.com/valleedelisle/nexus",
+    "projectWebsite": "https://github.com/valleedelisle/nexus",
+    "category": "Operations"
+  },
+  {
     "projectName": "nfs-ganesha",
     "projectDescription": "User Space NFS and 9P File Server",
     "projectRepository": "https://github.com/nfs-ganesha",
@@ -1113,12 +1120,5 @@
     "projectRepository": "https://github.com/Tendrl",
     "projectWebsite": "http://tendrl.org/",
     "category": "Storage"
-  },
-  {
-    "projectName": "Nexus",
-    "projectDescription": "Centralized WebUI for Citellus",
-    "projectRepository": "https://github.com/valleedelisle/nexus",
-    "projectWebsite": "https://github.com/valleedelisle/nexus",
-    "category": "Operations"
   }
 ]
