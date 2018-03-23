@@ -919,13 +919,6 @@
     "category": "Operations"
   },
   {
-    "projectName": "Tuned",
-    "projectDescription": "Tuning profile delivery mechanism for Linux",
-    "projectRepository": "https://github.com/redhat-performance/tuned",
-    "projectWebsite": "http://www.tuned-project.org/",
-    "category": "Platform"
-  },
-  {
     "projectName": "xsos",
     "projectDescription": "Summarize system info from sosreports",
     "projectRepository": "https://github.com/ryran/xsos",
@@ -1079,6 +1072,13 @@
     "projectName": "tito",
     "projectDescription": "A tool for managing rpm-based git projects.",
     "projectRepository": "https://github.com/dgoodwin/tito",
+    "category": "Platform"
+  },
+   {
+    "projectName": "Tuned",
+    "projectDescription": "Tuning profile delivery mechanism for Linux",
+    "projectRepository": "https://github.com/redhat-performance/tuned",
+    "projectWebsite": "http://www.tuned-project.org/",
     "category": "Platform"
   },
   {
