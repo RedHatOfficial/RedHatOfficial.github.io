@@ -250,6 +250,13 @@
     "category": "Middleware"
   },
   {
+    "projectName": "Debezium",
+    "projectDescription": "Change data capture for a variety of databases",
+    "projectRepository": "https://github.com/debezium/",
+    "projectWebsite": "http://debezium.io/",
+    "category": "Middleware"
+  },
+  {
     "projectName": "esbtools",
     "projectDescription": "Enterprise Service Bus",
     "projectRepository": "https://github.com/esbtools",
