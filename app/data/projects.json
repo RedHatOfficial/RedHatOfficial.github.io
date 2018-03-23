@@ -905,6 +905,13 @@
     "category": "Operations"
   },
   {
+    "projectName": "Strimzi",
+    "projectDescription": "Kafka as a Service running on Kubernetes and OpenShift",
+    "projectRepository": "https://github.com/strimzi",
+    "projectWebsite": "http://strimzi.io/",
+    "category": "Operations"
+  },
+  {
     "projectName": "The TorqueBox Project",
     "projectDescription": "Provides an all-in-one environment, built upon the latest JBoss AS Java application server and JRuby",
     "projectRepository": "https://github.com/torquebox",
