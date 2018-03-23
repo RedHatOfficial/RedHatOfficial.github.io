@@ -291,6 +291,13 @@
     "category": "Middleware"
   },
   {
+    "projectName": "Red Hat Insights",
+    "projectDescription": "Proactive analytics and real-time intelligence",
+    "projectRepository": "https://github.com/RedHatInsights",
+    "projectWebsite": "https://www.redhat.com/en/technologies/management/insights",
+    "category": "Operations"
+  },
+  {
     "projectName": "JBoss CapeDwarf",
     "projectDescription": "An open-source alternative to Google App Engine",
     "projectRepository": "https://github.com/capedwarf",
