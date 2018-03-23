@@ -399,6 +399,20 @@
     "category": "Middleware"
   },
   {
+    "projectName": "krb5",
+    "projectDescription": "MIT Kerberos authentication protocol",
+    "projectRepository": "https://github.com/krb5/krb5",
+    "projectWebsite": "http://web.mit.edu/kerberos/",
+    "category": "Operations",
+  },
+  {
+    "projectName": "mod_auth_gssapi",
+    "projectDescription": "GSSAPI Negotiate module for Apache",
+    "projectRepository": "https://github.com/modauthgssapi/mod_auth_gssapi",
+    "projectWebsite": "https://github.com/modauthgssapi/mod_auth_gssapi",
+    "category": "Operations",
+  },
+  {
     "projectName": "mod_cluster",
     "projectDescription": "An httpd-based load balancer",
     "projectRepository": "https://github.com/modcluster",
@@ -432,6 +446,13 @@
     "projectRepository": "https://github.com/portletbridge",
     "projectWebsite": "http://portletbridge.jboss.org/",
     "category": "Middleware"
+  },
+  {
+    "projectName": "Python GSSAPI",
+    "projectDescription": "GSSAPI bindings for Python and related testing tooling",
+    "projectRepository": "https://github.com/pythongssapi",
+    "projectWebsite": "https://github.com/pythongssapi",
+    "category": "Development",
   },
   {
     "projectName": "Red Hat Application Migration Toolkit",
