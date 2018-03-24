@@ -363,6 +363,13 @@
     "projectRepository": "https://github.com/netty",
     "projectWebsite": "https://netty.io/",
     "category": "Development"
+  }, 
+  {
+    "projectName": "TianoCore",
+    "projectDescription": "Cross-platform firmware development environment for the UEFI and Platform Initialization (PI) specifications",
+    "projectRepository": "https://github.com/tianocore",
+    "projectWebsite": "https://www.tianocore.org/",
+    "category": "Development"
   },
   {
     "projectName": "UberFire",
