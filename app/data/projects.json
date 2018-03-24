@@ -273,6 +273,13 @@
     "category": "Documentation"
   },
   {
+   "projectName": "Red Hat Documentation",
+   "projectDescription": "The location for fully open-sourced, freely accessible content on standards and conventions that relate to Red Hat's product documentation.",
+   "projectRepository": "https://github.com/redhat-documentation",
+   "projectWebsite": "https://redhat-documentation.github.io/",
+   "category": "Documentation"
+  },
+  {
     "projectName": "RPM Packaging Guide",
     "projectDescription": "Comprehensive guide to RPM packaging",
     "projectRepository": "https://github.com/redhat-developer/rpm-packaging-guide/",
