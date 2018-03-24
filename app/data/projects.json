@@ -1,10 +1,4 @@
-[{
-    "projectName": ".NET Core",
-    "projectDescription": "Open source and cross platform implementation of .NET",
-    "projectRepository": "https://github.com/dotnet",
-    "projectWebsite": "https://www.microsoft.com/net",
-    "category": "Development"
-  },
+[
   {
     "projectName": "abrt",
     "projectDescription": "Automatic bug detection and reporting tool",
@@ -134,6 +128,13 @@
     "projectWebsite": "https://www.lightblue.io/",
     "category": "Development"
   },
+  {
+    "projectName": ".NET Core",
+    "projectDescription": "Open source and cross platform implementation of .NET",
+    "projectRepository": "https://github.com/dotnet",
+    "projectWebsite": "https://www.microsoft.com/net",
+    "category": "Development"
+  },  
   {
     "projectName": "patternfly",
     "projectDescription": "Created to promote design commonality and improved user experience across enterprise IT products and applications.",
