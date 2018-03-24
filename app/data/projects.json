@@ -213,6 +213,13 @@
     "category": "Development"
   },
   {
+    "projectName": "Python GSSAPI",
+    "projectDescription": "GSSAPI bindings for Python and related testing tooling",
+    "projectRepository": "https://github.com/pythongssapi",
+    "projectWebsite": "https://github.com/pythongssapi",
+    "category": "Development",
+  },
+  {
     "projectName": "python-hwdata",
     "projectDescription": "Python bindings to hwdata",
     "projectRepository": "https://github.com/xsuchy/python-hwdata",
@@ -557,13 +564,6 @@
     "projectRepository": "https://github.com/portletbridge",
     "projectWebsite": "http://portletbridge.jboss.org/",
     "category": "Middleware"
-  },
-  {
-    "projectName": "Python GSSAPI",
-    "projectDescription": "GSSAPI bindings for Python and related testing tooling",
-    "projectRepository": "https://github.com/pythongssapi",
-    "projectWebsite": "https://github.com/pythongssapi",
-    "category": "Development",
   },
   {
     "projectName": "Red Hat Application Migration Toolkit",
@@ -918,7 +918,7 @@
     "category": "Operations"
   },
   {
-    "projectName": "mod_authgss_api",
+    "projectName": "mod_auth_gssapi",
     "projectDescription": "GSSAPI Negotiate module for Apache",
     "projectRepository": "https://github.com/modauthgssapi/",
     "category": "Operations"
