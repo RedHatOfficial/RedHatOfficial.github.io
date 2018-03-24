@@ -824,13 +824,6 @@
     "category": "Operations"
   },
   {
-    "projectName": "QEMU",
-    "projectDescription": "A FAST! processor emulator",
-    "projectRepository": "https://github.com/qemu/qemu",
-    "projectWebsite": "https://qemu.org/",
-    "category": "Operations"
-  },
-  {
     "projectName": "Project Atomic",
     "projectDescription": "Use immutable infrastructure to deploy and scale your containerized applications",
     "projectRepository": "https://github.com/projectatomic/",
@@ -842,6 +835,13 @@
     "projectDescription": "Pulp is a platform for managing repositories of software packages",
     "projectRepository": "https://github.com/pulp",
     "projectWebsite": "http://pulpproject.org",
+    "category": "Operations"
+  },
+  {
+    "projectName": "QEMU",
+    "projectDescription": "A FAST! processor emulator",
+    "projectRepository": "https://github.com/qemu/qemu",
+    "projectWebsite": "https://qemu.org/",
     "category": "Operations"
   },
   {
