@@ -1543,6 +1543,12 @@
     "category": "Storage"
   },
   {
+    "projectName": "Smallfile",
+    "projectDescription": "Metadata-intensive workload generator for distributed POSIX filesystems",
+    "projectRepository": "https://github.com/bengland2/smallfile",
+    "category": "Storage"
+  },
+  {
     "projectName": "Springfield Project",
     "projectDescription": "A smart and automated storage.",
     "projectRepository": "https://github.com/springfield-project/",
