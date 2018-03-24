@@ -155,6 +155,13 @@
     "category": "Development"
   },
   {
+    "projectName": "OpenShift.io",
+    "projectDescription": "Open online development environment for planning, creating and deploying hybrid cloud services",
+    "projectRepository": "https://github.com/openshiftio",
+    "projectWebsite": "https://openshift.io/",
+    "category": "Development"
+  },
+  {
     "projectName": "patternfly",
     "projectDescription": "Created to promote design commonality and improved user experience across enterprise IT products and applications.",
     "projectRepository": "https://github.com/patternfly",
@@ -889,13 +896,6 @@
     "projectRepository": "https://github.com/openshift",
     "projectWebsite": "https://www.openshift.com",
     "category": "Operations"
-  },
-  {
-    "projectName": "OpenShift.io",
-    "projectDescription": "Open online development environment for planning, creating and deploying hybrid cloud services",
-    "projectRepository": "https://github.com/openshiftio",
-    "projectWebsite": "https://openshift.io/",
-    "category": "Development"
   },
   {
     "projectName": "ophicleide",
