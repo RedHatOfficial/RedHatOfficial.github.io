@@ -227,6 +227,13 @@
     "category": "Development"
   },
   {
+    "projectName": "Python",
+    "projectDescription": "The Python programming language",
+    "projectRepository": "https://github.com/python/cpython",
+    "projectWebsite": "https://www.python.org/",
+    "category": "Development"
+  },
+  {
     "projectName": "Python GSSAPI",
     "projectDescription": "GSSAPI bindings for Python and related testing tooling",
     "projectRepository": "https://github.com/pythongssapi",
