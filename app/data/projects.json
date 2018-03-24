@@ -234,6 +234,7 @@
     "projectDescription": "Management Spins platform",
     "projectRepository": "https://github.com/ManageIQ-Exchange/",
     "projectWebsite": "https://manageiq-exchange.github.io/manageiq-exchange/",
+    "category": "Development"
   },
   {
     "projectName": "OpenTracing",
