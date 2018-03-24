@@ -42,6 +42,13 @@
     "category": "Development"
   },
   {
+    "projectName": "Apache Tomcat",
+    "projectDescription": "An open source implementation of the Java Servlet, JavaServer Pages, Java Expression Language and Java WebSocket technologies",
+    "projectRepository": "https://github.com/apache/tomcat",
+    "projectWebsite": "https://tomcat.apache.org/",
+    "category": "Development"
+  },
+  {
     "projectName": "Avocado",
     "projectDescription": "A testing framework with benefits.",
     "projectRepository": "https://github.com/avocado-framework",
@@ -522,12 +529,6 @@
     "projectDescription": "Open Source Identity and Access Management For Modern Applications and Services",
     "projectRepository": "https://github.com/keycloak",
     "projectWebsite": "http://www.keycloak.org",
-    "category": "Middleware"
-  },
-  {
-    "projectName": "Kiali",
-    "projectDescription": "Service Mesh Observability",
-    "projectRepository": "https://github.com/kiali",
     "category": "Middleware"
   },
   {
@@ -1104,13 +1105,6 @@
     "projectDescription": "Stomp Integration Layer and Transaction Server",
     "projectRepository": "https://github.com/projectodd/stilts",
     "projectWebsite": "http://stilts.projectodd.org",
-    "category": "Operations"
-  },
-  {
-    "projectName": "Strimzi",
-    "projectDescription": "Kafka as a Service running on Kubernetes and OpenShift",
-    "projectRepository": "https://github.com/strimzi",
-    "projectWebsite": "http://strimzi.io/",
     "category": "Operations"
   },
   {
