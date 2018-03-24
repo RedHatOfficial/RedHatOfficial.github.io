@@ -164,6 +164,13 @@
     "category": "Development"
   },
   {
+    "projectName": "Minishift",
+    "projectDescription": "Run Openshift Locally",
+    "projectRepository": "https://github.com/minishift/minishift",
+    "projectWebsite": "https://minishift.io/",
+    "category": "Development"
+  },
+  {
     "projectName": ".NET Core",
     "projectDescription": "Open source and cross platform implementation of .NET",
     "projectRepository": "https://github.com/dotnet",
@@ -880,12 +887,6 @@
     "projectDescription": "Management platform",
     "projectRepository": "https://github.com/ManageIQ/",
     "projectWebsite": "http://manageiq.org",
-    "category": "Operations"
-  },
-  {
-    "projectName": "minishift",
-    "projectDescription": "Run Openshift Locally",
-    "projectRepository": "https://github.com/minishift",
     "category": "Operations"
   },
   {
