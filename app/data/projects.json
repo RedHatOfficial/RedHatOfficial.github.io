@@ -983,6 +983,13 @@
     "category": "Operations"
   },
   {
+    "projectName": "QEMU",
+    "projectDescription": "A fast processor emulator",
+    "projectRepository": "https://github.com/qemu/qemu",
+    "projectWebsite": "https://qemu.org/",
+    "category": "Operations"
+  },
+  {
     "projectName": "Red Hat Insights",
     "projectDescription": "Proactive analytics and real-time intelligence",
     "projectRepository": "https://github.com/RedHatInsights",
