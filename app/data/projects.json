@@ -116,6 +116,13 @@
     "category": "Development"
   },
   {
+    "projectName": "GNU Compiler Collection",
+    "projectDescription": "Suite of compilers",
+    "projectRepository": "https://github.com/gcc-mirror",
+    "projectWebsite": "https://gcc.gnu.org/",
+    "category": "Development"
+  },
+  {
     "projectName": "Immutant",
     "projectDescription": "A cohesive suite of Clojure libraries",
     "projectRepository": "https://github.com/immutant",
