@@ -197,6 +197,13 @@
     "category": "Documentation"
   },
   {
+  "projectName": "Red Hat Documentation",
+  "projectDescription": "The location for fully open-sourced, freely accessible content on standards and conventions that relate to Red Hat's product documentation.",
+  "projectRepository": "https://github.com/redhat-documentation",
+  "projectWebsite": "https://redhat-documentation.github.io/",
+  "category": "Documentation"
+  },
+  {
     "projectName": "Zanata",
     "projectDescription": "Web-based system for translators to translate documentation and software online ",
     "projectRepository": "https://github.com/zanata",
@@ -439,13 +446,6 @@
     "projectRepository": "https://github.com/hodrigohamalho/jboss-migration",
     "projectWebsite": "https://developers.redhat.com/products/rhamt/overview/",
     "category": "Middleware"
-  },
-  {
-  "projectName": "Red Hat Documentation",
-  "projectDescription": "The location for fully open-sourced, freely accessible content on standards and conventions that relate to Red Hat's product documentation.",
-  "projectRepository": "https://github.com/redhat-documentation",
-  "projectWebsite": "https://redhat-documentation.github.io/",
-  "category": "Documentation"
   },
   {
     "projectName": "RESTEasy",
