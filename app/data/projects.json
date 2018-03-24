@@ -1308,6 +1308,13 @@
     "category": "Platform"
   },
   {
+    "projectName": "Open vSwitch",
+    "projectDescription": "Open source multilayer virtual switch and OVN: virtual networking for Open vSwitch",
+    "projectRepository": "http://github.com/openvswitch",
+    "projectWebsite": "https://www.openvswitch.org",
+    "category": "Platform"
+  },
+  {
     "projectName": "pesign",
     "projectDescription": "Linux tools for signed PE-COFF binaries",
     "projectRepository": "https://github.com/rhboot/pesign",
