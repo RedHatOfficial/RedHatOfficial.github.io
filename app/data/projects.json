@@ -68,6 +68,13 @@
     "category": "Development"
   },
   {
+    "projectName": "crash",
+    "projectDescription": "The Linux kernel crash utility",
+    "projectRepository": "https://github.com/crash-utility",
+    "projectWebsite": "http://people.redhat.com/anderson/crash",
+    "category": "Development"
+  },
+  {
     "projectName": "DBuildService",
     "projectDescription": "Python library for parsing Dockerfile files.",
     "projectRepository": "https://github.com/DBuildService",
@@ -999,13 +1006,6 @@
     "projectRepository": "https://github.com/crashub",
     "projectWebsite": "http://www.crashub.org/",
     "category": "Platform"
-  },
-  {
-    "projectName": "crash",
-    "projectDescription": "The Linux kernel crash utility",
-    "projectRepository": "https://github.com/crash-utility",
-    "projectWebsite": "http://people.redhat.com/anderson/crash",
-    "category": "Development"
   },
   {
     "projectName": "Cygwin",
