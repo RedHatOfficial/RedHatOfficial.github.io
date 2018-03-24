@@ -141,6 +141,13 @@
     "category": "Development"
   },
   {
+   "projectName": "Kubernetes",
+   "projectDescription": "An open-source system for automating deployment, scaling, and management of containerized applications",
+   "projectRepository": "https://github.com/kubernetes",
+   "projectWebsite": "https://kubernetes.io/",
+   "category": "Development"
+  }
+  {
     "projectName": "Lightblue Platform",
     "projectDescription": "Cloud focused data services with dynamic querying, versioned schemas, and robust security.",
     "projectRepository": "https://github.com/lightblue-platform",
@@ -1263,5 +1270,5 @@
     "projectRepository": "https://github.com/Tendrl",
     "projectWebsite": "http://tendrl.org/",
     "category": "Storage"
-  } 
+  }
 ]
