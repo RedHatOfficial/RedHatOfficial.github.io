@@ -9,9 +9,13 @@
 
     &-filters {
         display: grid;
-        grid-auto-rows: 1fr;
-        grid-gap: 30px;
-        grid-template-columns: 8fr 4fr;
+        grid-template-colums: 1fr;
+        grid-gap: 10px;
+        @media screen and (min-width: $breakpoint-sm-min) {
+            grid-auto-rows: 1fr;
+            grid-gap: 30px;
+            grid-template-columns: 8fr 4fr;
+        }
     }
 
     &-search {
@@ -68,6 +72,12 @@
       overflow: scroll;
       width: 100%;
 
+      thead {
+        @media screen and (max-width: $breakpoint-xs-max) {
+          display: none;
+        }
+      }
+
       thead tr {
         background-color: $iron;
       }
@@ -88,6 +98,14 @@
       td {
         @extend %table-row;
         padding: 10px;
+        @media screen and (max-width:768px) {
+          display: block;
+        }
+        &:first-child {
+          @media screen and (max-width:768px) {
+            font-weight: 600;
+          }
+        }
       }
     }
 
