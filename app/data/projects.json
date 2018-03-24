@@ -1331,6 +1331,20 @@
     "category": "Storage"
   },
   {
+    "projectName": "Springfield Project",
+    "projectDescription": "A smart and automated storage.",
+    "projectRepository": "https://github.com/springfield-project/",
+    "projectWebsite": "https://springfield-project.github.io/",
+    "category": "Storage"
+  },
+  {
+    "projectName": "SSM",
+    "projectDescription": "System Storage Manager - A single tool to manage your storage.",
+    "projectRepository": "https://github.com/system-storage-manager/",
+    "projectWebsite": "https://system-storage-manager.github.io/",
+    "category": "Storage"
+  },
+  {
     "projectName": "System Storage Manager",
     "projectDescription": "A single tool to manage your storage",
     "projectRepository": "https://github.com/system-storage-manager",
