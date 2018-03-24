@@ -164,6 +164,13 @@
    "category": "Development"
   }
   {
+    "projectName": "KubeVirt",
+    "projectDescription": "Enables developers to  bring existing virtual machines into their applications running on Kubernetes and OpenShift clusters",
+    "projectRepository": "https://github.com/kubevirt",
+    "projectWebsite": "http://kubevirt.github.io",
+    "category": "Development"
+  },
+  {
     "projectName": "Lightblue Platform",
     "projectDescription": "Cloud focused data services with dynamic querying, versioned schemas, and robust security.",
     "projectRepository": "https://github.com/lightblue-platform",
@@ -204,6 +211,13 @@
     "projectRepository": "https://github.com/picketlink",
     "projectWebsite": "http://picketlink.org/",
     "category": "Development"
+  },
+  {
+    "projectName": "Python GSSAPI",
+    "projectDescription": "GSSAPI bindings for Python and related testing tooling",
+    "projectRepository": "https://github.com/pythongssapi",
+    "projectWebsite": "https://github.com/pythongssapi",
+    "category": "Development",
   },
   {
     "projectName": "python-hwdata",
@@ -515,13 +529,6 @@
     "projectRepository": "https://github.com/kiegroup",
     "projectWebsite": "http://www.kiegroup.org/",
     "category": "Middleware"
-  },
-  {
-    "projectName": "KubeVirt",
-    "projectDescription": "Enables developers to  bring existing virtual machines into their applications running on Kubernetes and OpenShift clusters",
-    "projectRepository": "https://github.com/kubevirt",
-    "projectWebsite": "http://kubevirt.github.io",
-    "category": "Development"
   },
   {
     "projectName": "mod_cluster",
@@ -876,6 +883,13 @@
     "category": "Operations"
   },
   {
+    "projectName": "krb5",
+    "projectDescription": "MIT Kerberos authentication protocol",
+    "projectRepository": "https://github.com/krb5/krb5",
+    "projectWebsite": "http://web.mit.edu/kerberos/",
+    "category": "Operations",
+  },
+  {
     "projectName": "latchset",
     "projectDescription": "Encryption framework tools",
     "projectRepository": "https://github.com/latchset",
@@ -904,7 +918,7 @@
     "category": "Operations"
   },
   {
-    "projectName": "modauthgssapi",
+    "projectName": "mod_auth_gssapi",
     "projectDescription": "GSSAPI Negotiate module for Apache",
     "projectRepository": "https://github.com/modauthgssapi/",
     "category": "Operations"
