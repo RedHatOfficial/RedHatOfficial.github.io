@@ -1350,6 +1350,13 @@
     "category": "Platform"
   },
   {
+    "projectName": "Simple Signed Certificate Generator",
+    "projectDescription": "Simple SSL certificate generator",
+    "projectRepository": "https://github.com/sgallagher/sscg",
+    "projectWebsite": "https://github.com/sgallagher/sscg",
+    "category": "Platform"
+  },
+  {
     "projectName": "shim",
     "projectDescription": "shim: the UEFI first stage bootloader for Secure Boot",
     "projectRepository": "https://github.com/rhboot/shim",
