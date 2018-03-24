@@ -1,11 +1,6 @@
-
 # Red Hat on GitHub
 
 We’ve put together a comprehensive list of the projects hosted on GitHub in which Red Hat employees are actively involved. Given the large scope of our open source work, we recognize that we might have missed some projects or gotten a listing wrong. As time passes, more projects will need to be added to the list. These circumstances, and others we can’t currently foresee, may mean you’ll want to make changes to this list. So, how do you do that?
-
-## Built with
-
-This site was created using [Angular](https://angularjs.org/), [webpack](https://webpack.js.org/), [NPM](https://www.npmjs.com/), [Babel](https://babeljs.io/), and [Sass](https://sass-lang.com/).
 
 ## Adding a project
 
@@ -41,3 +36,7 @@ At this time, only projects that Red Hat employees are required to work on as pa
 
 ### What about projects not on GitHub?
 This list is just for Red Hat contributions to projects hosted on GitHub.  See https://community.redhat.com/software/ for an attempt at listing Red Hat's contributions to the broader universe of FLOSS projects.
+
+## Built with
+
+This site was created using [Angular](https://angularjs.org/), [webpack](https://webpack.js.org/), [NPM](https://www.npmjs.com/), [Babel](https://babeljs.io/), and [Sass](https://sass-lang.com/).
