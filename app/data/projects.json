@@ -1,5 +1,4 @@
-[
-  {
+[{
     "projectName": "abrt",
     "projectDescription": "Automatic bug detection and reporting tool",
     "projectRepository": "https://github.com/abrt",
@@ -98,7 +97,7 @@
     "projectName": "containers/storage",
     "projectDescription": "A library for storing and mounting container images",
     "projectRepository": "https://github.com/containers/storage",
-    "category": "Development",
+    "category": "Development"
   },
   {
     "projectName": "crash",
@@ -234,6 +233,7 @@
     "projectDescription": "Management Spins platform",
     "projectRepository": "https://github.com/ManageIQ-Exchange/",
     "projectWebsite": "https://manageiq-exchange.github.io/manageiq-exchange/",
+    "category": "Development"
   },
   {
     "projectName": "OpenTracing",
@@ -254,6 +254,12 @@
     "projectDescription": "Run Openshift Locally",
     "projectRepository": "https://github.com/minishift/minishift",
     "projectWebsite": "https://minishift.io/",
+    "category": "Development"
+  },
+  {
+    "projectName": "navmazing",
+    "projectDescription": "Python based navigation library for UIs",
+    "projectRepository": "https://github.com/RedHatQE/navmazing/",
     "category": "Development"
   },
   {
@@ -289,7 +295,7 @@
     "projectDescription": "GSSAPI bindings for Python and related testing tooling",
     "projectRepository": "https://github.com/pythongssapi",
     "projectWebsite": "https://github.com/pythongssapi",
-    "category": "Development",
+    "category": "Development"
   },
   {
     "projectName": "python-hwdata",
@@ -304,7 +310,7 @@
     "projectWebsite": "https://radanalytics.io/",
     "category": "Development"
   },
-   {
+  {
     "projectName": "Red Hat Fuse Tooling",
     "projectDescription": "Tooling to develop Apache Camel and Red Hat Fuse integration projects",
     "projectRepository": "https://github.com/jbosstools/jbosstools-fuse",
@@ -339,6 +345,12 @@
     "category": "Development"
   },
   {
+    "projectName": "Sentaku",
+    "projectDescription": "Python based library for contextual method choice",
+    "projectRepository": "https://github.com/RedHatQE/Sentaku/",
+    "category": "Development"
+  },
+  {
     "projectName": "The Linux Audit Project",
     "projectDescription": "Audit tools for the Linux kernel",
     "projectRepository": "https://github.com/linux-audit",
@@ -357,6 +369,30 @@
     "projectDescription": "A web framework for a superior experience in building extensible workbenches and console type applications",
     "projectRepository": "https://github.com/AppFormer/uberfire",
     "projectWebsite": "http://uberfireframework.org",
+    "category": "Development"
+  },
+  {
+    "projectName": "wait_for",
+    "projectDescription": "Python based library for waiting for things",
+    "projectRepository": "https://github.com/RedHatQE/wait_for/",
+    "category": "Development"
+  },
+  {
+    "projectName": "widgetastic",
+    "projectDescription": "Python based WebUI testing library",
+    "projectRepository": "https://github.com/RedHatQE/widgetastic.core",
+    "category": "Development"
+  },
+  {
+    "projectName": "widgetastic.patternfly",
+    "projectDescription": "Python based WebUI testing library for patternfly",
+    "projectRepository": "https://github.com/RedHatQE/widgetastic.patternfly",
+    "category": "Development"
+  },
+  {
+    "projectName": "wrapanapi",
+    "projectDescription": "Python based library for provider communication abstraction",
+    "projectRepository": "https://github.com/ManageIQ/wrapanapi",
     "category": "Development"
   },
   {
@@ -960,7 +996,7 @@
     "projectDescription": "MIT Kerberos authentication protocol",
     "projectRepository": "https://github.com/krb5/krb5",
     "projectWebsite": "http://web.mit.edu/kerberos/",
-    "category": "Operations",
+    "category": "Operations"
   },
   {
     "projectName": "latchset",
@@ -1517,13 +1553,6 @@
     "projectName": "SSM",
     "projectDescription": "System Storage Manager - A single tool to manage your storage.",
     "projectRepository": "https://github.com/system-storage-manager/",
-    "projectWebsite": "https://system-storage-manager.github.io/",
-    "category": "Storage"
-  },
-  {
-    "projectName": "System Storage Manager",
-    "projectDescription": "A single tool to manage your storage",
-    "projectRepository": "https://github.com/system-storage-manager",
     "projectWebsite": "https://system-storage-manager.github.io/",
     "category": "Storage"
   },
