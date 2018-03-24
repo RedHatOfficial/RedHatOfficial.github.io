@@ -1,5 +1,4 @@
-[
-  {
+[{
     "projectName": "abrt",
     "projectDescription": "Automatic bug detection and reporting tool",
     "projectRepository": "https://github.com/abrt",
