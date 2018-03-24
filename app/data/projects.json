@@ -134,6 +134,12 @@
     "category": "Development"
   },
   {
+    "projectName": "navmazing",
+    "projectDescription": "Python based navigation library for UIs",
+    "projectRepository": "https://github.com/RedHatQE/navmazing/",
+    "category": "Development"
+  },
+  {
     "projectName": "patternfly",
     "projectDescription": "Created to promote design commonality and improved user experience across enterprise IT products and applications.",
     "projectRepository": "https://github.com/patternfly",
@@ -175,6 +181,12 @@
     "category": "Development"
   },
   {
+    "projectName": "Sentaku",
+    "projectDescription": "Python based library for contextual method choice",
+    "projectRepository": "https://github.com/RedHatQE/Sentaku/",
+    "category": "Development"
+  },
+  {
     "projectName": "The Linux Audit Project",
     "projectDescription": "Audit tools for the Linux kernel",
     "projectRepository": "https://github.com/linux-audit",
@@ -193,6 +205,30 @@
     "projectDescription": "A web framework for a superior experience in building extensible workbenches and console type applications",
     "projectRepository": "https://github.com/AppFormer/uberfire",
     "projectWebsite": "http://uberfireframework.org",
+    "category": "Development"
+  },
+  {
+    "projectName": "wait_for",
+    "projectDescription": "Python based library for waiting for things",
+    "projectRepository": "https://github.com/RedHatQE/wait_for/",
+    "category": "Development"
+  },
+  {
+    "projectName": "widgetastic",
+    "projectDescription": "Python based WebUI testing library",
+    "projectRepository": "https://github.com/RedHatQE/widgetastic.core",
+    "category": "Development"
+  },
+  {
+    "projectName": "widgetastic.patternfly",
+    "projectDescription": "Python based WebUI testing library for patternfly",
+    "projectRepository": "https://github.com/RedHatQE/widgetastic.patternfly",
+    "category": "Development"
+  },
+  {
+    "projectName": "wrapanapi",
+    "projectDescription": "Python based library for provider communication abstraction",
+    "projectRepository": "https://github.com/ManageIQ/wrapanapi",
     "category": "Development"
   },
   {
@@ -1160,49 +1196,6 @@
     "projectRepository": "https://github.com/system-storage-manager",
     "projectWebsite": "https://system-storage-manager.github.io/",
     "category": "Storage"
-  },
-  {
-    "projectName": "Tendrl",
-    "projectDescription": "Unified Storage Manager",
-    "projectRepository": "https://github.com/Tendrl",
-    "projectWebsite": "http://tendrl.org/",
-    "category": "Storage"
-  },
-  {
-    "projectName": "widgetastic",
-    "projectDescription": "Python based WebUI testing library",
-    "projectRepository": "https://github.com/RedHatQE/widgetastic.core",
-    "category": "Development"
-  },
-  {
-    "projectName": "widgetastic.patternfly",
-    "projectDescription": "Python based WebUI testing library for patternfly",
-    "projectRepository": "https://github.com/RedHatQE/widgetastic.patternfly",
-    "category": "Development"
-  },
-  {
-    "projectName": "navmazing",
-    "projectDescription": "Python based navigation library for UIs",
-    "projectRepository": "https://github.com/RedHatQE/navmazing/",
-    "category": "Development"
-  },
-  {
-    "projectName": "wait_for",
-    "projectDescription": "Python based library for waiting for things",
-    "projectRepository": "https://github.com/RedHatQE/wait_for/",
-    "category": "Development"
-  },
-  {
-    "projectName": "Sentaku",
-    "projectDescription": "Python based library for contextual method choice",
-    "projectRepository": "https://github.com/RedHatQE/Sentaku/",
-    "category": "Development"
-  },
-  {
-    "projectName": "wrapanapi",
-    "projectDescription": "Python based library for provider communication abstraction",
-    "projectRepository": "https://github.com/ManageIQ/wrapanapi",
-    "category": "Development"
   },
   {
     "projectName": "Tendrl",
