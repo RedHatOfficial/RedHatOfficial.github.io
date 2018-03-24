@@ -1218,13 +1218,6 @@
     "category": "Storage"
   },
   {
-    "projectName": "Rook",
-    "projectDescription": "File, block, and object storage services for cloud-native environments",
-    "projectRepository": "https://github.com/rook",
-    "projectWebsite": "http://rook.io/",
-    "category": "Storage"
-  },
-  {
     "projectName": "dm-vdo",
     "projectDescription": "A pair of kernel modules which provide pools of deduplicated and/or compressed block storage.",
     "projectRepository": "https://github.com/dm-vdo",
@@ -1235,6 +1228,13 @@
     "projectDescription": "Distributed file system storage",
     "projectRepository": "https://github.com/gluster",
     "projectWebsite": "http://www.gluster.org",
+    "category": "Storage"
+  },
+  {
+    "projectName": "Rook",
+    "projectDescription": "File, block, and object storage services for cloud-native environments",
+    "projectRepository": "https://github.com/rook",
+    "projectWebsite": "http://rook.io/",
     "category": "Storage"
   },
   {
