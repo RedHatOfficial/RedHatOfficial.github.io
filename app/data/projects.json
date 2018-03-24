@@ -42,6 +42,13 @@
     "category": "Development"
   },
   {
+    "projectName": "Avocado",
+    "projectDescription": "A testing framework with benefits.",
+    "projectRepository": "https://github.com/avocado-framework",
+    "projectWebsite": "http://avocado-framework.github.io/",
+    "category": "Development"
+  },
+  {
     "projectName": "awestruct",
     "projectDescription": "Static site baking and deployment tool written in Ruby",
     "projectRepository": "https://github.com/awestruct",
