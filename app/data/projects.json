@@ -1310,6 +1310,12 @@
     "category": "Organizations"
   },
   {
+    "projectName": "Red Hat Demo Central",
+    "projectDescription": "Red Hat demos coillection",
+    "projectRepository": "https://github.com/redhatdemocentral",
+    "category": "Organizations"
+  },
+  {
     "projectName": "Red Hat Inception",
     "projectDescription": "Red Hat's Inception Team",
     "projectRepository": "https://github.com/RHInception",
