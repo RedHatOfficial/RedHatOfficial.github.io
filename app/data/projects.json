@@ -1530,6 +1530,12 @@
     "category": "Storage"
   },
   {
+    "projectName": "fs-drift",
+    "projectDescription": "Stress and filesystem-aging tool for distributed POSIX filesystems",
+    "projectRepository": "https://github.com/parallel-fs-utils/fs-drift/commits/master",
+    "category": "Storage"
+  },
+  {
     "projectName": "Gluster.org",
     "projectDescription": "Distributed file system storage",
     "projectRepository": "https://github.com/gluster",
