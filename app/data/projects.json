@@ -102,17 +102,24 @@
     "category": "Development"
   },
   {
-    "projectName": "Eclipse Web Tools Project",
-    "projectDescription": "Eclipse plugins for Web, JavaEE development",
-    "projectRepository": "https://github.com/eclipse?q=webtools",
-    "projectWebsite": "https://www.eclipse.org/webtools/",
-    "category": "Development"
-  },
-  {
     "projectName": "dumpet",
     "projectDescription": "Tool for debugging and verifying El Torito boot data on CD-like images",
     "projectRepository": "https://github.com/rhboot/dumpet",
     "projectWebsite": "https://github.com/rhboot/dumpet",
+    "category": "Development"
+  },
+  {
+    "projectName": "Eclipse Che",
+    "projectDescription": "Eclipse Che: Next-generation Eclipse IDE. Open source workspace server and cloud IDE.",
+    "projectRepository": "https://github.com/eclipse/che",
+    "projectWebsite": "http://eclipse.org/che",
+    "category": "Development"
+  }, 
+  {
+    "projectName": "Eclipse Web Tools Project",
+    "projectDescription": "Eclipse plugins for Web, JavaEE development",
+    "projectRepository": "https://github.com/eclipse?q=webtools",
+    "projectWebsite": "https://www.eclipse.org/webtools/",
     "category": "Development"
   },
   {
