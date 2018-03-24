@@ -1208,6 +1208,20 @@
     "category": "Platform"
   },
   {
+    "projectName": "GNOME",
+    "projectDescription": "An easy and elegant way to use your computer and get things done.",
+    "projectRepository": "https://github.com/gnome",
+    "projectWebsite": "https://gnome.org/",
+    "category": "Platform"
+  },
+  {
+    "projectName": "LibreOffice",
+    "projectDescription": "An integrated office suite based on copyleft licenses.",
+    "projectRepository": "https://github.com/libreoffice",
+    "projectWebsite": "https://libreoffice.org/",
+    "category": "Platform"
+  },
+  {
     "projectName": "Linux",
     "projectDescription": "A (free) operating system (just a hobby, won’t be big and professional like gnu)",
     "projectRepository": "https://github.com/torvalds/linux",
