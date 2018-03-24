@@ -98,7 +98,7 @@
     "projectName": "containers/storage",
     "projectDescription": "A library for storing and mounting container images",
     "projectRepository": "https://github.com/containers/storage",
-    "category": "Development",
+    "category": "Development"
   },
   {
     "projectName": "crash",
