@@ -951,6 +951,13 @@
     "category": "Operations"
   },
   {
+    "projectName": "Heketi",
+    "projectDescription": "RESTful based volume management framework for Gluster",
+    "projectRepository": "https://github.com/heketi",
+    "projectWebsite": "https://github.com/heketi/heketi/wiki",
+    "category": "Operations"
+  },
+  {
     "projectName": "HornetQ",
     "projectDescription": "Build a multi-protocol, embeddable, very high performance, clustered, asynchronous messaging system",
     "projectRepository": "https://github.com/hornetq",
