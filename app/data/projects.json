@@ -1558,13 +1558,6 @@
     "category": "Storage"
   },
   {
-    "projectName": "System Storage Manager",
-    "projectDescription": "A single tool to manage your storage",
-    "projectRepository": "https://github.com/system-storage-manager",
-    "projectWebsite": "https://system-storage-manager.github.io/",
-    "category": "Storage"
-  },
-  {
     "projectName": "Tendrl",
     "projectDescription": "Unified Storage Manager",
     "projectRepository": "https://github.com/Tendrl",
