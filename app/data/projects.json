@@ -128,6 +128,13 @@
     "category": "Development"
   },
   {
+    "projectName": "Minishift",
+    "projectDescription": "Run Openshift Locally",
+    "projectRepository": "https://github.com/minishift/minishift",
+    "projectWebsite": "https://minishift.io/",
+    "category": "Development"
+  },
+  {
     "projectName": "patternfly",
     "projectDescription": "Created to promote design commonality and improved user experience across enterprise IT products and applications.",
     "projectRepository": "https://github.com/patternfly",
@@ -749,13 +756,6 @@
     "projectRepository": "https://github.com/ManageIQ/",
     "projectWebsite": "http://manageiq.org",
     "category": "Operations"
-  },
-  {
-    "projectName": "Minishift",
-    "projectDescription": "Run Openshift Locally",
-    "projectRepository": "https://github.com/minishift/minishift",
-    "projectWebsite": "https://minishift.io/",
-    "category": "Development"
   },
   {
     "projectName": "modauthgssapi",
