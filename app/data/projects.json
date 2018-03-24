@@ -997,7 +997,7 @@
     "projectDescription": "MIT Kerberos authentication protocol",
     "projectRepository": "https://github.com/krb5/krb5",
     "projectWebsite": "http://web.mit.edu/kerberos/",
-    "category": "Operations",
+    "category": "Operations"
   },
   {
     "projectName": "latchset",
