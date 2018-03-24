@@ -296,7 +296,7 @@
     "projectDescription": "GSSAPI bindings for Python and related testing tooling",
     "projectRepository": "https://github.com/pythongssapi",
     "projectWebsite": "https://github.com/pythongssapi",
-    "category": "Development",
+    "category": "Development"
   },
   {
     "projectName": "python-hwdata",
