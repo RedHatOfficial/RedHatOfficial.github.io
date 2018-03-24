@@ -954,6 +954,13 @@
     "category": "Operations"
   },
   {
+    "projectName": "Red Hat Insights",
+    "projectDescription": "Proactive analytics and real-time intelligence",
+    "projectRepository": "https://github.com/RedHatInsights",
+    "projectWebsite": "https://www.redhat.com/en/technologies/management/insights",
+    "category": "Operations"
+  },
+  {
     "projectName": "Red Hat Kontinuity",
     "projectDescription": "Continuous Delivery for Application Developers Using Red Hat",
     "projectRepository": "https://github.com/redhat-kontinuity",
