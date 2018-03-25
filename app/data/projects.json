@@ -1289,6 +1289,12 @@
     "category": "Organizations"
   },
   {
+    "projectName": "JBoss Demo Central",
+    "projectDescription": "Demos for JBoss",
+    "projectRepository": "https://github.com/jbossdemocentral",
+    "category": "Organizations"
+  },
+  {
     "projectName": "Open Source and Standards",
     "projectDescription": "Red Hat Open Source and Standards team",
     "projectRepository": "https://github.com/OSAS",
@@ -1321,6 +1327,12 @@
     "projectDescription": "Red Hat's Inception Team",
     "projectRepository": "https://github.com/RHInception",
     "projectWebsite": "http://release-engine.readthedocs.io/en/latest/",
+    "category": "Organizations"
+  },
+  {
+    "projectName": "Red Hat IoT",
+    "projectDescription": "Demos and projects for Red Hat's IoT efforts",
+    "projectRepository": "https://github.com/redhat-iot",
     "category": "Organizations"
   },
   {
