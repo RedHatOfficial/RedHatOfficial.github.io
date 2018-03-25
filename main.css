@@ -11,7 +11,9 @@ h1, h2, h3, h4 {
   margin: 0; }
 
 p {
-  margin: 0 0 10px; }
+  margin: 0; }
+  p:not(:last-child) {
+    margin-bottom: 10px; }
 
 /*doc
 ---
@@ -30,7 +32,9 @@ h1, h2, h3, h4 {
   margin: 0; }
 
 p {
-  margin: 0 0 10px; }
+  margin: 0; }
+  p:not(:last-child) {
+    margin-bottom: 10px; }
 
 /*doc
 ---
@@ -85,7 +89,7 @@ title: Breakpoints
 
 .band-container[data-layout="3-up"] {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(305px, 1fr));
   grid-auto-rows: 1fr;
   grid-gap: 15px; }
   .band-container[data-layout="3-up"] > * {
@@ -93,14 +97,16 @@ title: Breakpoints
 
 .band-container[data-layout="2-up"] {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(305px, 1fr));
   grid-gap: 30px; }
 
 h1, h2, h3, h4 {
   margin: 0; }
 
 p {
-  margin: 0 0 10px; }
+  margin: 0; }
+  p:not(:last-child) {
+    margin-bottom: 10px; }
 
 /*doc
 ---
@@ -188,8 +194,7 @@ title: Breakpoints
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
-  height: 50vh;
-  min-height: 300px;
+  min-height: 40vh;
   justify-content: center; }
 
 /* .band {
@@ -231,7 +236,9 @@ h1, h2, h3, h4 {
   margin: 0; }
 
 p {
-  margin: 0 0 10px; }
+  margin: 0; }
+  p:not(:last-child) {
+    margin-bottom: 10px; }
 
 /*doc
 ---
@@ -278,7 +285,9 @@ h1, h2, h3, h4 {
   margin: 0; }
 
 p {
-  margin: 0 0 10px; }
+  margin: 0; }
+  p:not(:last-child) {
+    margin-bottom: 10px; }
 
 /*doc
 ---
@@ -360,7 +369,7 @@ title: Breakpoints
     padding-bottom: 10px; }
 
 .card-footer {
-  padding: 0 40px; }
+  padding: 0 20px; }
   .card-footer[data-layout="2-up"] {
     display: grid;
     grid-template-columns: repeat(2, 50%);
@@ -379,7 +388,9 @@ h1, h2, h3, h4 {
   margin: 0; }
 
 p {
-  margin: 0 0 10px; }
+  margin: 0; }
+  p:not(:last-child) {
+    margin-bottom: 10px; }
 
 /*doc
 ---
@@ -443,7 +454,9 @@ h1, h2, h3, h4 {
   margin: 0; }
 
 p {
-  margin: 0 0 10px; }
+  margin: 0; }
+  p:not(:last-child) {
+    margin-bottom: 10px; }
 
 /*doc
 ---
@@ -541,9 +554,13 @@ title: Breakpoints
 
 .table-filters {
   display: grid;
-  grid-auto-rows: 1fr;
-  grid-gap: 30px;
-  grid-template-columns: 8fr 4fr; }
+  grid-template-columns: 1fr;
+  grid-gap: 10px; }
+  @media screen and (min-width: 768px) {
+    .table-filters {
+      grid-auto-rows: 1fr;
+      grid-gap: 30px;
+      grid-template-columns: 8fr 4fr; } }
 
 .table-search {
   display: grid;
@@ -576,6 +593,10 @@ title: Breakpoints
       text-decoration: none;
       background-color: #ad0000;
       color: #fff; }
+    @media all and (max-width: 991px) {
+      .table-search-button {
+        padding-left: 20px;
+        padding-right: 20px; } }
 
 .table-dropdown {
   font-family: "Overpass", Overpass, Helvetica, helvetica, arial, sans-serif;
@@ -602,8 +623,13 @@ title: Breakpoints
 
 .table-main {
   border-collapse: collapse;
-  overflow: scroll;
   width: 100%; }
+  @media all and (max-width: 991px) {
+    .table-main {
+      table-layout: fixed; } }
+  @media screen and (max-width: 767px) {
+    .table-main thead {
+      display: none; } }
   .table-main thead tr {
     background-color: #d2d3d5; }
   .table-main th {
@@ -613,13 +639,23 @@ title: Breakpoints
   .table-main tbody tr:nth-child(odd) {
     background-color: #fff; }
   .table-main td {
-    padding: 10px; }
+    padding: 10px;
+    overflow: hidden;
+    text-overflow: ellipsis; }
+    @media screen and (max-width: 767px) {
+      .table-main td {
+        display: block; } }
+    @media screen and (max-width: 767px) {
+      .table-main td:first-child {
+        font-weight: 600; } }
 
 h1, h2, h3, h4 {
   margin: 0; }
 
 p {
-  margin: 0 0 10px; }
+  margin: 0; }
+  p:not(:last-child) {
+    margin-bottom: 10px; }
 
 /*doc
 ---
@@ -636,7 +672,7 @@ title: Breakpoints
 .navigation-label {
   color: #252527;
   font-family: "Overpass", Overpass, Helvetica, helvetica, arial, sans-serif;
-  font-size: 34px;
+  font-size: 20px;
   font-weight: 400;
   line-height: 1.18;
   text-transform: uppercase;
@@ -645,6 +681,12 @@ title: Breakpoints
         margin-right: 5px;
         padding-right: 20px;
     } */ }
+  @media screen and (min-width: 992px) {
+    .navigation-label {
+      font-size: 30px; } }
+  @media screen and (min-width: 1200px) {
+    .navigation-label {
+      font-size: 34px; } }
 
 .navigation-link-anchor {
   color: #252527;
@@ -743,13 +785,18 @@ title: Breakpoints
   padding: 10px 15px; }
 
 .navigation-logo {
-  max-height: 3em; }
+  max-height: 2em; }
+  @media screen and (min-width: 1200px) {
+    .navigation-logo {
+      max-height: 3em; } }
 
 h1, h2, h3, h4 {
   margin: 0; }
 
 p {
-  margin: 0 0 10px; }
+  margin: 0; }
+  p:not(:last-child) {
+    margin-bottom: 10px; }
 
 /*doc
 ---
@@ -783,7 +830,7 @@ title: Breakpoints
     text-decoration: none !important;
     outline-color: #06c; }
 
-.footer-logo:focus {
+.footer-logo img:focus {
   outline-offset: 1px;
   outline-style: dotted;
   outline-width: 1px;
@@ -829,21 +876,38 @@ title: Breakpoints
   background-color: #1a1a1a; }
 
 .footer-container {
-  align-items: center;
   display: grid;
-  grid-auto-rows: 1fr;
-  grid-gap: 30px;
-  grid-template-columns: 1fr 3fr 5fr 1fr; }
+  grid-template-columns: 3fr 2fr;
+  grid-gap: 10px; }
+  @media screen and (min-width: 768px) {
+    .footer-container {
+      align-items: center;
+      grid-auto-rows: 1fr;
+      grid-gap: 30px;
+      grid-template-columns: 1fr 3fr 5fr 1fr; } }
 
-.footer-logo {
-  height: 44px;
-  min-width: 138px; }
+.footer-logo img {
+  height: 34px; }
+  @media screen and (min-width: 768px) {
+    .footer-logo img {
+      height: 44px;
+      min-width: 138px; } }
+
+@media screen and (max-width: 767px) {
   .footer-logo:last-child {
-    height: 35px;
-    min-width: 74px; }
+    display: flex;
+    justify-content: flex-end; } }
+
+.footer-logo:last-child img {
+  height: 35px;
+  min-width: 74px; }
+
+.footer-copyright {
+  margin-bottom: 0; }
 
 .footer-links > *:not(:last-child) {
   border-right: 1px solid #646464; }
 
 .footer-link {
   padding: 0 5px; }
+
