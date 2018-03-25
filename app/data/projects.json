@@ -365,13 +365,6 @@
     "category": "Development"
   },
   {
-    "projectName": "Transtats",
-    "projectDescription": "Tool to track translation completeness of packages for product releases",
-    "projectRepository": "https://github.com/transtats",
-    "projectWebsite": "http://transtats.org",
-    "category": "Operations"
-  },
-  {
     "projectName": "UberFire",
     "projectDescription": "A web framework for a superior experience in building extensible workbenches and console type applications",
     "projectRepository": "https://github.com/AppFormer/uberfire",
@@ -1266,6 +1259,13 @@
     "projectDescription": "Python ticketing utility for working with tickets in popular tools",
     "projectRepository": "https://github.com/dmranck/ticketutil",
     "projectWebsite": "http://ticketutil.readthedocs.io/",
+    "category": "Operations"
+  },
+  {
+    "projectName": "Transtats",
+    "projectDescription": "Tool to track translation completeness of packages for product releases",
+    "projectRepository": "https://github.com/transtats",
+    "projectWebsite": "http://transtats.org",
     "category": "Operations"
   },
   {
