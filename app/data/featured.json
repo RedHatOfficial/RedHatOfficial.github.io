@@ -20,7 +20,7 @@
   "name": "oVirt",
   "logo": "ovirt",
   "github": "https://github.com/ovirt",
-  "website": "http://ovirt.org",
+  "website": "https://ovirt.org",
   "description": "An open source virtualization platform powered by KVM on Linux<sup>&reg;</sup> with an easy-to-use web interface that manages virtual machines, storage, and networks."
 },{
   "name": "Project Atomic",

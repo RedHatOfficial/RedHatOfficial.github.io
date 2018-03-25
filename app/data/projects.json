@@ -1117,7 +1117,7 @@
     "projectName": "oVirt",
     "projectDescription": "Open virtual datacenter",
     "projectRepository": "https://github.com/ovirt",
-    "projectWebsite": "http://ovirt.org",
+    "projectWebsite": "https://ovirt.org",
     "category": "Operations"
   },
   {
