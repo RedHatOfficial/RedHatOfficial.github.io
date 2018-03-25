@@ -222,6 +222,13 @@
     "category": "Development"
   },
   {
+    "projectName": "Lago",
+    "projectDescription": "Ad-hoc virtual testing environment framework",
+    "projectRepository": "https://github.com/lago-project",
+    "projectWebsite": "http://lago.readthedocs.org/",
+    "category": "Development"
+  }, 
+  {
     "projectName": "Lightblue Platform",
     "projectDescription": "Cloud focused data services with dynamic querying, versioned schemas, and robust security.",
     "projectRepository": "https://github.com/lightblue-platform",
