@@ -40,3 +40,11 @@ This list is just for Red Hat contributions to projects hosted on GitHub.  See h
 ## Built with
 
 This site was created using [Angular](https://angularjs.org/), [webpack](https://webpack.js.org/), [NPM](https://www.npmjs.com/), [Babel](https://babeljs.io/), and [Sass](https://sass-lang.com/).
+
+## Licensing
+
+* [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) for the displayed page and primary license for this repository
+* [MIT](https://opensource.org/licenses/MIT) for the JavaScript
+* [CC0](https://creativecommons.org/share-your-work/public-domain/cc0/) for the HTML and CSS
+
+Red Hat trademarks are not subject to the above license grants.
