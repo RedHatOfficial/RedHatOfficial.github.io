@@ -108,11 +108,11 @@
         padding: 10px;
         overflow: hidden;
         text-overflow: ellipsis;
-        @media screen and (max-width:768px) {
+        @media screen and (max-width: $breakpoint-xs-max) {
           display: block;
         }
         &:first-child {
-          @media screen and (max-width:768px) {
+          @media screen and (max-width: $breakpoint-xs-max) {
             font-weight: 600;
           }
         }
