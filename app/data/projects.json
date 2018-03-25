@@ -2,7 +2,7 @@
     "projectName": "abrt",
     "projectDescription": "Automatic bug detection and reporting tool",
     "projectRepository": "https://github.com/abrt",
-    "projectWebsite": "http://abrt.readthedocs.org/en/latest/",
+    "projectWebsite": "https://abrt.readthedocs.org/en/latest/",
     "category": "Development"
   },
   {
@@ -23,21 +23,21 @@
     "projectName": "Apache Camel",
     "projectDescription": "Camel empowers you to define routing and mediation rules in a variety of domain-specific languages",
     "projectRepository": "https://github.com/apache/camel",
-    "projectWebsite": "http://camel.apache.org/",
+    "projectWebsite": "https://camel.apache.org/",
     "category": "Development"
   },
   {
     "projectName": "Apache DeltaSpike",
     "projectDescription": "Consists of a number of portable CDI extensions that provide useful features for Java application developers",
     "projectRepository": "https://github.com/apache/deltaspike",
-    "projectWebsite": "http://deltaspike.apache.org/",
+    "projectWebsite": "https://deltaspike.apache.org/",
     "category": "Development"
   },
   {
     "projectName": "Apache Qpid",
     "projectDescription": "Makes messaging tools that speak AMQP and support many languages and platforms.",
     "projectRepository": "https://github.com/apache/qpid",
-    "projectWebsite": "http://qpid.apache.org/",
+    "projectWebsite": "https://qpid.apache.org/",
     "category": "Development"
   },
   {
@@ -51,7 +51,7 @@
     "projectName": "Avocado",
     "projectDescription": "A testing framework with benefits.",
     "projectRepository": "https://github.com/avocado-framework",
-    "projectWebsite": "http://avocado-framework.github.io/",
+    "projectWebsite": "https://avocado-framework.github.io/",
     "category": "Development"
   },
   {
@@ -103,7 +103,7 @@
     "projectName": "crash",
     "projectDescription": "The Linux kernel crash utility",
     "projectRepository": "https://github.com/crash-utility",
-    "projectWebsite": "http://people.redhat.com/anderson/crash",
+    "projectWebsite": "https://people.redhat.com/anderson/crash",
     "category": "Development"
   },
   {
@@ -129,7 +129,7 @@
     "projectName": "Eclipse Che",
     "projectDescription": "Eclipse Che: Next-generation Eclipse IDE. Open source workspace server and cloud IDE.",
     "projectRepository": "https://github.com/eclipse/che",
-    "projectWebsite": "http://eclipse.org/che",
+    "projectWebsite": "https://eclipse.org/che",
     "category": "Development"
   }, 
   {
@@ -192,7 +192,7 @@
     "projectName": "JBoss Tools",
     "projectDescription": "Eclipse plugins for JBoss, Fuse, OpenShift",
     "projectRepository": "https://github.com/jbosstools",
-    "projectWebsite": "http://tools.jboss.org/",
+    "projectWebsite": "https://tools.jboss.org/",
     "category": "Development"
   },
   {
@@ -218,7 +218,7 @@
     "projectName": "KubeVirt",
     "projectDescription": "Enables developers to  bring existing virtual machines into their applications running on Kubernetes and OpenShift clusters",
     "projectRepository": "https://github.com/kubevirt",
-    "projectWebsite": "http://kubevirt.github.io",
+    "projectWebsite": "https://kubevirt.github.io",
     "category": "Development"
   },
   {
@@ -354,7 +354,7 @@
     "projectName": "The Linux Audit Project",
     "projectDescription": "Audit tools for the Linux kernel",
     "projectRepository": "https://github.com/linux-audit",
-    "projectWebsite": "http://people.redhat.com/sgrubb/audit/",
+    "projectWebsite": "https://people.redhat.com/sgrubb/audit/",
     "category": "Development"
   },
   {
@@ -413,7 +413,7 @@
     "projectName": "PressGang",
     "projectDescription": "Everything related to documentation tooling/writing for community projects",
     "projectRepository": "https://github.com/pressgang",
-    "projectWebsite": "http://pressgang.jboss.org/",
+    "projectWebsite": "https://pressgang.jboss.org/",
     "category": "Documentation"
   },
   {
@@ -441,7 +441,7 @@
     "projectName": "apiman",
     "projectDescription": "The apiman project brings an open source development methodology to API Management",
     "projectRepository": "https://github.com/apiman",
-    "projectWebsite": "http://www.apiman.io/",
+    "projectWebsite": "https://www.apiman.io/",
     "category": "Middleware"
   },
   {
@@ -556,14 +556,14 @@
     "projectName": "JBoss Developer Studio",
     "projectDescription": "A development environment with support for your entire development lifecycle",
     "projectRepository": "https://github.com/jbdevstudio",
-    "projectWebsite": "http://devstudio.jboss.com",
+    "projectWebsite": "https://devstudio.jboss.com",
     "category": "Middleware"
   },
   {
     "projectName": "JBoss Forge",
     "projectDescription": "Software development tool that extends your Java IDE",
     "projectRepository": "https://github.com/forge",
-    "projectWebsite": "http://forge.jboss.org",
+    "projectWebsite": "https://forge.jboss.org",
     "category": "Middleware"
   },
   {
@@ -596,7 +596,7 @@
     "projectName": "jboss-switchyard",
     "projectDescription": "SwitchYard is a component-based development framework focused on building structured, maintainable services and applications.",
     "projectRepository": "https://github.com/jboss-switchyard",
-    "projectWebsite": "http://switchyard.jboss.org/",
+    "projectWebsite": "https://switchyard.jboss.org/",
     "category": "Middleware"
   },
   {
@@ -622,14 +622,14 @@
     "projectName": "JSFUnit",
     "projectDescription": "Test Framework for JSF Applications",
     "projectRepository": "https://github.com/jsfunit",
-    "projectWebsite": "http://jsfunit.jboss.org/",
+    "projectWebsite": "https://jsfunit.jboss.org/",
     "category": "Middleware"
   },
   {
     "projectName": "keycloak",
     "projectDescription": "Open Source Identity and Access Management For Modern Applications and Services",
     "projectRepository": "https://github.com/keycloak",
-    "projectWebsite": "http://www.keycloak.org",
+    "projectWebsite": "https://www.keycloak.org",
     "category": "Middleware"
   },
   {
@@ -657,21 +657,21 @@
     "projectName": "Pbench",
     "projectDescription": "A Benchmarking and Performance Analysis Framework",
     "projectRepository": "https://github.com/distributed-system-analysis/pbench",
-    "projectWebsite": "http://distributed-system-analysis.github.io/pbench/",
+    "projectWebsite": "https://distributed-system-analysis.github.io/pbench/",
     "category": "Middleware"
   },
   {
     "projectName": "PicketBox",
     "projectDescription": "A project for Java Application Security",
     "projectRepository": "https://github.com/picketbox",
-    "projectWebsite": "http://picketbox.jboss.org/",
+    "projectWebsite": "https://picketbox.jboss.org/",
     "category": "Middleware"
   },
   {
     "projectName": "PortletBridge",
     "projectDescription": "An implementation of the JSR-301 and JSR-329 specifications to support JSF within a portlet",
     "projectRepository": "https://github.com/portletbridge",
-    "projectWebsite": "http://portletbridge.jboss.org/",
+    "projectWebsite": "https://portletbridge.jboss.org/",
     "category": "Middleware"
   },
   {
@@ -692,21 +692,21 @@
     "projectName": "Rhiot ",
     "projectDescription": "Messaging platform for the Internet Of Things",
     "projectRepository": "https://github.com/rhiot",
-    "projectWebsite": "http://rhiot.github.io/",
+    "projectWebsite": "https://rhiot.github.io/",
     "category": "Middleware"
   },
   {
     "projectName": "rhq-project",
     "projectDescription": "RHQ is an enterprise management solution for JBoss middleware projects",
     "projectRepository": "https://github.com/rhq-project",
-    "projectWebsite": "http://rhq-project.github.io/rhq/",
+    "projectWebsite": "https://rhq-project.github.io/rhq/",
     "category": "Middleware"
   },
   {
     "projectName": "riftsaw",
     "projectDescription": "A WS-BPEL 2.0 engine that is optimized for the JBoss AS container",
     "projectRepository": "https://github.com/riftsaw",
-    "projectWebsite": "http://riftsaw.jboss.org/",
+    "projectWebsite": "https://riftsaw.jboss.org/",
     "category": "Middleware"
   },
   {
@@ -748,7 +748,7 @@
     "projectName": "Tattletale",
     "projectDescription": "A tool that can help you get an overview of the project you are working on",
     "projectRepository": "https://github.com/jesperpedersen/tattletale",
-    "projectWebsite": "http://tattletale.jboss.org/",
+    "projectWebsite": "https://tattletale.jboss.org/",
     "category": "Middleware"
   },
   {
@@ -783,14 +783,14 @@
     "projectName": "XNIO",
     "projectDescription": "XNIO is a simplified low-level I/O layer which can be used anywhere you are using NIO today",
     "projectRepository": "https://github.com/xnio",
-    "projectWebsite": "http://xnio.jboss.org/",
+    "projectWebsite": "https://xnio.jboss.org/",
     "category": "Middleware"
   },
   {
     "projectName": "Ansible",
     "projectDescription": "IT automation platform that makes your applications and systems easier to deploy",
     "projectRepository": "https://github.com/ansible",
-    "projectWebsite": "http://ansible.com",
+    "projectWebsite": "https://ansible.com",
     "category": "Operations"
   },
   {
@@ -811,21 +811,21 @@
     "projectName": "Apache CXF",
     "projectDescription": "A smart web services suite (JAX-WS and JAX-RS)",
     "projectRepository": "https://github.com/apache/cxf",
-    "projectWebsite": "http://cxf.apache.org/",
+    "projectWebsite": "https://cxf.apache.org/",
     "category": "Operations"
   },
   {
     "projectName": "Apache HTTP Server Project",
     "projectDescription": "Provide a secure, efficient and extensible server that provides HTTP services",
     "projectRepository": "https://github.com/apache/httpd",
-    "projectWebsite": "http://httpd.apache.org",
+    "projectWebsite": "https://httpd.apache.org",
     "category": "Operations"
   },
   {
     "projectName": "Apache jUDDI",
     "projectDescription": "Open source Java implementation of OASIS",
     "projectRepository": "https://github.com/apache/juddi",
-    "projectWebsite": "http://juddi.apache.org",
+    "projectWebsite": "https://juddi.apache.org",
     "category": "Operations"
   },
   {
@@ -839,7 +839,7 @@
     "projectName": "Apache ODE",
     "projectDescription": "Executes business processes written following the WS-BPEL standard.",
     "projectRepository": "https://github.com/apache/ode",
-    "projectWebsite": "http://ode.apache.org",
+    "projectWebsite": "https://ode.apache.org",
     "category": "Operations"
   },
   {
@@ -874,14 +874,14 @@
     "projectName": "Cinch",
     "projectDescription": "Jenkins CI master/slave configuration",
     "projectRepository": "https://github.com/RedHatQE/cinch",
-    "projectWebsite": "http://redhatqe-cinch.readthedocs.io/en/latest/",
+    "projectWebsite": "https://redhatqe-cinch.readthedocs.io/en/latest/",
     "category": "Operations"
   },
   {
     "projectName": "cobbler",
     "projectDescription": "Versatile Linux deployment server",
     "projectRepository": "https://github.com/cobbler/cobbler",
-    "projectWebsite": "http://cobbler.github.io/",
+    "projectWebsite": "https://cobbler.github.io/",
     "category": "Operations"
   },
   {
@@ -928,7 +928,7 @@
     "projectName": "Dynflow",
     "projectDescription": "DYNamic workFLOW orchestration engine",
     "projectRepository": "https://github.com/Dynflow",
-    "projectWebsite": "http://dynflow.github.io/",
+    "projectWebsite": "https://dynflow.github.io/",
     "category": "Operations"
   },
   {
@@ -942,7 +942,7 @@
     "projectName": "Fedora libre-server Organization",
     "projectDescription": "Managing server roles",
     "projectRepository": "https://github.com/libre-server",
-    "projectWebsite": "http://libre-server.github.io/",
+    "projectWebsite": "https://libre-server.github.io/",
     "category": "Operations"
   },
   {
@@ -969,14 +969,14 @@
     "projectName": "Foreman Project",
     "projectDescription": "A complete lifecycle management tool for physical and virtual servers.",
     "projectRepository": "https://github.com/theforeman",
-    "projectWebsite": "http://theforeman.org",
+    "projectWebsite": "https://theforeman.org",
     "category": "Operations"
   },
   {
     "projectName": "freeipa",
     "projectDescription": "An integrated Identity and Authentication solution for Linux/UNIX networked environments",
     "projectRepository": "https://github.com/freeipa/",
-    "projectWebsite": "http://www.freeipa.org",
+    "projectWebsite": "https://www.freeipa.org",
     "category": "Operations"
   },
   {
@@ -989,7 +989,7 @@
     "projectName": "Gamin",
     "projectDescription": "A FAM implementation",
     "projectRepository": "https://github.com/GNOME/gamin",
-    "projectWebsite": "http://www.gnome.org/~veillard/gamin/",
+    "projectWebsite": "https://www.gnome.org/~veillard/gamin/",
     "category": "Operations"
   },
   {
@@ -1017,7 +1017,7 @@
     "projectName": "Juicer",
     "projectDescription": "Pulp repository administration",
     "projectRepository": "https://github.com/juicer",
-    "projectWebsite": "http://juicer.github.io/juicer/",
+    "projectWebsite": "https://juicer.github.io/juicer/",
     "category": "Operations"
   },
   {
@@ -1037,21 +1037,21 @@
     "projectName": "Koji",
     "projectDescription": "The Koji Build System",
     "projectRepository": "https://github.com/koji-project",
-    "projectWebsite": "http://fedoraproject.org/wiki/Koji",
+    "projectWebsite": "https://fedoraproject.org/wiki/Koji",
     "category": "Operations"
   },
   {
     "projectName": "krb5",
     "projectDescription": "MIT Kerberos authentication protocol",
     "projectRepository": "https://github.com/krb5/krb5",
-    "projectWebsite": "http://web.mit.edu/kerberos/",
+    "projectWebsite": "https://web.mit.edu/kerberos/",
     "category": "Operations"
   },
   {
     "projectName": "Kronosnet",
     "projectDescription": "Reliable, resilient, scalable, configurable, secure, and simple network abstraction layer",
     "projectRepository": "https://github.com/kronosnet/kronosnet",
-    "projectWebsite": "http://www.kronosnet.org/",
+    "projectWebsite": "https://www.kronosnet.org/",
     "category": "Operations"
   },
   {
@@ -1072,21 +1072,21 @@
     "projectName": "libvirt",
     "projectDescription": "Virtual host management toolkit",
     "projectRepository": "https://github.com/libvirt",
-    "projectWebsite": "http://libvirt.org/",
+    "projectWebsite": "https://libvirt.org/",
     "category": "Operations"
   },
    {
     "projectName": "Linchpin",
     "projectDescription": "Ansible-based cloud orchestration for CI",
     "projectRepository": "https://github.com/CentOS-PaaS-SiG/linchpin",
-    "projectWebsite": "http://linchpin.readthedocs.io/en/develop/",
+    "projectWebsite": "https://linchpin.readthedocs.io/en/develop/",
     "category": "Operations"
   },
   {
     "projectName": "ManageIQ",
     "projectDescription": "Management platform",
     "projectRepository": "https://github.com/ManageIQ/",
-    "projectWebsite": "http://manageiq.org",
+    "projectWebsite": "https://manageiq.org",
     "category": "Operations"
   },
   {
@@ -1125,7 +1125,7 @@
     "projectName": "nfs-ganesha",
     "projectDescription": "User Space NFS and 9P File Server",
     "projectRepository": "https://github.com/nfs-ganesha",
-    "projectWebsite": "http://nfs-ganesha.github.io/",
+    "projectWebsite": "https://nfs-ganesha.github.io/",
     "category": "Operations"
   },
   {
@@ -1151,7 +1151,7 @@
   {
     "projectName": "OpenSCAP",
     "projectDescription": "Open Source Security Compliance Solution",
-    "projectRepository": "http://github.com/OpenSCAP",
+    "projectRepository": "https://github.com/OpenSCAP",
     "projectWebsite": "https://www.open-scap.org",
     "category": "Operations"
   },
@@ -1208,7 +1208,7 @@
     "projectName": "Project Atomic",
     "projectDescription": "Use immutable infrastructure to deploy and scale your containerized applications",
     "projectRepository": "https://github.com/projectatomic/",
-    "projectWebsite": "http://www.projectatomic.io/",
+    "projectWebsite": "https://www.projectatomic.io/",
     "category": "Operations"
   },
   {
@@ -1222,7 +1222,7 @@
     "projectName": "pulp",
     "projectDescription": "Pulp is a platform for managing repositories of software packages",
     "projectRepository": "https://github.com/pulp",
-    "projectWebsite": "http://pulpproject.org",
+    "projectWebsite": "https://pulpproject.org",
     "category": "Operations"
   },
   {
@@ -1430,7 +1430,7 @@
     "projectName": "Red Hat Inception",
     "projectDescription": "Red Hat's Inception Team",
     "projectRepository": "https://github.com/RHInception",
-    "projectWebsite": "http://release-engine.readthedocs.io/en/latest/",
+    "projectWebsite": "https://release-engine.readthedocs.io/en/latest/",
     "category": "Organizations"
   },
   {
@@ -1450,7 +1450,7 @@
     "projectName": "anaconda",
     "projectDescription": "Graphical system installer",
     "projectRepository": "https://github.com/rhinstaller/anaconda",
-    "projectWebsite": "http://fedoraproject.org/wiki/Anaconda",
+    "projectWebsite": "https://fedoraproject.org/wiki/Anaconda",
     "category": "Platform"
   },
   {
@@ -1470,7 +1470,7 @@
     "projectName": "CRaSH",
     "projectDescription": "The shell for the Java platform.",
     "projectRepository": "https://github.com/crashub",
-    "projectWebsite": "http://www.crashub.org/",
+    "projectWebsite": "https://www.crashub.org/",
     "category": "Platform"
   },
   {
@@ -1505,7 +1505,7 @@
     "projectName": "Fedora LiveCD Tools",
     "projectDescription": "Tools for building live CDs using DNF",
     "projectRepository": "https://github.com/livecd-tools",
-    "projectWebsite": "http://fedoraproject.org/wiki/FedoraLiveCD",
+    "projectWebsite": "https://fedoraproject.org/wiki/FedoraLiveCD",
     "category": "Platform"
   },
   {
@@ -1525,7 +1525,7 @@
     "projectName": "firewalld",
     "projectDescription": "Firewall daemon with D-Bus interface",
     "projectRepository": "https://github.com/firewalld",
-    "projectWebsite": "http://firewalld.org",
+    "projectWebsite": "https://firewalld.org",
     "category": "Platform"
   },
   {
@@ -1546,7 +1546,7 @@
     "projectName": "Linux",
     "projectDescription": "A (free) operating system (just a hobby, won’t be big and professional like gnu)",
     "projectRepository": "https://github.com/torvalds/linux",
-    "projectWebsite": "http://kernel.org",
+    "projectWebsite": "https://kernel.org",
     "category": "Platform"
   },
   {
@@ -1573,7 +1573,7 @@
   {
     "projectName": "Open vSwitch",
     "projectDescription": "Open source multilayer virtual switch and OVN: virtual networking for Open vSwitch",
-    "projectRepository": "http://github.com/openvswitch",
+    "projectRepository": "https://github.com/openvswitch",
     "projectWebsite": "https://www.openvswitch.org",
     "category": "Platform"
   },
@@ -1588,7 +1588,7 @@
     "projectName": "Red Hat Update Agent",
     "projectDescription": "Software installer",
     "projectRepository": "https://github.com/up2date",
-    "projectWebsite": "http://en.wikipedia.org/wiki/Up2date",
+    "projectWebsite": "https://en.wikipedia.org/wiki/Up2date",
     "category": "Platform"
   },
   {
@@ -1602,7 +1602,7 @@
     "projectName": "redhat-imaging",
     "projectDescription": "imagefactory builds images for a variety of operating system/cloud combinations",
     "projectRepository": "https://github.com/redhat-imaging",
-    "projectWebsite": "http://imgfac.org/",
+    "projectWebsite": "https://imgfac.org/",
     "category": "Platform"
   },
   {
@@ -1650,7 +1650,7 @@
     "projectName": "Ceph",
     "projectDescription": "Block storage platform",
     "projectRepository": "https://github.com/ceph",
-    "projectWebsite": "http://ceph.com/",
+    "projectWebsite": "https://ceph.com/",
     "category": "Storage"
   },
   {
@@ -1669,14 +1669,14 @@
     "projectName": "Gluster.org",
     "projectDescription": "Distributed file system storage",
     "projectRepository": "https://github.com/gluster",
-    "projectWebsite": "http://www.gluster.org",
+    "projectWebsite": "https://www.gluster.org",
     "category": "Storage"
   },
   {
     "projectName": "Rook",
     "projectDescription": "File, block, and object storage services for cloud-native environments",
     "projectRepository": "https://github.com/rook",
-    "projectWebsite": "http://rook.io/",
+    "projectWebsite": "https://rook.io/",
     "category": "Storage"
   },
   {
