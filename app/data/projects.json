@@ -1396,7 +1396,7 @@
     "projectName": "Open Source and Standards",
     "projectDescription": "Red Hat Open Source and Standards team",
     "projectRepository": "https://github.com/OSAS",
-    "projectWebsite": "http://community.redhat.com",
+    "projectWebsite": "https://community.redhat.com",
     "category": "Organizations"
   },
   {
@@ -1525,7 +1525,7 @@
     "projectName": "firewalld",
     "projectDescription": "Firewall daemon with D-Bus interface",
     "projectRepository": "https://github.com/firewalld",
-    "projectWebsite": "https://firewalld.org",
+    "projectWebsite": "http://firewalld.org",
     "category": "Platform"
   },
   {
