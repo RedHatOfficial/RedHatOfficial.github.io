@@ -563,7 +563,7 @@
     "projectName": "JBoss Forge",
     "projectDescription": "Software development tool that extends your Java IDE",
     "projectRepository": "https://github.com/forge",
-    "projectWebsite": "https://forge.jboss.org",
+    "projectWebsite": "http://forge.jboss.org",
     "category": "Middleware"
   },
   {
