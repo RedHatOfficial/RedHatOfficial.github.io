@@ -11,7 +11,7 @@ import content from "../../data/content";
 // Images
 import ansible from "../../public/img/logo-ansible.png";
 import ceph from "../../public/img/logo-ceph.png";
-import manageiq from "../../public/img/logo-manageiq.jpg";
+import manageiq from "../../public/img/logo-manageiq.png";
 import ovirt from "../../public/img/logo-ovirt.png";
 import patternfly from "../../public/img/logo-patternfly.png";
 import projectatomic from "../../public/img/logo-projectatomic.png";
