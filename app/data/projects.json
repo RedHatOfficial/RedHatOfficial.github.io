@@ -1262,6 +1262,13 @@
     "category": "Operations"
   },
   {
+    "projectName": "Transtats",
+    "projectDescription": "Tool to track translation completeness of packages for product releases",
+    "projectRepository": "https://github.com/transtats",
+    "projectWebsite": "http://transtats.org",
+    "category": "Operations"
+  },
+  {
     "projectName": "xsos",
     "projectDescription": "Summarize system info from sosreports",
     "projectRepository": "https://github.com/ryran/xsos",
