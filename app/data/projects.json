@@ -1556,6 +1556,12 @@
     "category": "Storage"
   },
   {
+    "projectName": "fs-drift",
+    "projectDescription": "Stress and filesystem-aging tool for distributed POSIX filesystems",
+    "projectRepository": "https://github.com/parallel-fs-utils/fs-drift/commits/master",
+    "category": "Storage"
+  },
+  {
     "projectName": "Gluster.org",
     "projectDescription": "Distributed file system storage",
     "projectRepository": "https://github.com/gluster",
@@ -1573,6 +1579,12 @@
     "projectName": "skyrings",
     "projectDescription": "A modern, extensible web-based storage management platform",
     "projectRepository": "https://github.com/skyrings",
+    "category": "Storage"
+  },
+  {
+    "projectName": "Smallfile",
+    "projectDescription": "Metadata-intensive workload generator for distributed POSIX filesystems",
+    "projectRepository": "https://github.com/bengland2/smallfile",
     "category": "Storage"
   },
   {
