@@ -144,7 +144,7 @@
     "projectRepository": "https://github.com/eclipse/che",
     "projectWebsite": "https://eclipse.org/che",
     "category": "Development"
-  }, 
+  },
   {
     "projectName": "Eclipse Web Tools Project",
     "projectDescription": "Eclipse plugins for Web, JavaEE development",
@@ -238,7 +238,7 @@
    "projectDescription": "Library for creating, running, and managing Linux containers",
    "projectRepository": "https://github.com/projectatomic/libpod/",
    "category": "Development"
-  },    
+  },
   {
    "projectName": "Kubernetes",
    "projectDescription": "An open-source system for automating deployment, scaling, and management of containerized applications",
@@ -259,14 +259,14 @@
     "projectRepository": "https://github.com/lago-project",
     "projectWebsite": "http://lago.readthedocs.org/",
     "category": "Development"
-  }, 
+  },
   {
     "projectName": "Lightblue Platform",
     "projectDescription": "Cloud focused data services with dynamic querying, versioned schemas, and robust security.",
     "projectRepository": "https://github.com/lightblue-platform",
     "projectWebsite": "https://www.lightblue.io/",
     "category": "Development"
-  }, 
+  },
   {
     "projectName": "ManageIQ-Exchange",
     "projectDescription": "Management Spins platform",
@@ -307,7 +307,7 @@
     "projectRepository": "https://github.com/dotnet",
     "projectWebsite": "https://www.microsoft.com/net",
     "category": "Development"
-  }, 
+  },
   {
     "projectName": "patternfly",
     "projectDescription": "Created to promote design commonality and improved user experience across enterprise IT products and applications.",
@@ -402,7 +402,7 @@
     "projectRepository": "https://github.com/netty",
     "projectWebsite": "https://netty.io/",
     "category": "Development"
-  }, 
+  },
   {
     "projectName": "TianoCore",
     "projectDescription": "Cross-platform firmware development environment for the UEFI and Platform Initialization (PI) specifications",
@@ -1316,7 +1316,7 @@
     "projectRepository": "https://github.com/mbaldessari/sarstats",
     "projectWebsite": "https://github.com/mbaldessari/sarstats",
     "category": "Operations"
-  }, 
+  },
   {
     "projectName": "SBD",
     "projectDescription": "Shared-storage- and watchdog-based fencing for high-availability clusters",
@@ -1526,6 +1526,13 @@
     "category": "Platform"
   },
   {
+    "projectName": "dbus-broker",
+    "projectDescription": "Linux D-Bus Message Broker",
+    "projectRepository": "https://github.com/bus1/dbus-broker",
+    "projectWebsite": "https://github.com/bus1/dbus-broker/wiki",
+    "category": "Platform"
+  },
+  {
     "projectName": "dbxtool",
     "projectDescription": "Tool for UEFI Secure Boot DBX updates",
     "projectRepository": "https://github.com/rhboot/dbxtool",
@@ -1710,6 +1717,13 @@
     "projectDescription": "Tuning profile delivery mechanism for Linux",
     "projectRepository": "https://github.com/redhat-performance/tuned",
     "projectWebsite": "http://www.tuned-project.org/",
+    "category": "Platform"
+  },
+  {
+    "projectName": "varlink",
+    "projectDescription": "System and Service Manager for Linux",
+    "projectRepository": "https://github.com/varlink/",
+    "projectWebsite": "https://github.com/varlink/documentation/wiki",
     "category": "Platform"
   },
   {
