@@ -36,7 +36,7 @@ At this time, only projects that Red Hat employees are required to work on as pa
 
 ### What about projects not on GitHub?
 
-This list is just for Red Hat contributions to projects hosted on GitHub.  See https://community.redhat.com/software/ for more comprehensive listing of Red Hat's contributions to free and open source projects, regardless of where they are hosted.
+This list is just for Red Hat contributions to projects hosted on GitHub.  See https://community.redhat.com/software/ for a more comprehensive listing of Red Hat's contributions to free and open source projects, regardless of where they are hosted.
 
 ## Built with
 
