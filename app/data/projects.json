@@ -358,6 +358,13 @@
     "category": "Development"
   },
   {
+    "projectName": "Rsyslog",
+    "projectDescription": "a Rocket-fast SYStem for LOG processing",
+    "projectRepository": "https://github.com/rsyslog",
+    "projectWebsite": "http://www.rsyslog.com/",
+    "category": "Platform"
+  },
+  {
     "projectName": "Sentaku",
     "projectDescription": "Python based library for contextual method choice",
     "projectRepository": "https://github.com/RedHatQE/Sentaku/",
