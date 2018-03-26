@@ -172,6 +172,13 @@
     "projectRepository": "https://github.com/developer-portal",
     "projectWebsite": "https://developer.fedoraproject.org/",
     "category": "Development"
+  }, 
+  {
+    "projectName": "Gluetool",
+    "projectDescription": "Gluetool is a Python command line framework - glue for your tools and libraries￼Edit",
+    "projectRepository": "https://github.com/gluetool/gluetool",
+    "projectWebsite": "https://gluetool.readthedocs.io",
+    "category": "Development"
   },
   {
     "projectName": "GNU Compiler Collection",
