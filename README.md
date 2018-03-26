@@ -32,7 +32,11 @@ Current categories include:
 
 ### Criteria for adding projects to the page
 
-At this time, only projects that Red Hat employees are required to work on as part of their job will be listed. This includes projects Red Hat stewards as well as projects in which Red Hat is just one contributor among others. There are so many amazing projects that Red Hatters work on as enthusiasts, too many to recognize in one place. This criteria may be subject to change as the page evolves.
+At this time, only projects that Red Hat employees are required to work on as part of their job will be listed. This includes projects Red Hat stewards as well as projects in which Red Hat is just one contributor among others. For now, don't list sub-projects if at all possible. Eventually we will get to that, but for now, top-level projects only, please.
+
+Please don't add projects for which you volunteer. There are so many amazing projects that Red Hatters work on as enthusiasts, ourselves included, but too many to recognize here. 
+
+These criteria may be subject to change as the page evolves.
 
 ### What about projects not on GitHub?
 
