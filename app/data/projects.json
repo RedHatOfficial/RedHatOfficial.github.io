@@ -633,6 +633,12 @@
     "category": "Middleware"
   },
   {
+    "projectName": "Kiali",
+    "projectDescription": "Service Mesh Observability",
+    "projectRepository": "https://github.com/kiali",
+    "category": "Middleware"
+  },
+  {
     "projectName": "KIE",
     "projectDescription": "Code of the Drools rule engine, OptaPlanner constraint solver and jBPM workflow engine.",
     "projectRepository": "https://github.com/kiegroup",
