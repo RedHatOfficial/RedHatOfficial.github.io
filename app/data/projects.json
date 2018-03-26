@@ -1085,13 +1085,6 @@
     "category": "Operations"
   },
   {
-    "projectName": "Koji",
-    "projectDescription": "The Koji Build System",
-    "projectRepository": "https://github.com/koji-project",
-    "projectWebsite": "https://fedoraproject.org/wiki/Koji",
-    "category": "Operations"
-  },
-  {
     "projectName": "krb5",
     "projectDescription": "MIT Kerberos authentication protocol",
     "projectRepository": "https://github.com/krb5/krb5",
