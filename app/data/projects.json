@@ -1103,12 +1103,6 @@
     "category": "Operations"
   },
   {
-    "projectName": "minishift",
-    "projectDescription": "Run Openshift Locally",
-    "projectRepository": "https://github.com/minishift",
-    "category": "Operations"
-  },
-  {
     "projectName": "Moby Project",
     "projectDescription": "A collaborative project for the container ecosystem to assemble container-based systems",
     "projectRepository": "https://github.com/moby/moby/",
