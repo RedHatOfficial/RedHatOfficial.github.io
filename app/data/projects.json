@@ -1028,13 +1028,6 @@
     "category": "Operations"
   },
   {
-    "projectName": "KDE",
-    "projectDescription": "A free software community offering an advanced graphical desktop, a wide variety of applications and a platform to easily build new applications upon",
-    "projectRepository": "https://github.com/KDE",
-    "projectWebsite": "http://www.kde.org",
-    "category": "Platform"
-  },
-  {
     "projectName": "kimchi-project",
     "projectDescription": "An HTML5 management interface for KVM guests",
     "projectRepository": "https://github.com/kimchi-project",
@@ -1568,6 +1561,13 @@
     "projectDescription": "System firmware update support for UEFI machines",
     "projectRepository": "https://github.com/rhboot/fwupdate",
     "projectWebsite": "https://fwupd.org",
+    "category": "Platform"
+  },
+  {
+    "projectName": "KDE",
+    "projectDescription": "A free software community offering an advanced graphical desktop, a wide variety of applications and a platform to easily build new applications upon",
+    "projectRepository": "https://github.com/KDE",
+    "projectWebsite": "http://www.kde.org",
     "category": "Platform"
   },
   {
