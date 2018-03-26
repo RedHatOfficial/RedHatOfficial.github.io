@@ -9,9 +9,13 @@
 
     &-filters {
         display: grid;
-        grid-auto-rows: 1fr;
-        grid-gap: 30px;
-        grid-template-columns: 8fr 4fr;
+        grid-template-columns: 1fr;
+        grid-gap: 10px;
+        @media screen and (min-width: $breakpoint-sm-min) {
+            grid-auto-rows: 1fr;
+            grid-gap: 30px;
+            grid-template-columns: 8fr 4fr;
+        }
     }
 
     &-search {
@@ -26,6 +30,11 @@
 
         &-button {
             @include make-button($btn-color: $brand-primary);
+
+          @media all and (max-width: $breakpoint-sm-max) {
+            padding-left: 20px;
+            padding-right: 20px;
+          }
         }
     }
 
@@ -65,8 +74,17 @@
 
     &-main {
       border-collapse: collapse;
-      overflow: scroll;
       width: 100%;
+
+      @media all and (max-width: $breakpoint-sm-max) {
+        table-layout: fixed;
+      }
+
+      thead {
+        @media screen and (max-width: $breakpoint-xs-max) {
+          display: none;
+        }
+      }
 
       thead tr {
         background-color: $iron;
@@ -88,6 +106,16 @@
       td {
         @extend %table-row;
         padding: 10px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        @media screen and (max-width: $breakpoint-xs-max) {
+          display: block;
+        }
+        &:first-child {
+          @media screen and (max-width: $breakpoint-xs-max) {
+            font-weight: 600;
+          }
+        }
       }
     }
 

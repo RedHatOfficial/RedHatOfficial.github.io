@@ -43,6 +43,10 @@
     }
     &-logo {
         @extend %logo-link;
-        max-height: 3em;
+        max-height: 2em;
+
+        @media screen and (min-width: $breakpoint-lg-min) {
+            max-height: 3em;
+        }
     }
 }

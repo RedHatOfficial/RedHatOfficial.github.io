@@ -1,10 +1,18 @@
 %nav-label {
     color: $black;
     font-family: $base-font-family;
-    font-size: 34px;
+    font-size: 20px;
     font-weight: 400;
     line-height: 1.18;
     text-transform: uppercase;
+
+    @media screen and (min-width: $breakpoint-md-min) {
+        font-size: 30px;
+    }
+
+    @media screen and (min-width: $breakpoint-lg-min) {
+        font-size: 34px;
+    }
 
     /* &:not(:only-child) {
         border-right: 3px solid $fog;

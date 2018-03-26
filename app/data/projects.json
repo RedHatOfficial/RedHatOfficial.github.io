@@ -2,7 +2,7 @@
     "projectName": "abrt",
     "projectDescription": "Automatic bug detection and reporting tool",
     "projectRepository": "https://github.com/abrt",
-    "projectWebsite": "http://abrt.readthedocs.org/en/latest/",
+    "projectWebsite": "https://abrt.readthedocs.org/en/latest/",
     "category": "Development"
   },
   {
@@ -20,30 +20,38 @@
     "category": "Development"
   },
   {
-    "projectName": "Almighty",
-    "projectDescription": "Fabric8 toolset",
-    "projectRepository": "https://github.com/almighty/",
-    "category": "Development"
-  },
-  {
     "projectName": "Apache Camel",
     "projectDescription": "Camel empowers you to define routing and mediation rules in a variety of domain-specific languages",
     "projectRepository": "https://github.com/apache/camel",
-    "projectWebsite": "http://camel.apache.org/",
+    "projectWebsite": "https://camel.apache.org/",
     "category": "Development"
   },
   {
     "projectName": "Apache DeltaSpike",
     "projectDescription": "Consists of a number of portable CDI extensions that provide useful features for Java application developers",
     "projectRepository": "https://github.com/apache/deltaspike",
-    "projectWebsite": "http://deltaspike.apache.org/",
+    "projectWebsite": "https://deltaspike.apache.org/",
     "category": "Development"
   },
   {
     "projectName": "Apache Qpid",
     "projectDescription": "Makes messaging tools that speak AMQP and support many languages and platforms.",
     "projectRepository": "https://github.com/apache/qpid",
-    "projectWebsite": "http://qpid.apache.org/",
+    "projectWebsite": "https://qpid.apache.org/",
+    "category": "Development"
+  },
+  {
+    "projectName": "Apache Tomcat",
+    "projectDescription": "An open source implementation of the Java Servlet, JavaServer Pages, Java Expression Language and Java WebSocket technologies",
+    "projectRepository": "https://github.com/apache/tomcat",
+    "projectWebsite": "https://tomcat.apache.org/",
+    "category": "Development"
+  },
+  {
+    "projectName": "Avocado",
+    "projectDescription": "A testing framework with benefits.",
+    "projectRepository": "https://github.com/avocado-framework",
+    "projectWebsite": "https://avocado-framework.github.io/",
     "category": "Development"
   },
   {
@@ -67,10 +75,41 @@
     "category": "Development"
   },
   {
+    "projectName": "buildah",
+    "projectDescription": "A tool for building OCI container images",
+    "projectRepository": "https://github.com/projectatomic/buildah/",
+    "category": "Development"
+  },
+  {
+    "projectName": "CentOS CI",
+    "projectDescription": "CI/CD solutions running in containerized pipelines inside OpenShift in CentOS CI",
+    "projectRepository": "https://github.com/CentOS-PaaS-SIG",
+    "category": "Development"
+  },
+  {
     "projectName": "Ceylon",
     "projectDescription": "A language for writing large programs in teams.",
     "projectRepository": "https://github.com/ceylon",
     "projectWebsite": "https://ceylon-lang.org/",
+    "category": "Development"
+  },
+  {
+    "projectName": "containers/image",
+    "projectDescription": "A library for working with container images",
+    "projectRepository": "https://github.com/containers/image",
+    "category": "Development"
+  },
+  {
+    "projectName": "containers/storage",
+    "projectDescription": "A library for storing and mounting container images",
+    "projectRepository": "https://github.com/containers/storage",
+    "category": "Development"
+  },
+  {
+    "projectName": "crash",
+    "projectDescription": "The Linux kernel crash utility",
+    "projectRepository": "https://github.com/crash-utility",
+    "projectWebsite": "https://people.redhat.com/anderson/crash",
     "category": "Development"
   },
   {
@@ -86,6 +125,7 @@
     "category": "Development"
   },
   {
+<<<<<<< HEAD
     "projectName": "devsuite-installer",
     "projectDescription": "Single Installer for all Red Hat Development Tools",
     "projectRepository": "https://github.com/redhat-developer-tooling/developer-platform-install",
@@ -93,6 +133,22 @@
     "category": "Development"
   },
   {
+=======
+    "projectName": "dumpet",
+    "projectDescription": "Tool for debugging and verifying El Torito boot data on CD-like images",
+    "projectRepository": "https://github.com/rhboot/dumpet",
+    "projectWebsite": "https://github.com/rhboot/dumpet",
+    "category": "Development"
+  },
+  {
+    "projectName": "Eclipse Che",
+    "projectDescription": "Eclipse Che: Next-generation Eclipse IDE. Open source workspace server and cloud IDE.",
+    "projectRepository": "https://github.com/eclipse/che",
+    "projectWebsite": "https://eclipse.org/che",
+    "category": "Development"
+  }, 
+  {
+>>>>>>> 2aa29115dd47b382f4c0172f68267a11e524494f
     "projectName": "Eclipse Web Tools Project",
     "projectDescription": "Eclipse plugins for Web, JavaEE development",
     "projectRepository": "https://github.com/eclipse?q=webtools",
@@ -121,6 +177,19 @@
     "category": "Development"
   },
   {
+    "projectName": "GNU Compiler Collection",
+    "projectDescription": "Suite of compilers",
+    "projectRepository": "https://github.com/gcc-mirror",
+    "projectWebsite": "https://gcc.gnu.org/",
+    "category": "Development"
+  },
+  {
+    "projectName": "hwdata",
+    "projectDescription": "Hardware identification and configuration data",
+    "projectRepository": "https://github.com/vcrhonek/hwdata",
+    "category": "Development"
+  },
+  {
     "projectName": "Immutant",
     "projectDescription": "A cohesive suite of Clojure libraries",
     "projectRepository": "https://github.com/immutant",
@@ -133,12 +202,19 @@
     "projectRepository": "https://github.com/oloake/IronJacamar",
     "projectWebsite": "http://www.ironjacamar.org/",
     "category": "Development"
-  }, 
+  },
+  {
+    "projectName": "Jaeger",
+    "projectDescription": "CNCF OpenTracing compliant distributed tracing system",
+    "projectRepository": "https://github.com/jaegertracing",
+    "projectWebsite": "http://jaegertracing.io/",
+    "category": "Development"
+  },
   {
     "projectName": "JBoss Tools",
     "projectDescription": "Eclipse plugins for JBoss, Fuse, OpenShift",
     "projectRepository": "https://github.com/jbosstools",
-    "projectWebsite": "http://tools.jboss.org/",
+    "projectWebsite": "https://tools.jboss.org/",
     "category": "Development"
   },
   {
@@ -148,12 +224,39 @@
     "category": "Development"
   },
   {
+   "projectName": "libpod",
+   "projectDescription": "Library for creating, running, and managing Linux containers",
+   "projectRepository": "https://github.com/projectatomic/libpod/",
+   "category": "Development"
+  },    
+  {
+   "projectName": "Kubernetes",
+   "projectDescription": "An open-source system for automating deployment, scaling, and management of containerized applications",
+   "projectRepository": "https://github.com/kubernetes",
+   "projectWebsite": "https://kubernetes.io/",
+   "category": "Development"
+  },
+  {
+    "projectName": "KubeVirt",
+    "projectDescription": "Enables developers to  bring existing virtual machines into their applications running on Kubernetes and OpenShift clusters",
+    "projectRepository": "https://github.com/kubevirt",
+    "projectWebsite": "https://kubevirt.github.io",
+    "category": "Development"
+  },
+  {
+    "projectName": "Lago",
+    "projectDescription": "Ad-hoc virtual testing environment framework",
+    "projectRepository": "https://github.com/lago-project",
+    "projectWebsite": "http://lago.readthedocs.org/",
+    "category": "Development"
+  }, 
+  {
     "projectName": "Lightblue Platform",
     "projectDescription": "Cloud focused data services with dynamic querying, versioned schemas, and robust security.",
     "projectRepository": "https://github.com/lightblue-platform",
     "projectWebsite": "https://www.lightblue.io/",
     "category": "Development"
-  },
+  }, 
   {
     "projectName": "ManageIQ-Exchange",
     "projectDescription": "Management Spins platform",
@@ -161,6 +264,40 @@
     "projectWebsite": "https://manageiq-exchange.github.io/manageiq-exchange/",
     "category": "Development"
   },
+  {
+    "projectName": "OpenTracing",
+    "projectDescription": "CNCF OpenTracing API for distributed tracing",
+    "projectRepository": "https://github.com/opentracing",
+    "projectWebsite": "http://opentracing.io/",
+    "category": "Development"
+  },
+  {
+    "projectName": "OpenShift.io",
+    "projectDescription": "Open online development environment for planning, creating and deploying hybrid cloud services",
+    "projectRepository": "https://github.com/openshiftio",
+    "projectWebsite": "https://openshift.io/",
+    "category": "Development"
+  },
+  {
+    "projectName": "Minishift",
+    "projectDescription": "Run Openshift Locally",
+    "projectRepository": "https://github.com/minishift/minishift",
+    "projectWebsite": "https://minishift.io/",
+    "category": "Development"
+  },
+  {
+    "projectName": "navmazing",
+    "projectDescription": "Python based navigation library for UIs",
+    "projectRepository": "https://github.com/RedHatQE/navmazing/",
+    "category": "Development"
+  },
+  {
+    "projectName": ".NET Core",
+    "projectDescription": "Open source and cross platform implementation of .NET",
+    "projectRepository": "https://github.com/dotnet",
+    "projectWebsite": "https://www.microsoft.com/net",
+    "category": "Development"
+  }, 
   {
     "projectName": "patternfly",
     "projectDescription": "Created to promote design commonality and improved user experience across enterprise IT products and applications.",
@@ -176,6 +313,20 @@
     "category": "Development"
   },
   {
+    "projectName": "Python",
+    "projectDescription": "The Python programming language",
+    "projectRepository": "https://github.com/python/cpython",
+    "projectWebsite": "https://www.python.org/",
+    "category": "Development"
+  },
+  {
+    "projectName": "Python GSSAPI",
+    "projectDescription": "GSSAPI bindings for Python and related testing tooling",
+    "projectRepository": "https://github.com/pythongssapi",
+    "projectWebsite": "https://github.com/pythongssapi",
+    "category": "Development"
+  },
+  {
     "projectName": "python-hwdata",
     "projectDescription": "Python bindings to hwdata",
     "projectRepository": "https://github.com/xsuchy/python-hwdata",
@@ -188,7 +339,7 @@
     "projectWebsite": "https://radanalytics.io/",
     "category": "Development"
   },
-   {
+  {
     "projectName": "Red Hat Fuse Tooling",
     "projectDescription": "Tooling to develop Apache Camel and Red Hat Fuse integration projects",
     "projectRepository": "https://github.com/jbosstools/jbosstools-fuse",
@@ -223,10 +374,16 @@
     "category": "Development"
   },
   {
+    "projectName": "Sentaku",
+    "projectDescription": "Python based library for contextual method choice",
+    "projectRepository": "https://github.com/RedHatQE/Sentaku/",
+    "category": "Development"
+  },
+  {
     "projectName": "The Linux Audit Project",
     "projectDescription": "Audit tools for the Linux kernel",
     "projectRepository": "https://github.com/linux-audit",
-    "projectWebsite": "http://people.redhat.com/sgrubb/audit/",
+    "projectWebsite": "https://people.redhat.com/sgrubb/audit/",
     "category": "Development"
   },
   {
@@ -235,12 +392,36 @@
     "projectRepository": "https://github.com/netty",
     "projectWebsite": "https://netty.io/",
     "category": "Development"
+  }, 
+  {
+    "projectName": "TianoCore",
+    "projectDescription": "Cross-platform firmware development environment for the UEFI and Platform Initialization (PI) specifications",
+    "projectRepository": "https://github.com/tianocore",
+    "projectWebsite": "https://www.tianocore.org/",
+    "category": "Development"
   },
   {
-    "projectName": "UberFire",
-    "projectDescription": "A web framework for a superior experience in building extensible workbenches and console type applications",
-    "projectRepository": "https://github.com/AppFormer/uberfire",
-    "projectWebsite": "http://uberfireframework.org",
+    "projectName": "wait_for",
+    "projectDescription": "Python-based library for waiting for things",
+    "projectRepository": "https://github.com/RedHatQE/wait_for/",
+    "category": "Development"
+  },
+  {
+    "projectName": "widgetastic",
+    "projectDescription": "Python-based WebUI testing library",
+    "projectRepository": "https://github.com/RedHatQE/widgetastic.core",
+    "category": "Development"
+  },
+  {
+    "projectName": "widgetastic.patternfly",
+    "projectDescription": "Python-based WebUI testing library for patternfly",
+    "projectRepository": "https://github.com/RedHatQE/widgetastic.patternfly",
+    "category": "Development"
+  },
+  {
+    "projectName": "wrapanapi",
+    "projectDescription": "Python-based library for provider communication abstraction",
+    "projectRepository": "https://github.com/ManageIQ/wrapanapi",
     "category": "Development"
   },
   {
@@ -254,8 +435,15 @@
     "projectName": "PressGang",
     "projectDescription": "Everything related to documentation tooling/writing for community projects",
     "projectRepository": "https://github.com/pressgang",
-    "projectWebsite": "http://pressgang.jboss.org/",
+    "projectWebsite": "https://pressgang.jboss.org/",
     "category": "Documentation"
+  },
+  {
+   "projectName": "Red Hat Documentation",
+   "projectDescription": "The location for fully open-sourced, freely accessible content on standards and conventions that relate to Red Hat's product documentation.",
+   "projectRepository": "https://github.com/redhat-documentation",
+   "projectWebsite": "https://redhat-documentation.github.io/",
+   "category": "Documentation"
   },
   {
     "projectName": "RPM Packaging Guide",
@@ -275,7 +463,7 @@
     "projectName": "apiman",
     "projectDescription": "The apiman project brings an open source development methodology to API Management",
     "projectRepository": "https://github.com/apiman",
-    "projectWebsite": "http://www.apiman.io/",
+    "projectWebsite": "https://www.apiman.io/",
     "category": "Middleware"
   },
   {
@@ -390,7 +578,7 @@
     "projectName": "JBoss Developer Studio",
     "projectDescription": "A development environment with support for your entire development lifecycle",
     "projectRepository": "https://github.com/jbdevstudio",
-    "projectWebsite": "http://devstudio.jboss.com",
+    "projectWebsite": "https://devstudio.jboss.com",
     "category": "Middleware"
   },
   {
@@ -430,7 +618,7 @@
     "projectName": "jboss-switchyard",
     "projectDescription": "SwitchYard is a component-based development framework focused on building structured, maintainable services and applications.",
     "projectRepository": "https://github.com/jboss-switchyard",
-    "projectWebsite": "http://switchyard.jboss.org/",
+    "projectWebsite": "https://switchyard.jboss.org/",
     "category": "Middleware"
   },
   {
@@ -456,14 +644,14 @@
     "projectName": "JSFUnit",
     "projectDescription": "Test Framework for JSF Applications",
     "projectRepository": "https://github.com/jsfunit",
-    "projectWebsite": "http://jsfunit.jboss.org/",
+    "projectWebsite": "https://jsfunit.jboss.org/",
     "category": "Middleware"
   },
   {
     "projectName": "keycloak",
     "projectDescription": "Open Source Identity and Access Management For Modern Applications and Services",
     "projectRepository": "https://github.com/keycloak",
-    "projectWebsite": "http://www.keycloak.org",
+    "projectWebsite": "https://www.keycloak.org",
     "category": "Middleware"
   },
   {
@@ -478,13 +666,6 @@
     "projectRepository": "https://github.com/kiegroup",
     "projectWebsite": "http://www.kiegroup.org/",
     "category": "Middleware"
-  },
-  {
-    "projectName": "KubeVirt",
-    "projectDescription": "Enables developers to  bring existing virtual machines into their applications running on Kubernetes and OpenShift clusters",
-    "projectRepository": "https://github.com/kubevirt",
-    "projectWebsite": "http://kubevirt.github.io",
-    "category": "Development"
   },
   {
     "projectName": "mod_cluster",
@@ -504,21 +685,21 @@
     "projectName": "Pbench",
     "projectDescription": "A Benchmarking and Performance Analysis Framework",
     "projectRepository": "https://github.com/distributed-system-analysis/pbench",
-    "projectWebsite": "http://distributed-system-analysis.github.io/pbench/",
+    "projectWebsite": "https://distributed-system-analysis.github.io/pbench/",
     "category": "Middleware"
   },
   {
     "projectName": "PicketBox",
     "projectDescription": "A project for Java Application Security",
     "projectRepository": "https://github.com/picketbox",
-    "projectWebsite": "http://picketbox.jboss.org/",
+    "projectWebsite": "https://picketbox.jboss.org/",
     "category": "Middleware"
   },
   {
     "projectName": "PortletBridge",
     "projectDescription": "An implementation of the JSR-301 and JSR-329 specifications to support JSF within a portlet",
     "projectRepository": "https://github.com/portletbridge",
-    "projectWebsite": "http://portletbridge.jboss.org/",
+    "projectWebsite": "https://portletbridge.jboss.org/",
     "category": "Middleware"
   },
   {
@@ -539,21 +720,21 @@
     "projectName": "Rhiot ",
     "projectDescription": "Messaging platform for the Internet Of Things",
     "projectRepository": "https://github.com/rhiot",
-    "projectWebsite": "http://rhiot.github.io/",
+    "projectWebsite": "https://rhiot.github.io/",
     "category": "Middleware"
   },
   {
     "projectName": "rhq-project",
     "projectDescription": "RHQ is an enterprise management solution for JBoss middleware projects",
     "projectRepository": "https://github.com/rhq-project",
-    "projectWebsite": "http://rhq-project.github.io/rhq/",
+    "projectWebsite": "https://rhq-project.github.io/rhq/",
     "category": "Middleware"
   },
   {
     "projectName": "riftsaw",
     "projectDescription": "A WS-BPEL 2.0 engine that is optimized for the JBoss AS container",
     "projectRepository": "https://github.com/riftsaw",
-    "projectWebsite": "http://riftsaw.jboss.org/",
+    "projectWebsite": "https://riftsaw.jboss.org/",
     "category": "Middleware"
   },
   {
@@ -595,7 +776,7 @@
     "projectName": "Tattletale",
     "projectDescription": "A tool that can help you get an overview of the project you are working on",
     "projectRepository": "https://github.com/jesperpedersen/tattletale",
-    "projectWebsite": "http://tattletale.jboss.org/",
+    "projectWebsite": "https://tattletale.jboss.org/",
     "category": "Middleware"
   },
   {
@@ -630,14 +811,14 @@
     "projectName": "XNIO",
     "projectDescription": "XNIO is a simplified low-level I/O layer which can be used anywhere you are using NIO today",
     "projectRepository": "https://github.com/xnio",
-    "projectWebsite": "http://xnio.jboss.org/",
+    "projectWebsite": "https://xnio.jboss.org/",
     "category": "Middleware"
   },
   {
     "projectName": "Ansible",
     "projectDescription": "IT automation platform that makes your applications and systems easier to deploy",
     "projectRepository": "https://github.com/ansible",
-    "projectWebsite": "http://ansible.com",
+    "projectWebsite": "https://ansible.com",
     "category": "Operations"
   },
   {
@@ -648,24 +829,31 @@
     "category": "Operations"
   },
   {
+    "projectName": "Apache ActiveMQ Artemis",
+    "projectDescription": "Apache ActiveMQ Artemis is an open source project to build a multi-protocol, embeddable, very high performance, clustered, asynchronous messaging system.",
+    "projectRepository": "https://github.com/apache/activemq-artemis",
+    "projectWebsite": "https://activemq.apache.org/artemis/",
+    "category": "Operations"
+  },
+  {
     "projectName": "Apache CXF",
     "projectDescription": "A smart web services suite (JAX-WS and JAX-RS)",
     "projectRepository": "https://github.com/apache/cxf",
-    "projectWebsite": "http://cxf.apache.org/",
+    "projectWebsite": "https://cxf.apache.org/",
     "category": "Operations"
   },
   {
     "projectName": "Apache HTTP Server Project",
     "projectDescription": "Provide a secure, efficient and extensible server that provides HTTP services",
     "projectRepository": "https://github.com/apache/httpd",
-    "projectWebsite": "http://httpd.apache.org",
+    "projectWebsite": "https://httpd.apache.org",
     "category": "Operations"
   },
   {
     "projectName": "Apache jUDDI",
     "projectDescription": "Open source Java implementation of OASIS",
     "projectRepository": "https://github.com/apache/juddi",
-    "projectWebsite": "http://juddi.apache.org",
+    "projectWebsite": "https://juddi.apache.org",
     "category": "Operations"
   },
   {
@@ -679,7 +867,7 @@
     "projectName": "Apache ODE",
     "projectDescription": "Executes business processes written following the WS-BPEL standard.",
     "projectRepository": "https://github.com/apache/ode",
-    "projectWebsite": "http://ode.apache.org",
+    "projectWebsite": "https://ode.apache.org",
     "category": "Operations"
   },
   {
@@ -690,10 +878,30 @@
     "category": "Operations"
   },
   {
+    "projectName": "Beaker",
+    "projectDescription": "Managing and automating labs of test computers",
+    "projectRepository": "https://github.com/beaker-project",
+    "projectWebsite": "http://beaker-project.org",
+    "category": "Operations"
+  },
+  {
+    "projectName": "Booth",
+    "projectDescription": "Ticket manager for geographically dispersed high-availability clustering",
+    "projectRepository": "https://github.com/ClusterLabs/booth",
+    "projectWebsite": "https://clusterlabs.org/",
+    "category": "Operations"
+  },
+  {
     "projectName": "Candlepin",
     "projectDescription": "Subscription and entitlement management",
     "projectRepository": "https://github.com/candlepin",
     "projectWebsite": "http://www.candlepinproject.org/",
+    "category": "Operations"
+  },
+  {
+    "projectName": "casync",
+    "projectDescription": "Content Addressable Data Synchronizer",
+    "projectRepository": "https://github.com/systemd/casync/",
     "category": "Operations"
   },
   {
@@ -707,14 +915,14 @@
     "projectName": "Cinch",
     "projectDescription": "Jenkins CI master/slave configuration",
     "projectRepository": "https://github.com/RedHatQE/cinch",
-    "projectWebsite": "http://redhatqe-cinch.readthedocs.io/en/latest/",
+    "projectWebsite": "https://redhatqe-cinch.readthedocs.io/en/latest/",
     "category": "Operations"
   },
   {
     "projectName": "cobbler",
     "projectDescription": "Versatile Linux deployment server",
     "projectRepository": "https://github.com/cobbler/cobbler",
-    "projectWebsite": "http://cobbler.github.io/",
+    "projectWebsite": "https://cobbler.github.io/",
     "category": "Operations"
   },
   {
@@ -722,6 +930,20 @@
     "projectDescription": "Server manager that makes it easy to administer your GNU/Linux servers via browser.",
     "projectRepository": "https://github.com/cockpit-project",
     "projectWebsite": "http://cockpit-project.org/",
+    "category": "Operations"
+  },
+  {
+    "projectName": "Corosync",
+    "projectDescription": "High-availability cluster communication system",
+    "projectRepository": "https://github.com/corosync/corosync",
+    "projectWebsite": "https://corosync.github.io/corosync/",
+    "category": "Operations"
+  },
+  {
+    "projectName": "CRI-O",
+    "projectDescription": "Container runtime for Kubernetes clusters",
+    "projectRepository": "https://github.com/kubernetes-incubator/cri-o/",
+    "projectWebsite": "http://cri-o.io/",
     "category": "Operations"
   },
   {
@@ -747,7 +969,7 @@
     "projectName": "Dynflow",
     "projectDescription": "DYNamic workFLOW orchestration engine",
     "projectRepository": "https://github.com/Dynflow",
-    "projectWebsite": "http://dynflow.github.io/",
+    "projectWebsite": "https://dynflow.github.io/",
     "category": "Operations"
   },
   {
@@ -761,7 +983,7 @@
     "projectName": "Fedora libre-server Organization",
     "projectDescription": "Managing server roles",
     "projectRepository": "https://github.com/libre-server",
-    "projectWebsite": "http://libre-server.github.io/",
+    "projectWebsite": "https://libre-server.github.io/",
     "category": "Operations"
   },
   {
@@ -771,17 +993,31 @@
     "category": "Operations"
   },
   {
+    "projectName": "fence-agents",
+    "projectDescription": "Common fencing agents for high-availability clustering",
+    "projectRepository": "https://github.com/ClusterLabs/fence-agents",
+    "projectWebsite": "https://clusterlabs.org/",
+    "category": "Operations"
+  },
+  {
+    "projectName": "fence-virt",
+    "projectDescription": "Fence agents for virtual machines in high-availability clusters",
+    "projectRepository": "https://github.com/ClusterLabs/fence-virt",
+    "projectWebsite": "https://clusterlabs.org/",
+    "category": "Operations"
+  },
+  {
     "projectName": "Foreman Project",
     "projectDescription": "A complete lifecycle management tool for physical and virtual servers.",
     "projectRepository": "https://github.com/theforeman",
-    "projectWebsite": "http://theforeman.org",
+    "projectWebsite": "https://theforeman.org",
     "category": "Operations"
   },
   {
     "projectName": "freeipa",
     "projectDescription": "An integrated Identity and Authentication solution for Linux/UNIX networked environments",
     "projectRepository": "https://github.com/freeipa/",
-    "projectWebsite": "http://www.freeipa.org",
+    "projectWebsite": "https://www.freeipa.org",
     "category": "Operations"
   },
   {
@@ -794,14 +1030,21 @@
     "projectName": "Gamin",
     "projectDescription": "A FAM implementation",
     "projectRepository": "https://github.com/GNOME/gamin",
-    "projectWebsite": "http://www.gnome.org/~veillard/gamin/",
+    "projectWebsite": "https://www.gnome.org/~veillard/gamin/",
+    "category": "Operations"
+  },
+  {
+    "projectName": "Heketi",
+    "projectDescription": "RESTful based volume management framework for Gluster",
+    "projectRepository": "https://github.com/heketi",
+    "projectWebsite": "https://github.com/heketi/heketi/wiki",
     "category": "Operations"
   },
   {
     "projectName": "HornetQ",
     "projectDescription": "Build a multi-protocol, embeddable, very high performance, clustered, asynchronous messaging system",
     "projectRepository": "https://github.com/hornetq",
-    "projectWebsite": "http://activemq.apache.org/",
+    "projectWebsite": "http://hornetq.org",
     "category": "Operations"
   },
   {
@@ -815,7 +1058,7 @@
     "projectName": "Juicer",
     "projectDescription": "Pulp repository administration",
     "projectRepository": "https://github.com/juicer",
-    "projectWebsite": "http://juicer.github.io/juicer/",
+    "projectWebsite": "https://juicer.github.io/juicer/",
     "category": "Operations"
   },
   {
@@ -835,7 +1078,21 @@
     "projectName": "Koji",
     "projectDescription": "The Koji Build System",
     "projectRepository": "https://github.com/koji-project",
-    "projectWebsite": "http://fedoraproject.org/wiki/Koji",
+    "projectWebsite": "https://fedoraproject.org/wiki/Koji",
+    "category": "Operations"
+  },
+  {
+    "projectName": "krb5",
+    "projectDescription": "MIT Kerberos authentication protocol",
+    "projectRepository": "https://github.com/krb5/krb5",
+    "projectWebsite": "https://web.mit.edu/kerberos/",
+    "category": "Operations"
+  },
+  {
+    "projectName": "Kronosnet",
+    "projectDescription": "Reliable, resilient, scalable, configurable, secure, and simple network abstraction layer",
+    "projectRepository": "https://github.com/kronosnet/kronosnet",
+    "projectWebsite": "https://www.kronosnet.org/",
     "category": "Operations"
   },
   {
@@ -846,34 +1103,42 @@
     "category": "Operations"
   },
   {
+    "projectName": "libqb",
+    "projectDescription": "Library providing high-performance features for client-server applications",
+    "projectRepository": "https://github.com/ClusterLabs/libqb",
+    "projectWebsite": "https://clusterlabs.github.io/libqb/",
+    "category": "Operations"
+  },
+  {
     "projectName": "libvirt",
     "projectDescription": "Virtual host management toolkit",
     "projectRepository": "https://github.com/libvirt",
-    "projectWebsite": "http://libvirt.org/",
+    "projectWebsite": "https://libvirt.org/",
     "category": "Operations"
   },
    {
     "projectName": "Linchpin",
     "projectDescription": "Ansible-based cloud orchestration for CI",
     "projectRepository": "https://github.com/CentOS-PaaS-SiG/linchpin",
-    "projectWebsite": "http://linchpin.readthedocs.io/en/develop/",
+    "projectWebsite": "https://linchpin.readthedocs.io/en/develop/",
     "category": "Operations"
   },
   {
     "projectName": "ManageIQ",
     "projectDescription": "Management platform",
     "projectRepository": "https://github.com/ManageIQ/",
-    "projectWebsite": "http://manageiq.org",
+    "projectWebsite": "https://manageiq.org",
     "category": "Operations"
   },
   {
-    "projectName": "minishift",
-    "projectDescription": "Run Openshift Locally",
-    "projectRepository": "https://github.com/minishift",
+    "projectName": "Moby Project",
+    "projectDescription": "A collaborative project for the container ecosystem to assemble container-based systems",
+    "projectRepository": "https://github.com/moby/moby/",
+    "projectWebsite": "https://mobyproject.org/",
     "category": "Operations"
   },
   {
-    "projectName": "modauthgssapi",
+    "projectName": "mod_auth_gssapi",
     "projectDescription": "GSSAPI Negotiate module for Apache",
     "projectRepository": "https://github.com/modauthgssapi/",
     "category": "Operations"
@@ -895,7 +1160,7 @@
     "projectName": "nfs-ganesha",
     "projectDescription": "User Space NFS and 9P File Server",
     "projectRepository": "https://github.com/nfs-ganesha",
-    "projectWebsite": "http://nfs-ganesha.github.io/",
+    "projectWebsite": "https://nfs-ganesha.github.io/",
     "category": "Operations"
   },
   {
@@ -904,10 +1169,24 @@
     "projectRepository": "https://github.com/obsidian-toaster",
     "category": "Operations"
   },
+ {
+    "projectName": "OCF-spec",
+    "projectDescription": "Open Cluster Framework standards for high-availability clustering",
+    "projectRepository": "https://github.com/ClusterLabs/OCF-spec",
+    "projectWebsite": "https://clusterlabs.org/",
+    "category": "Operations"
+  },
+  {
+    "projectName": "OpenDaylight",
+    "projectDescription": "A modular open platform for customizing and automating networks of any size and scale.",
+    "projectRepository": "https://github.com/opendaylight/",
+    "projectWebsite": "https://www.opendaylight.org/",
+    "category": "Operations"
+  },
   {
     "projectName": "OpenSCAP",
     "projectDescription": "Open Source Security Compliance Solution",
-    "projectRepository": "http://github.com/OpenSCAP",
+    "projectRepository": "https://github.com/OpenSCAP",
     "projectWebsite": "https://www.open-scap.org",
     "category": "Operations"
   },
@@ -915,7 +1194,7 @@
     "projectName": "OpenShift Origin",
     "projectDescription": "Platform as a Service",
     "projectRepository": "https://github.com/openshift",
-    "projectWebsite": "https://www.openshift.com",
+    "projectWebsite": "https://www.openshift.org",
     "category": "Operations"
   },
   {
@@ -936,7 +1215,21 @@
     "projectName": "oVirt",
     "projectDescription": "Open virtual datacenter",
     "projectRepository": "https://github.com/ovirt",
-    "projectWebsite": "http://ovirt.org",
+    "projectWebsite": "https://ovirt.org",
+    "category": "Operations"
+  },
+  {
+    "projectName": "Pacemaker",
+    "projectDescription": "Advanced, scalabale high-availability cluster resource manager",
+    "projectRepository": "https://github.com/ClusterLabs/pacemaker",
+    "projectWebsite": "https://clusterlabs.org/",
+    "category": "Operations"
+  },
+  {
+    "projectName": "pcs",
+    "projectDescription": "Unified interface for high-availability cluster configuration",
+    "projectRepository": "https://github.com/ClusterLabs/pcs",
+    "projectWebsite": "https://clusterlabs.org/",
     "category": "Operations"
   },
   {
@@ -950,14 +1243,41 @@
     "projectName": "Project Atomic",
     "projectDescription": "Use immutable infrastructure to deploy and scale your containerized applications",
     "projectRepository": "https://github.com/projectatomic/",
-    "projectWebsite": "http://www.projectatomic.io/",
+    "projectWebsite": "https://www.projectatomic.io/",
+    "category": "Operations"
+  },
+  {
+    "projectName": "Prometheus",
+    "projectDescription": "A monitoring system and time series database",
+    "projectRepository": "https://github.com/prometheus",
+    "projectWebsite": "https://prometheus.io/",
     "category": "Operations"
   },
   {
     "projectName": "pulp",
     "projectDescription": "Pulp is a platform for managing repositories of software packages",
     "projectRepository": "https://github.com/pulp",
-    "projectWebsite": "http://pulpproject.org",
+    "projectWebsite": "https://pulpproject.org",
+    "category": "Operations"
+  },
+  {
+    "projectName": "PythonGSSAPI",
+    "projectDescription": "Python libraries to work with GSSAPI",
+    "projectRepository": "https://github.com/pythongssapi",
+    "category": "Operations"
+  },
+  {
+    "projectName": "QEMU",
+    "projectDescription": "A fast processor emulator",
+    "projectRepository": "https://github.com/qemu/qemu",
+    "projectWebsite": "https://qemu.org/",
+    "category": "Operations"
+  },
+  {
+    "projectName": "Red Hat Insights",
+    "projectDescription": "Proactive analytics and real-time intelligence",
+    "projectRepository": "https://github.com/RedHatInsights",
+    "projectWebsite": "https://www.redhat.com/en/technologies/management/insights",
     "category": "Operations"
   },
   {
@@ -981,10 +1301,37 @@
     "category": "Operations"
   },
   {
+    "projectName": "resource-agents",
+    "projectDescription": "Common OCF resource agents for high-availability clustering",
+    "projectRepository": "https://github.com/ClusterLabs/resource-agents",
+    "projectWebsite": "https://clusterlabs.org/",
+    "category": "Operations"
+  },
+  {
+    "projectName": "sarstats",
+    "projectDescription": "Creates a PDF report out of sar files",
+    "projectRepository": "https://github.com/mbaldessari/sarstats",
+    "projectWebsite": "https://github.com/mbaldessari/sarstats",
+    "category": "Operations"
+  }, 
+  {
+    "projectName": "SBD",
+    "projectDescription": "Shared-storage- and watchdog-based fencing for high-availability clusters",
+    "projectRepository": "https://github.com/ClusterLabs/sbd",
+    "projectWebsite": "https://clusterlabs.org/",
+    "category": "Operations"
+  },
+  {
     "projectName": "SELinux Project",
     "projectDescription": "SELinux is a security enhancement to Linux which allows users and administrators more control over access control",
     "projectRepository": "https://github.com/SELinuxProject",
     "projectWebsite": "http://selinuxproject.org/",
+    "category": "Operations"
+  },
+  {
+    "projectName": "Skopeo",
+    "projectDescription": "Tool for moving and signing container images",
+    "projectRepository": "https://github.com/projectatomic/skopeo",
     "category": "Operations"
   },
   {
@@ -1034,13 +1381,6 @@
     "category": "Operations"
   },
   {
-    "projectName": "Strimzi",
-    "projectDescription": "Kafka as a Service running on Kubernetes and OpenShift",
-    "projectRepository": "https://github.com/strimzi",
-    "projectWebsite": "http://strimzi.io/",
-    "category": "Operations"
-  },
-  {
     "projectName": "The TorqueBox Project",
     "projectDescription": "Provides an all-in-one environment, built upon the latest JBoss AS Java application server and JRuby",
     "projectRepository": "https://github.com/torquebox",
@@ -1052,6 +1392,13 @@
     "projectDescription": "Python ticketing utility for working with tickets in popular tools",
     "projectRepository": "https://github.com/dmranck/ticketutil",
     "projectWebsite": "http://ticketutil.readthedocs.io/",
+    "category": "Operations"
+  },
+  {
+    "projectName": "Transtats",
+    "projectDescription": "Tool to track translation completeness of packages for product releases",
+    "projectRepository": "https://github.com/transtats",
+    "projectWebsite": "http://transtats.org",
     "category": "Operations"
   },
   {
@@ -1075,10 +1422,16 @@
     "category": "Organizations"
   },
   {
+    "projectName": "JBoss Demo Central",
+    "projectDescription": "Demos for JBoss",
+    "projectRepository": "https://github.com/jbossdemocentral",
+    "category": "Organizations"
+  },
+  {
     "projectName": "Open Source and Standards",
     "projectDescription": "Red Hat Open Source and Standards team",
     "projectRepository": "https://github.com/OSAS",
-    "projectWebsite": "http://community.redhat.com",
+    "projectWebsite": "https://community.redhat.com",
     "category": "Organizations"
   },
   {
@@ -1103,17 +1456,43 @@
     "category": "Organizations"
   },
   {
+    "projectName": "Red Hat Demo Central",
+    "projectDescription": "Red Hat demos coillection",
+    "projectRepository": "https://github.com/redhatdemocentral",
+    "category": "Organizations"
+  },
+  {
     "projectName": "Red Hat Inception",
     "projectDescription": "Red Hat's Inception Team",
     "projectRepository": "https://github.com/RHInception",
-    "projectWebsite": "http://release-engine.readthedocs.io/en/latest/",
+    "projectWebsite": "https://release-engine.readthedocs.io/en/latest/",
+    "category": "Organizations"
+  },
+  {
+    "projectName": "Red Hat IoT",
+    "projectDescription": "Demos and projects for Red Hat's IoT efforts",
+    "projectRepository": "https://github.com/redhat-iot",
+    "category": "Organizations"
+  },
+  {
+    "projectName": "Red Hat Open Innovation Labs",
+    "projectDescription": "Red Hat Open Innovation Labs Team",
+    "projectRepository": "https://github.com/rht-labs",
+    "projectWebsite": "https://www.redhat.com/en/services/consulting/open-innovation-labs",
+    "category": "Organizations"
+  },
+  {
+    "projectName": "Red Hat AI CoE",
+    "projectDescription": "This is Artificial Intelligence Center of Excellence's Repository, we are part of the Red Hat's Office of the CTO",
+    "projectRepository": "https://github.com/AICoE",
+    "projectWebsite": "https://github.com/AICoE",
     "category": "Organizations"
   },
   {
     "projectName": "anaconda",
     "projectDescription": "Graphical system installer",
     "projectRepository": "https://github.com/rhinstaller/anaconda",
-    "projectWebsite": "http://fedoraproject.org/wiki/Anaconda",
+    "projectWebsite": "https://fedoraproject.org/wiki/Anaconda",
     "category": "Platform"
   },
   {
@@ -1133,7 +1512,7 @@
     "projectName": "CRaSH",
     "projectDescription": "The shell for the Java platform.",
     "projectRepository": "https://github.com/crashub",
-    "projectWebsite": "http://www.crashub.org/",
+    "projectWebsite": "https://www.crashub.org/",
     "category": "Platform"
   },
   {
@@ -1144,10 +1523,31 @@
     "category": "Platform"
   },
   {
+    "projectName": "dbxtool",
+    "projectDescription": "Tool for UEFI Secure Boot DBX updates",
+    "projectRepository": "https://github.com/rhboot/dbxtool",
+    "projectWebsite": "https://github.com/rhboot/dbxtool",
+    "category": "Platform"
+  },
+  {
+    "projectName": "efibootmgr",
+    "projectDescription": "The efibootmgr tool for configuring UEFI boot parameters",
+    "projectRepository": "https://github.com/rhboot/efibootmgr",
+    "projectWebsite": "https://github.com/rhboot/efibootmgr",
+    "category": "Platform"
+  },
+  {
+    "projectName": "efivar",
+    "projectDescription": "Tools and libraries to work with UEFI variables",
+    "projectRepository": "https://github.com/rhboot/efivar",
+    "projectWebsite": "https://github.com/rhboot/efivar",
+    "category": "Platform"
+  },
+  {
     "projectName": "Fedora LiveCD Tools",
     "projectDescription": "Tools for building live CDs using DNF",
     "projectRepository": "https://github.com/livecd-tools",
-    "projectWebsite": "http://fedoraproject.org/wiki/FedoraLiveCD",
+    "projectWebsite": "https://fedoraproject.org/wiki/FedoraLiveCD",
     "category": "Platform"
   },
   {
@@ -1167,6 +1567,49 @@
     "projectName": "firewalld",
     "projectDescription": "Firewall daemon with D-Bus interface",
     "projectRepository": "https://github.com/firewalld",
+    "projectWebsite": "http://firewalld.org",
+    "category": "Platform"
+  },
+  {
+    "projectName": "fwupd",
+    "projectDescription": "A simple daemon to allow session software to update firmware",
+    "projectRepository": "https://github.com/hughsie/fwupd",
+    "projectWebsite": "https://fwupd.org",
+    "category": "Platform"
+  },
+  {
+    "projectName": "fwupdate",
+    "projectDescription": "System firmware update support for UEFI machines",
+    "projectRepository": "https://github.com/rhboot/fwupdate",
+    "projectWebsite": "https://fwupd.org",
+    "category": "Platform"
+  },
+  {
+    "projectName": "GNOME",
+    "projectDescription": "An easy and elegant way to use your computer and get things done.",
+    "projectRepository": "https://github.com/gnome",
+    "projectWebsite": "https://gnome.org/",
+    "category": "Platform"
+  },
+  {
+    "projectName": "KDE",
+    "projectDescription": "A free software community offering an advanced graphical desktop, a wide variety of applications and a platform to easily build new applications upon",
+    "projectRepository": "https://github.com/KDE",
+    "projectWebsite": "http://www.kde.org",
+    "category": "Platform"
+  },
+  {
+    "projectName": "LibreOffice",
+    "projectDescription": "An integrated office suite based on copyleft licenses.",
+    "projectRepository": "https://github.com/libreoffice",
+    "projectWebsite": "https://libreoffice.org/",
+    "category": "Platform"
+  },
+  {
+    "projectName": "Linux",
+    "projectDescription": "A (free) operating system (just a hobby, won’t be big and professional like gnu)",
+    "projectRepository": "https://github.com/torvalds/linux",
+    "projectWebsite": "https://kernel.org",
     "category": "Platform"
   },
   {
@@ -1177,17 +1620,38 @@
     "category": "Platform"
   },
   {
+    "projectName": "Open vSwitch",
+    "projectDescription": "Open source multilayer virtual switch and OVN: virtual networking for Open vSwitch",
+    "projectRepository": "https://github.com/openvswitch",
+    "projectWebsite": "https://www.openvswitch.org",
+    "category": "Platform"
+  },
+  {
+    "projectName": "pesign",
+    "projectDescription": "Linux tools for signed PE-COFF binaries",
+    "projectRepository": "https://github.com/rhboot/pesign",
+    "projectWebsite": "https://github.com/rhboot/pesign",
+    "category": "Platform"
+  },
+  {
     "projectName": "Red Hat Update Agent",
     "projectDescription": "Software installer",
     "projectRepository": "https://github.com/up2date",
-    "projectWebsite": "http://en.wikipedia.org/wiki/Up2date",
+    "projectWebsite": "https://en.wikipedia.org/wiki/Up2date",
+    "category": "Platform"
+  },
+  {
+    "projectName": "rebase-helper",
+    "projectDescription": "Tool aiming to help package maintainers rebase their packages",
+    "projectRepository": "https://github.com/rebase-helper",
+    "projectWebsite": "https://rebase-helper.readthedocs.io",
     "category": "Platform"
   },
   {
     "projectName": "redhat-imaging",
     "projectDescription": "imagefactory builds images for a variety of operating system/cloud combinations",
     "projectRepository": "https://github.com/redhat-imaging",
-    "projectWebsite": "http://imgfac.org/",
+    "projectWebsite": "https://imgfac.org/",
     "category": "Platform"
   },
   {
@@ -1198,10 +1662,38 @@
     "category": "Platform"
   },
   {
+    "projectName": "Rsyslog",
+    "projectDescription": "a Rocket-fast SYStem for LOG processing",
+    "projectRepository": "https://github.com/rsyslog",
+    "projectWebsite": "http://www.rsyslog.com/",
+    "category": "Platform"
+  },
+  {
+    "projectName": "Simple Signed Certificate Generator",
+    "projectDescription": "Simple SSL certificate generator",
+    "projectRepository": "https://github.com/sgallagher/sscg",
+    "projectWebsite": "https://github.com/sgallagher/sscg",
+    "category": "Platform"
+  },
+  {
+    "projectName": "shim",
+    "projectDescription": "shim: the UEFI first stage bootloader for Secure Boot",
+    "projectRepository": "https://github.com/rhboot/shim",
+    "projectWebsite": "https://github.com/rhboot/shim",
+    "category": "Platform"
+  },
+  {
     "projectName": "System Security Services Daemon",
     "projectDescription": "System daemon providing identity and access-control",
     "projectRepository": "https://github.com/SSSD",
     "projectWebsite": "https://pagure.io/sssd",
+    "category": "Platform"
+  },
+  {
+    "projectName": "systemd",
+    "projectDescription": "System and Service Manager for Linux",
+    "projectRepository": "https://github.com/systemd/systemd/",
+    "projectWebsite": "https://www.freedesktop.org/wiki/Software/systemd/",
     "category": "Platform"
   },
   {
@@ -1221,7 +1713,7 @@
     "projectName": "Ceph",
     "projectDescription": "Block storage platform",
     "projectRepository": "https://github.com/ceph",
-    "projectWebsite": "http://ceph.com/",
+    "projectWebsite": "https://ceph.com/",
     "category": "Storage"
   },
   {
@@ -1231,10 +1723,23 @@
     "category": "Storage"
   },
   {
+    "projectName": "fs-drift",
+    "projectDescription": "Stress and filesystem-aging tool for distributed POSIX filesystems",
+    "projectRepository": "https://github.com/parallel-fs-utils/fs-drift/commits/master",
+    "category": "Storage"
+  },
+  {
     "projectName": "Gluster.org",
     "projectDescription": "Distributed file system storage",
     "projectRepository": "https://github.com/gluster",
-    "projectWebsite": "http://www.gluster.org",
+    "projectWebsite": "https://www.gluster.org",
+    "category": "Storage"
+  },
+  {
+    "projectName": "Rook",
+    "projectDescription": "File, block, and object storage services for cloud-native environments",
+    "projectRepository": "https://github.com/rook",
+    "projectWebsite": "https://rook.io/",
     "category": "Storage"
   },
   {
@@ -1244,9 +1749,22 @@
     "category": "Storage"
   },
   {
-    "projectName": "System Storage Manager",
-    "projectDescription": "A single tool to manage your storage",
-    "projectRepository": "https://github.com/system-storage-manager",
+    "projectName": "Smallfile",
+    "projectDescription": "Metadata-intensive workload generator for distributed POSIX filesystems",
+    "projectRepository": "https://github.com/bengland2/smallfile",
+    "category": "Storage"
+  },
+  {
+    "projectName": "Springfield Project",
+    "projectDescription": "A smart and automated storage.",
+    "projectRepository": "https://github.com/springfield-project/",
+    "projectWebsite": "https://springfield-project.github.io/",
+    "category": "Storage"
+  },
+  {
+    "projectName": "SSM",
+    "projectDescription": "System Storage Manager - A single tool to manage your storage.",
+    "projectRepository": "https://github.com/system-storage-manager/",
     "projectWebsite": "https://system-storage-manager.github.io/",
     "category": "Storage"
   },

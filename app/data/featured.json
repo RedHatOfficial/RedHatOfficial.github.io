@@ -8,25 +8,25 @@
   "name": "Ceph",
   "logo": "ceph",
   "github": "https://github.com/ceph",
-  "website": "http://ceph.com/",
+  "website": "https://ceph.com/",
   "description": "An open source and freely available distributed object store and file system that relies on Reliable Autonomic Distributed Object Store (RADOS)."
 },{
   "name": "ManageIQ",
   "logo": "manageiq",
   "github": "https://github.com/ManageIQ/",
-  "website": "http://manageiq.org",
+  "website": "https://manageiq.org",
   "description": "Manage containers, virtual machines, networks, and storage from a single platform."
 },{
   "name": "oVirt",
   "logo": "ovirt",
   "github": "https://github.com/ovirt",
-  "website": "http://ovirt.org",
+  "website": "https://ovirt.org",
   "description": "An open source virtualization platform powered by KVM on Linux<sup>&reg;</sup> with an easy-to-use web interface that manages virtual machines, storage, and networks."
 },{
   "name": "Project Atomic",
   "logo": "projectatomic",
   "github": "https://github.com/projectatomic/",
-  "website": "http://www.projectatomic.io/",
+  "website": "https://www.projectatomic.io/",
   "description": "Use immutable infrastructure to deploy and scale your containerized applications."
 },{
   "name": "PatternFly",
