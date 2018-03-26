@@ -1065,13 +1065,6 @@
     "category": "Operations"
   },
   {
-    "projectName": "Koji",
-    "projectDescription": "The Koji Build System",
-    "projectRepository": "https://pagure.io/koji",
-    "projectWebsite": "https://docs.pagure.org/koji/",
-    "category": "Operations"
-  },
-  {
     "projectName": "krb5",
     "projectDescription": "MIT Kerberos authentication protocol",
     "projectRepository": "https://github.com/krb5/krb5",
