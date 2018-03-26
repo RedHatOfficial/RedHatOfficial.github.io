@@ -81,6 +81,12 @@
     "category": "Development"
   },
   {
+    "projectName": "casync",
+    "projectDescription": "Content Addressable Data Synchronizer",
+    "projectRepository": "https://github.com/systemd/casync/",
+    "category": "Operations"
+  },
+  {
     "projectName": "CentOS CI",
     "projectDescription": "CI/CD solutions running in containerized pipelines inside OpenShift in CentOS CI",
     "projectRepository": "https://github.com/CentOS-PaaS-SIG",
