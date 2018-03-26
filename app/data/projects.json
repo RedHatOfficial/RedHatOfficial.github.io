@@ -86,6 +86,13 @@
     "category": "Development"
   },
   {
+    "projectName": "devsuite-installer",
+    "projectDescription": "Single Installer for all Red Hat Development Tools",
+    "projectRepository": "https://github.com/redhat-developer-tooling/developer-platform-install",
+    "projectWebsite": "https://developers.redhat.com/products/devsuite/overview/",
+    "category": "Development"
+  },
+  {
     "projectName": "Eclipse Web Tools Project",
     "projectDescription": "Eclipse plugins for Web, JavaEE development",
     "projectRepository": "https://github.com/eclipse?q=webtools",
