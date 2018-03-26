@@ -201,6 +201,13 @@
     "category": "Development"
   },
   {
+    "projectName": "JBeret",
+    "projectDescription": "A standard-based, lightweight and scalable Java batch processing framework",
+    "projectRepository": "https://github.com/jberet",
+    "projectWebsite": "https://github.com/jberet",
+    "category": "Development"
+  },
+  {
     "projectName": "JBoss Tools",
     "projectDescription": "Eclipse plugins for JBoss, Fuse, OpenShift",
     "projectRepository": "https://github.com/jbosstools",
