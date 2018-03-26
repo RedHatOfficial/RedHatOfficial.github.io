@@ -85,7 +85,7 @@
     "projectDescription": "CI/CD solutions running in containerized pipelines inside OpenShift in CentOS CI",
     "projectRepository": "https://github.com/CentOS-PaaS-SIG",
     "category": "Development"
-  }
+  },
   {
     "projectName": "Ceylon",
     "projectDescription": "A language for writing large programs in teams.",
