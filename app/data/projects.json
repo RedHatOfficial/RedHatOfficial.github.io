@@ -125,6 +125,13 @@
     "category": "Development"
   },
   {
+    "projectName": "devsuite-installer",
+    "projectDescription": "Single Installer for all Red Hat Development Tools",
+    "projectRepository": "https://github.com/redhat-developer-tooling/developer-platform-install",
+    "projectWebsite": "https://developers.redhat.com/products/devsuite/overview/",
+    "category": "Development"
+  },
+  {
     "projectName": "dumpet",
     "projectDescription": "Tool for debugging and verifying El Torito boot data on CD-like images",
     "projectRepository": "https://github.com/rhboot/dumpet",
