@@ -883,6 +883,12 @@
     "category": "Operations"
   },
   {
+    "projectName": "casync",
+    "projectDescription": "Content Addressable Data Synchronizer",
+    "projectRepository": "https://github.com/systemd/casync/",
+    "category": "Operations"
+  },
+  {
     "projectName": "Citellus",
     "projectDescription": "Framework to validate configuration and log files with bash, python, ruby and others",
     "projectRepository": "https://github.com/zerodayz/citellus",
@@ -1665,6 +1671,13 @@
     "projectDescription": "System daemon providing identity and access-control",
     "projectRepository": "https://github.com/SSSD",
     "projectWebsite": "https://pagure.io/sssd",
+    "category": "Platform"
+  },
+  {
+    "projectName": "systemd",
+    "projectDescription": "System and Service Manager for Linux",
+    "projectRepository": "https://github.com/systemd/systemd/",
+    "projectWebsite": "https://www.freedesktop.org/wiki/Software/systemd/",
     "category": "Platform"
   },
   {
