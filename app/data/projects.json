@@ -1067,8 +1067,8 @@
   {
     "projectName": "Koji",
     "projectDescription": "The Koji Build System",
-    "projectRepository": "https://github.com/koji-project",
-    "projectWebsite": "https://fedoraproject.org/wiki/Koji",
+    "projectRepository": "https://pagure.io/koji",
+    "projectWebsite": "https://docs.pagure.org/koji/",
     "category": "Operations"
   },
   {
