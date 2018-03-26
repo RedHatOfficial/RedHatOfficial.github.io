@@ -81,12 +81,6 @@
     "category": "Development"
   },
   {
-    "projectName": "casync",
-    "projectDescription": "Content Addressable Data Synchronizer",
-    "projectRepository": "https://github.com/systemd/casync/",
-    "category": "Operations"
-  },
-  {
     "projectName": "CentOS CI",
     "projectDescription": "CI/CD solutions running in containerized pipelines inside OpenShift in CentOS CI",
     "projectRepository": "https://github.com/CentOS-PaaS-SIG",
@@ -896,6 +890,12 @@
     "category": "Operations"
   },
   {
+    "projectName": "casync",
+    "projectDescription": "Content Addressable Data Synchronizer",
+    "projectRepository": "https://github.com/systemd/casync/",
+    "category": "Operations"
+  },
+  {
     "projectName": "Citellus",
     "projectDescription": "Framework to validate configuration and log files with bash, python, ruby and others",
     "projectRepository": "https://github.com/zerodayz/citellus",
@@ -1681,6 +1681,13 @@
     "category": "Platform"
   },
   {
+    "projectName": "systemd",
+    "projectDescription": "System and Service Manager for Linux",
+    "projectRepository": "https://github.com/systemd/systemd/",
+    "projectWebsite": "https://www.freedesktop.org/wiki/Software/systemd/",
+    "category": "Platform"
+  },
+  {
     "projectName": "tito",
     "projectDescription": "A tool for managing rpm-based git projects.",
     "projectRepository": "https://github.com/dgoodwin/tito",
@@ -1751,13 +1758,6 @@
     "projectRepository": "https://github.com/system-storage-manager/",
     "projectWebsite": "https://system-storage-manager.github.io/",
     "category": "Storage"
-  },
-  {
-    "projectName": "systemd",
-    "projectDescription": "System and Service Manager for Linux",
-    "projectRepository": "https://github.com/systemd/systemd/",
-    "projectWebsite": "https://www.freedesktop.org/wiki/Software/systemd/",
-    "category": "Platform"
   },
   {
     "projectName": "Tendrl",
