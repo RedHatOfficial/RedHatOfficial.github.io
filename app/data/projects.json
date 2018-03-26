@@ -125,7 +125,6 @@
     "category": "Development"
   },
   {
-<<<<<<< HEAD
     "projectName": "devsuite-installer",
     "projectDescription": "Single Installer for all Red Hat Development Tools",
     "projectRepository": "https://github.com/redhat-developer-tooling/developer-platform-install",
@@ -133,7 +132,6 @@
     "category": "Development"
   },
   {
-=======
     "projectName": "dumpet",
     "projectDescription": "Tool for debugging and verifying El Torito boot data on CD-like images",
     "projectRepository": "https://github.com/rhboot/dumpet",
@@ -148,7 +146,6 @@
     "category": "Development"
   }, 
   {
->>>>>>> 2aa29115dd47b382f4c0172f68267a11e524494f
     "projectName": "Eclipse Web Tools Project",
     "projectDescription": "Eclipse plugins for Web, JavaEE development",
     "projectRepository": "https://github.com/eclipse?q=webtools",
