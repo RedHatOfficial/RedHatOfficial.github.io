@@ -385,33 +385,26 @@
     "category": "Development"
   },
   {
-    "projectName": "UberFire",
-    "projectDescription": "A web framework for a superior experience in building extensible workbenches and console type applications",
-    "projectRepository": "https://github.com/AppFormer/uberfire",
-    "projectWebsite": "http://uberfireframework.org",
-    "category": "Development"
-  },
-  {
     "projectName": "wait_for",
-    "projectDescription": "Python based library for waiting for things",
+    "projectDescription": "Python-based library for waiting for things",
     "projectRepository": "https://github.com/RedHatQE/wait_for/",
     "category": "Development"
   },
   {
     "projectName": "widgetastic",
-    "projectDescription": "Python based WebUI testing library",
+    "projectDescription": "Python-based WebUI testing library",
     "projectRepository": "https://github.com/RedHatQE/widgetastic.core",
     "category": "Development"
   },
   {
     "projectName": "widgetastic.patternfly",
-    "projectDescription": "Python based WebUI testing library for patternfly",
+    "projectDescription": "Python-based WebUI testing library for patternfly",
     "projectRepository": "https://github.com/RedHatQE/widgetastic.patternfly",
     "category": "Development"
   },
   {
     "projectName": "wrapanapi",
-    "projectDescription": "Python based library for provider communication abstraction",
+    "projectDescription": "Python-based library for provider communication abstraction",
     "projectRepository": "https://github.com/ManageIQ/wrapanapi",
     "category": "Development"
   },
