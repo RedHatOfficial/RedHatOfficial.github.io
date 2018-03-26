@@ -174,6 +174,12 @@
     "category": "Development"
   },
   {
+    "projectName": "hwdata",
+    "projectDescription": "Hardware identification and configuration data",
+    "projectRepository": "https://github.com/vcrhonek/hwdata",
+    "category": "Development"
+  },
+  {
     "projectName": "Immutant",
     "projectDescription": "A cohesive suite of Clojure libraries",
     "projectRepository": "https://github.com/immutant",
@@ -536,12 +542,6 @@
     "projectRepository": "https://github.com/hibernate",
     "projectWebsite": "http://hibernate.org",
     "category": "Middleware"
-  },
-  {
-    "projectName": "hwdata",
-    "projectDescription": "Hardware identification and configuration data",
-    "projectRepository": "https://github.com/vcrhonek/hwdata",
-    "category": "Development"
   },
   {
     "projectName": "Infinispan",
