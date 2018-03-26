@@ -1772,5 +1772,12 @@
     "projectRepository": "https://github.com/Tendrl",
     "projectWebsite": "http://tendrl.org/",
     "category": "Storage"
+  },
+  {
+    "projectName": "varlink",
+    "projectDescription": "System and Service Manager for Linux",
+    "projectRepository": "https://github.com/varlink/",
+    "projectWebsite": "https://github.com/varlink/documentation/wiki",
+    "category": "Platform"
   }
 ]
