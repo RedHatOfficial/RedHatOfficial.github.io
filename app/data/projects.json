@@ -119,6 +119,13 @@
     "category": "Development"
   },
   {
+    "projectName": "dbus-broker",
+    "projectDescription": "Linux D-Bus Message Broker",
+    "projectRepository": "https://github.com/bus1/dbus-broker",
+    "projectWebsite": "https://github.com/bus1/dbus-broker/wiki",
+    "category": "Platform"
+  },
+  {
     "projectName": "dmpy",
     "projectDescription": "Device-mapper Python bindings",
     "projectRepository": "https://github.com/bmr-cymru/dmpy",
