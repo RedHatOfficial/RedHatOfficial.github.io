@@ -62,6 +62,13 @@
     "category": "Development"
   },
   {
+    "projectName": "Beaker",
+    "projectDescription": "Managing and automating labs of test computers",
+    "projectRepository": "https://github.com/beaker-project",
+    "projectWebsite": "http://beaker-project.org",
+    "category": "Operations"
+  },
+  {
     "projectName": "BoxGrinder",
     "projectDescription": "Tool to build appliances",
     "projectRepository": "https://github.com/boxgrinder",
