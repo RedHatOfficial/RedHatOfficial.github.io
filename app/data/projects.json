@@ -1447,6 +1447,13 @@
     "category": "Organizations"
   },
   {
+    "projectName": "Red Hat AI CoE",
+    "projectDescription": "This is Artificial Intelligence Center of Excellence's Repository, we are part of the Red Hat's Office of the CTO",
+    "projectRepository": "https://github.com/AICoE",
+    "projectWebsite": "https://github.com/AICoE",
+    "category": "Organizations"
+  },
+  {
     "projectName": "anaconda",
     "projectDescription": "Graphical system installer",
     "projectRepository": "https://github.com/rhinstaller/anaconda",
