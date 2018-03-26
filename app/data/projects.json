@@ -119,13 +119,6 @@
     "category": "Development"
   },
   {
-    "projectName": "dbus-broker",
-    "projectDescription": "Linux D-Bus Message Broker",
-    "projectRepository": "https://github.com/bus1/dbus-broker",
-    "projectWebsite": "https://github.com/bus1/dbus-broker/wiki",
-    "category": "Platform"
-  },
-  {
     "projectName": "dmpy",
     "projectDescription": "Device-mapper Python bindings",
     "projectRepository": "https://github.com/bmr-cymru/dmpy",
@@ -1521,6 +1514,13 @@
     "category": "Platform"
   },
   {
+    "projectName": "dbus-broker",
+    "projectDescription": "Linux D-Bus Message Broker",
+    "projectRepository": "https://github.com/bus1/dbus-broker",
+    "projectWebsite": "https://github.com/bus1/dbus-broker/wiki",
+    "category": "Platform"
+  },
+  {
     "projectName": "dbxtool",
     "projectDescription": "Tool for UEFI Secure Boot DBX updates",
     "projectRepository": "https://github.com/rhboot/dbxtool",
@@ -1708,6 +1708,13 @@
     "category": "Platform"
   },
   {
+    "projectName": "varlink",
+    "projectDescription": "System and Service Manager for Linux",
+    "projectRepository": "https://github.com/varlink/",
+    "projectWebsite": "https://github.com/varlink/documentation/wiki",
+    "category": "Platform"
+  },
+  {
     "projectName": "Ceph",
     "projectDescription": "Block storage platform",
     "projectRepository": "https://github.com/ceph",
@@ -1772,12 +1779,5 @@
     "projectRepository": "https://github.com/Tendrl",
     "projectWebsite": "http://tendrl.org/",
     "category": "Storage"
-  },
-  {
-    "projectName": "varlink",
-    "projectDescription": "System and Service Manager for Linux",
-    "projectRepository": "https://github.com/varlink/",
-    "projectWebsite": "https://github.com/varlink/documentation/wiki",
-    "category": "Platform"
   }
 ]
