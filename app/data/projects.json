@@ -1591,6 +1591,13 @@
     "category": "Platform"
   },
   {
+    "projectName": "KDE",
+    "projectDescription": "A free software community offering an advanced graphical desktop, a wide variety of applications and a platform to easily build new applications upon",
+    "projectRepository": "https://github.com/KDE",
+    "projectWebsite": "http://www.kde.org",
+    "category": "Platform"
+  },
+  {
     "projectName": "Mock",
     "projectDescription": "Mock is a tool for a reproducible build of RPM packages",
     "projectRepository": "https://github.com/rpm-software-management/mock",
