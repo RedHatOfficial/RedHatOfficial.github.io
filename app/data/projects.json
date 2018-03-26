@@ -538,6 +538,12 @@
     "category": "Middleware"
   },
   {
+    "projectName": "hwdata",
+    "projectDescription": "Hardware identification and configuration data",
+    "projectRepository": "https://github.com/vcrhonek/hwdata",
+    "category": "Development"
+  },
+  {
     "projectName": "Infinispan",
     "projectDescription": "Data grid platform and highly scalable NoSQL cloud data store",
     "projectRepository": "https://github.com/infinispan",
