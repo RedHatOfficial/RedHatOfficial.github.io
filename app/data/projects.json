@@ -863,6 +863,13 @@
     "category": "Operations"
   },
   {
+    "projectName": "Beaker",
+    "projectDescription": "Managing and automating labs of test computers",
+    "projectRepository": "https://github.com/beaker-project",
+    "projectWebsite": "http://beaker-project.org",
+    "category": "Operations"
+  },
+  {
     "projectName": "Booth",
     "projectDescription": "Ticket manager for geographically dispersed high-availability clustering",
     "projectRepository": "https://github.com/ClusterLabs/booth",
