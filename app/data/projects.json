@@ -172,7 +172,7 @@
     "projectRepository": "https://github.com/developer-portal",
     "projectWebsite": "https://developer.fedoraproject.org/",
     "category": "Development"
-  }, 
+  },
   {
     "projectName": "Gluetool",
     "projectDescription": "Gluetool is a Python command line framework - glue for your tools and libraries￼Edit",
@@ -697,13 +697,6 @@
     "projectDescription": "A project for Java Application Security",
     "projectRepository": "https://github.com/picketbox",
     "projectWebsite": "https://picketbox.jboss.org/",
-    "category": "Middleware"
-  },
-  {
-    "projectName": "PortletBridge",
-    "projectDescription": "An implementation of the JSR-301 and JSR-329 specifications to support JSF within a portlet",
-    "projectRepository": "https://github.com/portletbridge",
-    "projectWebsite": "https://portletbridge.jboss.org/",
     "category": "Middleware"
   },
   {
