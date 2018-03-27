@@ -484,12 +484,6 @@
     "category": "Middleware"
   },
   {
-    "projectName": "bserdar/jcliff",
-    "projectDescription": "Jcliff configures a running instance of EAP6/JBoss7 using modular configuration files",
-    "projectRepository": "https://github.com/bserdar/jcliff",
-    "category": "Middleware"
-  },
-  {
     "projectName": "Byteman",
     "projectDescription": "Trace, monitor and test the behaviour of Java application and JDK runtime code",
     "projectRepository": "https://github.com/bytemanproject",
@@ -648,6 +642,12 @@
     "projectDescription": "Web Services framework and tools for WildFly and JBoss EAP",
     "projectRepository": "https://github.com/jbossws",
     "projectWebsite": "http://jbossws.jboss.org/",
+    "category": "Middleware"
+  },
+  {
+    "projectName": "Jcliff",
+    "projectDescription": "Jcliff configures a running instance of EAP6/JBoss7 using modular configuration files",
+    "projectRepository": "https://github.com/bserdar/jcliff",
     "category": "Middleware"
   },
   {
