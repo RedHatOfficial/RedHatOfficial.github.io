@@ -343,6 +343,12 @@
     "category": "Development"
   },
   {
+    "projectName": "pyudev",
+    "projectDescription": "Python bindings for libudev",
+    "projectRepository": "https://github.com/pyudev",
+    "category": "Development"
+  },
+  {
     "projectName": "radanalyticsio",
     "projectDescription": "Empowering intelligent application development on the OpenShift platform",
     "projectRepository": "https://github.com/radanalyticsio",
