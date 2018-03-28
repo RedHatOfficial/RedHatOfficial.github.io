@@ -700,13 +700,6 @@
     "category": "Middleware"
   },
   {
-    "projectName": "PortletBridge",
-    "projectDescription": "An implementation of the JSR-301 and JSR-329 specifications to support JSF within a portlet",
-    "projectRepository": "https://github.com/portletbridge",
-    "projectWebsite": "https://portletbridge.jboss.org/",
-    "category": "Middleware"
-  },
-  {
     "projectName": "Red Hat Application Migration Toolkit",
     "projectDescription": "An assembly of open source tools that enables large-scale application migrations and modernizations",
     "projectRepository": "https://github.com/windup",
