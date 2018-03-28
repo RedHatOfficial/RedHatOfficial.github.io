@@ -172,7 +172,7 @@
     "projectRepository": "https://github.com/developer-portal",
     "projectWebsite": "https://developer.fedoraproject.org/",
     "category": "Development"
-  }, 
+  },
   {
     "projectName": "Gluetool",
     "projectDescription": "Gluetool is a Python command line framework - glue for your tools and libraries￼Edit",
@@ -809,6 +809,13 @@
     "projectDescription": "A powerful security framework for Java applications",
     "projectRepository": "https://github.com/wildfly-security",
     "projectWebsite": "http://wildfly.org",
+    "category": "Middleware"
+  },
+  {
+    "projectName": "WildFly Swarm",
+    "projectDescription": "WildFly Swarm offers an innovative approach to packaging and running Java EE applications by packaging them with just enough of the server runtime to 'java -jar' your application. It's MicroProfile compatible, too.",
+    "projectRepository": "https://github.com/wildfly-swarm",
+    "projectWebsite": "http://wildfly-swarm.io/",
     "category": "Middleware"
   },
   {
