@@ -1786,6 +1786,13 @@
     "category": "Storage"
   },
   {
+    "projectName": "Storaged Project",
+    "projectDescription": "The Storaged project provides a daemon, tools and libraries to access and manipulate disks and storage devices.",
+    "projectRepository": "https://github.com/storaged-project",
+    "projectWebsite": "http://storaged.org/",
+    "category": "Storage"
+  },
+  {
     "projectName": "Tendrl",
     "projectDescription": "Unified Storage Manager",
     "projectRepository": "https://github.com/Tendrl",
