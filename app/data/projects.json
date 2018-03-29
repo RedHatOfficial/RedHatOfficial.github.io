@@ -1431,6 +1431,13 @@
     "category": "Organizations"
   },
   {
+    "projectName": "Open Organization Ambassadors",
+    "projectDescription": "Repositories from the open organization ambassadors at Opensource.com",
+    "projectRepository": "https://github.com/open-organization-ambassadors",
+    "projectWebsite": "https://www.opensource.com/open-organization",
+    "category": "Organizations"
+  },
+  {
     "projectName": "Open Source and Standards",
     "projectDescription": "Red Hat Open Source and Standards team",
     "projectRepository": "https://github.com/OSAS",
