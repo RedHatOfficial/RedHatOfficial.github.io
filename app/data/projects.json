@@ -119,16 +119,16 @@
     "category": "Development"
   },
   {
-    "projectName": "dmpy",
-    "projectDescription": "Device-mapper Python bindings",
-    "projectRepository": "https://github.com/bmr-cymru/dmpy",
-    "category": "Development"
-  },
-  {
     "projectName": "devsuite-installer",
     "projectDescription": "Single Installer for all Red Hat Development Tools",
     "projectRepository": "https://github.com/redhat-developer-tooling/developer-platform-install",
     "projectWebsite": "https://developers.redhat.com/products/devsuite/overview/",
+    "category": "Development"
+  },
+  {
+    "projectName": "dmpy",
+    "projectDescription": "Device-mapper Python bindings",
+    "projectRepository": "https://github.com/bmr-cymru/dmpy",
     "category": "Development"
   },
   {
@@ -175,7 +175,7 @@
   },
   {
     "projectName": "Gluetool",
-    "projectDescription": "Gluetool is a Python command line framework - glue for your tools and libraries￼Edit",
+    "projectDescription": "Gluetool is a Python command-line framework; glue for your tools and libraries￼",
     "projectRepository": "https://github.com/gluetool/gluetool",
     "projectWebsite": "https://gluetool.readthedocs.io",
     "category": "Development"
@@ -234,12 +234,6 @@
     "category": "Development"
   },
   {
-   "projectName": "libpod",
-   "projectDescription": "Library for creating, running, and managing Linux containers",
-   "projectRepository": "https://github.com/projectatomic/libpod/",
-   "category": "Development"
-  },
-  {
    "projectName": "Kubernetes",
    "projectDescription": "An open-source system for automating deployment, scaling, and management of containerized applications",
    "projectRepository": "https://github.com/kubernetes",
@@ -261,6 +255,12 @@
     "category": "Development"
   },
   {
+   "projectName": "libpod",
+   "projectDescription": "Library for creating, running, and managing Linux containers",
+   "projectRepository": "https://github.com/projectatomic/libpod/",
+   "category": "Development"
+  },
+  {
     "projectName": "Lightblue Platform",
     "projectDescription": "Cloud focused data services with dynamic querying, versioned schemas, and robust security.",
     "projectRepository": "https://github.com/lightblue-platform",
@@ -268,24 +268,17 @@
     "category": "Development"
   },
   {
+    "projectName": "Linux Audit Project",
+    "projectDescription": "Audit tools for the Linux kernel",
+    "projectRepository": "https://github.com/linux-audit",
+    "projectWebsite": "https://people.redhat.com/sgrubb/audit/",
+    "category": "Development"
+  },
+  {
     "projectName": "ManageIQ-Exchange",
     "projectDescription": "Management Spins platform",
     "projectRepository": "https://github.com/ManageIQ-Exchange/",
     "projectWebsite": "https://manageiq-exchange.github.io/manageiq-exchange/",
-    "category": "Development"
-  },
-  {
-    "projectName": "OpenTracing",
-    "projectDescription": "CNCF OpenTracing API for distributed tracing",
-    "projectRepository": "https://github.com/opentracing",
-    "projectWebsite": "http://opentracing.io/",
-    "category": "Development"
-  },
-  {
-    "projectName": "OpenShift.io",
-    "projectDescription": "Open online development environment for planning, creating and deploying hybrid cloud services",
-    "projectRepository": "https://github.com/openshiftio",
-    "projectWebsite": "https://openshift.io/",
     "category": "Development"
   },
   {
@@ -302,14 +295,35 @@
     "category": "Development"
   },
   {
-    "projectName": ".NET Core",
+    "projectName": "NET Core",
     "projectDescription": "Open source and cross platform implementation of .NET",
     "projectRepository": "https://github.com/dotnet",
     "projectWebsite": "https://www.microsoft.com/net",
     "category": "Development"
   },
   {
-    "projectName": "patternfly",
+    "projectName": "Netty Project",
+    "projectDescription": "An event-driven asynchronous network application framework",
+    "projectRepository": "https://github.com/netty",
+    "projectWebsite": "https://netty.io/",
+    "category": "Development"
+  },
+  {
+    "projectName": "OpenTracing",
+    "projectDescription": "CNCF OpenTracing API for distributed tracing",
+    "projectRepository": "https://github.com/opentracing",
+    "projectWebsite": "http://opentracing.io/",
+    "category": "Development"
+  },
+  {
+    "projectName": "OpenShift.io",
+    "projectDescription": "Open online development environment for planning, creating, and deploying hybrid cloud services",
+    "projectRepository": "https://github.com/openshiftio",
+    "projectWebsite": "https://openshift.io/",
+    "category": "Development"
+  },
+  {
+    "projectName": "Patternfly",
     "projectDescription": "Created to promote design commonality and improved user experience across enterprise IT products and applications.",
     "projectRepository": "https://github.com/patternfly",
     "projectWebsite": "https://www.patternfly.org",
@@ -393,20 +407,6 @@
     "projectName": "Sentaku",
     "projectDescription": "Python based library for contextual method choice",
     "projectRepository": "https://github.com/RedHatQE/Sentaku/",
-    "category": "Development"
-  },
-  {
-    "projectName": "The Linux Audit Project",
-    "projectDescription": "Audit tools for the Linux kernel",
-    "projectRepository": "https://github.com/linux-audit",
-    "projectWebsite": "https://people.redhat.com/sgrubb/audit/",
-    "category": "Development"
-  },
-  {
-    "projectName": "The Netty Project",
-    "projectDescription": "An event-driven asynchronous network application framework",
-    "projectRepository": "https://github.com/netty",
-    "projectWebsite": "https://netty.io/",
     "category": "Development"
   },
   {
@@ -599,6 +599,18 @@
     "category": "Middleware"
   },
   {
+    "projectName": "JBoss Logging",
+    "projectDescription": "JBoss Logging API including i18n/l10n support",
+    "projectRepository": "https://github.com/jboss-logging",
+    "category": "Middleware"
+  },
+  {
+    "projectName": "JBoss LogManager",
+    "projectDescription": "JBoss implementation of standard Java logging, with many powerful enhancements",
+    "projectRepository": "https://github.com/jboss-logging",
+    "category": "Middleware"
+  },
+  {
     "projectName": "JBoss Remoting",
     "projectDescription": "A general purpose framework for symmetric and asymmetric communication over a network",
     "projectRepository": "https://github.com/jboss-remoting",
@@ -610,18 +622,6 @@
     "projectDescription": "Java framework for easily invoking webservices",
     "projectRepository": "https://github.com/jboss-wise",
     "projectWebsite": "http://wise.jboss.org/",
-    "category": "Middleware"
-  },
-  {
-    "projectName": "JBoss Logging",
-    "projectDescription": "JBoss Logging API including i18n/l10n support",
-    "projectRepository": "https://github.com/jboss-logging",
-    "category": "Middleware"
-  },
-  {
-    "projectName": "JBoss LogManager",
-    "projectDescription": "JBoss implementation of standard Java logging, with many powerful enhancements",
-    "projectRepository": "https://github.com/jboss-logging",
     "category": "Middleware"
   },
   {
@@ -720,7 +720,7 @@
     "category": "Middleware"
   },
   {
-    "projectName": "Rhiot ",
+    "projectName": "Rhiot",
     "projectDescription": "Messaging platform for the Internet Of Things",
     "projectRepository": "https://github.com/rhiot",
     "projectWebsite": "https://rhiot.github.io/",
@@ -1384,17 +1384,17 @@
     "category": "Operations"
   },
   {
-    "projectName": "The TorqueBox Project",
-    "projectDescription": "Provides an all-in-one environment, built upon the latest JBoss AS Java application server and JRuby",
-    "projectRepository": "https://github.com/torquebox",
-    "projectWebsite": "http://torquebox.org",
-    "category": "Operations"
-  },
-  {
     "projectName": "ticketutil",
     "projectDescription": "Python ticketing utility for working with tickets in popular tools",
     "projectRepository": "https://github.com/dmranck/ticketutil",
     "projectWebsite": "http://ticketutil.readthedocs.io/",
+    "category": "Operations"
+  },
+  {
+    "projectName": "TorqueBox Project",
+    "projectDescription": "Provides an all-in-one environment, built upon the latest JBoss AS Java application server and JRuby",
+    "projectRepository": "https://github.com/torquebox",
+    "projectWebsite": "http://torquebox.org",
     "category": "Operations"
   },
   {
@@ -1459,6 +1459,13 @@
     "category": "Organizations"
   },
   {
+    "projectName": "Red Hat AI CoE",
+    "projectDescription": "This is Artificial Intelligence Center of Excellence's Repository, we are part of the Red Hat's Office of the CTO",
+    "projectRepository": "https://github.com/AICoE",
+    "projectWebsite": "https://github.com/AICoE",
+    "category": "Organizations"
+  },
+  {
     "projectName": "Red Hat Consulting",
     "projectDescription": "Consulting team for Red Hat",
     "projectRepository": "https://github.com/rhtconsulting",
@@ -1489,13 +1496,6 @@
     "projectDescription": "Red Hat Open Innovation Labs Team",
     "projectRepository": "https://github.com/rht-labs",
     "projectWebsite": "https://www.redhat.com/en/services/consulting/open-innovation-labs",
-    "category": "Organizations"
-  },
-  {
-    "projectName": "Red Hat AI CoE",
-    "projectDescription": "This is Artificial Intelligence Center of Excellence's Repository, we are part of the Red Hat's Office of the CTO",
-    "projectRepository": "https://github.com/AICoE",
-    "projectWebsite": "https://github.com/AICoE",
     "category": "Organizations"
   },
   {
@@ -1651,17 +1651,17 @@
     "category": "Platform"
   },
   {
-    "projectName": "Red Hat Update Agent",
-    "projectDescription": "Software installer",
-    "projectRepository": "https://github.com/up2date",
-    "projectWebsite": "https://en.wikipedia.org/wiki/Up2date",
-    "category": "Platform"
-  },
-  {
     "projectName": "rebase-helper",
     "projectDescription": "Tool aiming to help package maintainers rebase their packages",
     "projectRepository": "https://github.com/rebase-helper",
     "projectWebsite": "https://rebase-helper.readthedocs.io",
+    "category": "Platform"
+  },
+  {
+    "projectName": "Red Hat Update Agent",
+    "projectDescription": "Software installer",
+    "projectRepository": "https://github.com/up2date",
+    "projectWebsite": "https://en.wikipedia.org/wiki/Up2date",
     "category": "Platform"
   },
   {
