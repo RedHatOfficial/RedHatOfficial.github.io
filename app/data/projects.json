@@ -678,6 +678,27 @@
     "category": "Middleware"
   },
   {
+    "projectName": "Drools",
+    "projectDescription": "Business rule management system with a forward-chaining and backward-chaining inference based rules engine, allowing fast and reliable evaluation of business rules and complex event processing. A rule engine is also a fundamental building block to create an expert system which, in artificial intelligence, is a computer system that emulates the decision-making ability of a human expert.",
+    "projectRepository": "https://github.com/kiegroup/drools",
+    "projectWebsite": "https://www.drools.org",
+    "category": "Middleware"
+  },
+  {
+    "projectName": "OptaPlanner",
+    "projectDescription": "Java Constraint Solver that optimizes use cases such as employee rostering, vehicle routing, task assignment, cloud optimization and other planning problems.",
+    "projectRepository": "https://github.com/kiegroup/optaplanner",
+    "projectWebsite": "https://www.optaplanner.org",
+    "category": "Middleware"
+  },
+  {
+    "projectName": "jBPM",
+    "projectDescription": "A flexible Business Process Management (BPM) Suite. It makes the bridge between business analysts and developers. Traditional BPM engines have a focus that is limited to non-technical people only. jBPM has a dual focus: it offers process management features in a way that both business users and developers like it.",
+    "projectRepository": "https://github.com/kiegroup/jbpm",
+    "projectWebsite": "https://www.jbpm.org",
+    "category": "Middleware"
+  },
+  {
     "projectName": "mod_cluster",
     "projectDescription": "An httpd-based load balancer",
     "projectRepository": "https://github.com/modcluster",
