@@ -315,6 +315,13 @@
     "projectWebsite": "http://opentracing.io/",
     "category": "Development"
   },
+ {
+  "projectName": "OpenShift",
+  "projectDescription": "Enterprise Kubernetes for Developers",
+  "projectRepository": "https://github.com/openshift/origin",
+  "projectWebsite": "http://www.openshift.org",
+  "category": "Containers"
+  },
   {
     "projectName": "OpenShift.io",
     "projectDescription": "Open online development environment for planning, creating, and deploying hybrid cloud services",
