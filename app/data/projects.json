@@ -132,6 +132,13 @@
     "category": "Development"
   },
   {
+    "projectName": "Drupal",
+    "projectDescription": "Content management framework/system",
+    "projectRepository": "hhttps://cgit.drupalcode.org/drupal",
+    "projectWebsite": "https://www.drupal.org",
+    "category": "Platform"
+  },
+  {
     "projectName": "dumpet",
     "projectDescription": "Tool for debugging and verifying El Torito boot data on CD-like images",
     "projectRepository": "https://github.com/rhboot/dumpet",
