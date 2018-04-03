@@ -964,6 +964,13 @@
     "category": "Operations"
   },
   {
+    "projectName": "CoreOS",
+    "projectDescription": "Key components to secure, simplify and automate your container infrastructure",
+    "projectRepository": "https://github.com/coreos/",
+    "projectWebsite": "https://coreos.com/",
+    "category": "Operations"
+  },
+  {
     "projectName": "Corosync",
     "projectDescription": "High-availability cluster communication system",
     "projectRepository": "https://github.com/corosync/corosync",
