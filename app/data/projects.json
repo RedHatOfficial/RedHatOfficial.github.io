@@ -1202,9 +1202,9 @@
   },
   {
     "projectName": "OpenShift Origin",
-    "projectDescription": "Platform as a Service",
-    "projectRepository": "https://github.com/openshift",
-    "projectWebsite": "https://www.openshift.org",
+    "projectDescription": "Enterprise Kubernetes for Developers",
+    "projectRepository": "https://github.com/openshift/origin",
+    "projectWebsite": "http://www.openshift.org",
     "category": "Operations"
   },
   {
