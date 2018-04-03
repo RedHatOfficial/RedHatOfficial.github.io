@@ -146,6 +146,13 @@
     "category": "Development"
   },
   {
+    "projectName": "Eclipse Vert.x",
+    "projectDescription": "Eclipse Vert.x is a tool-kit for building reactive applications on the JVM.",
+    "projectRepository": "https://github.com/vert-x3",
+    "projectWebsite": "https://vertx.io",
+    "category": "Middleware"
+  },
+  {
     "projectName": "Eclipse Web Tools Project",
     "projectDescription": "Eclipse plugins for Web, JavaEE development",
     "projectRepository": "https://github.com/eclipse?q=webtools",
