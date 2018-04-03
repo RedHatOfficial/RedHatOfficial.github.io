@@ -1,37 +1,37 @@
 [{
-  "name": "Ansible",
-  "logo": "ansible",
-  "github": "https://github.com/ansible",
-  "website": "https://www.ansible.com/",
-  "description": "App deployment, configuration management and orchestration - all from one system."
+  "name": "CentOS Project",
+  "logo": "centos",
+  "github": "https://github.com/CentOS",
+  "website": "https://www.centos.org/",
+  "description": "A solid, predictable base to build upon, with extensive resources to build, test, release, and maintain code."
+},{  
+  "name": "Eclipse Vert.X",
+  "logo": "vertx",
+  "github": "https://github.com/vert-x3",
+  "website": "https://vertx.io/",
+  "description": "A tool kit for building reactive applications on the JVM."
 },{
-  "name": "Ceph",
-  "logo": "ceph",
-  "github": "https://github.com/ceph",
-  "website": "https://ceph.com/",
-  "description": "An open source and freely available distributed object store and file system that relies on Reliable Autonomic Distributed Object Store (RADOS)."
+  "name": "Gluster",
+  "logo": "gluster",
+  "github": "https://github.com/gluster",
+  "website": "https://www.gluster.org/",
+  "description": "A free and open source software scalable network filesystem."
 },{
-  "name": "ManageIQ",
-  "logo": "manageiq",
-  "github": "https://github.com/ManageIQ/",
-  "website": "https://manageiq.org",
-  "description": "Manage containers, virtual machines, networks, and storage from a single platform."
+  "name": "OpenShift Origin",
+  "logo": "openshift",
+  "github": "https://github.com/openshift/origin",
+  "website": "https://www.openshift.org/",
+  "description": "Enterprise Kubernetes for Developers."
 },{
-  "name": "oVirt",
-  "logo": "ovirt",
-  "github": "https://github.com/ovirt",
-  "website": "https://ovirt.org",
-  "description": "An open source virtualization platform powered by KVM on Linux<sup>&reg;</sup> with an easy-to-use web interface that manages virtual machines, storage, and networks."
+  "name": "Pulp",
+  "logo": "pulp",
+  "github": "https://github.com/pulp",
+  "website": "https://pulpproject.org/",
+  "description": "A platform for managing repositories of software packages and making it available to a large numbers of consumers."
 },{
-  "name": "Project Atomic",
-  "logo": "projectatomic",
-  "github": "https://github.com/projectatomic/",
-  "website": "https://www.projectatomic.io/",
-  "description": "Use immutable infrastructure to deploy and scale your containerized applications."
-},{
-  "name": "PatternFly",
-  "logo": "patternfly",
-  "github": "https://github.com/patternfly",
-  "website": "https://www.patternfly.org",
-  "description": "Created to promote design commonality and improved user experience across enterprise IT products and applications."
+  "name": "WildFly",
+  "logo": "wildfly",
+  "github": "https://github.com/wildfly",
+  "website": "http://wildfly.org/",
+  "description": "A flexible, lightweight, managed application runtime that helps you build amazing applications."
 }]

@@ -9,12 +9,12 @@ import featured from "../../data/featured";
 import content from "../../data/content";
 
 // Images
-import ansible from "../../public/img/logo-ansible.png";
-import ceph from "../../public/img/logo-ceph.png";
-import manageiq from "../../public/img/logo-manageiq.png";
-import ovirt from "../../public/img/logo-ovirt.png";
-import patternfly from "../../public/img/logo-patternfly.png";
-import projectatomic from "../../public/img/logo-projectatomic.png";
+import centos from "../../public/img/logo-centos.png";
+import gluster from "../../public/img/logo-gluster.jpg";
+import openshift from "../../public/img/logo-openshift.png";
+import pulp from "../../public/img/logo-pulp.png";
+import vertx from "../../public/img/logo-vertx.png";
+import wildfly from "../../public/img/logo-wildfly.png";
 
 // Components
 import hero from "../../components/hero/hero";
@@ -43,12 +43,12 @@ export default angular.module("rhGitHub.main", [
     this.heroDetail = heroDetail;
     this.featured = featured;
     this.logos = {
-      ansible: ansible,
-      ceph: ceph,
-      manageiq: manageiq,
-      ovirt: ovirt,
-      patternfly: patternfly,
-      projectatomic: projectatomic
+      centos: centos,
+      gluster: gluster,
+      openshift: openshift,
+      pulp: pulp,
+      vertx: vertx,
+      wildfly: wildfly
     };
     this.content = content;
   }]);
