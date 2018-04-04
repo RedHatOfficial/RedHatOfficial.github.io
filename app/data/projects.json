@@ -1433,6 +1433,13 @@
     "category": "Operations"
   },
   {
+    "projectName": "VMaaS",
+    "projectDescription": "Vulnerability Management as a Service",
+    "projectRepository": "https://github.com/RedHatInsights/vmaas/",
+    "projectWebsite": "https://github.com/RedHatInsights/vmaas/wiki",
+    "category": "Operations"
+  },
+  {
     "projectName": "xsos",
     "projectDescription": "Summarize system info from sosreports",
     "projectRepository": "https://github.com/ryran/xsos",
