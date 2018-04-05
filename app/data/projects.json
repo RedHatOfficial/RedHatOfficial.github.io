@@ -936,6 +936,13 @@
     "category": "Operations"
   },
   {
+    "projectName": "Charlotte",
+    "projectDescription": "A Snort unified file to database processor",
+    "projectRepository": "https://github.com/redhat-infosec/charlotte",
+    "projectWebsite": "https://github.com/redhat-infosec/charlotte",
+    "category": "Operations"
+  },
+  {
     "projectName": "Citellus",
     "projectDescription": "Framework to validate configuration and log files with bash, python, ruby and others",
     "projectRepository": "https://github.com/zerodayz/citellus",
