@@ -1392,7 +1392,7 @@
     "category": "Operations"
   },
   {
-    "projectName": "spacewalkproject",
+    "projectName": "Spacewalk",
     "projectDescription": "Free and open source systems management",
     "projectRepository": "https://github.com/spacewalkproject",
     "projectWebsite": "https://spacewalkproject.github.io/",
