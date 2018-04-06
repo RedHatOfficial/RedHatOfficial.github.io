@@ -38,11 +38,5 @@ export default angular.module("rhGitHub.dynamictable", [])
           $scope.searchInputValue = null;
           $scope.searchQuery = '';
           $scope.searchCategory = null;
-        }
-
-        // Helper function
-        $scope.startsWith = (actual, expected) => {
-            let lowerStr = (actual + "").toLowerCase();
-            return lowerStr.indexOf(expected.toLowerCase()) === 0;
         };
     }]);
