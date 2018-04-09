@@ -957,6 +957,13 @@
     "category": "Operations"
   },
   {
+    "projectName": "clufter",
+    "projectDescription": "Tool for transforming/analyzing cluster configuration formats",
+    "projectRepository": "https://github.com/jnpkrn/clufter",
+    "projectWebsite": "https://pagure.io/clufter",
+    "category": "Operations"
+  },
+  {
     "projectName": "cobbler",
     "projectDescription": "Versatile Linux deployment server",
     "projectRepository": "https://github.com/cobbler/cobbler",
