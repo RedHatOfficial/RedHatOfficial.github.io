@@ -292,7 +292,7 @@
     "projectName": "Minishift",
     "projectDescription": "Run Openshift Locally",
     "projectRepository": "https://github.com/minishift/minishift",
-    "projectWebsite": "https://minishift.io/",
+    "projectWebsite": "https://www.openshift.org/minishift/",
     "category": "Development"
   },
   {
