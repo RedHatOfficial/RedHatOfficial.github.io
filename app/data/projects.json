@@ -1025,13 +1025,6 @@
     "category": "Operations"
   },
   {
-    "projectName": "Drupal",
-    "projectDescription": "Content management framework/system",
-    "projectRepository": "https://cgit.drupalcode.org/drupal",
-    "projectWebsite": "https://www.drupal.org",
-    "category": "Operations"
-  },
-  {
     "projectName": "Dynflow",
     "projectDescription": "DYNamic workFLOW orchestration engine",
     "projectRepository": "https://github.com/Dynflow",
