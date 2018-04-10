@@ -417,6 +417,13 @@
     "category": "Development"
   },
   {
+    "projectName": "Theia",
+    "projectDescription": "Cloud & Desktop IDE",
+    "projectRepository": "https://github.com/theia-ide",
+    "projectWebsite": "http://www.theia-ide.org/",
+    "category": "Development"
+  },
+  {
     "projectName": "TianoCore",
     "projectDescription": "Cross-platform firmware development environment for the UEFI and Platform Initialization (PI) specifications",
     "projectRepository": "https://github.com/tianocore",
@@ -1854,12 +1861,5 @@
     "projectRepository": "https://github.com/Tendrl",
     "projectWebsite": "http://tendrl.org/",
     "category": "Storage"
-  },
-  {
-    "projectName": "Theia",
-    "projectDescription": "Cloud & Desktop IDE",
-    "projectRepository": "https://github.com/theia-ide",
-    "projectWebsite": "http://www.theia-ide.org/",
-    "category": "Development"
   }
 ]
