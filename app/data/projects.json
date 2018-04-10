@@ -1854,5 +1854,12 @@
     "projectRepository": "https://github.com/Tendrl",
     "projectWebsite": "http://tendrl.org/",
     "category": "Storage"
+  },
+  {
+    "projectName": "Theia",
+    "projectDescription": "Cloud & Desktop IDE",
+    "projectRepository": "https://github.com/theia-ide",
+    "projectWebsite": "http://www.theia-ide.org/",
+    "category": "Development"
   }
 ]
