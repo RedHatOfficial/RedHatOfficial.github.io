@@ -170,7 +170,7 @@
     "projectName": "fabric8",
     "projectDescription": "Development platform for kubernetes",
     "projectRepository": "https://github.com/fabric8io",
-    "projectWebsite": "https://fabric8.io/",
+    "projectWebsite": "http://fabric8.io/",
     "category": "Development"
   },
   {
