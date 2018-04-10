@@ -170,7 +170,7 @@
     "projectName": "fabric8",
     "projectDescription": "Development platform for kubernetes",
     "projectRepository": "https://github.com/fabric8io",
-    "projectWebsite": "https://fabric8.io/",
+    "projectWebsite": "http://fabric8.io/",
     "category": "Development"
   },
   {
@@ -292,7 +292,7 @@
     "projectName": "Minishift",
     "projectDescription": "Run Openshift Locally",
     "projectRepository": "https://github.com/minishift/minishift",
-    "projectWebsite": "https://minishift.io/",
+    "projectWebsite": "https://www.openshift.org/minishift/",
     "category": "Development"
   },
   {
@@ -1022,13 +1022,6 @@
     "projectName": "dogtagpki",
     "projectDescription": "PKI component of FreeIPA",
     "projectRepository": "https://github.com/dogtagpki",
-    "category": "Operations"
-  },
-  {
-    "projectName": "Drupal",
-    "projectDescription": "Content management framework/system",
-    "projectRepository": "https://cgit.drupalcode.org/drupal",
-    "projectWebsite": "https://www.drupal.org",
     "category": "Operations"
   },
   {
