@@ -417,6 +417,13 @@
     "category": "Development"
   },
   {
+    "projectName": "Solenopsis",
+    "projectDescription": "A command-line deployment tool for Salesforce",
+    "projectRepository": "https://github.com/solenopsis/Solenopsis",
+    "projectWebsite": "http://solenopsis.org/Solenopsis/",
+    "category": "Development"
+  },
+  {
     "projectName": "Theia",
     "projectDescription": "Cloud & Desktop IDE",
     "projectRepository": "https://github.com/theia-ide",
