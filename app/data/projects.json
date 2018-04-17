@@ -1474,6 +1474,13 @@
     "category": "Operations"
   },
   {
+    "projectName": "CO.LAB",
+    "projectDescription": "CO.LAB teaches students how to work together to solve problems, share new ideas, and to create collaboratively out of a shared experience.",
+    "projectRepository": "https://github.com/RedHatOfficial/CO.LAB",
+    "projectWebsite": "https://www.redhat.com/en/open-source-stories/colab",
+    "category": "Organizations"
+  },
+  {
     "projectName": "Fedora Cloud SIG",
     "projectDescription": "Works to make Fedora successful on all major cloud platforms, public and private",
     "projectRepository": "https://github.com/fedora-cloud",
