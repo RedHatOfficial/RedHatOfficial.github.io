@@ -1320,12 +1320,6 @@
     "category": "Operations"
   },
   {
-    "projectName": "PythonGSSAPI",
-    "projectDescription": "Python libraries to work with GSSAPI",
-    "projectRepository": "https://github.com/pythongssapi",
-    "category": "Operations"
-  },
-  {
     "projectName": "QEMU",
     "projectDescription": "A fast processor emulator",
     "projectRepository": "https://github.com/qemu/qemu",
