@@ -201,13 +201,6 @@
     "category": "Development"
   },
   {
-    "projectName": "IBus",
-    "projectDescription": "Intelligent Input Bus for Linux/Unix",
-    "projectRepository": "https://github.com/ibus/ibus",
-    "projectWebsite": "https://github.com/ibus/ibus/wiki",
-    "category": "Platform"
-  },
-  {
     "projectName": "Immutant",
     "projectDescription": "A cohesive suite of Clojure libraries",
     "projectRepository": "https://github.com/immutant",
@@ -1119,6 +1112,13 @@
     "projectRepository": "https://github.com/hornetq",
     "projectWebsite": "http://hornetq.org",
     "category": "Operations"
+  },
+  {
+    "projectName": "IBus",
+    "projectDescription": "Intelligent Input Bus for Linux/Unix",
+    "projectRepository": "https://github.com/ibus/ibus",
+    "projectWebsite": "https://github.com/ibus/ibus/wiki",
+    "category": "Platform"
   },
   {
     "projectName": "JGroups",
