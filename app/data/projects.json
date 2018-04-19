@@ -1652,6 +1652,13 @@
     "category": "Platform"
   },
   {
+    "projectName": "freedesktop",
+    "projectDescription": "A collection of specifications and software used as a base platform for Linux and UNIX desktop environments",
+    "projectRepository": "https://github.com/freedesktop",
+    "projectWebsite": "https://freedesktop.org/",
+    "category": "Platform"
+  },
+  {
     "projectName": "fwupd",
     "projectDescription": "A simple daemon to allow session software to update firmware",
     "projectRepository": "https://github.com/hughsie/fwupd",
