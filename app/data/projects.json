@@ -188,13 +188,6 @@
     "category": "Development"
   },
   {
-    "projectName": "GNU Compiler Collection",
-    "projectDescription": "Suite of compilers",
-    "projectRepository": "https://github.com/gcc-mirror",
-    "projectWebsite": "https://gcc.gnu.org/",
-    "category": "Development"
-  },
-  {
     "projectName": "hwdata",
     "projectDescription": "Hardware identification and configuration data",
     "projectRepository": "https://github.com/vcrhonek/hwdata",
@@ -234,6 +227,13 @@
     "projectWebsite": "https://tools.jboss.org/",
     "category": "Development"
   },
+  {
+    "projectName": "JRuby",
+    "projectDescription": "Ruby programming language on the JVM",
+    "projectRepository": "https://github.com/jruby",
+    "projectWebsite": "http://jruby.org/",
+    "category": "Development"
+  }, 
   {
     "projectName": "kpatch",
     "projectDescription": "A Linux dynamic kernel patching infrastructure",
@@ -330,8 +330,22 @@
     "category": "Development"
   },
   {
+    "projectName": "Paradyn",
+    "projectDescription": "The Paradyn Performance Consultant",
+    "projectRepository": "https://github.com/dyninst",
+    "projectWebsite": "http://www.dyninst.org/",
+    "category": "Development"
+  },
+  {
+    "projectName": "patchutils",
+    "projectDescription": "Patchutils is a small collection of programs that operate on patch files",
+    "projectRepository": "https://github.com/twaugh/patchutils",
+    "projectWebsite": "http://cyberelk.net/tim/software/patchutils/",
+    "category": "Development"
+  }, 
+  {
     "projectName": "Patternfly",
-    "projectDescription": "Created to promote design commonality and improved user experience across enterprise IT products and applications.",
+    "projectDescription": "Created to promote design commonality and improved user experience across enterprise IT products and applications",
     "projectRepository": "https://github.com/patternfly",
     "projectWebsite": "https://www.patternfly.org",
     "category": "Development"
@@ -423,6 +437,13 @@
     "projectWebsite": "http://solenopsis.org/Solenopsis/",
     "category": "Development"
   },
+  {
+    "projectName": "SWI-Prolog",
+    "projectDescription": "Comprehensive Prolog compiler and development environment",
+    "projectRepository": "https://github.com/SWI-Prolog",
+    "projectWebsite": "http://www.swi-prolog.org",
+    "category": "Development"
+  }, 
   {
     "projectName": "Theia",
     "projectDescription": "Cloud & Desktop IDE",
@@ -545,7 +566,7 @@
   },
   {
     "projectName": "Drools",
-    "projectDescription": "Business rule management system with a forward-chaining and backward-chaining inference based rules engine, allowing fast and reliable evaluation of business rules and complex event processing. A rule engine is also a fundamental building block to create an expert system which, in artificial intelligence, is a computer system that emulates the decision-making ability of a human expert.",
+    "projectDescription": "Business rule management system with a forward-chaining and backward-chaining inference based rules engine, allowing fast and reliable evaluation of business rules and complex event processing",
     "projectRepository": "https://github.com/kiegroup/drools",
     "projectWebsite": "https://www.drools.org",
     "category": "Middleware"
@@ -646,19 +667,19 @@
     "category": "Middleware"
   },
   {
-    "projectName": "JBoss Wise",
-    "projectDescription": "Java framework for easily invoking webservices",
-    "projectRepository": "https://github.com/jboss-wise",
-    "projectWebsite": "http://wise.jboss.org/",
+    "projectName": "JBoss Web Services",
+    "projectDescription": "Web Services framework and tools for WildFly and JBoss EAP",
+    "projectRepository": "https://github.com/jbossws",
+    "projectWebsite": "http://jbossws.jboss.org/",
     "category": "Middleware"
-  },
+  }, 
   {
-    "projectName": "jboss-switchyard",
-    "projectDescription": "SwitchYard is a component-based development framework focused on building structured, maintainable services and applications.",
-    "projectRepository": "https://github.com/jboss-switchyard",
-    "projectWebsite": "https://switchyard.jboss.org/",
+    "projectName": "jboss-logging",
+    "projectDescription": "JBoss Logging is a logging bridge providing integration with numerous logging frameworks",
+    "projectRepository": "https://github.com/jboss-logging",
+    "projectWebsite": "http://docs.jboss.org/hibernate/orm/4.3/topical/html/logging/Logging.html",
     "category": "Middleware"
-  },
+  }, 
   {
     "projectName": "jbosstm",
     "projectDescription": "Tools for working with the Narayana transaction service",
@@ -666,25 +687,24 @@
     "category": "Middleware"
   },
   {
-    "projectName": "jbossws",
-    "projectDescription": "Web Services framework and tools for WildFly and JBoss EAP",
-    "projectRepository": "https://github.com/jbossws",
-    "projectWebsite": "http://jbossws.jboss.org/",
-    "category": "Middleware"
-  },
-  {
     "projectName": "jBPM",
-    "projectDescription": "A flexible Business Process Management (BPM) Suite. It makes the bridge between business analysts and developers. Traditional BPM engines have a focus that is limited to non-technical people only. jBPM has a dual focus: it offers process management features in a way that both business users and developers like it.",
+    "projectDescription": "A flexible Business Process Management (BPM) Suite.",
     "projectRepository": "https://github.com/kiegroup/jbpm",
     "projectWebsite": "https://www.jbpm.org",
     "category": "Middleware"
   },
   {
     "projectName": "Jcliff",
-    "projectDescription": "Jcliff configures a running instance of EAP6/JBoss7 using modular configuration files",
+    "projectDescription": "Configures a running instance of EAP6/JBoss7 using modular configuration files",
     "projectRepository": "https://github.com/bserdar/jcliff",
     "category": "Middleware"
   },
+  {
+    "projectName": "JReadline",
+    "projectDescription": "A Java library for handling console input with the goal to support most GNU Readline features",
+    "projectRepository": "https://github.com/qmx/jreadline",
+    "category": "Middleware"
+  }, 
   {
     "projectName": "JSFUnit",
     "projectDescription": "Test Framework for JSF Applications",
@@ -719,6 +739,13 @@
     "projectWebsite": "http://modeshape.jboss.org/",
     "category": "Middleware"
   },
+  {
+    "projectName": "Netty",
+    "projectDescription": "An asynchronous event-driven network application framework for rapid development of maintainable high performance protocol servers & clients.",
+    "projectRepository": "https://github.com/netty",
+    "projectWebsite": "http://netty.io/",
+    "category": "Middleware"
+  }, 
   {
     "projectName": "OptaPlanner",
     "projectDescription": "Java Constraint Solver that optimizes use cases such as employee rostering, vehicle routing, task assignment, cloud optimization and other planning problems.",
@@ -769,6 +796,13 @@
     "category": "Middleware"
   },
   {
+    "projectName": "RichFaces",
+    "projectDescription": "The next-generation JSF component framework",
+    "projectRepository": "https://github.com/richfaces/",
+    "projectWebsite": "http://richfaces.jboss.org/",
+    "category": "Middleware"
+  }, 
+  {
     "projectName": "riftsaw",
     "projectDescription": "A WS-BPEL 2.0 engine that is optimized for the JBoss AS container",
     "projectRepository": "https://github.com/riftsaw",
@@ -783,8 +817,15 @@
     "category": "Middleware"
   },
   {
+    "projectName": "Scribble",
+    "projectDescription": "A language to describe application-level protocols among communicating systems",
+    "projectRepository": "https://github.com/scribble",
+    "projectWebsite": "http://www.scribble.org",
+    "category": "Middleware"
+  }, 
+  {
     "projectName": "Seam",
-    "projectDescription": "A development platform for building rich Internet applications in Java.",
+    "projectDescription": "A development platform for building rich Internet applications in Java",
     "projectRepository": "https://github.com/seam",
     "projectWebsite": "http://seamframework.org/",
     "category": "Middleware"
@@ -798,11 +839,18 @@
   },
   {
     "projectName": "Snowdrop",
-    "projectDescription": "A utility package that contains JBoss-specific extensions to the Spring Framework.",
+    "projectDescription": "A utility package that contains JBoss-specific extensions to the Spring Framework",
     "projectRepository": "https://github.com/snowdrop",
     "projectWebsite": "http://snowdrop.jboss.org/",
     "category": "Middleware"
   },
+  {
+    "projectName": "Switchyard",
+    "projectDescription": "SwitchYard is a component-based development framework focused on building structured, maintainable services and applications",
+    "projectRepository": "https://github.com/jboss-switchyard",
+    "projectWebsite": "https://switchyard.jboss.org/",
+    "category": "Middleware"
+  }, 
   {
     "projectName": "Syndesis",
     "projectDescription": "A flexible, customizable platform that provides core integration capabilities as a service",
@@ -824,6 +872,13 @@
     "projectWebsite": "http://teiid.jboss.org/",
     "category": "Middleware"
   },
+  {
+    "projectName": "TorqueBox",
+    "projectDescription": "TorqueBox provides an all-in-one environment, built upon the latest JBoss AS Java application server and JRuby. ",
+    "projectRepository": "https://github.com/torquebox",
+    "projectWebsite": "http://torquebox.org/",
+    "category": "Middleware"
+  }, 
   {
     "projectName": "Weld",
     "projectDescription": "Weld is the reference implementation of CDI: Contexts and Dependency Injection for the Java EE Platform",
@@ -853,11 +908,25 @@
     "category": "Middleware"
   },
   {
+    "projectName": "Wise",
+    "projectDescription": "Java framework for easily invoking webservices",
+    "projectRepository": "https://github.com/jboss-wise",
+    "projectWebsite": "http://wise.jboss.org/",
+    "category": "Middleware"
+  }, 
+  {
     "projectName": "XNIO",
     "projectDescription": "XNIO is a simplified low-level I/O layer which can be used anywhere you are using NIO today",
     "projectRepository": "https://github.com/xnio",
     "projectWebsite": "https://xnio.jboss.org/",
     "category": "Middleware"
+  },
+  {
+    "projectName": "Aeolus Project",
+    "projectDescription": "Aeolus is a suite of open-source tools to help you build a custom cloud from both public and private resources",
+    "projectRepository": "https://github.com/aeolusproject",
+    "projectWebsite": "http://aeolusproject.github.io/",
+    "category": "Operations"
   },
   {
     "projectName": "Ansible",
@@ -920,6 +989,13 @@
     "projectDescription": "A flexible, open-source integration container",
     "projectRepository": "https://github.com/apache/servicemix",
     "projectWebsite": "https://servicemix.apache.org/",
+    "category": "Operations"
+  },
+  {
+    "projectName": "Augeas",
+    "projectDescription": "Augeas is a configuration editing tool",
+    "projectRepository": "https://github.com/hercules-team/augeas",
+    "projectWebsite": "http://augeas.net/",
     "category": "Operations"
   },
   {
@@ -1162,6 +1238,13 @@
     "category": "Operations"
   },
   {
+    "projectName": "libguestfs",
+    "projectDescription": "A set of tools for accessing and modifying virtual machine disk images",
+    "projectRepository": "https://github.com/libguestfs",
+    "projectWebsite": "http://libguestfs.org/",
+    "category": "Operations"
+  }, 
+  {
     "projectName": "libqb",
     "projectDescription": "Library providing high-performance features for client-server applications",
     "projectRepository": "https://github.com/ClusterLabs/libqb",
@@ -1192,7 +1275,7 @@
   {
     "projectName": "Moby Project",
     "projectDescription": "A collaborative project for the container ecosystem to assemble container-based systems",
-    "projectRepository": "https://github.com/moby/moby/",
+    "projectRepository": "https://github.com/moby",
     "projectWebsite": "https://mobyproject.org/",
     "category": "Operations"
   },
@@ -1277,6 +1360,13 @@
     "projectWebsite": "https://ovirt.org",
     "category": "Operations"
   },
+  {
+    "projectName": "Oz",
+    "projectDescription": "A tool for automatically installing operating systems into files with only minimal up-front input from the user",
+    "projectRepository": "https://github.com/clalancette/oz",
+    "projectWebsite": "https://github.com/clalancette/oz/wiki",
+    "category": "Operations"
+  }, 
   {
     "projectName": "Pacemaker",
     "projectDescription": "Advanced, scalabale high-availability cluster resource manager",
@@ -1455,6 +1545,13 @@
     "category": "Operations"
   },
   {
+    "projectName": "virt-manager",
+    "projectDescription": "A desktop user interface for managing virtual machines through libvirt",
+    "projectRepository": "https://github.com/virt-manager",
+    "projectWebsite": "https://virt-manager.org/",
+    "category": "Operations"
+  }, 
+  {
     "projectName": "VMaaS",
     "projectDescription": "Vulnerability Management as a Service",
     "projectRepository": "https://github.com/RedHatInsights/vmaas/",
@@ -1570,6 +1667,13 @@
     "category": "Platform"
   },
   {
+    "projectName": "Avahi",
+    "projectDescription": "Facilitates service discovery on a local network via the mDNS/DNS-SD protocol suite",
+    "projectRepository": "https://github.com/lathiat/avahi",
+    "projectWebsite": "http://avahi.org/",
+    "category": "Platform"
+  }, 
+  {
     "projectName": "boom",
     "projectDescription": "Snapshot boot manager",
     "projectRepository": "https://github.com/bmr-cymru/boom",
@@ -1583,8 +1687,15 @@
     "category": "Platform"
   },
   {
+    "projectName": "colord",
+    "projectDescription": "A system service that makes it easy to manage, install and generate color profiles",
+    "projectRepository": "https://github.com/hughsie/colord",
+    "projectWebsite": "https://www.freedesktop.org/software/colord/",
+    "category": "Platform"
+  }, 
+  {
     "projectName": "CRaSH",
-    "projectDescription": "The shell for the Java platform.",
+    "projectDescription": "The shell for the Java platform",
     "projectRepository": "https://github.com/crashub",
     "projectWebsite": "https://www.crashub.org/",
     "category": "Platform"
@@ -1663,13 +1774,6 @@
     "projectDescription": "System firmware update support for UEFI machines",
     "projectRepository": "https://github.com/rhboot/fwupdate",
     "projectWebsite": "https://fwupd.org",
-    "category": "Platform"
-  },
-  {
-    "projectName": "GNOME",
-    "projectDescription": "An easy and elegant way to use your computer and get things done.",
-    "projectRepository": "https://github.com/gnome",
-    "projectWebsite": "https://gnome.org/",
     "category": "Platform"
   },
   {
