@@ -1819,6 +1819,13 @@
     "category": "Platform"
   },
   {
+    "projectName": "PackageKit",
+    "projectDescription": "A D-BUS abstraction layer that allows the user to manage packages in a secure way using a cross-distro, cross-architecture API",
+    "projectRepository": "https://github.com/hughsie/PackageKit",
+    "projectWebsite": "https://www.freedesktop.org/software/PackageKit/",
+    "category": "Development"
+  }, 
+  {
     "projectName": "pesign",
     "projectDescription": "Linux tools for signed PE-COFF binaries",
     "projectRepository": "https://github.com/rhboot/pesign",
@@ -1847,7 +1854,7 @@
     "category": "Platform"
   },
   {
-    "projectName": "rpm-software-management",
+    "projectName": "RPM Package Manager",
     "projectDescription": "Package creation and management",
     "projectRepository": "https://github.com/rpm-software-management",
     "projectWebsite": "http://rpm.org/",
@@ -1869,11 +1876,18 @@
   },
   {
     "projectName": "shim",
-    "projectDescription": "shim: the UEFI first stage bootloader for Secure Boot",
+    "projectDescription": "The UEFI first stage bootloader for Secure Boot",
     "projectRepository": "https://github.com/rhboot/shim",
     "projectWebsite": "https://github.com/rhboot/shim",
     "category": "Platform"
   },
+  {
+    "projectName": "syslog-ng",
+    "projectDescription": "An enhanced log daemon, supporting a wide range of input and output methods: syslog, unstructured text, queueing, SQL & NoSQL",
+    "projectRepository": "https://github.com/balabit/syslog-ng",
+    "projectWebsite": "https://syslog-ng.com/open-source-log-management",
+    "category": "Platform"
+  }, 
   {
     "projectName": "System Security Services Daemon",
     "projectDescription": "System daemon providing identity and access-control",
@@ -1884,7 +1898,7 @@
   {
     "projectName": "systemd",
     "projectDescription": "System and Service Manager for Linux",
-    "projectRepository": "https://github.com/systemd/systemd/",
+    "projectRepository": "https://github.com/systemd",
     "projectWebsite": "https://www.freedesktop.org/wiki/Software/systemd/",
     "category": "Platform"
   },
@@ -1894,13 +1908,27 @@
     "projectRepository": "https://github.com/dgoodwin/tito",
     "category": "Platform"
   },
-   {
+  {
     "projectName": "Tuned",
     "projectDescription": "Tuning profile delivery mechanism for Linux",
     "projectRepository": "https://github.com/redhat-performance/tuned",
     "projectWebsite": "http://www.tuned-project.org/",
     "category": "Platform"
   },
+  {
+    "projectName": "udisks",
+    "projectDescription": "Provides a daemon, tools and libraries to access and manipulate disks, storage devices and technologies",
+    "projectRepository": "https://github.com/storaged-project/udisks",
+    "projectWebsite": "http://storaged.org/doc/udisks2-api/latest/",
+    "category": "Platform"
+  },
+  {
+    "projectName": "util-linux",
+    "projectDescription": "A standard package distributed by the Linux Kernel Organization for use as part of the Linux operating system",
+    "projectRepository": "https://github.com/karelzak/util-linux",
+    "projectWebsite": "https://en.wikipedia.org/wiki/Util-linux",
+    "category": "Platform"
+  },  
   {
     "projectName": "varlink",
     "projectDescription": "System and Service Manager for Linux",
@@ -1934,6 +1962,13 @@
     "projectWebsite": "https://www.gluster.org",
     "category": "Storage"
   },
+  {
+    "projectName": "LibStorageMgmt",
+    "projectDescription": "A library for storage management",
+    "projectRepository": "https://github.com/libstorage/libstoragemgmt/",
+    "projectWebsite": "https://libstorage.github.io/libstoragemgmt-doc/",
+    "category": "Storage"
+  }, 
   {
     "projectName": "Rook",
     "projectDescription": "File, block, and object storage services for cloud-native environments",
