@@ -1,12 +1,5 @@
 [
   {
-    "projectName": "3scale",
-    "projectDescription": "API management",
-    "projectRepository": "https://github.com/3scale",
-    "projectWebsite": "https://www.3scale.net",
-    "category": "Middleware"
-  },
-  {
     "projectName": "abrt",
     "projectDescription": "Automatic bug detection and reporting tool",
     "projectRepository": "https://github.com/abrt",
@@ -524,6 +517,13 @@
     "projectRepository": "https://github.com/zanata",
     "projectWebsite": "http://zanata.org/",
     "category": "Documentation"
+  },
+    {
+    "projectName": "3scale",
+    "projectDescription": "API management",
+    "projectRepository": "https://github.com/3scale",
+    "projectWebsite": "https://www.3scale.net",
+    "category": "Middleware"
   },
   {
     "projectName": "apiman",
