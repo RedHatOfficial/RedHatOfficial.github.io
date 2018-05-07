@@ -518,7 +518,7 @@
     "projectWebsite": "http://zanata.org/",
     "category": "Documentation"
   },
-    {
+  {
     "projectName": "3scale",
     "projectDescription": "API management",
     "projectRepository": "https://github.com/3scale",
