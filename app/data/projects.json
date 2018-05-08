@@ -1608,7 +1608,7 @@
   },
   {
     "projectName": "Open Practice Library",
-    "projectDescription": "Documentation on the practices used in Red Hat Open Innovation Labs residencies.",
+    "projectDescription": "Documentation on the practices used in Red Hat Open Innovation Labs residencies",
     "projectRepository": "https://github.com/rht-labs/practice-library/",
     "projectWebsite": "https://rht-labs.github.io/practice-library/",
     "category": "Documentation"
