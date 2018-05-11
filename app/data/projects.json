@@ -1607,6 +1607,13 @@
     "category": "Organizations"
   },
   {
+    "projectName": "Open Practice Library",
+    "projectDescription": "Documentation on the practices used in Red Hat Open Innovation Labs residencies",
+    "projectRepository": "https://github.com/rht-labs/practice-library/",
+    "projectWebsite": "https://rht-labs.github.io/practice-library/",
+    "category": "Organizations"
+  },
+  {
     "projectName": "Open Source and Standards",
     "projectDescription": "Red Hat Open Source and Standards team",
     "projectRepository": "https://github.com/OSAS",
