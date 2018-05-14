@@ -852,6 +852,13 @@
     "projectWebsite": "http://snowdrop.jboss.org/",
     "category": "Middleware"
   },
+    {
+    "projectName": "Strimsi",
+    "projectDescription": "Strimzi provides a way to run an Apache Kafka cluster on OpenShift and Kubernetes in various deployment configurations",
+    "projectRepository": "https://github.com/strimzi/strimzi",
+    "projectWebsite": "https://strimzi.io/",
+    "category": "Middleware"
+  }, 
   {
     "projectName": "Switchyard",
     "projectDescription": "SwitchYard is a component-based development framework focused on building structured, maintainable services and applications",
