@@ -856,7 +856,7 @@
     "projectName": "Strimsi",
     "projectDescription": "Strimzi provides a way to run an Apache Kafka cluster on OpenShift and Kubernetes in various deployment configurations",
     "projectRepository": "https://github.com/strimzi/strimzi",
-    "projectWebsite": "https://strimzi.io/",
+    "projectWebsite": "http://strimzi.io/",
     "category": "Middleware"
   }, 
   {
