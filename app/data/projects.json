@@ -1937,6 +1937,12 @@
     "category": "Platform"
   },
   {
+    "projectName": "tlsfuzzer",
+    "projectDescription": "Test suite for SSL and TLS implementations",
+    "projectRepository": "https://github.com/tomato42/tlsfuzzer",
+    "category": "Platform"
+  },
+  {
     "projectName": "Tuned",
     "projectDescription": "Tuning profile delivery mechanism for Linux",
     "projectRepository": "https://github.com/redhat-performance/tuned",
