@@ -1862,6 +1862,12 @@
     "category": "Platform"
   },
   {
+    "projectName": "Red Hat QE Security",
+    "projectDescription": "Red Hat Quality Engineering Secruity Team",
+    "projectRepository": "http://github.com/redhat-qe-security/",
+    "category": "Platform"
+  },
+  {
     "projectName": "Red Hat Update Agent",
     "projectDescription": "Software installer",
     "projectRepository": "https://github.com/up2date",
