@@ -1862,6 +1862,12 @@
     "category": "Platform"
   },
   {
+    "projectName": "Red Hat QE Security",
+    "projectDescription": "Red Hat Quality Engineering Secruity Team",
+    "projectRepository": "http://github.com/redhat-qe-security/",
+    "category": "Platform"
+  },
+  {
     "projectName": "Red Hat Update Agent",
     "projectDescription": "Software installer",
     "projectRepository": "https://github.com/up2date",
@@ -1928,6 +1934,12 @@
     "projectName": "tito",
     "projectDescription": "A tool for managing rpm-based git projects.",
     "projectRepository": "https://github.com/dgoodwin/tito",
+    "category": "Platform"
+  },
+  {
+    "projectName": "tlsfuzzer",
+    "projectDescription": "Test suite for SSL and TLS implementations",
+    "projectRepository": "https://github.com/tomato42/tlsfuzzer",
     "category": "Platform"
   },
   {
