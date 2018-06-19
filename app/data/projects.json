@@ -70,12 +70,6 @@
     "category": "Development"
   },
   {
-    "projectName": "Bucharest Gold",
-    "projectDescription": "Red Hat Middleware Node.js projects and research",
-    "projectRepository": "https://github.com/bucharest-gold",
-    "category": "Development"
-  },
-  {
     "projectName": "buildah",
     "projectDescription": "A tool for building OCI container images",
     "projectRepository": "https://github.com/projectatomic/buildah/",
@@ -139,6 +133,13 @@
     "projectWebsite": "https://github.com/rhboot/dumpet",
     "category": "Development"
   },
+  {
+    "projectName": "Dynist Project",
+    "projectDescription": "The Paradyn Performance Consultant",
+    "projectRepository": "https://github.com/dyninst",
+    "projectWebsite": "http://www.dyninst.org/",
+    "category": "Development"
+  }, 
   {
     "projectName": "Eclipse Che",
     "projectDescription": "Eclipse Che: Next-generation Eclipse IDE. Open source workspace server and cloud IDE.",
@@ -310,13 +311,6 @@
     "category": "Development"
   },
   {
-    "projectName": "Netty Project",
-    "projectDescription": "An event-driven asynchronous network application framework",
-    "projectRepository": "https://github.com/netty",
-    "projectWebsite": "https://netty.io/",
-    "category": "Development"
-  },
-  {
     "projectName": "OpenTracing",
     "projectDescription": "CNCF OpenTracing API for distributed tracing",
     "projectRepository": "https://github.com/opentracing",
@@ -328,13 +322,6 @@
     "projectDescription": "Open online development environment for planning, creating, and deploying hybrid cloud services",
     "projectRepository": "https://github.com/openshiftio",
     "projectWebsite": "https://openshift.io/",
-    "category": "Development"
-  },
-  {
-    "projectName": "Paradyn",
-    "projectDescription": "The Paradyn Performance Consultant",
-    "projectRepository": "https://github.com/dyninst",
-    "projectWebsite": "http://www.dyninst.org/",
     "category": "Development"
   },
   {
@@ -392,6 +379,13 @@
     "category": "Development"
   },
   {
+    "projectName": "RadarGun",
+    "projectDescription": "Distributed systems benchmark framework with focus on key-value IMDBs",
+    "projectRepository": "https://github.com/radargun",
+    "projectWebsite": "http://radargun.github.io/",
+    "category": "Development"
+  },
+  {
     "projectName": "Red Hat Fuse Tooling",
     "projectDescription": "Tooling to develop Apache Camel and Red Hat Fuse integration projects",
     "projectRepository": "https://github.com/jbosstools/jbosstools-fuse",
@@ -406,10 +400,9 @@
     "category": "Development"
   },
   {
-    "projectName": "RadarGun",
-    "projectDescription": "Distributed systems benchmark framework with focus on key-value IMDBs",
-    "projectRepository": "https://github.com/radargun",
-    "projectWebsite": "http://radargun.github.io/",
+    "projectName": "Red Hat Middleware Node.js",
+    "projectDescription": "Red Hat Middleware Node.js projects and research",
+    "projectRepository": "https://github.com/bucharest-gold",
     "category": "Development"
   },
   {
@@ -776,13 +769,6 @@
     "category": "Middleware"
   },
   {
-    "projectName": "Red Hat Application Migration Toolkit",
-    "projectDescription": "An assembly of open source tools that enables large-scale application migrations and modernizations",
-    "projectRepository": "https://github.com/windup",
-    "projectWebsite": "https://developers.redhat.com/products/rhamt/overview/",
-    "category": "Middleware"
-  },
-  {
     "projectName": "RESTEasy",
     "projectDescription": "Provides various frameworks to help you build RESTful Web Services and RESTful Java applications",
     "projectRepository": "https://github.com/resteasy",
@@ -888,13 +874,6 @@
     "category": "Middleware"
   },
   {
-    "projectName": "TorqueBox",
-    "projectDescription": "TorqueBox provides an all-in-one environment, built upon the latest JBoss AS Java application server and JRuby. ",
-    "projectRepository": "https://github.com/torquebox",
-    "projectWebsite": "http://torquebox.org/",
-    "category": "Middleware"
-  }, 
-  {
     "projectName": "Weld",
     "projectDescription": "Weld is the reference implementation of CDI: Contexts and Dependency Injection for the Java EE Platform",
     "projectRepository": "https://github.com/weld",
@@ -922,6 +901,13 @@
     "projectWebsite": "http://wildfly-swarm.io/",
     "category": "Middleware"
   },
+  {
+    "projectName": "Windup",
+    "projectDescription": "An assembly of open source tools that enables large-scale application migrations and modernizations",
+    "projectRepository": "https://github.com/windup",
+    "projectWebsite": "https://developers.redhat.com/products/rhamt/overview/",
+    "category": "Middleware"
+  }, 
   {
     "projectName": "Wise",
     "projectDescription": "Java framework for easily invoking webservices",
@@ -1580,6 +1566,13 @@
     "category": "Operations"
   },
   {
+    "projectName": "Artificial Intelligence Center of Excellence",
+    "projectDescription": "This is Artificial Intelligence Center of Excellence's Repository, we are part of the Red Hat's Office of the CTO",
+    "projectRepository": "https://github.com/AICoE",
+    "projectWebsite": "https://github.com/AICoE",
+    "category": "Organizations"
+  }, 
+  {
     "projectName": "CO.LAB",
     "projectDescription": "CO.LAB teaches students how to work together to solve problems, share new ideas, and to create collaboratively out of a shared experience.",
     "projectRepository": "https://github.com/RedHatOfficial/CO.LAB",
@@ -1639,13 +1632,6 @@
     "projectDescription": "Management of RDO build, packaging, monitoring and CI infrastructure",
     "projectRepository": "https://github.com/rdo-infra",
     "projectWebsite": "https://rdoproject.org",
-    "category": "Organizations"
-  },
-  {
-    "projectName": "Red Hat AI CoE",
-    "projectDescription": "This is Artificial Intelligence Center of Excellence's Repository, we are part of the Red Hat's Office of the CTO",
-    "projectRepository": "https://github.com/AICoE",
-    "projectWebsite": "https://github.com/AICoE",
     "category": "Organizations"
   },
   {
