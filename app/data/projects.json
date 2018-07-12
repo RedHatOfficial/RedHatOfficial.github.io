@@ -42,13 +42,6 @@
     "category": "Development"
   },
   {
-    "projectName": "Apache spark",
-    "projectDescription": "An analytics engine to run large-scale data processing",
-    "projectRepository": "https://github.com/apache/spark",
-    "projectWebsite": "https://spark.apache.org/",
-    "category": "Middleware"
-  },
-  {
     "projectName": "Apache Tomcat",
     "projectDescription": "An open source implementation of the Java Servlet, JavaServer Pages, Java Expression Language and Java WebSocket technologies",
     "projectRepository": "https://github.com/apache/tomcat",
@@ -525,6 +518,13 @@
     "projectWebsite": "https://www.3scale.net",
     "category": "Middleware"
   },
+  {
+    "projectName": "Apache Spark",
+    "projectDescription": "An analytics engine to run large-scale data processing",
+    "projectRepository": "https://github.com/apache/spark",
+    "projectWebsite": "https://spark.apache.org/",
+    "category": "Middleware"
+  }, 
   {
     "projectName": "apiman",
     "projectDescription": "The apiman project brings an open source development methodology to API Management",
