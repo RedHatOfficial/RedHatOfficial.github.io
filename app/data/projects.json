@@ -1228,7 +1228,7 @@
     "projectName": "krb5",
     "projectDescription": "MIT Kerberos authentication protocol",
     "projectRepository": "https://github.com/krb5/krb5",
-    "projectWebsite": "https://web.mit.edu/kerberos/",
+    "projectWebsite": "http://web.mit.edu/kerberos/",
     "category": "Operations"
   },
   {
