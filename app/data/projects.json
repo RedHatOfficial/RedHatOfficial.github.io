@@ -1806,6 +1806,13 @@
     "category": "Platform"
   },
   {
+    "projectName": "LEAPP",
+    "projectDescription": "In-place upgrades RHEL 7 to future versions of RHEL",
+    "projectRepository": "https://github.com/leapp-to/",
+    "projectWebsite": "https://leapp-to.github.io",
+    "category": "Platform"
+  },  
+  {
     "projectName": "LibreOffice",
     "projectDescription": "An integrated office suite based on copyleft licenses.",
     "projectRepository": "https://github.com/libreoffice",
@@ -1848,6 +1855,12 @@
     "category": "Platform"
   },
   {
+    "projectName": "preupgrade-assistant",
+    "projectDescription": "Assists with in-place upgrading RHEL 6 to RHEL 7",
+    "projectRepository": "https://github.com/upgrades-migrations/preupgrade-assistant/",
+    "category": "Platform"
+  },  
+  {
     "projectName": "rebase-helper",
     "projectDescription": "Tool aiming to help package maintainers rebase their packages",
     "projectRepository": "https://github.com/rebase-helper",
@@ -1874,6 +1887,12 @@
     "projectWebsite": "https://imgfac.org/",
     "category": "Platform"
   },
+  {
+    "projectName": "redhat-upgrade-tool",
+    "projectDescription": "In-place upgrades RHEL 6 to RHEL 7",
+    "projectRepository": "https://github.com/upgrades-migrations/redhat-upgrade-tool/",
+    "category": "Platform"
+  },  
   {
     "projectName": "RPM Package Manager",
     "projectDescription": "Package creation and management",
