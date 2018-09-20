@@ -840,9 +840,9 @@
   },
   {
     "projectName": "Snowdrop",
-    "projectDescription": "A utility package that contains JBoss-specific extensions to the Spring Framework",
+    "projectDescription": "A utility package that contains Red Hat-specific extensions to the Spring & Spring Boot Frameworks",
     "projectRepository": "https://github.com/snowdrop",
-    "projectWebsite": "http://snowdrop.jboss.org/",
+    "projectWebsite": "http://snowdrop.me/",
     "category": "Middleware"
   },
     {
