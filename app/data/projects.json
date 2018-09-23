@@ -152,14 +152,14 @@
     "projectDescription": "Eclipse Hono provides uniform (remote) service interfaces for connecting large numbers of IoT devices to a (cloud) back end.",
     "projectRepository": "https://github.com/eclipse/hono",
     "projectWebsite": "https://eclipse.org/hono",
-    "category": "Middleware"
+    "category": "Development"
   },
   {
     "projectName": "Eclipse Vert.x",
     "projectDescription": "Eclipse Vert.x is a tool-kit for building reactive applications on the JVM.",
     "projectRepository": "https://github.com/vert-x3",
     "projectWebsite": "https://vertx.io",
-    "category": "Middleware"
+    "category": "Development"
   },
   {
     "projectName": "Eclipse Web Tools Project",
