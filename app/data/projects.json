@@ -1432,13 +1432,6 @@
     "category": "Operations"
   },
   {
-    "projectName": "Red Hat Kontinuity",
-    "projectDescription": "Continuous Delivery for Application Developers Using Red Hat",
-    "projectRepository": "https://github.com/redhat-kontinuity",
-    "projectWebsite": "https://developers.redhat.com/",
-    "category": "Operations"
-  },
-  {
     "projectName": "redhat-openstack",
     "projectDescription": "RDOProject code",
     "projectRepository": "https://github.com/redhat-openstack",
