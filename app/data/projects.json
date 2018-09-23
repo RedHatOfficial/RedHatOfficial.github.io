@@ -1043,8 +1043,8 @@
   {
     "projectName": "Citellus",
     "projectDescription": "Framework to validate configuration and log files with bash, python, ruby and others",
-    "projectRepository": "https://github.com/zerodayz/citellus",
-    "projectWebsite": "https://github.com/zerodayz/citellus",
+    "projectRepository": "https://github.com/citellusorg/citellus",
+    "projectWebsite": "https://citellus.org",
     "category": "Operations"
   },
   {
@@ -1429,13 +1429,6 @@
     "projectDescription": "Proactive analytics and real-time intelligence",
     "projectRepository": "https://github.com/RedHatInsights",
     "projectWebsite": "https://www.redhat.com/en/technologies/management/insights",
-    "category": "Operations"
-  },
-  {
-    "projectName": "Red Hat Kontinuity",
-    "projectDescription": "Continuous Delivery for Application Developers Using Red Hat",
-    "projectRepository": "https://github.com/redhat-kontinuity",
-    "projectWebsite": "https://developers.redhat.com/",
     "category": "Operations"
   },
   {
