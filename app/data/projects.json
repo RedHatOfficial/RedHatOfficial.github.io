@@ -240,7 +240,7 @@
     "projectName": "JRuby",
     "projectDescription": "Ruby programming language on the JVM",
     "projectRepository": "https://github.com/jruby",
-    "projectWebsite": "http://jruby.org/",
+    "projectWebsite": "https://jruby.org/",
     "category": "Development"
   }, 
   {
@@ -884,7 +884,7 @@
     "projectName": "Teiid",
     "projectDescription": "Data virtualization platform",
     "projectRepository": "https://github.com/teiid",
-    "projectWebsite": "http://teiid.jboss.org/",
+    "projectWebsite": "https://teiid.io/",
     "category": "Middleware"
   },
   {
