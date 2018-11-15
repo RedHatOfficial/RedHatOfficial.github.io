@@ -1615,9 +1615,9 @@
   },
   {
     "projectName": "Open Practice Library",
-    "projectDescription": "Documentation on the practices used in Red Hat Open Innovation Labs residencies",
-    "projectRepository": "https://github.com/rht-labs/practice-library/",
-    "projectWebsite": "https://rht-labs.github.io/practice-library/",
+    "projectDescription": "Community of like-minded people who are dedicated to openly sharing practices used to perform product discovery and delivery.",
+    "projectRepository": "https://github.com/openpracticelibrary/openpracticelibrary",
+    "projectWebsite": "https://openpracticelibrary.com/",
     "category": "Organizations"
   },
   {
