@@ -300,7 +300,7 @@
     "projectName": "Minishift",
     "projectDescription": "Run Openshift Locally",
     "projectRepository": "https://github.com/minishift/minishift",
-    "projectWebsite": "https://www.openshift.org/minishift/",
+    "projectWebsite": "https://www.okd.io/minishift/",
     "category": "Development"
   },
   {
@@ -329,6 +329,20 @@
     "projectRepository": "https://github.com/openshiftio",
     "projectWebsite": "https://openshift.io/",
     "category": "Development"
+  },
+  {
+    "projectName": "OKD",
+    "projectDescription": "The Origin Community Distribution of Kubernetes",
+    "projectRepository": "https://github.com/openshift/origin",
+    "projectWebsite": "https://www.okd.io",
+    "category": "Operations"
+  },
+  {
+    "projectName": "okd.io",
+    "projectDescription": "Website for the Origin Community Distribution of Kubernetes",
+    "projectRepository": "https://github.com/openshift-cs/okd.io",
+    "projectWebsite": "https://www.okd.io/",
+    "category": "Operations"
   },
   {
     "projectName": "patchutils",
@@ -1344,13 +1358,6 @@
     "projectDescription": "Open Source Security Compliance Solution",
     "projectRepository": "https://github.com/OpenSCAP",
     "projectWebsite": "https://www.open-scap.org",
-    "category": "Operations"
-  },
-  {
-    "projectName": "OpenShift Origin",
-    "projectDescription": "Enterprise Kubernetes for Developers",
-    "projectRepository": "https://github.com/openshift/origin",
-    "projectWebsite": "http://www.openshift.org",
     "category": "Operations"
   },
   {
