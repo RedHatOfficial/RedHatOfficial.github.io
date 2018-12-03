@@ -11,7 +11,7 @@ import content from "../../data/content";
 // Images
 import centos from "../../public/img/logo-centos.png";
 import gluster from "../../public/img/logo-gluster.jpg";
-import openshift from "../../public/img/logo-openshift.png";
+import okd from "../../public/img/logo-okd.png";
 import pulp from "../../public/img/logo-pulp.png";
 import vertx from "../../public/img/logo-vertx.png";
 import wildfly from "../../public/img/logo-wildfly.png";
