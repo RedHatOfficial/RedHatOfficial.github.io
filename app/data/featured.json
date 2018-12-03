@@ -17,11 +17,11 @@
   "website": "https://www.gluster.org/",
   "description": "A free and open source software scalable network filesystem."
 },{
-  "name": "OKD",
-  "logo": "okd",
+  "name": "OpenShift Origin",
+  "logo": "openshift",
   "github": "https://github.com/openshift/origin",
-  "website": "https://www.okd.io",
-  "description": "The Origin Community Distribution of Kubernetes."
+  "website": "https://www.openshift.org/",
+  "description": "Enterprise Kubernetes for Developers."
 },{
   "name": "Pulp",
   "logo": "pulp",
