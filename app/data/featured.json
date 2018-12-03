@@ -4,7 +4,7 @@
   "github": "https://github.com/CentOS",
   "website": "https://www.centos.org/",
   "description": "A solid, predictable base to build upon, with extensive resources to build, test, release, and maintain code."
-},{  
+},{
   "name": "Eclipse Vert.X",
   "logo": "vertx",
   "github": "https://github.com/vert-x3",
@@ -17,11 +17,11 @@
   "website": "https://www.gluster.org/",
   "description": "A free and open source software scalable network filesystem."
 },{
-  "name": "OpenShift Origin",
-  "logo": "openshift",
+  "name": "OKD",
+  "logo": "okd",
   "github": "https://github.com/openshift/origin",
-  "website": "https://www.openshift.org/",
-  "description": "Enterprise Kubernetes for Developers."
+  "website": "https://www.okd.io/",
+  "description": "The Origin Community Distribution of Kubernetes that powers Red Hat OpenShift."
 },{
   "name": "Pulp",
   "logo": "pulp",

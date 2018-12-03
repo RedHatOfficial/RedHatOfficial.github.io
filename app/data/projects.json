@@ -139,7 +139,7 @@
     "projectRepository": "https://github.com/dyninst",
     "projectWebsite": "http://www.dyninst.org/",
     "category": "Development"
-  }, 
+  },
   {
     "projectName": "Eclipse Che",
     "projectDescription": "Eclipse Che: Next-generation Eclipse IDE. Open source workspace server and cloud IDE.",
@@ -241,7 +241,7 @@
     "projectDescription": "Ruby programming language on the JVM",
     "projectRepository": "https://github.com/jruby",
     "category": "Development"
-  }, 
+  },
   {
     "projectName": "kpatch",
     "projectDescription": "A Linux dynamic kernel patching infrastructure",
@@ -336,7 +336,7 @@
     "projectRepository": "https://github.com/twaugh/patchutils",
     "projectWebsite": "http://cyberelk.net/tim/software/patchutils/",
     "category": "Development"
-  }, 
+  },
   {
     "projectName": "Patternfly",
     "projectDescription": "Created to promote design commonality and improved user experience across enterprise IT products and applications",
@@ -443,7 +443,7 @@
     "projectRepository": "https://github.com/SWI-Prolog",
     "projectWebsite": "http://www.swi-prolog.org",
     "category": "Development"
-  }, 
+  },
   {
     "projectName": "Theia",
     "projectDescription": "Cloud & Desktop IDE",
@@ -530,7 +530,7 @@
     "projectRepository": "https://github.com/apache/spark",
     "projectWebsite": "https://spark.apache.org/",
     "category": "Middleware"
-  }, 
+  },
   {
     "projectName": "apiman",
     "projectDescription": "The apiman project brings an open source development methodology to API Management",
@@ -686,14 +686,14 @@
     "projectRepository": "https://github.com/jbossws",
     "projectWebsite": "http://jbossws.jboss.org/",
     "category": "Middleware"
-  }, 
+  },
   {
     "projectName": "jboss-logging",
     "projectDescription": "JBoss Logging is a logging bridge providing integration with numerous logging frameworks",
     "projectRepository": "https://github.com/jboss-logging",
     "projectWebsite": "http://docs.jboss.org/hibernate/orm/4.3/topical/html/logging/Logging.html",
     "category": "Middleware"
-  }, 
+  },
   {
     "projectName": "jbosstm",
     "projectDescription": "Tools for working with the Narayana transaction service",
@@ -718,7 +718,7 @@
     "projectDescription": "A Java library for handling console input with the goal to support most GNU Readline features",
     "projectRepository": "https://github.com/qmx/jreadline",
     "category": "Middleware"
-  }, 
+  },
   {
     "projectName": "JSFUnit",
     "projectDescription": "Test Framework for JSF Applications",
@@ -759,7 +759,7 @@
     "projectRepository": "https://github.com/netty",
     "projectWebsite": "http://netty.io/",
     "category": "Middleware"
-  }, 
+  },
   {
     "projectName": "OptaPlanner",
     "projectDescription": "Java Constraint Solver that optimizes use cases such as employee rostering, vehicle routing, task assignment, cloud optimization and other planning problems.",
@@ -808,7 +808,7 @@
     "projectRepository": "https://github.com/richfaces/",
     "projectWebsite": "http://richfaces.jboss.org/",
     "category": "Middleware"
-  }, 
+  },
   {
     "projectName": "riftsaw",
     "projectDescription": "A WS-BPEL 2.0 engine that is optimized for the JBoss AS container",
@@ -829,7 +829,7 @@
     "projectRepository": "https://github.com/scribble",
     "projectWebsite": "http://www.scribble.org",
     "category": "Middleware"
-  }, 
+  },
   {
     "projectName": "Seam",
     "projectDescription": "A development platform for building rich Internet applications in Java",
@@ -857,14 +857,14 @@
     "projectRepository": "https://github.com/strimzi/strimzi",
     "projectWebsite": "http://strimzi.io/",
     "category": "Middleware"
-  }, 
+  },
   {
     "projectName": "Switchyard",
     "projectDescription": "SwitchYard is a component-based development framework focused on building structured, maintainable services and applications",
     "projectRepository": "https://github.com/jboss-switchyard",
     "projectWebsite": "https://switchyard.jboss.org/",
     "category": "Middleware"
-  }, 
+  },
   {
     "projectName": "Syndesis",
     "projectDescription": "A flexible, customizable platform that provides core integration capabilities as a service",
@@ -920,14 +920,14 @@
     "projectRepository": "https://github.com/windup",
     "projectWebsite": "https://developers.redhat.com/products/rhamt/overview/",
     "category": "Middleware"
-  }, 
+  },
   {
     "projectName": "Wise",
     "projectDescription": "Java framework for easily invoking webservices",
     "projectRepository": "https://github.com/jboss-wise",
     "projectWebsite": "http://wise.jboss.org/",
     "category": "Middleware"
-  }, 
+  },
   {
     "projectName": "XNIO",
     "projectDescription": "XNIO is a simplified low-level I/O layer which can be used anywhere you are using NIO today",
@@ -1257,7 +1257,7 @@
     "projectRepository": "https://github.com/libguestfs",
     "projectWebsite": "http://libguestfs.org/",
     "category": "Operations"
-  }, 
+  },
   {
     "projectName": "libqb",
     "projectDescription": "Library providing high-performance features for client-server applications",
@@ -1333,6 +1333,13 @@
     "category": "Operations"
   },
   {
+    "projectName": "OKD",
+    "projectDescription": "The Origin Community Distribution of Kubernetes that powers Red Hat OpenShift",
+    "projectRepository": "https://github.com/openshift/origin",
+    "projectWebsite": "http://www.okd.io",
+    "category": "Operations"
+  },
+  {
     "projectName": "OpenDaylight",
     "projectDescription": "A modular open platform for customizing and automating networks of any size and scale.",
     "projectRepository": "https://github.com/opendaylight/",
@@ -1344,13 +1351,6 @@
     "projectDescription": "Open Source Security Compliance Solution",
     "projectRepository": "https://github.com/OpenSCAP",
     "projectWebsite": "https://www.open-scap.org",
-    "category": "Operations"
-  },
-  {
-    "projectName": "OpenShift Origin",
-    "projectDescription": "Enterprise Kubernetes for Developers",
-    "projectRepository": "https://github.com/openshift/origin",
-    "projectWebsite": "http://www.openshift.org",
     "category": "Operations"
   },
   {
@@ -1380,7 +1380,7 @@
     "projectRepository": "https://github.com/clalancette/oz",
     "projectWebsite": "https://github.com/clalancette/oz/wiki",
     "category": "Operations"
-  }, 
+  },
   {
     "projectName": "Pacemaker",
     "projectDescription": "Advanced, scalabale high-availability cluster resource manager",
@@ -1557,7 +1557,7 @@
     "projectRepository": "https://github.com/virt-manager",
     "projectWebsite": "https://virt-manager.org/",
     "category": "Operations"
-  }, 
+  },
   {
     "projectName": "VMaaS",
     "projectDescription": "Vulnerability Management as a Service",
@@ -1577,7 +1577,7 @@
     "projectRepository": "https://github.com/AICoE",
     "projectWebsite": "https://github.com/AICoE",
     "category": "Organizations"
-  }, 
+  },
   {
     "projectName": "CO.LAB",
     "projectDescription": "CO.LAB teaches students how to work together to solve problems, share new ideas, and to create collaboratively out of a shared experience.",
@@ -1686,7 +1686,7 @@
     "projectRepository": "https://github.com/lathiat/avahi",
     "projectWebsite": "http://avahi.org/",
     "category": "Platform"
-  }, 
+  },
   {
     "projectName": "boom",
     "projectDescription": "Snapshot boot manager",
@@ -1706,7 +1706,7 @@
     "projectRepository": "https://github.com/hughsie/colord",
     "projectWebsite": "https://www.freedesktop.org/software/colord/",
     "category": "Platform"
-  }, 
+  },
   {
     "projectName": "CRaSH",
     "projectDescription": "The shell for the Java platform",
@@ -1810,7 +1810,7 @@
     "projectRepository": "https://github.com/leapp-to/",
     "projectWebsite": "https://leapp-to.github.io",
     "category": "Platform"
-  },  
+  },
   {
     "projectName": "LibreOffice",
     "projectDescription": "An integrated office suite based on copyleft licenses.",
@@ -1845,7 +1845,7 @@
     "projectRepository": "https://github.com/hughsie/PackageKit",
     "projectWebsite": "https://www.freedesktop.org/software/PackageKit/",
     "category": "Development"
-  }, 
+  },
   {
     "projectName": "pesign",
     "projectDescription": "Linux tools for signed PE-COFF binaries",
@@ -1858,7 +1858,7 @@
     "projectDescription": "Assists with in-place upgrading RHEL 6 to RHEL 7",
     "projectRepository": "https://github.com/upgrades-migrations/preupgrade-assistant/",
     "category": "Platform"
-  },  
+  },
   {
     "projectName": "rebase-helper",
     "projectDescription": "Tool aiming to help package maintainers rebase their packages",
@@ -1891,7 +1891,7 @@
     "projectDescription": "In-place upgrades RHEL 6 to RHEL 7",
     "projectRepository": "https://github.com/upgrades-migrations/redhat-upgrade-tool/",
     "category": "Platform"
-  },  
+  },
   {
     "projectName": "RPM Package Manager",
     "projectDescription": "Package creation and management",
@@ -1926,7 +1926,7 @@
     "projectRepository": "https://github.com/balabit/syslog-ng",
     "projectWebsite": "https://syslog-ng.com/open-source-log-management",
     "category": "Platform"
-  }, 
+  },
   {
     "projectName": "System Security Services Daemon",
     "projectDescription": "System daemon providing identity and access-control",
@@ -1973,7 +1973,7 @@
     "projectRepository": "https://github.com/karelzak/util-linux",
     "projectWebsite": "https://en.wikipedia.org/wiki/Util-linux",
     "category": "Platform"
-  },  
+  },
   {
     "projectName": "varlink",
     "projectDescription": "System and Service Manager for Linux",
@@ -2013,7 +2013,7 @@
     "projectRepository": "https://github.com/libstorage/libstoragemgmt/",
     "projectWebsite": "https://libstorage.github.io/libstoragemgmt-doc/",
     "category": "Storage"
-  }, 
+  },
   {
     "projectName": "Rook",
     "projectDescription": "File, block, and object storage services for cloud-native environments",
