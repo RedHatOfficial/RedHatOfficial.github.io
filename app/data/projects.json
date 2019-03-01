@@ -723,6 +723,7 @@
     "projectName": "Kiali",
     "projectDescription": "Service Mesh Observability",
     "projectRepository": "https://github.com/kiali",
+    "projectWebsite": "https://www.kiali.io/",
     "category": "Middleware"
   },
   {
