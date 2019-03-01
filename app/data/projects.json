@@ -592,20 +592,6 @@
     "category": "Middleware"
   },
   {
-    "projectName": "GateIn",
-    "projectDescription": "More than a web framework by letting you use your preferred one",
-    "projectRepository": "https://github.com/gatein",
-    "projectWebsite": "http://gatein.jboss.org/",
-    "category": "Middleware"
-  },
-  {
-    "projectName": "Hawkular",
-    "projectDescription": "Monitoring services: Metrics, Alerting, Inventory, Application Performance Management",
-    "projectRepository": "https://github.com/hawkular",
-    "projectWebsite": "http://www.hawkular.org",
-    "category": "Middleware"
-  },
-  {
     "projectName": "hawtio",
     "projectDescription": "Lightweight and modular HTML5 web console with lots of plugins for managing your Java stuff",
     "projectRepository": "https://github.com/hawtio",
@@ -1180,13 +1166,6 @@
     "projectName": "fusor",
     "projectDescription": "Ansible playbook server",
     "projectRepository": "https://github.com/fusor",
-    "category": "Operations"
-  },
-  {
-    "projectName": "Gamin",
-    "projectDescription": "A FAM implementation",
-    "projectRepository": "https://github.com/GNOME/gamin",
-    "projectWebsite": "https://www.gnome.org/~veillard/gamin/",
     "category": "Operations"
   },
   {
