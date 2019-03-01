@@ -1169,13 +1169,6 @@
     "category": "Operations"
   },
   {
-    "projectName": "Gamin",
-    "projectDescription": "A FAM implementation",
-    "projectRepository": "https://github.com/GNOME/gamin",
-    "projectWebsite": "https://www.gnome.org/~veillard/gamin/",
-    "category": "Operations"
-  },
-  {
     "projectName": "Heketi",
     "projectDescription": "RESTful based volume management framework for Gluster",
     "projectRepository": "https://github.com/heketi",
