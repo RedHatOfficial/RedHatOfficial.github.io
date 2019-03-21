@@ -2040,5 +2040,12 @@
     "projectRepository": "https://github.com/Tendrl",
     "projectWebsite": "http://tendrl.org/",
     "category": "Storage"
+  },
+  {
+    "projectName": "Keylime",
+    "projectDescription": "Bootstrapping and Maintaining Trust in the Cloud",
+    "projectRepository": "https://github.com/keylime",
+    "projectWebsite": "https://keylime.github.io/",
+    "category": "Operations"
   }
 ]
