@@ -119,20 +119,6 @@
     "category": "Development"
   },
   {
-    "projectName": "devsuite-installer",
-    "projectDescription": "Single Installer for all Red Hat Development Tools",
-    "projectRepository": "https://github.com/redhat-developer-tooling/developer-platform-install",
-    "projectWebsite": "https://developers.redhat.com/products/devsuite/overview/",
-    "category": "Development"
-  },
-  {
-    "projectName": "Distributed-CI",
-    "projectDescription": "Extend Red Hat production chain on partner platforms.",
-    "projectRepository": "https://github.com/redhat-cip/dci-control-server",
-    "projectWebsite": "https://doc.distributed-ci.io/",
-    "category": "Development"
-  },
-  {
     "projectName": "dmpy",
     "projectDescription": "Device-mapper Python bindings",
     "projectRepository": "https://github.com/bmr-cymru/dmpy",
@@ -404,17 +390,17 @@
     "category": "Development"
   },
   {
+    "projectName": "Red Hat CodeReady Studio",
+    "projectDescription": "Eclipse plugins for JBoss, Fuse, OpenShift",
+    "projectRepository": "https://github.com/jbdevstudio",
+    "projectWebsite": "https://developers.redhat.com/products/codeready-studio/overview/",
+    "category": "Development"
+  },  
+  {
     "projectName": "Red Hat Fuse Tooling",
     "projectDescription": "Tooling to develop Apache Camel and Red Hat Fuse integration projects",
     "projectRepository": "https://github.com/jbosstools/jbosstools-fuse",
     "projectWebsite": "https://tools.jboss.org/features/fusetools.html",
-    "category": "Development"
-  },
-  {
-    "projectName": "Red Hat JBoss Developer Studio",
-    "projectDescription": "Eclipse plugins for JBoss, Fuse, OpenShift",
-    "projectRepository": "https://github.com/jbdevstudio",
-    "projectWebsite": "https://developers.redhat.com/products/devstudio/",
     "category": "Development"
   },
   {
@@ -568,7 +554,6 @@
     "projectName": "chronicler",
     "projectDescription": "Pluggable Rally time sheet uploader",
     "projectRepository": "https://github.com/alechenninger/chronicler",
-    "projectWebsite": "https://rally1.rallydev.com",
     "category": "Middleware"
   },
   {
@@ -795,7 +780,7 @@
     "category": "Middleware"
   },
   {
-    "projectName": "rhq-project",
+    "projectName": "RHQ",
     "projectDescription": "RHQ is an enterprise management solution for JBoss middleware projects",
     "projectRepository": "https://github.com/rhq-project",
     "projectWebsite": "https://rhq-project.github.io/rhq/",
@@ -858,7 +843,7 @@
     "category": "Middleware"
   },
   {
-    "projectName": "Switchyard",
+    "projectName": "SwitchYard",
     "projectDescription": "SwitchYard is a component-based development framework focused on building structured, maintainable services and applications",
     "projectRepository": "https://github.com/jboss-switchyard",
     "projectWebsite": "https://switchyard.jboss.org/",
@@ -1135,13 +1120,6 @@
     "category": "Operations"
   },
   {
-    "projectName": "Fedora libre-server Organization",
-    "projectDescription": "Managing server roles",
-    "projectRepository": "https://github.com/libre-server",
-    "projectWebsite": "https://libre-server.github.io/",
-    "category": "Operations"
-  },
-  {
     "projectName": "fedora-selinux",
     "projectDescription": "SELinux policies for Fedora",
     "projectRepository": "https://github.com/fedora-selinux",
@@ -1186,13 +1164,6 @@
     "projectDescription": "RESTful based volume management framework for Gluster",
     "projectRepository": "https://github.com/heketi",
     "projectWebsite": "https://github.com/heketi/heketi/wiki",
-    "category": "Operations"
-  },
-  {
-    "projectName": "HornetQ",
-    "projectDescription": "Build a multi-protocol, embeddable, very high performance, clustered, asynchronous messaging system",
-    "projectRepository": "https://github.com/hornetq",
-    "projectWebsite": "http://hornetq.org",
     "category": "Operations"
   },
   {
@@ -1255,6 +1226,13 @@
     "projectDescription": "Library providing high-performance features for client-server applications",
     "projectRepository": "https://github.com/ClusterLabs/libqb",
     "projectWebsite": "https://clusterlabs.github.io/libqb/",
+    "category": "Operations"
+  },
+  {
+    "projectName": "Libre Server",
+    "projectDescription": "Managing server roles",
+    "projectRepository": "https://github.com/libre-server",
+    "projectWebsite": "https://libre-server.github.io/",
     "category": "Operations"
   },
   {
@@ -1790,6 +1768,13 @@
     "category": "Platform"
   },
   {
+    "projectName": "ImageFactory",
+    "projectDescription": "imagefactory builds images for a variety of operating system/cloud combinations",
+    "projectRepository": "https://github.com/redhat-imaging",
+    "projectWebsite": "https://imgfac.org/",
+    "category": "Platform"
+  },
+  {
     "projectName": "KDE",
     "projectDescription": "A free software community offering an advanced graphical desktop, a wide variety of applications and a platform to easily build new applications upon",
     "projectRepository": "https://github.com/KDE",
@@ -1798,9 +1783,9 @@
   },
   {
     "projectName": "LEAPP",
-    "projectDescription": "In-place upgrades RHEL 7 to future versions of RHEL",
+    "projectDescription": "Leapp project aims to enable users to modernize their existing workloads without disrupting them in three different ways: upgrading them in place, migrating them to a different place or containerize them.",
     "projectRepository": "https://github.com/leapp-to/",
-    "projectWebsite": "https://leapp-to.github.io",
+    "projectWebsite": "https://oamg.github.io/leapp/",
     "category": "Platform"
   },
   {
@@ -1869,13 +1854,6 @@
     "projectDescription": "Software installer",
     "projectRepository": "https://github.com/up2date",
     "projectWebsite": "https://en.wikipedia.org/wiki/Up2date",
-    "category": "Platform"
-  },
-  {
-    "projectName": "redhat-imaging",
-    "projectDescription": "imagefactory builds images for a variety of operating system/cloud combinations",
-    "projectRepository": "https://github.com/redhat-imaging",
-    "projectWebsite": "https://imgfac.org/",
     "category": "Platform"
   },
   {
@@ -2007,6 +1985,13 @@
     "category": "Storage"
   },
   {
+    "projectName": "Project Springfield",
+    "projectDescription": "A smart and automated storage.",
+    "projectRepository": "https://github.com/springfield-project/",
+    "projectWebsite": "https://springfield-project.github.io/",
+    "category": "Storage"
+  },  
+  {
     "projectName": "Rook",
     "projectDescription": "File, block, and object storage services for cloud-native environments",
     "projectRepository": "https://github.com/rook",
@@ -2023,13 +2008,6 @@
     "projectName": "Smallfile",
     "projectDescription": "Metadata-intensive workload generator for distributed POSIX filesystems",
     "projectRepository": "https://github.com/bengland2/smallfile",
-    "category": "Storage"
-  },
-  {
-    "projectName": "Springfield Project",
-    "projectDescription": "A smart and automated storage.",
-    "projectRepository": "https://github.com/springfield-project/",
-    "projectWebsite": "https://springfield-project.github.io/",
     "category": "Storage"
   },
   {
