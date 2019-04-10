@@ -18,4 +18,5 @@ export default angular.module("rhGitHub.universalfooter", [])
     $scope.links = links;
     $scope.logo = logo;
     $scope.summit = summit;
+    $scope.copyright_years = '2018–' + new Date().getFullYear();
   }]);
