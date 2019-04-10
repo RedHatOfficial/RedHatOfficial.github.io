@@ -112,6 +112,13 @@
     "category": "Development"
   },
   {
+    "projectName": "DCI",
+    "projectDescription": "Extend the Red Hat CI systems through our walls",
+    "projectRepository": "https://github.com/redhat-cip/dci-control-server/",
+    "projectWebsite": "https://www.distributed-ci.io/",
+    "category": "Development"
+  },
+  {
     "projectName": "devsuite-installer",
     "projectDescription": "Single Installer for all Red Hat Development Tools",
     "projectRepository": "https://github.com/redhat-developer-tooling/developer-platform-install",
