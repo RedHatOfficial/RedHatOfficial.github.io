@@ -59,7 +59,6 @@
     "projectName": "awestruct",
     "projectDescription": "Static site baking and deployment tool written in Ruby",
     "projectRepository": "https://github.com/awestruct",
-    "projectWebsite": "http://awestruct.org",
     "category": "Development"
   },
   {
