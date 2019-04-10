@@ -121,6 +121,13 @@
     "category": "Development"
   },
   {
+    "projectName": "Distributed-CI",
+    "projectDescription": "Extend Red Hat production chain on partner platforms.",
+    "projectRepository": "https://github.com/redhat-cip/dci-control-server",
+    "projectWebsite": "https://doc.distributed-ci.io/",
+    "category": "Development"
+  },
+  {
     "projectName": "dmpy",
     "projectDescription": "Device-mapper Python bindings",
     "projectRepository": "https://github.com/bmr-cymru/dmpy",
