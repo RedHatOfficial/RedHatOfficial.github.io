@@ -766,6 +766,13 @@
     "category": "Middleware"
   },
   {
+    "projectName": "Quarkus",
+    "projectDescription": "A Kubernetes Native Java stack tailored for GraalVM & OpenJDK HotSpot",
+    "projectRepository": "https://github.com/quarkusio/quarkus",
+    "projectWebsite": "https://quarkus.io",
+    "category": "Middleware"
+  },
+  {
     "projectName": "RESTEasy",
     "projectDescription": "Provides various frameworks to help you build RESTful Web Services and RESTful Java applications",
     "projectRepository": "https://github.com/resteasy",
