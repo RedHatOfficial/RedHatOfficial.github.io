@@ -23,7 +23,7 @@
 
 %hero-heading {
     color: $black;
-    font-family: $header-font-family;
+    font-family: $base-font-family--heading;
     font-size: 35px;
     font-weight: 600;
     line-height: 1.18;
@@ -76,7 +76,7 @@
 
 %band-heading {
     color: $black;
-    font-family: $header-font-family;
+    font-family: $base-font-family--heading;
     font-size: 32px;
     font-weight: 800;
     line-height: 1.1;
@@ -125,7 +125,7 @@
 
 %group-heading {
     color: $black;
-    font-family: $header-font-family;
+    font-family: $base-font-family--heading;
     font-size: 22px;
     font-weight: 600;
     line-height: 1.18;
