@@ -1,0 +1,28 @@
+@import "../../public/styles/global";
+
+.hero {
+    &--component {
+        @extend %default--band;
+        align-items: center;
+        background-color: $gallery;
+        background-image: url("../../public/img/hero.png");
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        min-height: 40vh;
+        justify-content: center;
+    }
+
+    &-container {
+        @extend %default-container;
+    }
+
+    &-heading {
+        @extend %hero-heading;
+    }
+
+    &-copy {
+        @extend %hero-copy;
+    }
+}

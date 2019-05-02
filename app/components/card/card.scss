@@ -1,0 +1,57 @@
+@import "../../public/styles/global";
+
+.card {
+    &--component {
+        @extend %default--card;
+    }
+    &-header {
+        display: flex;
+        justify-content: center;
+        flex-flow: column nowrap;
+        &-img {
+            display: block;
+            margin: 0 auto;
+            padding: 0 10px;
+            max-width: 80%;
+            max-height: 50px;
+        }
+    }
+    &-body {
+        flex-grow: 1;
+        > *:not(:last-child) {
+            padding-bottom: 10px;
+        }
+        &-headline {
+            @extend %card-heading;
+        }
+        &-copy {
+            @extend %card-copy;
+        }
+    }
+    &-footer {
+        padding: 0 20px;
+        &[data-layout="2-up"] {
+            display: grid;
+            grid-template-columns: repeat(2, 50%);
+            grid-auto-rows: 1fr;
+            > * {
+              padding: 0 10px;
+            }
+        }
+        &[data-layout="center"] {
+            display: flex;
+            flex-flow: row nowrap;
+            align-items: center;
+            justify-content: center;
+        }
+        [data-layout="2-up"] &-content:last-child {
+            border-left: 2px solid $iron;
+        }
+        &-link {
+            @extend %subtle-link;
+        }
+        &-icon {
+            @extend %link-icon;
+        }
+    }
+}

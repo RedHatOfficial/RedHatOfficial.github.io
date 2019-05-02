@@ -1,0 +1,47 @@
+<div class="table--component">
+
+  <div class="table-filters">
+    <div class="table-search">
+      <input class="table-search-input"
+              type="text"
+              placeholder="Search by project name..."
+              ng-model="searchInputValue"
+              ng-change="searchTable()">
+      <button class="table-search-button"
+        ng-submit="searchTable()">Search</button>
+    </div>
+    <div class="table-dropdown"
+      ng-show="{{ categories.length > 0 }}">
+      <label for="category" class="table-dropdown-label">Categories</label>
+      <select class="table-dropdown-select"
+        ng-options="category as category for category in categories track by category"
+        name="category"
+        ng-model="searchCategory">
+        <option value="">-- Filter by category --</option>
+      </select>
+      <i class="fas fa-caret-down"></i>
+    </div>
+  </div>
+
+  <table class="table-main" ng-hide="filtered.length < 1">
+    <thead class="table-header">
+      <tr>
+        <th>Project name</th>
+        <th>Project website</th>
+        <th>Category</th>
+      </tr>
+    </thead>
+    <tbody class="table-body">
+      <tr class="table-row"
+        ng-repeat="project in projects | orderBy:'+projectName' | filter:{projectName:searchQuery} | filter:{category:searchCategory || ''} as filtered">
+        <td><a href="{{ project.projectRepository }}">{{ project.projectName }}</a></td>
+        <td><a href="{{ project.projectWebsite }}">{{ project.projectWebsite }}</a></td>
+        <td>{{ project.category }}</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="table-no-results" ng-show="filtered.length < 1">
+    <p class="table-no-results-message">There appear to be no results for your search. <a href="" ng-click="searchClear()">Clear filters</a></p>
+  </div>
+</div>
