@@ -62,15 +62,16 @@
     "category": "Development"
   },
   {
-    "projectName": "BoxGrinder",
-    "projectDescription": "Tool to build appliances",
-    "projectRepository": "https://github.com/boxgrinder",
-    "category": "Development"
-  },
-  {
     "projectName": "buildah",
     "projectDescription": "A tool for building OCI container images",
     "projectRepository": "https://github.com/projectatomic/buildah/",
+    "category": "Development"
+  },
+  {
+    "projectName": "CEKit",
+    "projectDescription": "Container image creation tool",
+    "projectRepository": "https://github.com/cekit/cekit/",
+    "projectWebsite": "https://cekit.io/",
     "category": "Development"
   },
   {
