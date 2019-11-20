@@ -32,7 +32,7 @@
     "webpack-dev-server": "^3.3.1"
   },
   "dependencies": {
-    "angular": "^1.6.9",
+    "angular": "^1.7.9",
     "angular-route": "^1.6.9",
     "angular-sanitize": "^1.6.9"
   }
