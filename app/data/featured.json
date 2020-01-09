@@ -5,23 +5,23 @@
   "website": "https://www.centos.org/",
   "description": "A solid, predictable base to build upon, with extensive resources to build, test, release, and maintain code."
 },{
-  "name": "Eclipse Vert.X",
-  "logo": "vertx",
-  "github": "https://github.com/vert-x3",
-  "website": "https://vertx.io/",
-  "description": "A tool kit for building reactive applications on the JVM."
-},{
-  "name": "Gluster",
-  "logo": "gluster",
-  "github": "https://github.com/gluster",
-  "website": "https://www.gluster.org/",
-  "description": "A free and open source software scalable network filesystem."
+  "name": "Ceph",
+  "logo": "ceph",
+  "github": "https://github.com/ceph",
+  "website": "https://ceph.io/",
+  "description": "A distributed object, block, and file storage platform."
 },{
   "name": "OKD",
   "logo": "okd",
   "github": "https://github.com/openshift/origin",
   "website": "https://www.okd.io/",
   "description": "The Origin Community Distribution of Kubernetes that powers Red Hat OpenShift."
+},{
+  "name": "Project QUAY",
+  "logo": "quay",
+  "github": "https://github.com/quay",
+  "website": "https://quay.io",
+  "description": "[Builds, analyzes, distributes] your container images."
 },{
   "name": "Pulp",
   "logo": "pulp",
