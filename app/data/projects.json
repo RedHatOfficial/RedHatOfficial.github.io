@@ -1388,6 +1388,13 @@
     "category": "Operations"
   },
   {
+    "projectName": "Project QUAY",
+    "projectDescription": "[builds, analyzes, distributes] your container images",
+    "projectRepository": "https://github.com/quay",
+    "projectWebsite": "https://quay.io/",
+    "category": "Operations"
+  },
+  {
     "projectName": "Prometheus",
     "projectDescription": "A monitoring system and time series database",
     "projectRepository": "https://github.com/prometheus",
@@ -1406,13 +1413,6 @@
     "projectDescription": "A fast processor emulator",
     "projectRepository": "https://github.com/qemu/qemu",
     "projectWebsite": "https://qemu.org/",
-    "category": "Operations"
-  },
-  {
-    "projectName": "QUAY",
-    "projectDescription": "[builds, analyzes, distributes] your container images",
-    "projectRepository": "https://github.com/quay",
-    "projectWebsite": "https://quay.io/",
     "category": "Operations"
   },
   {
