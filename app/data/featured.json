@@ -20,7 +20,7 @@
   "name": "Project QUAY",
   "logo": "quay",
   "github": "https://github.com/quay",
-  "website": "https://quay.io",
+  "website": "https://projectquay.io",
   "description": "[Builds, analyzes, distributes] your container images."
 },{
   "name": "Pulp",
