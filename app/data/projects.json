@@ -1409,6 +1409,13 @@
     "category": "Operations"
   },
   {
+    "projectName": "QUAY",
+    "projectDescription": "[builds, analyzes, distributes] your container images",
+    "projectRepository": "https://github.com/quay",
+    "projectWebsite": "https://quay.io/",
+    "category": "Operations"
+  },
+  {
     "projectName": "Red Hat Insights",
     "projectDescription": "Proactive analytics and real-time intelligence",
     "projectRepository": "https://github.com/RedHatInsights",
