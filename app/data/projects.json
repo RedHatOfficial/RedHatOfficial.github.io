@@ -1391,7 +1391,7 @@
     "projectName": "Project QUAY",
     "projectDescription": "[builds, analyzes, distributes] your container images",
     "projectRepository": "https://github.com/quay",
-    "projectWebsite": "https://quay.io/",
+    "projectWebsite": "https://projectquay.io/",
     "category": "Operations"
   },
   {
