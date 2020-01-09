@@ -10,10 +10,10 @@ import content from "../../data/content";
 
 // Images
 import centos from "../../public/img/logo-centos.png";
-import gluster from "../../public/img/logo-gluster.jpg";
+import ceph from "../../public/img/logo-ceph.png";
 import okd from "../../public/img/logo-okd.png";
 import pulp from "../../public/img/logo-pulp.png";
-import vertx from "../../public/img/logo-vertx.png";
+import quay from "../../public/img/project_quay_logo.png";
 import wildfly from "../../public/img/logo-wildfly.png";
 
 // Components
@@ -44,10 +44,10 @@ export default angular.module("rhGitHub.main", [
     this.featured = featured;
     this.logos = {
       centos: centos,
-      gluster: gluster,
+      ceph: ceph,
       okd: okd,
       pulp: pulp,
-      vertx: vertx,
+      quay: quay,
       wildfly: wildfly
     };
     this.content = content;
