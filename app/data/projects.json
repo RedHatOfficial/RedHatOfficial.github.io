@@ -1591,10 +1591,10 @@
     "category": "Organizations"
   },
   {
-    "projectName": "Open Organization Ambassadors",
-    "projectDescription": "Repositories from the open organization ambassadors at Opensource.com",
-    "projectRepository": "https://github.com/open-organization-ambassadors",
-    "projectWebsite": "https://www.opensource.com/open-organization",
+    "projectName": "The Open Organization Project",
+    "projectDescription": "Resources for building open organizations",
+    "projectRepository": "https://github.com/open-organization",
+    "projectWebsite": "https://open-organization.github.io",
     "category": "Organizations"
   },
   {
