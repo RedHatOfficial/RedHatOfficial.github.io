@@ -75,6 +75,7 @@
     &-main {
       border-collapse: collapse;
       width: 100%;
+      table-layout: fixed;
 
       @media all and (max-width: $breakpoint-sm-max) {
         table-layout: fixed;
@@ -93,6 +94,16 @@
       th {
         @extend %table-head;
         padding: 10px;
+      }
+
+      th:nth-child(3) {
+        //text-align: center;
+        padding-left: 13%;
+      }
+
+      th:nth-child(4) {
+        //text-align: center;
+        padding-left: 13%;
       }
 
       tbody tr:nth-child(even) {
@@ -116,6 +127,28 @@
             font-weight: 600;
           }
         }
+      }
+      td:nth-child(1) {
+        //max-width: 200px;
+        //padding-right: 15%;
+        //width: 10%;
+      }
+      td:nth-child(2) {
+        //max-width: 300px;
+        //overflow: hidden;
+        //text-overflow: ellipsis;
+        //column-width: 50%;
+      }
+      td:nth-child(3) {
+        //max-width: 10%;
+        //padding-right: 10%;
+        padding-left: 13%;
+        //width: 10%;
+      }
+      td:nth-child(4) {
+        //width: 70%;
+        //text-align: center;
+        padding-left: 13%;
       }
     }
 
