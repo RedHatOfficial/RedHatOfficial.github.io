@@ -576,13 +576,13 @@
 		"twitterURL": ""
   },
   {
-    "projectName": "Theia",
-    "projectDescription": "Cloud & Desktop IDE",
-    "projectRepository": "https://github.com/theia-ide",
-    "projectWebsite": "http://www.theia-ide.org/",
+    "projectName": "Eclipse Theia",
+    "projectDescription": "Cloud & Desktop IDE Platform",
+    "projectRepository": "https://github.com/eclipse-theia/theia",
+    "projectWebsite": "https://www.theia-ide.org/",
     "category": "Development",
-		"twitterHandle": "",
-		"twitterURL": ""
+    "twitterHandle": "",
+    "twitterURL": ""
   },
   {
     "projectName": "TianoCore",
