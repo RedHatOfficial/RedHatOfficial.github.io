@@ -49,6 +49,33 @@ This list is just for Red Hat contributions to projects hosted on GitHub.  See h
 ### Hosting projects on /RedHatOfficial
 
 Open an issue in *this* repo, and the owners of the RedHatOfficial organization will get in touch with you.
+
+## Quick start
+    ```
+    git clone https://github.com/RedHatOfficial/RedHatOfficial.github.io.git
+    cd RedHatOfficial.github.io
+    
+    ```
+ 
+## Building and Running Locally
+Building and running the Red Hat Official Project Page in your local dev environment is very easy. Be sure you have [Node.js](https://nodejs.org/) installed, then follow the directions below. 
+
+1. Setup Webpack and babel-loader modules using npm
+
+   `npm install babel-loader webpack --save-dev`
+   
+2. Setup node-sass using npm 
+
+   `npm install --save-dev node-sass`
+   
+3. Run a local Development Server
+
+   `npm start`
+   
+   
+ Red Hat Official Project Page will start running on [localhost:8080](http://localhost:8080/)
+   
+   
 ## Built with
 
 This site was created using [Angular](https://angularjs.org/), [webpack](https://webpack.js.org/), [NPM](https://www.npmjs.com/), [Babel](https://babeljs.io/), and [Sass](https://sass-lang.com/).
