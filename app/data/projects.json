@@ -736,7 +736,6 @@
     "projectName": "mod_cluster",
     "projectDescription": "An httpd-based load balancer",
     "projectRepository": "https://github.com/modcluster",
-    "projectWebsite": "http://modcluster.io/",
     "category": "Middleware"
   },
   {
