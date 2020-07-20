@@ -104,7 +104,7 @@
     "projectName": "crash",
     "projectDescription": "The Linux kernel crash utility",
     "projectRepository": "https://github.com/crash-utility",
-    "projectWebsite": "https://people.redhat.com/anderson/crash",
+    "projectWebsite": "https://crash-utility.github.io/",
     "category": "Development"
   },
   {
