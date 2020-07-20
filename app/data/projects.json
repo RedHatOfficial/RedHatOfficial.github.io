@@ -643,7 +643,7 @@
     "projectName": "JBoss Developer Studio",
     "projectDescription": "A development environment with support for your entire development lifecycle",
     "projectRepository": "https://github.com/jbdevstudio",
-    "projectWebsite": "https://devstudio.jboss.com",
+    "projectWebsite": "https://developer.jboss.org/welcome",
     "category": "Middleware"
   },
   {
