@@ -1772,14 +1772,12 @@
     "projectName": "fwupd",
     "projectDescription": "A simple daemon to allow session software to update firmware",
     "projectRepository": "https://github.com/hughsie/fwupd",
-    "projectWebsite": "https://fwupd.org",
     "category": "Platform"
   },
   {
     "projectName": "fwupdate",
     "projectDescription": "System firmware update support for UEFI machines",
     "projectRepository": "https://github.com/rhboot/fwupdate",
-    "projectWebsite": "https://fwupd.org",
     "category": "Platform"
   },
   {
