@@ -30,12 +30,14 @@
   "name": "Pulp",
   "logo": "pulp",
   "github": "https://github.com/pulp",
+  "twitter": "https://twitter.com/pulpproj",
   "website": "https://pulpproject.org/",
   "description": "A platform for managing repositories of software packages and making it available to a large numbers of consumers."
 },{
   "name": "WildFly",
   "logo": "wildfly",
   "github": "https://github.com/wildfly",
+  "twitter": "https://twitter.com/wildflyas",
   "website": "http://wildfly.org/",
   "description": "A flexible, lightweight, managed application runtime that helps you build amazing applications."
 }]
