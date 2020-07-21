@@ -379,18 +379,21 @@ title: Breakpoints
 
 .card-footer {
   padding: 0 20px; }
+  .card-footer[data-layout="3-up"] {
+    display: grid;
+    grid-template-columns: repeat(3, 36.156%);
+    grid-auto-rows: 1fr; }
+    .card-footer[data-layout="3-up"] > * {
+      padding: 0 10px; }
   .card-footer[data-layout="2-up"] {
     display: grid;
     grid-template-columns: repeat(2, 50%);
     grid-auto-rows: 1fr; }
     .card-footer[data-layout="2-up"] > * {
       padding: 0 10px; }
-  .card-footer[data-layout="center"] {
-    display: flex;
-    flex-flow: row nowrap;
-    align-items: center;
-    justify-content: center; }
-  [data-layout="2-up"] .card-footer-content:last-child {
+  [data-layout="3-up"] .card-footer-content:last-child {
+    border-left: 2px solid #d2d3d5; }
+  [data-layout="3-up"] .card-footer-content:nth-child(2) {
     border-left: 2px solid #d2d3d5; }
 
 h1, h2, h3, h4 {
