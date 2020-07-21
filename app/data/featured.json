@@ -2,24 +2,28 @@
   "name": "CentOS Project",
   "logo": "centos",
   "github": "https://github.com/CentOS",
+  "twitter": "https://twitter.com/CentOSProject",
   "website": "https://www.centos.org/",
   "description": "A solid, predictable base to build upon, with extensive resources to build, test, release, and maintain code."
 },{
   "name": "Ceph",
   "logo": "ceph",
   "github": "https://github.com/ceph",
+  "twitter": "https://twitter.com/Ceph",
   "website": "https://ceph.io/",
   "description": "A distributed object, block, and file storage platform."
 },{
   "name": "OKD",
   "logo": "okd",
   "github": "https://github.com/openshift/origin",
+  "twitter": "https://twitter.com/openshift",
   "website": "https://www.okd.io/",
   "description": "The Origin Community Distribution of Kubernetes that powers Red Hat OpenShift."
 },{
   "name": "Project QUAY",
   "logo": "quay",
   "github": "https://github.com/quay",
+  "twitter": "https://twitter.com/quayio",
   "website": "https://projectquay.io",
   "description": "[Builds, analyzes, distributes] your container images."
 },{

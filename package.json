@@ -12,7 +12,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@angular/cli": "^1.7.3",
+    "@angular/cli": "10.0.3",
     "angular-cli-ghpages": "^0.5.2",
     "babel-core": "^6.26.3",
     "babel-loader": "^7.1.4",
