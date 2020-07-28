@@ -155,6 +155,13 @@
     "category": "Development"
   },
   {
+    "projectName": "Eclipse JKube",
+    "projectDescription": "Cloud-Native Java Applications without a hassle. Eclipse JKube is a collection of plugins and libraries that are used for building container images using Docker, JIB or S2I build strategies. Eclipse JKube generates and deploys Kubernetes/OpenShift manifests at compile time too. It brings your Java applications on to Kubernetes and OpenShift by leveraging the tasks required to make your application cloud-native.",
+    "projectRepository": "https://github.com/eclipse/jkube",
+    "projectWebsite": "https://www.eclipse.org/jkube/",
+    "category": "Development"
+  },
+  {
     "projectName": "Eclipse Vert.x",
     "projectDescription": "Eclipse Vert.x is a tool-kit for building reactive applications on the JVM.",
     "projectRepository": "https://github.com/vert-x3",
