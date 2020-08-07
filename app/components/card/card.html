@@ -6,11 +6,17 @@
       <h3 class="card-body-headline"><a href="{{ $ctrl.feature.github }}">{{ $ctrl.feature.name }}</a></h3>
       <p class="card-body-copy" ng-bind-html="$ctrl.feature.description"></p>
   </div>
-  <div class="card-footer" ng-attr-data-layout="{{ $ctrl.feature.website && $ctrl.feature.github ? '2-up' : 'center' }}" ng-show="$ctrl.feature.website || $ctrl.feature.github">
+  <div class="card-footer" ng-attr-data-layout="{{ $ctrl.feature.website && $ctrl.feature.github && $ctrl.feature.twitter ? '3-up' : '2-up' }}" ng-show="$ctrl.feature.website || $ctrl.feature.github || $ctrl.feature.twitter">
       <div class="card-footer-content" data-align="right" ng-show="$ctrl.feature.website">
         <a class="card-footer-link" href="{{ $ctrl.feature.website }}">
           <i class="card-footer-icon fa fa-fw fa-globe"></i>
           Website
+        </a>
+      </div>
+      <div class="card-footer-content" data-align="center" ng-show="$ctrl.feature.twitter">
+        <a class="card-footer-link" href="{{ $ctrl.feature.twitter }}">
+          <i class="card-footer-icon fab fa-twitter"></i>
+          Twitter
         </a>
       </div>
       <div class="card-footer-content" data-align="left" ng-show="$ctrl.feature.github">
@@ -19,5 +25,6 @@
           Repo
         </a>
       </div>
+      
   </div>
 </div>

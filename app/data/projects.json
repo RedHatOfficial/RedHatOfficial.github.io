@@ -83,6 +83,7 @@
     "projectName": "buildah",
     "projectDescription": "A tool for building OCI container images",
     "projectRepository": "https://github.com/projectatomic/buildah/",
+    "projectWebsite": "https://buildah.io/",
     "category": "Development",
 		"twitterHandle": "",
 		"twitterURL": ""
@@ -133,7 +134,7 @@
     "projectName": "crash",
     "projectDescription": "The Linux kernel crash utility",
     "projectRepository": "https://github.com/crash-utility",
-    "projectWebsite": "https://people.redhat.com/anderson/crash",
+    "projectWebsite": "https://crash-utility.github.io/",
     "category": "Development",
 		"twitterHandle": "",
 		"twitterURL": ""
@@ -198,6 +199,13 @@
     "category": "Development",
 		"twitterHandle": "",
 		"twitterURL": ""
+  },
+  {
+    "projectName": "Eclipse JKube",
+    "projectDescription": "Cloud-Native Java Applications without a hassle. Eclipse JKube is a collection of plugins and libraries that are used for building container images using Docker, JIB or S2I build strategies. Eclipse JKube generates and deploys Kubernetes/OpenShift manifests at compile time too. It brings your Java applications on to Kubernetes and OpenShift by leveraging the tasks required to make your application cloud-native.",
+    "projectRepository": "https://github.com/eclipse/jkube",
+    "projectWebsite": "https://www.eclipse.org/jkube/",
+    "category": "Development"
   },
   {
     "projectName": "Eclipse Vert.x",
@@ -453,6 +461,13 @@
     "category": "Development",
 		"twitterHandle": "",
 		"twitterURL": ""
+  },
+  {
+    "projectName": "Podman",
+    "projectDescription": "Library and tool for running OCI-based containers",
+    "projectRepository": "https://github.com/containers/podman",
+    "projectWebsite": "https://podman.io/",
+    "category": "Development"
   },
   {
     "projectName": "Python",
@@ -823,7 +838,7 @@
     "projectName": "JBoss Developer Studio",
     "projectDescription": "A development environment with support for your entire development lifecycle",
     "projectRepository": "https://github.com/jbdevstudio",
-    "projectWebsite": "https://devstudio.jboss.com",
+    "projectWebsite": "https://developer.jboss.org/welcome",
     "category": "Middleware",
 		"twitterHandle": "",
 		"twitterURL": ""
@@ -944,7 +959,6 @@
     "projectName": "mod_cluster",
     "projectDescription": "An httpd-based load balancer",
     "projectRepository": "https://github.com/modcluster",
-    "projectWebsite": "http://modcluster.io/",
     "category": "Middleware",
 		"twitterHandle": "",
 		"twitterURL": ""
@@ -2283,7 +2297,6 @@
     "projectName": "fwupd",
     "projectDescription": "A simple daemon to allow session software to update firmware",
     "projectRepository": "https://github.com/hughsie/fwupd",
-    "projectWebsite": "https://fwupd.org",
     "category": "Platform",
 		"twitterHandle": "",
 		"twitterURL": ""
@@ -2292,7 +2305,6 @@
     "projectName": "fwupdate",
     "projectDescription": "System firmware update support for UEFI machines",
     "projectRepository": "https://github.com/rhboot/fwupdate",
-    "projectWebsite": "https://fwupd.org",
     "category": "Platform",
 		"twitterHandle": "",
 		"twitterURL": ""
