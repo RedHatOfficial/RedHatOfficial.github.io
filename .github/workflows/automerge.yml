@@ -1,7 +1,7 @@
 name: Automerge PR
 on:
   pull_request:
-    types: [labeled, unlabeled, synchronize, edited, unlocked]
+    types: [labeled, synchronize, edited, unlocked]
   pull_request_review:
     types: [submitted]
   check_suite:
@@ -9,6 +9,7 @@ on:
     status: success
 jobs:
   try_to_merge:
+    if: contains(github.event.pull_request.labels.*.name, 'automerge')
     runs-on: ubuntu-latest
     steps:
       - name: Try to automerge PR ${{ github.event.number }}
