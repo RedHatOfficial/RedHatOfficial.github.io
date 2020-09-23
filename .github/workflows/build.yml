@@ -35,6 +35,6 @@ jobs:
         run: npm run build
 
       - name: Validate URLs
-        run: |
-          set -e && for url in $(jq .[].projectWebsite app/data/projects.json | tr -d \"); do if [ "$url" != "null" ]; then echo "${url}"; curl "${url}" -o /dev/null --fail -L; fi; done
-          set -e && for url in $(jq .[].projectRepository app/data/projects.json | tr -d \"); do if [ "$url" != "null" ]; then echo "${url}"; curl "${url}" -o /dev/null --fail -L; fi; done
+        uses: paramt/url-checker@master
+        with:
+          files: "app/data/projects.json"
