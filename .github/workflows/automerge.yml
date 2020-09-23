@@ -8,17 +8,8 @@ on:
     types: [completed]
     status: success
 jobs:
-  build:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v2
-      - name: Update Octokit
-        working-directory: packages/github 
-        run: |
-          npm install
-          npm run build
   try_to_merge:
+    needs: build
     runs-on: ubuntu-latest
     steps:
       - name: Try to automerge PR ${{ github.event.number }}
