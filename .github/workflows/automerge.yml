@@ -9,7 +9,6 @@ on:
     status: success
 jobs:
   try_to_merge:
-    needs: build
     runs-on: ubuntu-latest
     steps:
       - name: Try to automerge PR ${{ github.event.number }}
