@@ -1,0 +1,26 @@
+name: Automerge PR
+on:
+  pull_request:
+    types: [labeled, unlabeled, synchronize, edited, unlocked]
+  pull_request_review:
+    types: [submitted]
+  check_suite:
+    types: [completed]
+    status: success
+jobs:
+  try_to_merge:
+    if: contains(github.event.pull_request.labels.*.name, 'ready to merge')
+    runs-on: ubuntu-latest
+    steps:
+      - name: Try to automerge PR ${{ github.event.number }}
+        uses: "pascalgn/automerge-action@4536e8847eb62fe2f0ee52c8fa92d17aa97f932f"
+        env:
+          GITHUB_TOKEN: "${{ secrets.ACTIONS }}"
+          MERGE_LABELS: "ready to merge,!work in progress!,!blocked,!needs: code updates,!needs: additional info,!needs: AT updates,!needs: changelog,!ready: branch testing,!ready: browser testing"
+          MERGE_REMOVE_LABELS: Ready to merge
+          MERGE_METHOD: squash
+          MERGE_COMMIT_MESSAGE: "pull-request-title"
+          MERGE_RETRIES: 3
+          MERGE_RETRY_SLEEP: 10000
+          UPDATE_LABELS: "ready to merge,!work in progress!,!blocked"
+          UPDATE_METHOD: rebase
