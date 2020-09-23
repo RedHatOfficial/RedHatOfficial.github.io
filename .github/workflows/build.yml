@@ -10,6 +10,13 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v2
 
+      - name: Capture changed files
+        uses: jitterbit/get-changed-files@v1
+        id: files
+        with:
+          format: space-delimited
+          token: ${{ secrets.GITHUB_TOKEN }}
+
       - name: Cache node modules
         uses: actions/cache@v2
         env:
@@ -35,6 +42,8 @@ jobs:
         run: npm run build
 
       - name: Validate URLs
+        # Only run this if these files were edited
+        if: contains(steps.files.outputs.added_modified, 'app/data/*.json')
         uses: urlstechie/urlchecker-action@0.2.1
         with:
           sub_folder: app/data/
