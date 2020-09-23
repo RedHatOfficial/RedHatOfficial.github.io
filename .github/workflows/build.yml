@@ -23,11 +23,13 @@ jobs:
             ${{ runner.os }}-build-
             ${{ runner.os }}-
 
-      - name: Install Dependencies
-        run: npm install            
+      - name: Install dependencies
+        run: npm install    
 
-      - name: Install Dependencies
-        run: npm run babel
+      - name: Backwards compatibility
+        run: |
+          mkdir -p build
+          npm run babel        
 
       - name: Build
         run: npm run build
