@@ -28,7 +28,7 @@ jobs:
 
       - name: Backwards compatibility
         run: |
-          mkdir -p build
+          mkdir -p dist
           npm run babel        
 
       - name: Build
