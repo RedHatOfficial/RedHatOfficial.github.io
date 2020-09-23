@@ -35,6 +35,8 @@ jobs:
         run: npm run build
 
       - name: Validate URLs
-        uses: paramt/url-checker@master
+        uses: urlstechie/urlchecker-action@0.2.1
         with:
-          files: "app/data/projects.json"
+          sub_folder: app/data/
+          file_types: .json
+          timeout: 3
