@@ -1626,6 +1626,13 @@
     "category": "Organizations"
   },
   {
+    "projectName": "The Open Source Way",
+    "projectDescription": "The Open Source Way is a community of practice around open source community architecture and management",
+    "projectRepository": "https://github.com/theopensourceway",
+    "projectWebsite": "https://theopensourceway.org",
+    "category": "Organizations"
+  },
+  {
     "projectName": "Pulp QE",
     "projectDescription": "Pulp QE team",
     "projectRepository": "https://github.com/pulpqe",
