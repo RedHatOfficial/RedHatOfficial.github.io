@@ -14,7 +14,7 @@ jobs:
         uses: jitterbit/get-changed-files@v1
         id: files
         with:
-          format: space-delimited
+          format: comma-delimited
           token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Cache node modules
@@ -46,6 +46,8 @@ jobs:
         if: contains(steps.files.outputs.added_modified, 'app/data/*.json')
         uses: urlstechie/urlchecker-action@0.2.1
         with:
+          # Only validate the files that were changed
+          include_files: {{ steps.files.outputs.added_modified }}
           sub_folder: app/data/
           file_types: .json
           timeout: 3
