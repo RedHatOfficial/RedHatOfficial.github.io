@@ -47,7 +47,7 @@ jobs:
         uses: urlstechie/urlchecker-action@0.2.1
         with:
           # Only validate the files that were changed
-          include_files: {{ steps.files.outputs.added_modified }}
+          include_files: ${{ steps.files.outputs.added_modified }}
           sub_folder: app/data/
           file_types: .json
           timeout: 3
