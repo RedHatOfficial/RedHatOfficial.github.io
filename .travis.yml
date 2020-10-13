@@ -10,7 +10,7 @@ addons:
 script:
   # Test commands in package.json
   - npm install babel-cli
-  - mkdir -p build
+  - mkdir -p dist
   - npm run-script babel
   - npm run-script build
   # Be sure that all provided URLs are valid
