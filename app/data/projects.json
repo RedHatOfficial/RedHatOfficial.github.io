@@ -263,6 +263,13 @@
    "category": "Development"
   },
   {
+   "projectName": "Knative",
+   "projectDescription": "Kubernetes-based platform to deploy and manage modern serverless workloads",
+   "projectRepository": "https://github.com/knative",
+   "projectWebsite": "https://knative.dev/",
+   "category": "Development"
+  },  
+  {
     "projectName": "KubeVirt",
     "projectDescription": "Enables developers to  bring existing virtual machines into their applications running on Kubernetes and OpenShift clusters",
     "projectRepository": "https://github.com/kubevirt",
