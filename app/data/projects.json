@@ -430,6 +430,7 @@
     "projectName": "Red Hat Middleware Node.js",
     "projectDescription": "Red Hat Middleware Node.js projects and research",
     "projectRepository": "https://github.com/nodeshift",
+    "projectWebsite": "https://nodeshift.dev/",
     "category": "Development"
   },
   {
