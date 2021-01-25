@@ -10,6 +10,7 @@ export default angular.module("rhGitHub.dynamictable", [])
     .component("dynamictable", {
         template: require("./dynamictable.html"),
         controller: "dynamictableCtrl"
+        regex : \b(?:(?!the)\w)+\b
     })
     .controller("dynamictableCtrl", ["$scope", function($scope) {
         // Initial
