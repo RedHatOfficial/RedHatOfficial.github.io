@@ -311,6 +311,13 @@
     "category": "Development"
   },
   {
+  "projectName": "Maistra",
+  "projectDescription": "Service mesh for OpenShift based on Istio.",
+  "projectRepository": "https://github.com/maistra",
+  "projectWebsite": "http://maistra.io",
+  "category": "Middleware"
+  },
+  {
     "projectName": "Minishift",
     "projectDescription": "Run Openshift Locally",
     "projectRepository": "https://github.com/minishift/minishift",
