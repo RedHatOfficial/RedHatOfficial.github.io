@@ -14,7 +14,16 @@ export default angular.module("rhGitHub.dynamictable", [])
     .controller("dynamictableCtrl", ["$scope", function($scope) {
         // Initial
         $scope.searchQuery = "";
-        $scope.projects = projects;
+        
+        // We'll pre-sort the list first, ignoring leading 'The's
+        $scope.ignoreThes = (projectList) => {
+          return projectList.sort( (a,b) => {
+            return a['projectName'].toUpperCase().replace(/^THE /, "") > b['projectName'].toUpperCase().replace(/^THE /, "") ? 1 : -1 
+          });
+        };
+
+        // Create sorted list of projects
+        $scope.projects = $scope.ignoreThes(projects);
 
         // Get unique category lists
         let flags = [];
