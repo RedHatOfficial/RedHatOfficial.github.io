@@ -339,6 +339,13 @@
 		"twitterURL": ""
   },
   {
+   "projectName": "Knative",
+   "projectDescription": "Kubernetes-based platform to deploy and manage modern serverless workloads",
+   "projectRepository": "https://github.com/knative",
+   "projectWebsite": "https://knative.dev/",
+   "category": "Development"
+  },  
+  {
     "projectName": "KubeVirt",
     "projectDescription": "Enables developers to  bring existing virtual machines into their applications running on Kubernetes and OpenShift clusters",
     "projectRepository": "https://github.com/kubevirt",
@@ -543,6 +550,7 @@
     "projectName": "Red Hat Middleware Node.js",
     "projectDescription": "Red Hat Middleware Node.js projects and research",
     "projectRepository": "https://github.com/nodeshift",
+    "projectWebsite": "https://nodeshift.dev/",
     "category": "Development",
 		"twitterHandle": "",
 		"twitterURL": ""
@@ -2098,6 +2106,13 @@
     "category": "Organizations",
 		"twitterHandle": "",
 		"twitterURL": ""
+  },
+  {
+    "projectName": "The Open Source Way",
+    "projectDescription": "The Open Source Way is a community of practice around open source community architecture and management",
+    "projectRepository": "https://github.com/theopensourceway",
+    "projectWebsite": "https://theopensourceway.org",
+    "category": "Organizations"
   },
   {
     "projectName": "Pulp QE",
