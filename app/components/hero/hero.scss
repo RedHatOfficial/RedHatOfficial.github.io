@@ -51,3 +51,13 @@
         animation:octocat-wave 560ms ease-in-out
     }
 }
+
+.github-button {
+    fill:#fcfcfc;
+    color:#c00;
+    position: absolute;
+    top: 0;
+    border: 0;
+    left: 0;
+    transform: scale(-1, 1);
+}
