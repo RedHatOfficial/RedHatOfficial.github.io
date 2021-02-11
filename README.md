@@ -6,7 +6,7 @@ We’ve put together a comprehensive list of the projects hosted on GitHub in wh
 
 To add or modify projects to the list on [https://redhatofficial.github.io](https://redhatofficial.github.io), either submit a pull request or create an issue in the [repo](https://github.com/RedHatOfficial/RedHatOfficial.github.io). Upon review, the site maintainers will merge the PR or change the content as requested. No direct merges will be accepted.
 
-All projects are stored in the `/app/data` directory in the `projects.json` file within the dev branch of this repo.  Try to add your project alphabetically (just to make the file easier to search) and create a new object in the JSON that has:
+All projects are stored in the `/app/data` directory in the `projects.json` file within the dev branch of this repo. Try to add your project alphabetically (just to make the file easier to search) and create a new object in the JSON that has:
 
 ```js
 {
@@ -14,7 +14,9 @@ All projects are stored in the `/app/data` directory in the `projects.json` file
   "projectDescription": "Lorem ipsum.",
   "projectRepository": "https://github.com/foo",
   "projectWebsite": "http://foo.github.io",
-  "category": "Development"
+  "category": "Development",
+  "twitterHandle": "",
+  "twitterURL": ""
 }
 ```
 
@@ -34,7 +36,7 @@ Current categories include:
 
 At this time, only projects that Red Hat employees are required to work on as part of their job will be listed. This includes projects Red Hat stewards as well as projects in which Red Hat is just one contributor among others. For now, don't list sub-projects if at all possible. Eventually we will get to that, but for now, top-level projects only, please.
 
-Please don't add projects for which you volunteer. There are so many amazing projects that Red Hatters work on as enthusiasts, ourselves included, but too many to recognize here. 
+Please don't add projects for which you volunteer. There are so many amazing projects that Red Hatters work on as enthusiasts, ourselves included, but too many to recognize here.
 
 These criteria may be subject to change as the page evolves.
 
@@ -44,11 +46,11 @@ Any project can appear in the Featured Projects section. To do so, the project m
 
 ### What about projects not on GitHub?
 
-This list is just for Red Hat contributions to projects hosted on GitHub.  See https://community.redhat.com/software/ for a more comprehensive listing of Red Hat's contributions to free and open source projects, regardless of where they are hosted.
+This list is just for Red Hat contributions to projects hosted on GitHub. See https://community.redhat.com/software/ for a more comprehensive listing of Red Hat's contributions to free and open source projects, regardless of where they are hosted.
 
 ### Hosting projects on /RedHatOfficial
 
-Open an issue in *this* repo, and the owners of the RedHatOfficial organization will get in touch with you.
+Open an issue in _this_ repo, and the owners of the RedHatOfficial organization will get in touch with you.
 
 ## Quick start
 
@@ -56,26 +58,24 @@ Open an issue in *this* repo, and the owners of the RedHatOfficial organization 
 git clone https://github.com/RedHatOfficial/RedHatOfficial.github.io.git
 cd RedHatOfficial.github.io
 ```
- 
+
 ## Building and running locally
 
 To build and run this project in your local dev environment, follow the instructions below. Be sure you have [Node.js](https://nodejs.org/) installed before you start.
 
 1. Install dependencies: `npm install`
-   
 2. Run the local development server: `npm start`
-   
+
 The web page will start running on [localhost:8080](http://localhost:8080/).
-   
-   
+
 ## Built with
 
 This site was created using [Angular](https://angularjs.org/), [webpack](https://webpack.js.org/), [NPM](https://www.npmjs.com/), [Babel](https://babeljs.io/), [Sass](https://sass-lang.com/), and [Netlify](https://www.netlify.com/).
 
 ## Licensing
 
-* [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) for the displayed page and primary license for this repository
-* [MIT](https://opensource.org/licenses/MIT) for the JavaScript
-* [CC0](https://creativecommons.org/share-your-work/public-domain/cc0/) for the HTML and CSS
+- [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) for the displayed page and primary license for this repository
+- [MIT](https://opensource.org/licenses/MIT) for the JavaScript
+- [CC0](https://creativecommons.org/share-your-work/public-domain/cc0/) for the HTML and CSS
 
 Red Hat trademarks are not subject to the above license grants.
