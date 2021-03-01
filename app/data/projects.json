@@ -911,9 +911,10 @@
 		"twitterURL": ""
   },
   {
-    "projectName": "jbosstm",
-    "projectDescription": "Tools for working with the Narayana transaction service",
+    "projectName": "Narayana",
+    "projectDescription": "Narayana is the premier open source transaction manager",
     "projectRepository": "https://github.com/jbosstm",
+    "projectWebsite": "https://narayana.io/",
     "category": "Middleware",
 		"twitterHandle": "",
 		"twitterURL": ""
