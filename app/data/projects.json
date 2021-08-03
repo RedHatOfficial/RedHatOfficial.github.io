@@ -2151,7 +2151,7 @@
   },
   {
     "projectName": "Red Hat Demo Central",
-    "projectDescription": "Red Hat demos coillection",
+    "projectDescription": "Red Hat demos collection",
     "projectRepository": "https://github.com/redhatdemocentral",
     "category": "Organizations",
 		"twitterHandle": "",
@@ -2450,7 +2450,7 @@
   },
   {
     "projectName": "Red Hat QE Security",
-    "projectDescription": "Red Hat Quality Engineering Secruity Team",
+    "projectDescription": "Red Hat Quality Engineering Security Team",
     "projectRepository": "http://github.com/redhat-qe-security/",
     "category": "Platform",
 		"twitterHandle": "",
