@@ -2440,6 +2440,15 @@
 		"twitterURL": ""
   },
   {
+    "projectName": "Red Hat Product Security",
+    "projectDescription": "Red Hat Product Security provides the guidance, stability and security needed to confidently deploy enterprise solutions.",
+    "projectRepository": "https://github.com/RedHatProductSecurity",
+    "projectWebsite": "https://access.redhat.com/security/overview",
+    "category": "Organizations",
+		"twitterHandle": "@RedHatSecurity",
+		"twitterURL": "https://twitter.com/RedHatSecurity"
+  },
+  {
     "projectName": "Red Hat QE Security",
     "projectDescription": "Red Hat Quality Engineering Secruity Team",
     "projectRepository": "http://github.com/redhat-qe-security/",
