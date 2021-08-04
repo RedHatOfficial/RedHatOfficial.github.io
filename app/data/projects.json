@@ -2151,7 +2151,7 @@
   },
   {
     "projectName": "Red Hat Demo Central",
-    "projectDescription": "Red Hat demos coillection",
+    "projectDescription": "Red Hat demos collection",
     "projectRepository": "https://github.com/redhatdemocentral",
     "category": "Organizations",
 		"twitterHandle": "",
@@ -2440,8 +2440,17 @@
 		"twitterURL": ""
   },
   {
+    "projectName": "Red Hat Product Security",
+    "projectDescription": "Red Hat Product Security provides the guidance, stability and security needed to confidently deploy enterprise solutions.",
+    "projectRepository": "https://github.com/RedHatProductSecurity",
+    "projectWebsite": "https://access.redhat.com/security/overview",
+    "category": "Organizations",
+		"twitterHandle": "@RedHatSecurity",
+		"twitterURL": "https://twitter.com/RedHatSecurity"
+  },
+  {
     "projectName": "Red Hat QE Security",
-    "projectDescription": "Red Hat Quality Engineering Secruity Team",
+    "projectDescription": "Red Hat Quality Engineering Security Team",
     "projectRepository": "http://github.com/redhat-qe-security/",
     "category": "Platform",
 		"twitterHandle": "",
