@@ -390,6 +390,15 @@
 		"twitterURL": ""
   },
   {
+    "projectName": "linux-system-roles",
+    "projectDescription": "A collection of Ansible roles and modules",
+    "projectRepository": "https://github.com/linux-system-roles",
+    "projectWebsite": "https://linux-system-roles.github.io",
+    "category": "Operations",
+		"twitterHandle": "",
+		"twitterURL": ""
+  },
+  {
     "projectName": "ManageIQ-Exchange",
     "projectDescription": "Management Spins platform",
     "projectRepository": "https://github.com/ManageIQ-Exchange/",
