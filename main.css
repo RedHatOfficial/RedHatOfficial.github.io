@@ -203,7 +203,7 @@ title: Breakpoints
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
-  min-height: 40vh;
+  min-height: 25vh;
   justify-content: center; }
 
 /* .band {
@@ -395,6 +395,8 @@ title: Breakpoints
     border-left: 2px solid #d2d3d5; }
   [data-layout="3-up"] .card-footer-content:nth-child(2) {
     border-left: 2px solid #d2d3d5; }
+  .card-footer-icon {
+    display: flex; }
 
 h1, h2, h3, h4 {
   margin: 0; }
@@ -635,7 +637,8 @@ title: Breakpoints
 
 .table-main {
   border-collapse: collapse;
-  width: 100%; }
+  width: 100%;
+  table-layout: fixed; }
   @media all and (max-width: 991px) {
     .table-main {
       table-layout: fixed; } }
@@ -646,6 +649,10 @@ title: Breakpoints
     background-color: #d2d3d5; }
   .table-main th {
     padding: 10px; }
+  .table-main th:nth-child(3) {
+    padding-left: 13%; }
+  .table-main th:nth-child(4) {
+    padding-left: 13%; }
   .table-main tbody tr:nth-child(even) {
     background-color: #e2e2e2; }
   .table-main tbody tr:nth-child(odd) {
@@ -660,6 +667,10 @@ title: Breakpoints
     @media screen and (max-width: 767px) {
       .table-main td:first-child {
         font-weight: 600; } }
+  .table-main td:nth-child(3) {
+    padding-left: 13%; }
+  .table-main td:nth-child(4) {
+    padding-left: 13%; }
 
 h1, h2, h3, h4 {
   margin: 0; }
