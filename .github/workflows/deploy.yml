@@ -16,7 +16,6 @@ jobs:
         run: |
           npm install
           mkdir -p build
-          npm run babel
           npm run build
 
       - name: Deploy 🚀
