@@ -1672,8 +1672,8 @@
     "projectRepository": "https://github.com/ManageIQ/",
     "projectWebsite": "https://manageiq.org",
     "category": "Operations",
-		"twitterHandle": "",
-		"twitterURL": ""
+		"twitterHandle": "@manageiq",
+		"twitterURL": "https://twitter.com/manageiq"
   },
   {
     "projectName": "Moby Project",
