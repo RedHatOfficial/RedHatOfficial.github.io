@@ -140,6 +140,15 @@
 		"twitterURL": ""
   },
   {
+    "projectName": "Checkpoint/Restore In Userspace",
+    "projectDescription": "A tool for checkpoint and restore of running applications",
+    "projectRepository": "https://github.com/checkpoint-restore/criu",
+    "projectWebsite": "https://criu.org",
+    "category": "Development",
+    "twitterHandle": "@__criu__",
+    "twitterURL": "https://twitter.com/__criu__"
+  },
+  {
     "projectName": "DBuildService",
     "projectDescription": "Python library for parsing Dockerfile files.",
     "projectRepository": "https://github.com/DBuildService",
@@ -344,7 +353,7 @@
    "projectRepository": "https://github.com/knative",
    "projectWebsite": "https://knative.dev/",
    "category": "Development"
-  },  
+  },
   {
     "projectName": "KubeVirt",
     "projectDescription": "Enables developers to  bring existing virtual machines into their applications running on Kubernetes and OpenShift clusters",
@@ -552,7 +561,7 @@
     "category": "Development",
 		"twitterHandle": "",
 		"twitterURL": ""
-  },  
+  },
   {
     "projectName": "Red Hat Fuse Tooling",
     "projectDescription": "Tooling to develop Apache Camel and Red Hat Fuse integration projects",
@@ -2648,7 +2657,7 @@
     "category": "Storage",
 		"twitterHandle": "",
 		"twitterURL": ""
-  },  
+  },
   {
     "projectName": "Rook",
     "projectDescription": "File, block, and object storage services for cloud-native environments",
