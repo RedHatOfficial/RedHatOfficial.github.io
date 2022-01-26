@@ -140,6 +140,15 @@
 		"twitterURL": ""
   },
   {
+    "projectName": "Cryostat",
+    "projectDescription": "JFR management for JVMs in the cloud",
+    "projectRepository": "https://github.com/cryostatio",
+    "projectWebsite": "https://cryostat.io",
+    "category": "Middleware",
+    "twitterHandle": "",
+    "twitterURL": ""
+  },
+  {
     "projectName": "Checkpoint/Restore In Userspace",
     "projectDescription": "A tool for checkpoint and restore of running applications",
     "projectRepository": "https://github.com/checkpoint-restore/criu",
@@ -448,6 +457,24 @@
     "category": "Development",
 		"twitterHandle": "",
 		"twitterURL": ""
+  },
+  {
+    "projectName": "Node.js",
+    "projectDescription": "JavaScript runtime built on Chrome's V8 JavaScript engine",
+    "projectRepository": "https://github.com/nodejs",
+    "projectWebsite": "https://nodejs.org/",
+    "category": "Development",
+    "twitterHandle": "",
+    "twitterURL": ""
+  },
+  {
+    "projectName": "OpenJDK",
+    "projectDescription": "Open source implementation of the Java Platform, Standard Edition and related projects",
+    "projectRepository": "https://github.com/openjdk",
+    "projectWebsite": "https://openjdk.java.net/",
+    "category": "Development",
+    "twitterHandle": "",
+    "twitterURL": ""
   },
   {
     "projectName": "OpenTracing",
