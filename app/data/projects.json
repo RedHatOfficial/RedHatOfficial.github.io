@@ -2745,5 +2745,14 @@
     "category": "Operations",
 		"twitterHandle": "",
 		"twitterURL": ""
+  },
+  {
+    "projectName": "Skupper",
+    "projectDescription": "Secure communication across Kubernetes clusters with no VPNs or special firewall rules.",
+    "projectRepository": "https://github.com/skupperproject",
+    "projectWebsite": "https://skupper.io/",
+    "category": "Middleware",
+		"twitterHandle": "skupperio",
+		"twitterURL": ""
   }
 ]
