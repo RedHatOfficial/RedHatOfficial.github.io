@@ -2745,5 +2745,24 @@
     "category": "Operations",
 		"twitterHandle": "",
 		"twitterURL": ""
+  },
+  {
+    "projectName": "QUADS",
+    "projectDescription": "The infrastructure deployment time machine",
+    "projectRepository": "https://github.com/redhat-performance/quads",
+    "projectWebsite": "https://quads.dev",
+    "category": "Operations",
+		"twitterHandle": "quadsproject",
+		"twitterURL": "https://twitter.com/quadsproject"
+  },
+  {
+    "projectName": "Badfish",
+    "projectDescription": "Vendor-agnostic tool for managing bare-metal systems via the Redfish API",
+    "projectRepository": "https://github.com/redhat-performance/badfish",
+    "projectWebsite": "https://quads.dev/about-badfish",
+    "category": "Operations",
+		"twitterHandle": "",
+		"twitterURL": ""
   }
+
 ]
