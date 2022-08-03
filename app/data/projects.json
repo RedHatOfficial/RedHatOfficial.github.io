@@ -1160,6 +1160,15 @@
 		"twitterURL": ""
   },
   {
+
+    "projectName": "Skupper",
+    "projectDescription": "Secure communication across Kubernetes clusters with no VPNs or special firewall rules.",
+    "projectRepository": "https://github.com/skupperproject",
+    "projectWebsite": "https://skupper.io/",
+    "category": "Middleware",
+		"twitterHandle": "skupperio"
+  },		
+  {
     "projectName": "Snowdrop",
     "projectDescription": "A utility package that contains Red Hat-specific extensions to the Spring & Spring Boot Frameworks",
     "projectRepository": "https://github.com/snowdrop",
@@ -2764,5 +2773,4 @@
 		"twitterHandle": "",
 		"twitterURL": ""
   }
-
 ]
