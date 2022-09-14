@@ -433,6 +433,15 @@
   "category": "Middleware"
   },
   {
+    "projectName": "Medik8s",
+    "projectDescription": "Medik8s is a project consists of several kubernetes operators that provide automatic node remediation and high availability for singleton workloads",
+    "projectRepository": "https://github.com/medik8s",
+    "projectWebsite": "https://www.medik8s.io/",
+    "category": "Development",
+		"twitterHandle": "",
+		"twitterURL": ""
+  },
+  {
     "projectName": "Minishift",
     "projectDescription": "Run Openshift Locally",
     "projectRepository": "https://github.com/minishift/minishift",
