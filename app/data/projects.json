@@ -2468,6 +2468,15 @@
 		"twitterURL": ""
   },
   {
+    "projectName": "Packit",
+    "projectDescription": "An open source project aiming to ease the integration of your project with Fedora Linux, CentOS Stream and other distributions.",
+    "projectRepository": "https://github.com/packit",
+    "projectWebsite": "https://packit.dev",
+    "category": "Development",
+		"twitterHandle": "",
+		"twitterURL": ""
+  },
+  {
     "projectName": "pesign",
     "projectDescription": "Linux tools for signed PE-COFF binaries",
     "projectRepository": "https://github.com/rhboot/pesign",
