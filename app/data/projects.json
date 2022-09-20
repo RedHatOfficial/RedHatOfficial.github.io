@@ -2424,7 +2424,7 @@
   {
     "projectName": "LEAPP",
     "projectDescription": "Leapp project aims to enable users to modernize their existing workloads without disrupting them in three different ways: upgrading them in place, migrating them to a different place or containerize them.",
-    "projectRepository": "https://github.com/leapp-to/",
+    "projectRepository": "https://github.com/oamg/leapp",
     "projectWebsite": "https://oamg.github.io/leapp/",
     "category": "Platform",
 		"twitterHandle": "",
