@@ -131,6 +131,14 @@
 		"twitterURL": ""
   },
   {
+    "projectName": "convert2rhel",
+    "projectDescription": "A tool to automate converting Oracle/CentOS/Scientific/Rocky/Alma Linux to Red Hat Enterprise Linux.",
+    "projectRepository": "https://github.com/oamg/convert2rhel/",
+    "category": "Platform",
+		"twitterHandle": "",
+		"twitterURL": ""
+  },
+  {
     "projectName": "crash",
     "projectDescription": "The Linux kernel crash utility",
     "projectRepository": "https://github.com/crash-utility",
