@@ -2798,5 +2798,14 @@
     "category": "Operations",
 		"twitterHandle": "",
 		"twitterURL": ""
+  },
+  {
+    "projectName": "Copr",
+    "projectDescription": "A service that builds your open-source projects and creates your own RPM repositories",
+    "projectRepository": "https://pagure.io/copr/copr",
+    "projectWebsite": "https://copr.fedorainfracloud.org",
+    "category": "Development",
+    "twitterHandle": "",
+    "twitterURL": ""
   }
 ]
