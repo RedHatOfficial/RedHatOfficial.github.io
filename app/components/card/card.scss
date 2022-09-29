@@ -1,4 +1,5 @@
-@import "../../public/styles/global";
+@use "../../public/styles/global";
+@use "../../public/styles/variables/colors";
 
 .card {
     &--component {
@@ -47,10 +48,10 @@
             }
         }
         [data-layout="3-up"] &-content:last-child {
-            border-left: 2px solid $iron;
+            border-left: 2px solid colors.$iron;
         }
         [data-layout="3-up"] &-content:nth-child(2) {
-            border-left: 2px solid $iron;
+            border-left: 2px solid colors.$iron;
         }
         &-link {
             @extend %subtle-link;

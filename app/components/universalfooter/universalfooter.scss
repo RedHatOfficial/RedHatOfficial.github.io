@@ -1,9 +1,11 @@
-@import "../../public/styles/global";
+@use "../../public/styles/global";
+@use "../../public/styles/variables/breakpoints";
+@use "../../public/styles/variables/colors";
 
 .footer {
   &--component {
     @extend %default--band;
-    background-color: $rich-black;
+    background-color: colors.$rich-black;
   }
   &-container {
     @extend %default-container;
@@ -11,7 +13,7 @@
     grid-template-columns: 3fr 2fr;
     grid-gap: 10px;
 
-    @media screen and (min-width: $breakpoint-sm-min) {
+    @media screen and (min-width: breakpoints.$breakpoint-sm-min) {
         align-items: center;
         grid-auto-rows: 1fr;
         grid-gap: 30px;
@@ -22,13 +24,13 @@
     img {
       @extend %logo-link-dark;
       height: 34px;
-      @media screen and (min-width: $breakpoint-sm-min) {
+      @media screen and (min-width: breakpoints.$breakpoint-sm-min) {
         height: 44px;
         min-width: 138px;
       }
     }
     &:last-child {
-      @media screen and (max-width: $breakpoint-xs-max) {
+      @media screen and (max-width: breakpoints.$breakpoint-xs-max) {
         display: flex;
         justify-content: flex-end;
       }
@@ -44,7 +46,7 @@
   }
   &-links {
     > *:not(:last-child) {
-      border-right: 1px solid $stone;
+      border-right: 1px solid colors.$stone;
     }
   }
   &-link {

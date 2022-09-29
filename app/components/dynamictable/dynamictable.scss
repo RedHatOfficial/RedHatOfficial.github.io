@@ -1,4 +1,8 @@
-@import '../../public/styles/global';
+@use '../../public/styles/global';
+@use "../../public/styles/mixins/global" as global2;
+@use "../../public/styles/variables/base";
+@use "../../public/styles/variables/breakpoints";
+@use "../../public/styles/variables/colors";
 
 .table {
     &--component {
@@ -11,7 +15,7 @@
         display: grid;
         grid-template-columns: 1fr;
         grid-gap: 10px;
-        @media screen and (min-width: $breakpoint-sm-min) {
+        @media screen and (min-width: breakpoints.$breakpoint-sm-min) {
             grid-auto-rows: 1fr;
             grid-gap: 30px;
             grid-template-columns: 8fr 4fr;
@@ -25,13 +29,13 @@
         grid-template-columns: 7fr 1fr;
 
         &-input {
-            @include make-input();
+            @include global2.make-input();
         }
 
         &-button {
-            @include make-button($btn-color: $brand-primary);
+            @include global2.make-button($btn-color: colors.$brand-primary);
 
-          @media all and (max-width: $breakpoint-sm-max) {
+          @media all and (max-width: breakpoints.$breakpoint-sm-max) {
             padding-left: 20px;
             padding-right: 20px;
           }
@@ -39,7 +43,7 @@
     }
 
     &-dropdown {
-        font-family: $base-font-family;
+        font-family: base.$base-font-family;
         align-items: center;
         display: grid;
         grid-auto-rows: 1fr;
@@ -52,15 +56,15 @@
         }
 
         &-select {
-            background-color: $white;
-            color: $stone;
+            background-color: colors.$white;
+            color: colors.$stone;
             height: 100%;
             -webkit-appearance: none;
             border-radius: 0;
             padding: 5px 30px 5px 10px;
 
             + i {
-                color: $stone;
+                color: colors.$stone;
                 position: absolute;
                 top: calc(50% - .55em);
                 right: 10px;
@@ -77,18 +81,18 @@
       width: 100%;
       table-layout: fixed;
 
-      @media all and (max-width: $breakpoint-sm-max) {
+      @media all and (max-width: breakpoints.$breakpoint-sm-max) {
         table-layout: fixed;
       }
 
       thead {
-        @media screen and (max-width: $breakpoint-xs-max) {
+        @media screen and (max-width: breakpoints.$breakpoint-xs-max) {
           display: none;
         }
       }
 
       thead tr {
-        background-color: $iron;
+        background-color: colors.$iron;
       }
 
       th {
@@ -105,11 +109,11 @@
       }
 
       tbody tr:nth-child(even) {
-        background-color: $mercury;
+        background-color: colors.$mercury;
       }
 
       tbody tr:nth-child(odd) {
-        background-color: $white;
+        background-color: colors.$white;
       }
 
       td {
@@ -117,11 +121,11 @@
         padding: 10px;
         overflow: hidden;
         text-overflow: ellipsis;
-        @media screen and (max-width: $breakpoint-xs-max) {
+        @media screen and (max-width: breakpoints.$breakpoint-xs-max) {
           display: block;
         }
         &:first-child {
-          @media screen and (max-width: $breakpoint-xs-max) {
+          @media screen and (max-width: breakpoints.$breakpoint-xs-max) {
             font-weight: 600;
           }
         }

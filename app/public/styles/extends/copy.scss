@@ -1,16 +1,21 @@
+@use '../variables/colors';
+@use '../variables/base';
+@use '../variables/breakpoints';
+@use '../mixins/global' as mixins;
+
 %nav-label {
-    color: $black;
-    font-family: $base-font-family;
+    color: colors.$black;
+    font-family: base.$base-font-family;
     font-size: 20px;
     font-weight: 400;
     line-height: 1.18;
     text-transform: uppercase;
 
-    @media screen and (min-width: $breakpoint-md-min) {
+    @media screen and (min-width: breakpoints.$breakpoint-md-min) {
         font-size: 30px;
     }
 
-    @media screen and (min-width: $breakpoint-lg-min) {
+    @media screen and (min-width: breakpoints.$breakpoint-lg-min) {
         font-size: 34px;
     }
 
@@ -22,8 +27,8 @@
 }
 
 %hero-heading {
-    color: $black;
-    font-family: $base-font-family--heading;
+    color: colors.$black;
+    font-family: base.$base-font-family--heading;
     font-size: 35px;
     font-weight: 600;
     line-height: 1.18;
@@ -32,18 +37,18 @@
         padding-bottom: 20px;
     }
 
-    @media screen and (min-width: $breakpoint-md-min) {
+    @media screen and (min-width: breakpoints.$breakpoint-md-min) {
         font-size: 36px;
     }
 
-    @media screen and (min-width: $breakpoint-lg-min) {
+    @media screen and (min-width: breakpoints.$breakpoint-lg-min) {
         font-size: 38px;
     }
 }
 
 %hero-copy {
-    color: $black;
-    font-family: $base-font-family;
+    color: colors.$black;
+    font-family: base.$base-font-family;
     font-size: 20px;
     font-weight: 100;
     line-height: 1.44;
@@ -55,19 +60,19 @@
     }
 
     a {
-        color: $midnight-blue;
+        color: colors.$midnight-blue;
         text-decoration: none;
 
         &:active,
         &:hover {
-            color: $unc-blue;
+            color: colors.$unc-blue;
         }
     }
 }
 
 %band-title {
-    color: $black;
-    font-family: $base-font-family;
+    color: colors.$black;
+    font-family: base.$base-font-family;
     font-size: 22px;
     font-weight: 800;
     line-height: 1.18;
@@ -75,171 +80,171 @@
 }
 
 %band-heading {
-    color: $black;
-    font-family: $base-font-family--heading;
+    color: colors.$black;
+    font-family: base.$base-font-family--heading;
     font-size: 32px;
     font-weight: 800;
     line-height: 1.1;
     text-transform: none;
 
-    @media screen and (min-width: $breakpoint-md-min) {
+    @media screen and (min-width: breakpoints.$breakpoint-md-min) {
         font-size: 36px;
     }
 
-    @media screen and (min-width: $breakpoint-lg-min) {
+    @media screen and (min-width: breakpoints.$breakpoint-lg-min) {
         font-size: 38px;
     }
 }
 
 %band-summary {
-    color: $stone;
-    font-family: $base-font-family;
+    color: colors.$stone;
+    font-family: base.$base-font-family;
     font-size: 22px;
     font-weight: 400;
     line-height: 1.44;
 }
 
 %card-heading {
-    color: $black;
-    font-family: $base-font-family;
+    color: colors.$black;
+    font-family: base.$base-font-family;
     font-size: 22px;
     font-weight: 400;
     line-height: 1.18;
     a {
-        color: $black;
+        color: colors.$black;
         text-decoration: none;
         &:active,
         &:hover {
-          color: $steel-blue;
+          color: colors.$steel-blue;
         }
     }
 }
 
 %card-copy {
-    color: $stone;
-    font-family: $base-font-family;
+    color: colors.$stone;
+    font-family: base.$base-font-family;
     font-size: 16px;
     font-weight: 100;
     line-height: 1.44;
 }
 
 %group-heading {
-    color: $black;
-    font-family: $base-font-family--heading;
+    color: colors.$black;
+    font-family: base.$base-font-family--heading;
     font-size: 22px;
     font-weight: 600;
     line-height: 1.18;
 }
 
 %group-copy {
-    color: $stone;
-    font-family: $base-font-family;
+    color: colors.$stone;
+    font-family: base.$base-font-family;
     font-size: 18px;
     font-weight: 100;
     line-height: 1.44;
     a {
-      color: $denim-blue;
+      color: colors.$denim-blue;
 
       &:active,
       &:hover {
-          color: $steel-blue;
+          color: colors.$steel-blue;
       }
 
       &:focus {
-        @include accessibility-focus();
+        @include mixins.accessibility-focus();
       }
     }
 }
 
 %table-head {
-    color: $black;
-    font-family: $base-font-family;
+    color: colors.$black;
+    font-family: base.$base-font-family;
     font-size: 18px;
     font-weight: 600;
     line-height: 1.44;
     text-align: left;
     a {
-      color: $denim-blue;
+      color: colors.$denim-blue;
 
       &:active,
       &:hover {
-          color: $steel-blue;
+          color: colors.$steel-blue;
       }
 
       &:focus {
-        @include accessibility-focus();
+        @include mixins.accessibility-focus();
       }
     }
 }
 
 %table-row {
-    color: $coal;
-    font-family: $base-font-family;
+    color: colors.$coal;
+    font-family: base.$base-font-family;
     font-size: 18px;
     font-weight: 100;
     line-height: 1.44;
     text-align: left;
     a {
-      color: $coal;
+      color: colors.$coal;
 
       &:active,
       &:hover {
-          color: $steel-blue;
+          color: colors.$steel-blue;
       }
 
       &:focus {
-        @include accessibility-focus();
+        @include mixins.accessibility-focus();
       }
     }
 }
 
 %link {
-    color: $denim-blue;
-    font-family: $base-font-family;
+    color: colors.$denim-blue;
+    font-family: base.$base-font-family;
     text-decoration: none;
 
     &:active,
     &:hover {
-        color: $steel-blue;
+        color: colors.$steel-blue;
     }
 
     &:focus {
-        @include accessibility-focus();
+        @include mixins.accessibility-focus();
     }
 }
 
 %subtle-link {
-    color: $stone;
-    font-family: $base-font-family;
+    color: colors.$stone;
+    font-family: base.$base-font-family;
     text-decoration: none;
 
     &:active,
     &:hover {
-        color: $steel-blue;
+        color: colors.$steel-blue;
     }
 
     &:focus {
-        @include accessibility-focus();
+        @include mixins.accessibility-focus();
     }
 }
 
 %link-underline {
-    color: $denim-blue;
-    font-family: $base-font-family;
+    color: colors.$denim-blue;
+    font-family: base.$base-font-family;
 
     &:active,
     &:hover {
-        color: $steel-blue;
+        color: colors.$steel-blue;
     }
 
     &:focus {
-        @include accessibility-focus();
+        @include mixins.accessibility-focus();
     }
 }
 
 %secondary-link {
-    color: $denim-blue;
-    font-family: $base-font-family;
+    color: colors.$denim-blue;
+    font-family: base.$base-font-family;
     font-size: 16px;
     text-decoration: none;
 
@@ -252,11 +257,11 @@
 
     &:active,
     &:hover {
-        color: $steel-blue;
+        color: colors.$steel-blue;
     }
 
     &:focus {
-        @include accessibility-focus();
+        @include mixins.accessibility-focus();
     }
 }
 
@@ -265,8 +270,8 @@
 }
 
 %nav-link {
-    color: $black;
-    font-family: $base-font-family;
+    color: colors.$black;
+    font-family: base.$base-font-family;
     font-size: 24px;
     font-weight: 600;
     line-height: 1.18;
@@ -275,7 +280,7 @@
 
     &:hover::after,
     &:active::after {
-        background: $red;
+        background: colors.$red;
         bottom: -8px;
         content: " ";
         height: 4px;
@@ -285,44 +290,44 @@
     }
 
     &:focus {
-        @include accessibility-focus();
+        @include mixins.accessibility-focus();
     }
 }
 
 %nav-icon {
-    color: $stone;
+    color: colors.$stone;
     font-size: .7em;
     vertical-align: text-top;
 }
 
 %dropdown-label {
-    color: $black;
-    font-family: $base-font-family;
+    color: colors.$black;
+    font-family: base.$base-font-family;
     font-size: 18px;
     font-weight: 600;
     line-height: 1.18;
 }
 
 %footer-text {
-    color: $fog;
-    font-family: $base-font-family;
+    color: colors.$fog;
+    font-family: base.$base-font-family;
     font-size: 14px;
     line-height: 1.18;
 }
 
 %footer-link {
-    color: $fog;
-    font-family: $base-font-family;
+    color: colors.$fog;
+    font-family: base.$base-font-family;
     font-size: 14px;
     line-height: 1.18;
 
     &:active,
     &:hover {
-        color: $white;
+        color: colors.$white;
     }
 
     &:focus {
-        @include accessibility-focus();
+        @include mixins.accessibility-focus();
     }
 }
 
@@ -333,7 +338,7 @@
     }
 
     &:focus {
-        @include accessibility-focus();
+        @include mixins.accessibility-focus();
     }
 }
 
@@ -344,6 +349,6 @@
     }
 
     &:focus {
-        @include accessibility-focus();
+        @include mixins.accessibility-focus();
     }
 }
