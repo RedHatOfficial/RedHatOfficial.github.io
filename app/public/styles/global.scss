@@ -1,3 +1,4 @@
+@use "sass:meta";
 h1, h2, h3, h4 {
     margin: 0;
 }
@@ -10,13 +11,13 @@ p {
     }
 }
 
-@import "fonts/fonts";
+@include meta.load-css("fonts/fonts");
 
-@import "variables/base";
-@import "variables/colors";
-@import "variables/breakpoints";
+@include meta.load-css("variables/base");
+@include meta.load-css("variables/colors");
+@include meta.load-css("variables/breakpoints");
 
-@import "mixins/global";
+@include meta.load-css("mixins/global");
 
-@import "extends/copy";
-@import "extends/block";
+@include meta.load-css("extends/copy");
+@include meta.load-css("extends/block");

@@ -7,7 +7,7 @@ module.exports = {
   entry: "./app/index.js",
   devtool: "inline-source-map",
   devServer: {
-    contentBase: "./dist",
+    static: "./dist",
     hot: true
   },
   output: {
@@ -20,7 +20,6 @@ module.exports = {
       template: path.resolve(__dirname, "app/index.html")
     }),
     new webpack.NamedModulesPlugin(),
-    new webpack.HotModuleReplacementPlugin(),
   ],
   module: {
     rules: [{
@@ -43,7 +42,10 @@ module.exports = {
       }, {
         loader: "css-loader"
       }, {
-        loader: "sass-loader"
+        loader: "sass-loader",
+        // options: {
+        //   implementation: require('sass'),
+        // },
       }]
     }]
   }

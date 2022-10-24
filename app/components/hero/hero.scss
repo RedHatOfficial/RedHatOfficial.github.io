@@ -1,10 +1,11 @@
-@import "../../public/styles/global";
+@use "../../public/styles/global";
+@use "../../public/styles/variables/colors";
 
 .hero {
     &--component {
         @extend %default--band;
         align-items: center;
-        background-color: $gallery;
+        background-color: colors.$gallery;
         background-image: url("../../public/img/hero.png");
         background-position: center center;
         background-repeat: no-repeat;

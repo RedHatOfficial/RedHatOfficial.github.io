@@ -1,4 +1,5 @@
-@import "../../public/styles/global";
+@use "../../public/styles/global";
+@use "../../public/styles/variables/breakpoints";
 
 .navigation {
     &--component {
@@ -45,7 +46,7 @@
         @extend %logo-link;
         max-height: 2em;
 
-        @media screen and (min-width: $breakpoint-lg-min) {
+        @media screen and (min-width: breakpoints.$breakpoint-lg-min) {
             max-height: 3em;
         }
     }

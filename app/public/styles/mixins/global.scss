@@ -1,4 +1,8 @@
-@mixin accessibility-focus($color: $denim-blue) {
+@use "sass:color";
+@use '../variables/colors';
+@use '../variables/base';
+
+@mixin accessibility-focus($color: colors.$denim-blue) {
     outline-offset: 1px;
     outline-style: dotted;
     outline-width: 1px;
@@ -9,7 +13,7 @@
 
 @mixin make-button(
     $btn-color,
-    $btn-text-color: $white,
+    $btn-text-color: colors.$white,
     $border-color: $btn-color,
     $disabled: false,
     $btn-color-hover: null,
@@ -21,7 +25,7 @@
     ) {
 
     display: block;
-    font-family: $base-font-family;
+    font-family: base.$base-font-family;
     border-width: 1px;
     border-style: solid;
     font-size: $text-size;
@@ -50,7 +54,7 @@
             text-decoration: none;
             // Set hover background color for the button
             @if $btn-color-hover == null {
-                background-color: darken($btn-color, 6%);
+                background-color: color.adjust($btn-color, $lightness: -6%);
             }
             @else {
                 background-color: $btn-color-hover;
@@ -71,7 +75,7 @@
 }
 
 @mixin make-input() {
-    font-family: $base-font-family;
+    font-family: base.$base-font-family;
     border-radius: 0;
     padding: 5px;
 }
