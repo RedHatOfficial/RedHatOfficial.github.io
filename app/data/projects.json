@@ -14,8 +14,8 @@
     "projectRepository": "https://github.com/aerogear",
     "projectWebsite": "https://aerogear.org/",
     "category": "Development",
-		"twitterHandle": "",
-		"twitterURL": ""
+		"twitterHandle": "@AeroGears",
+		"twitterURL": "https://twitter.com/aerogears"
   },
   {
     "projectName": "aeshell",
@@ -32,8 +32,8 @@
     "projectRepository": "https://github.com/apache/camel",
     "projectWebsite": "https://camel.apache.org/",
     "category": "Development",
-		"twitterHandle": "",
-		"twitterURL": ""
+		"twitterHandle": "@ApacheCamel",
+		"twitterURL": "https://twitter.com/ApacheCamel"
   },
   {
     "projectName": "Apache DeltaSpike",
@@ -41,8 +41,8 @@
     "projectRepository": "https://github.com/apache/deltaspike",
     "projectWebsite": "https://deltaspike.apache.org/",
     "category": "Development",
-		"twitterHandle": "",
-		"twitterURL": ""
+		"twitterHandle": "@DeltaSpikeTeam",
+		"twitterURL": "https://twitter.com/DeltaSpikeTeam"
   },
   {
     "projectName": "Apache Qpid",
@@ -59,8 +59,8 @@
     "projectRepository": "https://github.com/apache/tomcat",
     "projectWebsite": "https://tomcat.apache.org/",
     "category": "Development",
-		"twitterHandle": "",
-		"twitterURL": ""
+		"twitterHandle": "@TheApacheTomcat",
+		"twitterURL": "https://twitter.com/theapachetomcat"
   },
   {
     "projectName": "Avocado",
@@ -786,8 +786,8 @@
     "projectRepository": "https://github.com/apiman",
     "projectWebsite": "https://www.apiman.io/",
     "category": "Middleware",
-		"twitterHandle": "",
-		"twitterURL": ""
+		"twitterHandle": "@apiman_io",
+		"twitterURL": "https://twitter.com/apiman_io"
   },
   {
     "projectName": "Arquillian",
@@ -1308,8 +1308,8 @@
     "projectRepository": "https://github.com/aeolusproject",
     "projectWebsite": "http://aeolusproject.github.io/",
     "category": "Operations",
-		"twitterHandle": "",
-		"twitterURL": ""
+		"twitterHandle": "@aeolusproject",
+		"twitterURL": "https://twitter.com/aeolusproject"
   },
   {
     "projectName": "Ansible",
@@ -2119,7 +2119,7 @@
     "projectName": "Artificial Intelligence Center of Excellence",
     "projectDescription": "This is Artificial Intelligence Center of Excellence's Repository, we are part of the Red Hat's Office of the CTO",
     "projectRepository": "https://github.com/AICoE",
-    "projectWebsite": "https://github.com/AICoE",
+    "projectWebsite": "",
     "category": "Organizations",
 		"twitterHandle": "",
 		"twitterURL": ""

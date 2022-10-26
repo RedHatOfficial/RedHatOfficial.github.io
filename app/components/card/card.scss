@@ -58,7 +58,6 @@
         }
         &-icon {
             @extend %link-icon;
-	    display: flex;
         }
     }
 }
