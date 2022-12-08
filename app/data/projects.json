@@ -63,6 +63,15 @@
 		"twitterURL": ""
   },
   {
+    "projectName": "Apicurio",
+    "projectDescription": "All things API, because APIs are the cure",
+    "projectRepository": "https://github.com/Apicurio",
+    "projectWebsite": "https://www.apicur.io/",
+    "category": "Middleware",
+    "twitterHandle": "",
+    "twitterURL": ""
+  },
+  {
     "projectName": "Avocado",
     "projectDescription": "A testing framework with benefits.",
     "projectRepository": "https://github.com/avocado-framework",
@@ -299,7 +308,7 @@
     "projectName": "Immutant",
     "projectDescription": "A cohesive suite of Clojure libraries",
     "projectRepository": "https://github.com/immutant",
-    "projectWebsite": "http://immutant.org/",
+    "projectWebsite": "",
     "category": "Development",
 		"twitterHandle": "",
 		"twitterURL": ""
@@ -354,6 +363,14 @@
     "category": "Development",
 		"twitterHandle": "",
 		"twitterURL": ""
+  },
+  {
+    "projectName": "Kroxylicious",
+    "projectDescription": "Kroxylicious is a project aiming to provide an open source pluggable framework for writing network proxies that understand the Apache Kafka protocol.",
+    "projectRepository": "https://github.com/kroxylicious",
+    "category": "Middleware",
+    "twitterHandle": "",
+    "twitterURL": ""
   },
   {
    "projectName": "Kubernetes",
@@ -1037,6 +1054,7 @@
     "projectName": "mod_cluster",
     "projectDescription": "An httpd-based load balancer",
     "projectRepository": "https://github.com/modcluster",
+    "projectWebsite": "https://www.modcluster.io/",
     "category": "Middleware",
 		"twitterHandle": "",
 		"twitterURL": ""
@@ -1270,7 +1288,6 @@
     "projectName": "WildFly Swarm",
     "projectDescription": "WildFly Swarm offers an innovative approach to packaging and running Java EE applications by packaging them with just enough of the server runtime to 'java -jar' your application. It's MicroProfile compatible, too.",
     "projectRepository": "https://github.com/wildfly-swarm",
-    "projectWebsite": "http://wildfly-swarm.io/",
     "category": "Middleware",
 		"twitterHandle": "",
 		"twitterURL": ""
@@ -2075,7 +2092,6 @@
     "projectName": "TorqueBox Project",
     "projectDescription": "Provides an all-in-one environment, built upon the latest JBoss AS Java application server and JRuby",
     "projectRepository": "https://github.com/torquebox",
-    "projectWebsite": "http://torquebox.org",
     "category": "Operations",
 		"twitterHandle": "",
 		"twitterURL": ""
@@ -2807,5 +2823,87 @@
     "category": "Development",
     "twitterHandle": "",
     "twitterURL": ""
+  },
+  {
+    "projectName": "qbicc",
+    "projectDescription": "An experimental native image compiler for Java ",
+    "projectRepository": "https://github.com/qbicc",
+    "projectWebsite": "https://qbicc.org/",
+    "category": "Middleware",
+    "twitterHandle": "QbiccOrg",
+    "twitterURL": "https://twitter.com/qbiccOrg"
+  },
+    {
+    "projectName": "Boson",
+    "projectDescription": "Functions for Knative",
+    "projectRepository": "https://github.com/boson-project",
+    "projectWebsite": "",
+    "category": "Middleware",
+    "twitterHandle": "",
+    "twitterURL": ""
+  },
+    {
+    "projectName": "Kuadrant",
+    "projectDescription": "Kuadrant enables hybrid cloud application developers to securely expose & consume k8s services. Think AuthN/AuthZ, rate limiting, and OAS.",
+    "projectRepository": "https://github.com/Kuadrant",
+    "projectWebsite": "https://kuadrant.io/",
+    "category": "Middleware",
+    "twitterHandle": "kuadrantio",
+    "twitterURL": "https://twitter.com/kuadrantio"
+  },
+    {
+    "projectName": "Agroal",
+    "projectDescription": "High-performance connection pools for databases",
+    "projectRepository": "https://github.com/agroal",
+    "projectWebsite": "https://agroal.github.io/",
+    "category": "Middleware",
+    "twitterHandle": "pgagroal",
+    "twitterURL": "https://twitter.com/pgagroal"
+  },
+    {
+    "projectName": "AtlasMap",
+    "projectDescription": "he AtlasMap is a data mapping solution with interactive web based user interface, that simplifies configuring integrations between Java, XML, and JSON data sources. ",
+    "projectRepository": "https://github.com/atlasmap/atlasmap",
+    "projectWebsite": "",
+    "category": "Middleware",
+    "twitterHandle": "",
+    "twitterURL": ""
+  },
+    {
+    "projectName": "Dekorate",
+    "projectDescription": "Dekorate is a one-stop jar to Kubernetes manifest generation that works for all jvm languages regardless of your build tool.",
+    "projectRepository": "https://github.com/dekorateio",
+    "projectWebsite": "https://dekorate.io/",
+    "category": "Middleware",
+    "twitterHandle": "dekorateio",
+    "twitterURL": "https://twitter.com/dekorateio"
+  },
+    {
+    "projectName": "DrougeIoT",
+    "projectDescription": "Drogue IoT gives you the platform and tools to create safe, efficient and scalable IoT solutions. From the device on up to the cloud.",
+    "projectRepository": "https://github.com/drogue-iot",
+    "projectWebsite": "https://www.drogue.io/",
+    "category": "Middleware",
+    "twitterHandle": "DrogueIoT",
+    "twitterURL": "https://twitter.com/drogueiot"
+  }
+  ,
+    {
+    "projectName": "HyperFoil",
+    "projectDescription": "Microservice-oriented distributed benchmark framework.",
+    "projectRepository": "https://github.com/Hyperfoil/Hyperfoil",
+    "projectWebsite": "https://hyperfoil.io/",
+    "category": "Middleware",
+    "twitterHandle": "",
+    "twitterURL": ""
+  },
+    {
+    "projectName": "SmallRye",
+    "projectDescription": "SmallRye improves the developer experience for Cloud Native development through innovation in the critical functionality required for Cloud environments.",
+    "projectRepository": "https://github.com/smallrye",
+    "projectWebsite": "https://smallrye.io/",
+    "category": "Middleware",
+    "twitterHandle": "smallrye_io",
+    "twitterURL": "https://twitter.com/smallrye_io"
   }
 ]
