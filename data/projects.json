@@ -195,6 +195,16 @@
     "lowercaseName": "crash"
   },
   {
+    "projectName": "CRC",
+    "projectDescription": "A tool for managing a local OpenShift cluster.",
+    "projectRepository": "https://github.com/crc-org",
+    "projectWebsite": "https://crc.dev",
+    "category": "Development",
+    "twitterHandle": "",
+    "twitterURL": "",
+    "lowercaseName": "crc"
+  },
+  {
     "projectName": "Cryostat",
     "projectDescription": "JFR management for JVMs in the cloud",
     "projectRepository": "https://github.com/cryostatio",
