@@ -157,6 +157,15 @@
 		"twitterURL": ""
   },
   {
+    "projectName": "crc",
+    "projectDescription": "A tool which provides you with a single node OpenShift cluster (OCP or OKD) or a podman machine on either macOS, Windows or Linux",
+    "projectRepository": "https://github.com/crc-org",
+    "projectWebsite": "https://crc.dev",
+    "category": "Development",
+		"twitterHandle": "",
+		"twitterURL": ""
+  },
+  {
     "projectName": "Cryostat",
     "projectDescription": "JFR management for JVMs in the cloud",
     "projectRepository": "https://github.com/cryostatio",
