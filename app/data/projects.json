@@ -1222,6 +1222,15 @@
 		"twitterURL": ""
   },
   {
+    "projectName": "Submariner",
+    "projectDescription": "Submariner enables direct networking between Pods and Services in different Kubernetes clusters, either on-premises or in the cloud.",
+    "projectRepository": "https://github.com/submariner-io",
+    "projectWebsite": "https://submariner.io/",
+    "category": "Middleware",
+    "twitterHandle": "submarinerio",
+    "twitterURL": "https://twitter.com/submarinerio"
+  },		
+  {
     "projectName": "SwitchYard",
     "projectDescription": "SwitchYard is a component-based development framework focused on building structured, maintainable services and applications",
     "projectRepository": "https://github.com/jboss-switchyard",
