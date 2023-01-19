@@ -1824,15 +1824,6 @@
 		"twitterURL": ""
   },
   {
-    "projectName": "OpenDaylight",
-    "projectDescription": "A modular open platform for customizing and automating networks of any size and scale.",
-    "projectRepository": "https://github.com/opendaylight/",
-    "projectWebsite": "https://www.opendaylight.org/",
-    "category": "Operations",
-		"twitterHandle": "",
-		"twitterURL": ""
-  },
-  {
     "projectName": "OpenSCAP",
     "projectDescription": "Open Source Security Compliance Solution",
     "projectRepository": "https://github.com/OpenSCAP",
