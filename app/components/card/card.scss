@@ -55,6 +55,9 @@
         }
         &-link {
             @extend %subtle-link;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
         &-icon {
             @extend %link-icon;
