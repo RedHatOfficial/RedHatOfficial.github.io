@@ -373,6 +373,15 @@
     "twitterURL": ""
   },
   {
+    "projectName": "Kuadrant",
+    "projectDescription": "Securely expose & consume k8s services with Kuadrant",
+    "projectRepository": "https://github.com/kuadrant",
+    "projectWebsite": "https://kuadrant.io",
+    "category": "Middleware",
+    "twitterHandle": "",
+    "twitterURL": ""
+  },
+  {
    "projectName": "Kubernetes",
    "projectDescription": "An open-source system for automating deployment, scaling, and management of containerized applications",
    "projectRepository": "https://github.com/kubernetes",
