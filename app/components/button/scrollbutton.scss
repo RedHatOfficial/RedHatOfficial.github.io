@@ -1,0 +1,25 @@
+
+
+.scroll-button-container {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 10px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+.scroll-button{
+  background: none;
+  border: none;
+  cursor: pointer;
+&:hover {
+  background-color: none;
+}
+}
+
