@@ -33,3 +33,15 @@
     }
   }
 }
+
+.scroll{
+  
+  position: fixed;
+  bottom: 80px;
+  right: 20px;
+  z-index: 5;
+  place-items: center;
+  border-radius: 50%; 
+  cursor: pointer;
+ 
+}

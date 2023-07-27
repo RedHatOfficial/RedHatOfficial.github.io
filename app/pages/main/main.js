@@ -23,7 +23,7 @@ import bandheader from "../../components/bandheader/bandheader";
 import card from "../../components/card/card";
 import group from "../../components/group/group";
 import dynamictable from "../../components/dynamictable/dynamictable";
-
+import scrollbutton from "../../components/button/scrollbutton";
 export default angular.module("rhGitHub.main", [
     "ngRoute",
     "rhGitHub.hero",
@@ -31,7 +31,8 @@ export default angular.module("rhGitHub.main", [
     "rhGitHub.bandheader",
     "rhGitHub.card",
     "rhGitHub.group",
-    "rhGitHub.dynamictable"
+  "rhGitHub.dynamictable",
+    "rhGitHub.scrollbutton"
   ])
   .config(["$routeProvider", ($routeProvider) => {
     $routeProvider.when("/main", {
