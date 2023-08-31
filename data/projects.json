@@ -2019,8 +2019,8 @@
     "projectRepository": "https://github.com/moby",
     "projectWebsite": "https://mobyproject.org/",
     "category": "Operations",
-    "twitterHandle": "",
-    "twitterURL": "",
+    "twitterHandle": "moby",
+    "twitterURL": "https://twitter.com/moby",
     "lowercaseName": "moby project"
   },
   {
