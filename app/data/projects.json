@@ -1760,8 +1760,8 @@
     "projectRepository": "https://github.com/moby",
     "projectWebsite": "https://mobyproject.org/",
     "category": "Operations",
-		"twitterHandle": "",
-		"twitterURL": ""
+		"twitterHandle": "@moby",
+		"twitterURL": "https://twitter.com/moby?s=20"
   },
   {
     "projectName": "mod_auth_gssapi",
