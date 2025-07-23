@@ -1,0 +1,81 @@
+@use "variables/breakpoints";
+@use "variables/colors";
+@use "variables/base";
+@use "extends/block";
+@use "mixins/global" as mixins;
+
+.footer {
+  &--component {
+    @include block.default--band();
+    background-color: colors.$rich-black;
+  }
+  &-container {
+    @include block.default-container();
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    grid-gap: 10px;
+
+    @media screen and (min-width: breakpoints.$breakpoint-sm-min) {
+        align-items: center;
+        grid-auto-rows: 1fr;
+        grid-gap: 30px;
+        grid-template-columns: 1fr 3fr 5fr 1fr;
+    }
+  }
+  &-logo {
+    img {
+      &:active,
+      &:hover {
+        //filter: drop-shadow(0 2px 3px darken($black, 10%));
+      }
+      &:focus {
+        @include mixins.accessibility-focus();
+      }
+      height: 34px;
+      @media screen and (min-width: breakpoints.$breakpoint-sm-min) {
+        height: 44px;
+        min-width: 138px;
+      }
+    }
+    &:last-child {
+      @media screen and (max-width: breakpoints.$breakpoint-xs-max) {
+        display: flex;
+        justify-content: flex-end;
+      }
+      img {
+        height: 35px;
+        min-width: 74px;
+      }
+    }
+  }
+  &-copyright {
+    color: colors.$fog;
+    font-family: base.$base-font-family;
+    font-size: 14px;
+    line-height: 1.18;
+    margin-bottom: 0;
+  }
+  &-links {
+    > *:not(:last-child) {
+      border-right: 1px solid colors.$stone;
+    }
+  }
+  &-link {
+    padding: 0 5px;
+    &-anchor {
+      color: colors.$fog;
+      font-family: base.$base-font-family;
+      font-size: 14px;
+      line-height: 1.18;
+
+      &:active,
+      &:hover {
+        color: colors.$white;
+      }
+
+      &:focus {
+        @include mixins.accessibility-focus();
+      }
+    }
+  }
+}

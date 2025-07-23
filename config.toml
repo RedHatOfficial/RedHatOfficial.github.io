@@ -1,0 +1,32 @@
+# The URL the site will be built for
+base_url = "https://redhatofficial.github.io"
+
+# Whether to automatically compile all Sass files in the sass directory
+compile_sass = true
+
+# Whether to build a search index to be used later on by a JavaScript library
+build_search_index = false
+
+default_language = "en"
+
+title = "Red Hat Official GitHub"
+
+[markdown]
+# Whether to do syntax highlighting
+# Theme can be customised by setting the `highlight_theme` variable to a theme supported by Zola
+highlight_code = true
+external_links_target_blank = true
+
+[extra]
+# Put all your custom variables here
+nav_links = [
+    {label = "Projects", link = {href = "#projects", title = "View a list of all our projects", external = false} },
+    {label = "Contribute", link = {href = "#contribute", title = "Learn more about contributing to Red Hat's projects.", external = false} },
+    {label = "Blog", link = {href = "https://www.redhat.com/en/blog", title = "Read about Red Hat on our company blog.", external = true} },
+    {label = "About", link = {href = "https://www.redhat.com/en/about", title = "Learn more about Red Hat.", external = true} }
+]
+footer_links = [
+    {text = "Privacy statement", href = "https://www.redhat.com/en/about/privacy-policy", title = "" },
+    {text = "Terms of use", href = "https://www.redhat.com/en/about/terms-use", title = ""},
+    {text = "All policies and guidelines", href = "https://www.redhat.com/en/about/all-policies-guidelines", title = ""},
+]

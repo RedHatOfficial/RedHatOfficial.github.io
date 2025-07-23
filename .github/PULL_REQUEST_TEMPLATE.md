@@ -19,10 +19,10 @@
 Your updates should work in the following environments:
 
 - [ ] Latest 2 versions of Edge
-- [ ] Internet Explorer 11 (should be useable, not pixel perfect)
-- [ ] Latest 2 versions of Firefox (one on Mac OS, one of Windows OS)
+- [ ] Internet Explorer 11 (should be usable, not pixel perfect)
+- [ ] Latest 2 versions of Firefox (one on macOS, one of Windows OS)
 - [ ] Firefox 68 (or latest version for Red Hat Enterprise Linux distribution)
-- [ ] Latest 2 versions of Chrome (one on Mac OS, one of Windows OS)
+- [ ] Latest 2 versions of Chrome (one on macOS, one of Windows OS)
 - [ ] Latest 2 versions of Safari
 - [ ] Android mobile device (such as the Galaxy S9)
 - [ ] Apple mobile device (such as the iPhone X)

@@ -1,0 +1,67 @@
+@use "variables/colors";
+@use "variables/base";
+@use "variables/breakpoints";
+@use "extends/block";
+
+.hero {
+    &--component {
+        @include block.default--band();
+        align-items: center;
+        background-color: colors.$gallery;
+        background-image: url("img/hero.png");
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        min-height: 25vh;
+        justify-content: center;
+    }
+
+    &-container {
+        @include block.default-container();
+    }
+
+    &-heading {
+        color: colors.$black;
+        font-family: base.$base-font-family--heading;
+        font-size: 35px;
+        font-weight: 600;
+        line-height: 1.18;
+
+        &:not(:last-child) {
+            padding-bottom: 20px;
+        }
+
+        @media screen and (min-width: breakpoints.$breakpoint-md-min) {
+            font-size: 36px;
+        }
+
+        @media screen and (min-width: breakpoints.$breakpoint-lg-min) {
+            font-size: 38px;
+        }
+    }
+
+    &-copy {
+        color: colors.$black;
+        font-family: base.$base-font-family;
+        font-size: 20px;
+        font-weight: 100;
+        line-height: 1.44;
+        margin: auto;
+        max-width: 75%;
+
+        &:not(:last-child) {
+            padding-bottom: 15px;
+        }
+
+        a {
+            color: colors.$midnight-blue;
+            text-decoration: none;
+
+            &:active,
+            &:hover {
+                color: colors.$unc-blue;
+            }
+        }
+    }
+}

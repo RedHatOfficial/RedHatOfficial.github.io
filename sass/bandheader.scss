@@ -1,0 +1,37 @@
+@use "variables/colors";
+@use "variables/base";
+@use "variables/breakpoints";
+
+.band-header {
+  &-title {
+    color: colors.$black;
+    font-family: base.$base-font-family;
+    font-size: 22px;
+    font-weight: 800;
+    line-height: 1.18;
+    text-transform: uppercase;
+  }
+  &-heading {
+    color: colors.$black;
+    font-family: base.$base-font-family--heading;
+    font-size: 32px;
+    font-weight: 800;
+    line-height: 1.1;
+    text-transform: none;
+
+    @media screen and (min-width: breakpoints.$breakpoint-md-min) {
+      font-size: 36px;
+    }
+
+    @media screen and (min-width: breakpoints.$breakpoint-lg-min) {
+      font-size: 38px;
+    }
+  }
+  &-summary {
+    color: colors.$stone;
+    font-family: base.$base-font-family;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 1.44;
+  }
+}

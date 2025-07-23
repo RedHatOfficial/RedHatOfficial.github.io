@@ -1,0 +1,212 @@
+@use "mixins/global" as global2;
+@use "variables/base";
+@use "variables/breakpoints";
+@use "variables/colors";
+@use 'mixins/global' as mixins;
+
+.table {
+    &--component {
+        > *:not(:last-child) {
+            padding-bottom: 30px;
+        }
+    }
+
+    &-filters {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 10px;
+        @media screen and (min-width: breakpoints.$breakpoint-sm-min) {
+            grid-auto-rows: 1fr;
+            grid-gap: 30px;
+            grid-template-columns: 8fr 4fr;
+        }
+    }
+
+    &-search {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-gap: 0;
+        grid-template-columns: 7fr 1fr;
+
+        &-input {
+            @include global2.make-input();
+        }
+
+        &-button {
+            @include global2.make-button($btn-color: colors.$brand-primary);
+
+          @media all and (max-width: breakpoints.$breakpoint-sm-max) {
+            padding-left: 20px;
+            padding-right: 20px;
+          }
+        }
+    }
+
+    &-dropdown {
+        font-family: base.$base-font-family;
+        align-items: center;
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-gap: 10px;
+        grid-template-columns: 1fr 3fr;
+        position: relative;
+
+        &-label {
+          color: colors.$black;
+          font-family: base.$base-font-family;
+          font-size: 18px;
+          font-weight: 600;
+          line-height: 1.18;
+        }
+
+        &-select {
+            background-color: colors.$white;
+            color: colors.$stone;
+            height: 100%;
+            -webkit-appearance: none;
+            border-radius: 0;
+            padding: 5px 30px 5px 10px;
+
+            + i {
+                color: colors.$stone;
+                position: absolute;
+                top: calc(50% - .55em);
+                right: 10px;
+            }
+
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+
+    &-main {
+      border-collapse: collapse;
+      width: 100%;
+      table-layout: fixed;
+
+      @media all and (max-width: breakpoints.$breakpoint-sm-max) {
+        table-layout: fixed;
+      }
+
+      thead {
+        @media screen and (max-width: breakpoints.$breakpoint-xs-max) {
+          display: none;
+        }
+      }
+
+      thead tr {
+        background-color: colors.$iron;
+      }
+
+      th {
+        color: colors.$black;
+        font-family: base.$base-font-family;
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 1.44;
+        text-align: left;
+        a {
+          color: colors.$denim-blue;
+
+          &:active,
+          &:hover {
+            color: colors.$steel-blue;
+          }
+
+          &:focus {
+            @include mixins.accessibility-focus();
+          }
+        }
+        padding: 10px;
+      }
+
+      th:nth-child(3) {
+        padding-left: 13%;
+      }
+
+      th:nth-child(4) {
+        padding-left: 13%;
+      }
+
+      tbody tr:nth-child(even) {
+        background-color: colors.$mercury;
+      }
+
+      tbody tr:nth-child(odd) {
+        background-color: colors.$white;
+      }
+
+      td {
+        color: colors.$coal;
+        font-family: base.$base-font-family;
+        font-size: 18px;
+        font-weight: 100;
+        line-height: 1.44;
+        text-align: left;
+        a {
+          color: colors.$coal;
+
+          &:active,
+          &:hover {
+            color: colors.$steel-blue;
+          }
+
+          &:focus {
+            @include mixins.accessibility-focus();
+          }
+        }
+        padding: 10px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        @media screen and (max-width: breakpoints.$breakpoint-xs-max) {
+          display: block;
+        }
+        &:first-child {
+          @media screen and (max-width: breakpoints.$breakpoint-xs-max) {
+            font-weight: 600;
+          }
+        }
+      }
+      td:nth-child(3) {
+        padding-left: 13%;
+      }
+      td:nth-child(4) {
+        padding-left: 13%;
+      }
+    }
+
+    &-no-results {
+      color: colors.$stone;
+      font-family: base.$base-font-family;
+      font-size: 18px;
+      font-weight: 100;
+      line-height: 1.44;
+      a {
+        color: colors.$denim-blue;
+
+        &:active,
+        &:hover {
+          color: colors.$steel-blue;
+        }
+
+        &:focus {
+          @include mixins.accessibility-focus();
+        }
+      }
+      a {
+        color: colors.$stone;
+        font-family: base.$base-font-family;
+        text-decoration: none;
+
+        &:active,
+        &:hover {
+          color: colors.$steel-blue;
+        }
+
+        &:focus {
+          @include mixins.accessibility-focus();
+        }
+      }
+    }
+}

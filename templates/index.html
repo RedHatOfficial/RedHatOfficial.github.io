@@ -1,0 +1,329 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="copyright" content="&copy; 2017-{{ now() | date(format='%Y') }} Red Hat, Inc." />
+    <meta name="description" content="{% block description %}{{ config.description }}{% endblock description %}">
+    <title>{% block title %}{{ config.title }}{% endblock title %}</title>
+    <link rel="icon" type="image/png" href="https://static.redhat.com/libs/redhat/brand-assets/2/corp/favicon.png" />
+    <link rel="stylesheet" type="text/css" href="{{ get_url(path='css/normalize.css') }}"/>
+    <link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" integrity="sha384-3AB7yXWz4OeoZcPbieVW64vVXEwADiYyAEhwilzWsLw+9FgqpyjjStpPnpBO8o8S" crossorigin="anonymous"/>
+    <link rel="stylesheet" type="text/css" href="{{ get_url(path='global.css') }}"/>
+    <noscript>
+        <style>
+            .js-needed {
+                display:none;
+            }
+        </style>
+    </noscript>
+</head>
+<body>
+<header>
+    <a id="top"></a>
+    <nav class="navigation--component" aria-labelledby="mainMenuLabel" data-collapse="both">
+        <h2 id="mainMenuLabel" data-visibility="hidden">Main menu</h2>
+        <div class="navigation-container">
+            <div class="navigation-group">
+                <h1 class="navigation-label">Red Hat on GitHub</h1>
+                <div class="navigation-links">
+                    {% for link in config.extra.nav_links %}
+                    <span class="navigation-link">
+                        <a class="navigation-link-anchor"
+                           title="{{ link.link.title }}"
+                           href="{{ link.link.href }}">
+                            {{ link.label }}
+                        </a>
+                        {% if link.link.external == true %}
+                            <i class="navigation-link-icon fas fa-external-link-alt"></i>
+                        {% endif %}
+                    </span>
+                    {% endfor %}
+                </div>
+            </div>
+            <div class="navigation-group">
+                <a href="https://www.redhat.com">
+                    <img class="navigation-logo"
+                         src="{{ get_url(path='img/redhat-logo-retina.png') }}"
+                         alt="Red Hat Logo"/>
+                </a>
+            </div>
+        </div>
+    </nav>
+</header>
+<main>
+    <section class="hero--component">
+        <div class="hero-container" data-align="center">
+            <h2 class="hero-heading">Commit to collaborate. Push innovation.</h2>
+            <div class="hero-copy">
+                <p>Collaborating with a community is about more than developing code. Collaboration is the freedom to ask questions and offer improvements&mdash;that's the open source way. It's why we've been a part of open source communities for more than 25 years, working side-by-side with people like you.</p>
+                <p>Let's make something together.</p>
+            </div>
+        </div>
+    </section>
+    <section class="band--layout" data-background="gray" data-collapse="bottom">
+        <div class="band-container" data-layout="3-up">
+            {% set featured = load_data(path="data/featured.json") %}
+            {% for feature in featured %}
+            <div class="card--component" data-background="white">
+                <div class="card-header">
+                    <a href="{{ feature.github }}"><img class="card-header-img" src="img/logo-{{ feature.logo }}.png"></a>
+                </div>
+                <div class="card-body" data-align="center">
+                    <h3 class="card-body-headline"><a href="{{ feature.github }}">{{ feature.name }}</a></h3>
+                    <p class="card-body-copy">{{feature.description}}</p>
+                </div>
+                {% if feature.website and feature.github and feature.twitter %}
+                <div class="card-footer" data-layout="3-up">
+                    <div class="card-footer-content" data-align="right">
+                        <a class="card-footer-link" href="{{ feature.website }}">
+                            <i class="card-footer-icon fa fa-fw fa-globe"></i>
+                            Website
+                        </a>
+                    </div>
+                    <div class="card-footer-content" data-align="center">
+                        <a class="card-footer-link" href="{{ feature.twitter }}">
+                            <i class="card-footer-icon fab fa-twitter"></i>
+                            Twitter
+                        </a>
+                    </div>
+                    <div class="card-footer-content" data-align="left">
+                        <a class="card-footer-link" href="{{ feature.github }}">
+                            <i class="card-footer-icon fab fa-github"></i>
+                            Repo
+                        </a>
+                    </div>
+
+                </div>
+                {% elif feature.website and feature.github %}
+                <div class="card-footer" data-layout="2-up">
+                    <div class="card-footer-content" data-align="right">
+                        <a class="card-footer-link" href="{{ feature.website }}">
+                            <i class="card-footer-icon fa fa-fw fa-globe"></i>
+                            Website
+                        </a>
+                    </div>
+                    <div class="card-footer-content" data-align="left">
+                        <a class="card-footer-link" href="{{ feature.github }}">
+                            <i class="card-footer-icon fab fa-github"></i>
+                            Repo
+                        </a>
+                    </div>
+                </div>
+                {% elif feature.github %}
+                <div class="card-footer-content" data-align="left">
+                    <a class="card-footer-link" href="{{ feature.github }}">
+                        <i class="card-footer-icon fab fa-github"></i>
+                        Repo
+                    </a>
+                </div>
+            </div>
+            {% else %}
+            {% endif %}
+        </div>
+        {% endfor %}
+        </div>
+    </section>
+    <section class="band--layout" id="projects" data-background="gray" data-collapse="top">
+        <div class="band-container" data-layout="stack">
+            <div class="band-header--component">
+                <h3 class="band-header-heading">All projects</h3>
+            </div>
+            <div class="table--component">
+                <div class="table-filters">
+                    <noscript>
+                        <p>The search and filter options require Javascript to function</p>
+                    </noscript>
+                    <div class="table-search js-needed">
+                        <input aria-label="search"
+                               class="table-search-input"
+                               id="input-searchable-table"
+                               type="text"
+                               placeholder="Search by project name..."
+                        onkeyup="searchTable()">
+                        <button class="table-search-button"
+                        onclick="searchTable()">Search</button>
+                    </div>
+                    {% set categories = load_data(path="data/categories.json") %}
+                    {% if categories | length > 0 %}
+                    <div class="table-dropdown js-needed">
+                        <label for="dropdown-searchable-table" class="table-dropdown-label">Categories</label>
+                        <select aria-label="category"
+                                class="table-dropdown-select"
+                                id="dropdown-searchable-table"
+                                name="category"
+                                onchange="filterTable()"
+                                >
+                            <option value="">-- Filter by category --</option>
+                            {% for category in categories %}
+                            <option label="{{ category }}" value="{{category}}">{{ category }}</option>
+                            {% endfor %}
+                        </select>
+                        <i class="fas fa-caret-down"></i>
+                    </div>
+                    {% endif %}
+                </div>
+
+                <table class="table-main" id="project-table">
+                    <thead class="table-header">
+                    <tr>
+                        <th>Project name</th>
+                        <th>Project website</th>
+                        <th>Twitter</th>
+                        <th>Category</th>
+                    </tr>
+                    </thead>
+                    <tbody class="table-body">
+                    {% set projects = load_data(path="data/projects.json") %}
+                    {% for project in projects | sort(attribute="lowercaseName") %}
+                    <tr class="table-row">
+                        {% if project.projectRepository and project.projectName %}
+                        <td><a href="{{ project.projectRepository }}">{{ project.projectName }}</a></td>
+                        {% else %}
+                        <td></td>
+                        {% endif %}
+                        {% if project.projectWebsite %}
+                        <td><a href="{{ project.projectWebsite }}">{{ project.projectWebsite }}</a></td>
+                        {% else %}
+                        <td></td>
+                        {% endif %}
+                        {% if project.twitterURL and project.twitterHandle %}
+                        <td><a href="{{ project.twitterURL }}">@{{ project.twitterHandle }}</a></td>
+                        {% else %}
+                        <td></td>
+                        {% endif %}
+                        {% if project.category %}
+                        <td>{{ project.category }}</td>
+                        {% else %}
+                        <td></td>
+                        {% endif %}
+                    </tr>
+                    {% endfor %}
+                    </tbody>
+                </table>
+                <div class="table-no-results" id="no-results" style="display: none">
+                    <p class="table-no-results-message">There appear to be no results for your search. <a href="#projects" onclick="searchClear()">Clear filters</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="band--layout" id="contribute">
+        <div class="band-container" data-layout="2-up">
+            {% set end_content = load_data(path="data/content.json") %}
+            {% for elem in end_content %}
+            {% if elem.heading or elem.copy %}
+            <div class="group--component">
+                <div class="group-container" data-align="center">
+                    <h3 class="group-heading">{{ elem.heading }}</h3>
+                    <div class="group-copy"><p>{{ elem.copy }}</p>
+                        {% if elem.copy2 %}
+                        <p>{{ elem.copy2 }}</p>
+                        {% endif %}
+                    </div>
+                    {% if elem.cta %}
+                    <p class="group-cta">
+                        <a class="group-cta-anchor"
+                               href="{{ elem.cta.href }}"
+                               title="{{ elem.cta.title }}">
+                            {{ elem.cta.text }}
+                        </a>
+                    </p>
+                    {% endif %}
+                </div>
+            </div>
+            {% endif %}
+            {% endfor %}
+        </div>
+    </section>
+</main>
+<a class="top-button" href="#top">Back to top</a>
+<footer class="footer--component" xmlns:dc="http://purl.org/dc/elements/1.1/" data-collapse="both">
+    <div class="footer-container">
+        <a class="footer-logo" href="https://www.redhat.com"><img src="{{ get_url(path='img/redhat-logo-dark-retina.png') }}" alt="Red Hat logo"/></a>
+        <p class="footer-copyright" property="dc:rights">Copyright &copy;<span property="dc:dateCopyrighted">2017-{{ now() | date(format="%Y") }}</span> <span property="dc:publisher">Red Hat, Inc.</span></p>
+        <div class="footer-links">
+            {% for link in config.extra.footer_links %}
+            <span class="footer-link">
+                <a class="footer-link-anchor"
+                    href="{{ link.href }}"
+                    title="{{ link.title }}">
+                    {{ link.text }}
+                </a>
+            </span>
+            {% endfor %}
+        </div>
+        <a class="footer-logo" href="https://www.redhat.com/summit"><img src="{{ get_url(path='img/logo-summit.png') }}" alt="Red Hat Summit logo"/></a>
+    </div>
+</footer>
+<script>
+    // basic ideas from https://www.w3schools.com/howto/howto_js_filter_table.asp and https://www.madcapsoftware.com/blog/table-filtering-html/
+    function searchTable() {
+        let input, filter, table, tr, td, i, txtValue, resultCount;
+        input = document.getElementById("input-searchable-table");
+    filter = input.value.toUpperCase();
+    table = document.getElementById("project-table");
+    tr = table.getElementsByTagName("tr");
+    resultCount = 0
+
+    // Loop through all table rows, and hide those who don't match the search query
+    for (i = 0; i < tr.length; i++) {
+        td = tr[i].getElementsByTagName("td")[0];
+        if (td) {
+            txtValue = td.textContent || td.innerText;
+            if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                tr[i].style.display = "";
+                resultCount++;
+            } else {
+                tr[i].style.display = "none"
+            }
+        }
+    }
+
+    if (resultCount === 0) {
+        let noDisplay;
+        noDisplay = document.getElementById("no-results");
+        noDisplay.style.display = "";
+    }
+
+    if (resultCount != 0) {
+        let noDisplay;
+        noDisplay = document.getElementById("no-results");
+        noDisplay.style.display = "none";
+    }
+}
+function filterTable() {
+    let input, filter, table, tr, td, i, txtValue;
+    input = document.getElementById("dropdown-searchable-table");
+    filter = input.value.toUpperCase();
+    table = document.getElementById("project-table");
+    tr = table.getElementsByTagName("tr");
+
+    // Loop through all table rows, and hide those who don't match the search query
+    for (i = 0; i < tr.length; i++) {
+        td = tr[i].getElementsByTagName("td")[3];
+        if (td) {
+            txtValue = td.textContent || td.innerText;
+            if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                tr[i].style.display = "";
+            } else {
+                tr[i].style.display = "none"
+            }
+        }
+    }
+}
+
+function searchClear() {
+    let input, input2, hideMe;
+    input = document.getElementById("input-searchable-table");
+    input2 = document.getElementById("dropdown-searchable-table");
+    hideMe = document.getElementById("no-results")
+    input.value = "";
+    input2.value = "";
+    hideMe.style.display = "none";
+    searchTable();
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+@use "variables/colors";
+@use "variables/base";
+@use "mixins/global" as mixins;
+
+.group {
+  &-container {
+      > *:not(:last-child) {
+        padding-bottom: 15px;
+      }
+  }
+
+  &-heading {
+    color: colors.$black;
+    font-family: base.$base-font-family--heading;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 1.18;
+  }
+
+  &-copy {
+    color: colors.$stone;
+    font-family: base.$base-font-family;
+    font-size: 18px;
+    font-weight: 100;
+    line-height: 1.44;
+    a {
+      color: colors.$denim-blue;
+
+      &:active,
+      &:hover {
+        color: colors.$steel-blue;
+      }
+
+      &:focus {
+        @include mixins.accessibility-focus();
+      }
+    }
+  }
+
+  &-cta-anchor {
+    color: colors.$denim-blue;
+    font-family: base.$base-font-family;
+    font-size: 16px;
+    text-decoration: none;
+
+    &::after {
+      content: ">";
+      font-size: .7em;
+      padding-left: 5px;
+      vertical-align: baseline;
+    }
+
+    &:active,
+    &:hover {
+      color: colors.$steel-blue;
+    }
+
+    &:focus {
+      @include mixins.accessibility-focus();
+    }
+  }
+}

@@ -1,0 +1,112 @@
+@use "variables/colors";
+@use "variables/base";
+@use "variables/breakpoints";
+@use "mixins/global" as mixins;
+
+.card {
+    &--component {
+        border-top: 5px solid colors.$red;
+        display: flex;
+        flex-flow: column nowrap;
+        padding: base.$box-padding;
+
+        &[data-background="white"] {
+            background-color: colors.$white;
+        }
+        > *:not(:last-child) {
+            padding-bottom: 30px;
+        }
+        [data-align="left"] {
+            text-align: left;
+        }
+        [data-align="center"] {
+            text-align: center;
+        }
+        [data-align="right"] {
+            text-align: right;
+        }
+    }
+    &-header {
+        display: flex;
+        justify-content: center;
+        flex-flow: column nowrap;
+        &-img {
+            display: block;
+            margin: 0 auto;
+            padding: 0 10px;
+            max-width: 80%;
+            max-height: 50px;
+        }
+    }
+    &-body {
+        flex-grow: 1;
+        > *:not(:last-child) {
+            padding-bottom: 10px;
+        }
+        &-headline {
+            color: colors.$black;
+            font-family: base.$base-font-family;
+            font-size: 22px;
+            font-weight: 400;
+            line-height: 1.18;
+            a {
+                color: colors.$black;
+                text-decoration: none;
+                &:active,
+                &:hover {
+                    color: colors.$steel-blue;
+                }
+            }
+        }
+        &-copy {
+            color: colors.$stone;
+            font-family: base.$base-font-family;
+            font-size: 16px;
+            font-weight: 100;
+            line-height: 1.44;
+        }
+    }
+    &-footer {
+        padding: 0 20px;
+        &[data-layout="3-up"] {
+            display: grid;
+            grid-template-columns: repeat(3, 36.156%);
+            grid-auto-rows: 1fr;
+            > * {
+              padding: 0 10px;
+            }
+        }
+        &[data-layout="2-up"] {
+            display: grid;
+            grid-template-columns: repeat(2, 50%);
+            grid-auto-rows: 1fr;
+            > * {
+              padding: 0 10px;
+            }
+        }
+        [data-layout="3-up"] &-content:last-child {
+            border-left: 2px solid colors.$iron;
+        }
+        [data-layout="3-up"] &-content:nth-child(2) {
+            border-left: 2px solid colors.$iron;
+        }
+        &-link {
+            color: colors.$stone;
+            font-family: base.$base-font-family;
+            text-decoration: none;
+
+            &:active,
+            &:hover {
+                color: colors.$steel-blue;
+            }
+
+            &:focus {
+                @include mixins.accessibility-focus();
+            }
+        }
+        &-icon {
+            vertical-align: baseline;
+	        display: flex;
+        }
+    }
+}

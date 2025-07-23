@@ -17,7 +17,7 @@ Check the site https://redhatofficial.github.io first to ensure this project is 
 To add a new project we need: 
   - Project name
   - Project description
-  - Link to the github repository
+  - Link to the GitHub repository
   - Link to the project's website
   - General category for this project
 
