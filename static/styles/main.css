@@ -64,13 +64,26 @@
   }
 
   .visually-hidden {
-    position: fixed;
-    top: 0;
-    left: 0;
-    overflow: hidden;
-    clip: rect(0, 0, 0, 0);
-    white-space: nowrap;
     border: 0;
+    clip: rect(0, 0, 0, 0);
+    block-size: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    white-space: nowrap;
+    inline-size: 1px;
+  }
+
+  .visually-hidden.focusable:active,
+  .visually-hidden.focusable:focus {
+    clip: auto;
+    block-size: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    white-space: inherit;
+    inline-size: auto;
   }
 }
 
