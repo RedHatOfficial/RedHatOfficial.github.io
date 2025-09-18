@@ -15,7 +15,7 @@ function searchTable() {
     } else {
         clearInput.setAttribute('hidden', 'hidden');
     }
-    
+
     trs.forEach((tr) => {
         let tds = tr.querySelectorAll('td');
         let firstCell = tds[0];
@@ -74,6 +74,7 @@ function inputClear() {
     let input = document.querySelector('#table-search-input');
     input.value = '';
     searchTable();
+    input.focus();
 }
 
 function clearAllFilters() {
