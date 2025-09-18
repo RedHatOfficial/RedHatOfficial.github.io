@@ -163,7 +163,9 @@
   #table-filters {
     display: flex;
     flex-direction: column;
-    gap: var(--rh-space-lg);
+    flex-wrap: wrap;
+    column-gap: var(--rh-space-2xl);
+    row-gap: var(--rh-space-lg);
     margin-block: var(--rh-space-2xl);
 
     @media screen and (min-width: 768px) {
@@ -182,6 +184,10 @@
       flex-direction: row;
       align-items: center;
       gap: var(--rh-space-md);
+    }
+
+    #search-results-count {
+      font-size: var(--rh-font-size-body-text-sm);
 
       @media screen and (min-width: 768px) {
         margin-inline-start: auto;

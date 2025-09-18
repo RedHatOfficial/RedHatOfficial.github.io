@@ -35,9 +35,12 @@ function searchTable() {
     } else if (resultCount != 0) {
         noDisplay.setAttribute('hidden', 'hidden');
     }
+
+    updateResultsCount(resultCount);
 }
 
 function filterTable() {
+    let resultCount = 0;
     const input = document.querySelector('#table-search-dropdown');
     const table = document.querySelector('#project-table');
     const trs = table.querySelectorAll('tr');
@@ -51,11 +54,20 @@ function filterTable() {
             let txtValue = firstCell.textContent || firstCell.innerText;
             if (txtValue.toLowerCase().indexOf(filter) > -1) {
                 tr.removeAttribute('hidden');
+                resultCount++;
             } else {
                 tr.setAttribute('hidden', 'hidden');
             }
         }
     });
+
+    updateResultsCount(resultCount);
+}
+
+function updateResultsCount(count) {
+    const resultsCount = document.querySelector('#results-count');
+
+    resultsCount.innerText = count;
 }
 
 function inputClear() {
@@ -76,6 +88,8 @@ document.addEventListener('DOMContentLoaded', function() {
     const searchInput = document.querySelector('#table-search-input');
     const searchDropdown = document.querySelector('#table-search-dropdown');
     const clearFilters = document.querySelector('#clear-filters');
+
+    searchTable();
 
     searchButton.addEventListener('click', searchTable);
     searchInput.addEventListener('keyup', searchTable);
