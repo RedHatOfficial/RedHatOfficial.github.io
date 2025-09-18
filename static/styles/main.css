@@ -197,6 +197,10 @@
 }
 
 @layer patterns {
+  rh-skip-link a:visited {
+    color: var(--rh-color-interactive-primary-default);
+  }
+
   #featured {
     background: light-dark(var(--rh-color-surface-lighter), var(--rh-color-surface-darker));
 
