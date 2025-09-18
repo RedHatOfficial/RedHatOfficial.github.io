@@ -1,0 +1,61 @@
+body {
+  font-family: var(--rh-font-family-body-text);
+  font-size: 1rem;
+  line-height: var(--rh-line-height-body-text);
+}
+
+:where(h1, h2, h3, h4, h5, h6) {
+  font-family: var(--rh-font-family-heading);
+  line-height: var(--rh-line-height-heading);
+  font-weight: var(--rh-font-weight-heading-medium);
+}
+
+:where(code) {
+  font-size: inherit;
+  font-family: var(--rh-font-family-code);
+  line-height: var(--rh-line-height-code);
+}
+
+:where(kbd) {
+  font-family: var(--rh-font-family-body-text);
+  font-size: 1rem;
+  line-height: var(--rh-line-height-body-text);
+}
+
+:where(h1) {
+  font-size: var(--rh-font-size-heading-2xl);
+}
+
+:where(h2) {
+  font-size: var(--rh-font-size-heading-xl);
+  margin-block-end: var(--rh-space-lg);
+}
+
+:where(h3) {
+  font-size: var(--rh-font-size-heading-lg);
+}
+
+:where(h4) {
+  font-size: var(--rh-font-size-heading-md);
+}
+
+:where(h5) {
+  font-size: var(--rh-font-size-heading-sm);
+}
+
+:where(h6) {
+  font-size: var(--rh-font-size-heading-xs);
+}
+
+:where(p) {
+  margin-block: var(--rh-space-lg);
+  font-size: var(--rh-font-size-body-text-md);
+}
+
+:where(p, h1, h2, h3, h4, h5, h6, li) {
+  max-width: 56rem; /* warning: magic number */
+}
+
+:where(p, ul, ol, dl) {
+  font-size: var(--rh-font-size-body-text-lg);
+}

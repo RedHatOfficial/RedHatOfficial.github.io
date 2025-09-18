@@ -1,0 +1,22 @@
+[
+    {
+        "label": "Projects",
+        "href": "#projects",
+        "external": false
+    },
+    {
+        "label": "Contribute",
+        "href": "#contribute",
+        "external": false
+    },
+    {
+        "label": "Blog",
+        "href": "https://www.redhat.com/en/blog",
+        "external": true
+    },
+    {
+        "label": "About",
+        "href": "https://www.redhat.com/en/about",
+        "external": true
+    }
+]

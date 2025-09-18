@@ -1,0 +1,41 @@
+<meta charset="UTF-8">
+<meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="copyright" content="&copy; 2017-{{ now() | date(format='%Y') }} Red Hat, Inc." />
+<meta name="description" content="{% block description %}{{ config.description }}{% endblock description %}">
+<title>{% block title %}{{ config.title }}{% endblock title %}</title>
+
+<link rel="icon" type="image/png" href="https://static.redhat.com/libs/redhat/brand-assets/2/corp/favicon.png" />
+
+{% include "partials/_meta-importmap.html" %}
+
+<link rel="stylesheet" href="/styles/main.css">
+<link rel="stylesheet" href="/styles/rh-navigation-primary-shim.css">
+
+<script type="module">
+    import '@rhds/elements/rh-icon/rh-icon.js';
+    import '@rhds/elements/rh-navigation-primary/rh-navigation-primary.js';
+    import '@rhds/elements/rh-card/rh-card.js';
+    import '@rhds/elements/rh-cta/rh-cta.js';
+    import '@rhds/elements/rh-button/rh-button.js';
+    import '@rhds/elements/rh-table/rh-table.js';
+    import '@rhds/elements/rh-footer/rh-footer.js';
+    import '@rhds/elements/rh-scheme-toggle/rh-scheme-toggle.js';
+    import '@rhds/elements/rh-back-to-top/rh-back-to-top.js';
+</script>
+
+<style>
+    :root {
+        --rh-color-logo-text: light-dark(var(--rh-color-gray-95), var(--rh-color-white));
+        --rh-color-temp: #0c0;
+    }
+
+    rh-navigation-primary-item rh-icon {
+        margin-inline-start: var(--rh-space-sm);
+        color: var(--rh-color-gray-50);
+    }
+</style>
+
+<script src="/js/table-search.js"></script>
+<script src="/js/art-direction.js"></script>

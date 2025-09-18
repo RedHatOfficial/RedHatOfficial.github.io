@@ -19,4 +19,4 @@ external_links_target_blank = true
 
 [extra]
 # Put all your custom variables here
-env = "prod"
+env = "dev"
