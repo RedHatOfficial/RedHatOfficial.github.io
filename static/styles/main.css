@@ -209,10 +209,28 @@
         text-align: center;
       }
 
+      [slot="header"],
       [slot="image"] {
+        rht-art-direction {
+          display: grid;
+          grid-template-columns: 1fr;
+          align-content: center;
+          height: 100px;
+        }
+
         img {
           max-width: 80%;
           max-height: var(--rh-length-3xl);
+
+          &.img-pulp {
+            height: 100px;
+            max-height: 100px;
+          }
+
+          &.img-wildfly {
+            height: 70px;
+            max-height: 70px;
+          }
         }
       }
     }

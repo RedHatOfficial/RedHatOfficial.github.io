@@ -22,13 +22,13 @@
                 {% set featured = load_data(path="data/featured.json") %}
                 {% for feature in featured %}
                 <rh-card>
-                    <a href="{{ feature.github }}" slot="image">
+                    <a href="{{ feature.github }}" slot="header">
                         <rht-art-direction>
-                            <img class="img-on-light" src="img/new-logo-{{ feature.logo }}.png" alt="{{ feature.name }} logo">
-                            <img class="img-on-dark" src="img/new-logo-{{ feature.logo }}-on-dark.png" alt="{{ feature.name }} logo">
+                            <img class="img-{{ feature.logo }} img-on-light" src="img/new-logo-{{ feature.logo }}.png" alt="{{ feature.name }}">
+                            <img class="img-{{ feature.logo }} img-on-dark" src="img/new-logo-{{ feature.logo }}-on-dark.png" alt="{{ feature.name }}">
                         </rht-art-direction>
                     </a>
-                    <h3 slot="header"><a href="{{ feature.github }}">{{ feature.name }}</a></h3>
+                    <!-- <h3 slot="header"><a href="{{ feature.github }}">{{ feature.name }}</a></h3> -->
                     <p>{{feature.description}}</p>
 
                     {% if feature.website or feature.github or feature.twitter %}
