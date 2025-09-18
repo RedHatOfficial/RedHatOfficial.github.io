@@ -12,7 +12,7 @@
 <header id="top">
     {% include "partials/_nav.html" %}
 </header>
-<main>
+<div id="wrap">
     {% include "partials/_hero.html" %}
 
     <section id="featured" aria-labelledby="h-featured">
@@ -65,21 +65,21 @@
         </div>
     </section>
 
-    <section id="projects" aria-labelledby="h-projects">
+    <main id="projects">
         <div class="container">
-            <h2 id="h-projects">All projects</h2>
+            <h2>All projects</h2>
 
             {% include "partials/_table-filters.html" %}
 
             {% include "partials/_projects-table.html" %}
-            
+
             <div id="no-results" hidden>
                 <p>There appear to be no results for your search.</p>
                 <rh-button id="clear-filters" variant="secondary" type="reset">Clear filters</rh-button>
             </div>
 
         </div>
-    </section>
+    </main>
 
     <section id="contribute" role="section" aria-labelledby="h-contributing">
         <div class="container">
@@ -105,9 +105,9 @@
             </div>
         </div>
     </section>
-    
+
     <rh-back-to-top href="#">Back to top</rh-back-to-top>
-</main>
+</div>
 
 {% include "partials/_footer.html" %}
 

@@ -75,8 +75,8 @@
 }
 
 @layer layout {
-  main {
-    container-name: main;
+  #wrap {
+    container-name: wrap;
     container-type: inline-size;
   }
 
@@ -117,7 +117,7 @@
       position: relative;
       width: 100%;
 
-      @container main (min-width: 768px) {
+      @container wrap (min-width: 768px) {
         width: 56rem;
       }
     }
