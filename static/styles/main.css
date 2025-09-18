@@ -122,7 +122,7 @@
       }
     }
 
-    h2 {
+    h1 {
       margin-block-end: var(--rh-space-xl);
       font-family: var(--rh-font-family-heading);
       font-size: var(--rh-font-size-heading-lg);
