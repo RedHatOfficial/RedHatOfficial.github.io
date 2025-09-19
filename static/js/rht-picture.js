@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
     const body = document.querySelector('body');
-    const artDirectionEls = document.querySelectorAll('rht-art-direction');
+    const pictureEls = document.querySelectorAll('rht-picture');
 
     var observer = new MutationObserver(function(mutations) {
       mutations.forEach(function(mutation) {
@@ -8,11 +8,11 @@ document.addEventListener('DOMContentLoaded', function() {
           let styleAttr = mutation.target.getAttribute('style');
 
           if (styleAttr.includes('color-scheme: dark')) {
-            artDirectionEls.forEach((art) => {
+            pictureEls.forEach((art) => {
               art.classList.add('dark');
             });
           } else {
-            artDirectionEls.forEach((art) => {
+            pictureEls.forEach((art) => {
               art.classList.remove('dark');
             });
           }

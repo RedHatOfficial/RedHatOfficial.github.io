@@ -26,10 +26,10 @@
                 {% for feature in featured %}
                 <rh-card>
                     <a href="{{ feature.github }}" slot="header">
-                        <rht-art-direction>
+                        <rht-picture>
                             <img class="img-{{ feature.logo }} img-on-light" src="img/new-logo-{{ feature.logo }}.png" alt="{{ feature.name }}">
                             <img class="img-{{ feature.logo }} img-on-dark" src="img/new-logo-{{ feature.logo }}-on-dark.png" alt="{{ feature.name }}">
-                        </rht-art-direction>
+                        </rht-picture>
                     </a>
 
                     <p>{{feature.description}}</p>
@@ -117,7 +117,7 @@
 {% include "partials/_footer.html" %}
 
 <script src="/js/table-search.js"></script>
-<script src="/js/art-direction.js"></script>
+<script src="/js/rht-picture.js"></script>
 
 </body>
 </html>

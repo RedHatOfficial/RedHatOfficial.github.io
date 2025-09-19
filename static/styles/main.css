@@ -230,7 +230,7 @@
 
       [slot="header"],
       [slot="image"] {
-        rht-art-direction {
+        rht-picture {
           display: grid;
           grid-template-columns: 1fr;
           align-content: center;
@@ -319,7 +319,7 @@
 }
 
 @layer pseudo-components {
-  rht-art-direction {
+  rht-picture {
     .img-on-dark {
       display: none;
     }
