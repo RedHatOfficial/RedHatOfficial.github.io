@@ -108,6 +108,8 @@ This project is build and run using [Zola](https://www.getzola.org/), a Rust-bas
 
 Under the hood, Zola uses [Tera](https://keats.github.io/tera/) for templating.
 
+This project also uses the [Red Hat Design System](https://ux.redhat.com/).
+
 ## Licensing
 
 - [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) for the displayed page and primary license for this repository
