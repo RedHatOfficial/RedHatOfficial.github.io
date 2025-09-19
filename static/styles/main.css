@@ -209,6 +209,14 @@
       }
     }
   }
+
+  #th-project-x {
+    --rh-icon-size: 21px;
+
+    align-items: center;
+    display: flex;
+    gap: var(--rh-space-md);
+  }
 }
 
 @layer patterns {
@@ -395,6 +403,7 @@
       padding-block: var(--rh-space-md);
       padding-inline-start: var(--rh-space-lg);
       padding-inline-end: var(--rh-space-2xl);
+      line-height: 1.5;
       appearance: none;
       border: 0;
       background: none;
