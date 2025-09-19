@@ -107,6 +107,7 @@
     background-repeat: no-repeat;
     background-size: cover; */
     min-height: 25vh;
+    color: var(--rh-color-text-primary);
 
     .hero-bg {
       position: absolute;
@@ -171,6 +172,7 @@
     padding-block-end: var(--rh-space-4xl);
     padding-block-start: var(--rh-space-4xl);
     padding-inline: var(--rh-space-lg);
+    color: var(--rh-color-text-primary);
   }
 
   #table-filters {
