@@ -1,0 +1,12 @@
+rh-navigation-primary:not(:defined) {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: var(--rh-space-xl, 32px);
+    padding-inline: var(--rh-space-lg, 16px);
+    height: 83px;
+
+    @media (min-width: 576px) {
+        padding-inline: var(--rh-space-2xl, 32px);
+    }
+}

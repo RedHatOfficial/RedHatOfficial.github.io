@@ -87,11 +87,20 @@ cd RedHatOfficial.github.io
 To build and run this project in your local dev environment, first install [Zola](https://www.getzola.org/documentation/getting-started/installation/). Then, run
 
 ```bash
-cd site
-zola serve
+zola --config config.dev.toml serve
 ```
 
 Go to the URL for the webserver (likely `localhost:1111`) to explore the site.
+
+### Configuration note
+
+There are two config files:
+
+- `config.toml` — For use in production. Sets CDN to redhatstatic.com
+- `config.dev.toml` — For use in local development. Sets CDN to jsDelivr
+
+Any changes done in `config.toml` must be duplicated in `config.dev.toml` (and vice versa).
+
 
 ## Built with
 

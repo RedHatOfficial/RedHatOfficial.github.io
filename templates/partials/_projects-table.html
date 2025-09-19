@@ -1,0 +1,39 @@
+<rh-table>
+    <table id="project-table">
+        <thead>
+            <tr>
+                <th id="th-project-name" scope="col">Project name</th>
+                <th id="th-project-url" scope="col">Website</th>
+                <th id="th-project-x" scope="col"><rh-icon set="social" icon="x" aria-label="X"></rh-icon> account</th>
+                <th id="th-project-cat" scope="col">Category</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% set projects = load_data(path="data/projects.json") %}
+            {% for project in projects | sort(attribute="lowercaseName") %}
+            <tr>
+                {% if project.projectRepository and project.projectName %}
+                <td><a href="{{ project.projectRepository }}">{{ project.projectName }}</a></td>
+                {% else %}
+                <td></td>
+                {% endif %}
+                {% if project.projectWebsite %}
+                <td><a href="{{ project.projectWebsite }}">{{ project.projectWebsite }}</a></td>
+                {% else %}
+                <td></td>
+                {% endif %}
+                {% if project.twitterURL and project.twitterHandle %}
+                <td><a href="{{ project.twitterURL }}">@{{ project.twitterHandle }}</a></td>
+                {% else %}
+                <td></td>
+                {% endif %}
+                {% if project.category %}
+                <td>{{ project.category }}</td>
+                {% else %}
+                <td></td>
+                {% endif %}
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</rh-table>

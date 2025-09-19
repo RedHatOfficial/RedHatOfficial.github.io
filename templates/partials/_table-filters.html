@@ -1,0 +1,28 @@
+<div id="table-filters">
+    <div id="table-search">
+        <label for="table-search-input" class="visually-hidden">Search the table</label>
+        <rht-text-input>
+            <input class="rh-input" id="table-search-input" type="text" placeholder="Search by project name...">
+            <button id="input-clear" aria-label="Clear input" hidden><rh-icon set="microns" icon="close"></rh-icon></button>
+        </rht-text-input>
+        <rh-button id="table-search-button">Search</rh-button>
+    </div>
+    {% set categories = load_data(path="data/categories.json") %}
+    {% if categories | length > 0 %}
+    <div id="table-categories">
+        <label for="table-search-dropdown">Categories</label>
+        <rht-select>
+            <select id="table-search-dropdown" name="category">
+                <option value="">-- Filter by category --</option>
+                {% for category in categories %}
+                <option label="{{ category }}" value="{{category}}">{{ category }}</option>
+                {% endfor %}
+            </select>
+            <rh-icon set="ui" icon="caret-down-fill" aria-hidden="true"></rh-icon>
+        </rht-select>
+    </div>
+    {% endif %}
+    <p id="search-results-count" role="status">
+        Showing <span id="results-count"></span> results
+    </p>
+</div>
