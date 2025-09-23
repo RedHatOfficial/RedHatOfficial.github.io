@@ -18,6 +18,7 @@
 @layer base {
   body {
     color: var(--rh-color-text-primary);
+    color-scheme: light dark;
   }
 
   a {
