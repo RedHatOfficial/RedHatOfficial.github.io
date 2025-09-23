@@ -1,8 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
-    {# Temporarily using 3rd pary CDN while we fix CORS issue with https://redhatstatic.com/dssf-001/v2/ #}
-    {% set cdn_base_url = "https://cdn.jsdelivr.net/npm/" %}
+    {% set cdn_base_url = "https://redhatstatic.com/dssf-001/v2/" %}
     {% if config.extra.env == "dev" %}
         {% set cdn_base_url = "https://cdn.jsdelivr.net/npm/" %}
     {% endif %}
