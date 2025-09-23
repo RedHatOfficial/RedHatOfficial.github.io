@@ -380,6 +380,16 @@
     "lowercaseName": "immutant"
   },
   {
+    "projectName": "InstructLab",
+    "projectDescription": "InstructLab is a model-agnostic open source AI project that facilitates contributions to Large Language Models (LLMs).",
+    "projectRepository": "https://github.com/instructlab/",
+    "projectWebsite": "https://instructlab.ai/",
+    "category": "Development",
+    "twitterHandle": "",
+    "twitterURL": "",
+    "lowercaseName": "instructlab"
+  },
+  {
     "projectName": "IronJacamar",
     "projectDescription": "An implementation of the Java EE Connector Architecture 1.7 specification",
     "projectRepository": "https://github.com/oloake/IronJacamar",
