@@ -350,16 +350,6 @@
         display: none;
       }
     }
-
-    @media (prefers-color-scheme: dark) {
-      .img-on-dark {
-        display: inline;
-      }
-
-      .img-on-light {
-        display: none;
-      }
-    }
   }
 
   rht-text-input {
