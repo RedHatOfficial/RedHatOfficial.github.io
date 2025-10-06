@@ -1,0 +1,119 @@
+@font-face {
+  font-family: RedHatDisplay;
+  src: url('../fonts/RedHatDisplay/RedHatDisplay-Regular.woff');
+  font-style: normal;
+  font-weight: 400;
+  text-rendering: optimizelegibility;
+}
+
+@font-face {
+  font-family: RedHatDisplay;
+  src: url('../fonts/RedHatDisplay/RedHatDisplay-Medium.woff');
+  font-style: normal;
+  font-weight: 500;
+  text-rendering: optimizelegibility;
+}
+
+@font-face {
+  font-family: RedHatDisplay;
+  src: url('../fonts/RedHatDisplay/RedHatDisplay-Bold.woff');
+  font-style: normal;
+  font-weight: 700;
+  text-rendering: optimizelegibility;
+}
+
+@font-face {
+  font-family: RedHatText;
+  src: url('../fonts/RedHatText/RedHatText-Regular.woff');
+  font-style: normal;
+  font-weight: 400;
+  text-rendering: optimizelegibility;
+}
+
+@font-face {
+  font-family: RedHatText;
+  src: url('../fonts/RedHatText/RedHatText-Medium.woff');
+  font-style: normal;
+  font-weight: 500;
+  text-rendering: optimizelegibility;
+}
+
+@font-face {
+  font-family: RedHatMono;
+  src: url('../fonts/RedHatMono/RedHatMono-Bold.woff2') format('woff2');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: RedHatMono;
+  src: url('../fonts/RedHatMono/RedHatMono-BoldItalic.woff2') format('woff2');
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: RedHatMono;
+  src: url('../fonts/RedHatMono/RedHatMono-Italic.woff2') format('woff2');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: RedHatMono;
+  src: url('../fonts/RedHatMono/RedHatMono-Light.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: RedHatMono;
+  src: url('../fonts/RedHatMono/RedHatMono-LightItalic.woff2') format('woff2');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: RedHatMono;
+  src: url('../fonts/RedHatMono/RedHatMono-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: RedHatMono;
+  src: url('../fonts/RedHatMono/RedHatMono-MediumItalic.woff2') format('woff2');
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: RedHatMono;
+  src: url('../fonts/RedHatMono/RedHatMono-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: RedHatMono;
+  src: url('../fonts/RedHatMono/RedHatMono-SemiBold.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: RedHatMono;
+  src: url('../fonts/RedHatMono/RedHatMono-SemiBoldItalic.woff2') format('woff2');
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
