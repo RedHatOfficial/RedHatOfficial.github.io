@@ -426,4 +426,16 @@
       --rh-icon-size: 10px;
     }
   }
+
+        /* Fix for dark mode dropdown visibility - Issue #389 */
+[data-theme="dark"] #table-search-dropdown {
+  background-color: var(--pf-global--BackgroundColor--dark-100, #1f1f1f);
+  color: var(--pf-global--Color--light-100, #ffffff);
+  border-color: var(--pf-global--BorderColor--dark-100, #6a6e73);
+}
+
+[data-theme="dark"] #table-search-dropdown option {
+  background-color: var(--pf-global--BackgroundColor--dark-100, #1f1f1f);
+  color: var(--pf-global--Color--light-100, #ffffff);
+}
 }
