@@ -1,0 +1,150 @@
+name: Validate JSON Data Files
+
+on:
+  pull_request:
+    paths:
+      - 'data/projects.json'
+      - 'data/featured.json'
+  push:
+    branches:
+      - dev
+    paths:
+      - 'data/projects.json'
+      - 'data/featured.json'
+
+jobs:
+  validate-json:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+      
+      - name: Validate projects.json syntax
+        run: |
+          echo "Validating projects.json..."
+          python3 -m json.tool data/projects.json > /dev/null
+          if [ $? -eq 0 ]; then
+            echo "✅ projects.json has valid JSON syntax"
+          else
+            echo "❌ projects.json has invalid JSON syntax"
+            exit 1
+          fi
+      
+      - name: Validate featured.json syntax
+        run: |
+          echo "Validating featured.json..."
+          python3 -m json.tool data/featured.json > /dev/null
+          if [ $? -eq 0 ]; then
+            echo "✅ featured.json has valid JSON syntax"
+          else
+            echo "❌ featured.json has invalid JSON syntax"
+            exit 1
+          fi
+      
+      - name: Check project fields
+        run: |
+          python3 << 'EOF'
+          import json
+          import sys
+          
+          print("Checking projects.json structure...")
+          
+          with open('data/projects.json', 'r') as f:
+              projects = json.load(f)
+          
+          required_fields = ['projectName', 'projectRepository', 'category']
+          valid_categories = ['Development', 'Documentation', 'Middleware', 'Operations', 'Organizations', 'Platform', 'Storage']
+          
+          errors = []
+          warnings = []
+          
+          for i, project in enumerate(projects):
+              # Check required fields
+              for field in required_fields:
+                  if field not in project:
+                      errors.append(f"Project at index {i} missing required field: {field}")
+              
+              # Validate category
+              if 'category' in project and project['category'] not in valid_categories:
+                  errors.append(f"Project '{project.get('projectName', 'Unknown')}' has invalid category: {project['category']}")
+              
+              # Check URL format
+              if 'projectRepository' in project:
+                  repo = project['projectRepository']
+                  if not repo.startswith('https://'):
+                      warnings.append(f"Project '{project.get('projectName', 'Unknown')}' repository URL should use HTTPS: {repo}")
+          
+          # Check alphabetical order
+          project_names = [p.get('projectName', '') for p in projects]
+          sorted_names = sorted(project_names, key=str.lower)
+          
+          if project_names != sorted_names:
+              warnings.append("Projects are not in alphabetical order!")
+              print("\nExpected order:")
+              for name in sorted_names:
+                  print(f"  - {name}")
+          
+          # Print results
+          if errors:
+              print("\n❌ ERRORS FOUND:")
+              for error in errors:
+                  print(f"  - {error}")
+              sys.exit(1)
+          
+          if warnings:
+              print("\n⚠️  WARNINGS:")
+              for warning in warnings:
+                  print(f"  - {warning}")
+          
+          if not errors and not warnings:
+              print("✅ All checks passed!")
+          
+          EOF
+      
+      - name: Check featured project logos
+        run: |
+          python3 << 'EOF'
+          import json
+          import os
+          import sys
+          
+          print("Checking featured project logos...")
+          
+          with open('data/featured.json', 'r') as f:
+              featured = json.load(f)
+          
+          missing_logos = []
+          
+          for project in featured:
+              logo_id = project.get('logo', '')
+              logo_file = f"static/img/logo-{logo_id}.png"
+              
+              if not os.path.exists(logo_file):
+                  missing_logos.append(f"Logo file missing for {project.get('name', 'Unknown')}: {logo_file}")
+          
+          if missing_logos:
+              print("\n❌ MISSING LOGO FILES:")
+              for msg in missing_logos:
+                  print(f"  - {msg}")
+              sys.exit(1)
+          else:
+              print("✅ All featured project logos exist!")
+          
+          EOF
+      
+      - name: Summary
+        if: success()
+        run: |
+          echo ""
+          echo "========================================="
+          echo "✅ JSON Validation Complete"
+          echo "========================================="
+          echo ""
+          echo "All JSON files are valid and properly structured!"
+          echo ""
