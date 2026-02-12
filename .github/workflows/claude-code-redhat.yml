@@ -1,0 +1,141 @@
+name: Claude Code Review - RedHat Projects
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
+    branches:
+      - dev  # Main development branch for this repo
+  issue_comment:
+    types: [created]
+  pull_request_review_comment:
+    types: [created]
+
+permissions:
+  contents: write
+  pull-requests: write
+  issues: write
+
+jobs:
+  claude-review:
+    runs-on: ubuntu-latest
+    
+    # Only run on PRs or when @claude is mentioned
+    if: |
+      github.event_name == 'pull_request' || 
+      (github.event_name == 'issue_comment' && contains(github.event.comment.body, '@claude')) ||
+      (github.event_name == 'pull_request_review_comment' && contains(github.event.comment.body, '@claude'))
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          ref: dev  # Ensure we're on the dev branch
+      
+      - name: Run Claude Code Review
+        uses: anthropics/claude-code-action@v1
+        with:
+          anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
+          
+          # Custom prompt for RedHatOfficial.github.io
+          prompt: |
+            You are reviewing a pull request for RedHatOfficial.github.io, the official Red Hat project page.
+            
+            This is a static site built with Zola (Rust-based static site generator) that lists Red Hat's 
+            involvement in open source projects on GitHub.
+            
+            ## Key Review Areas:
+            
+            ### 1. JSON Data Validation (CRITICAL)
+            If `data/projects.json` or `data/featured.json` is modified:
+            
+            **For projects.json:**
+            - ✅ Verify JSON syntax is valid (no trailing commas, proper quotes)
+            - ✅ Check ALL required fields are present:
+              - projectName
+              - projectRepository  
+              - category
+            - ✅ Verify category is one of: Development, Documentation, Middleware, Operations, Organizations, Platform, Storage
+            - ✅ Ensure projects are in ALPHABETICAL ORDER by projectName
+            - ✅ Validate all URLs use HTTPS (not HTTP)
+            - ✅ Check GitHub repository URLs are valid format
+            - ✅ Verify lowercaseName matches projectName (if present)
+            
+            **For featured.json:**
+            - ✅ Check if corresponding logo file exists in static/img/
+            - ✅ Logo filename should be logo-<logo>.png
+            - ✅ Verify all fields are present: name, logo, github, twitter, website, description
+            - ✅ Ensure description is brief (under 150 characters)
+            
+            ### 2. Project Eligibility Check
+            For new projects being added:
+            - ✅ Is this a project Red Hat employees work on as part of their job?
+            - ✅ Is this a top-level project (not a sub-project)?
+            - ✅ Is the project hosted on GitHub?
+            - ⚠️ Flag if it appears to be a volunteer/personal project
+            - ⚠️ Flag if it's a sub-project that should be represented by its parent
+            
+            ### 3. Configuration Synchronization
+            If config.toml OR config.dev.toml is modified:
+            - ✅ Verify BOTH files have the same changes
+            - ✅ Only difference should be base_url and CDN settings
+            - ⚠️ Warn if changes exist in one but not the other
+            
+            ### 4. Template/HTML Changes
+            If templates/ files are modified:
+            - ✅ Check for valid Tera syntax
+            - ✅ Ensure accessibility (ARIA labels, alt text, semantic HTML)
+            - ✅ Verify Red Hat Design System usage is consistent
+            - ✅ No broken links or references
+            
+            ### 5. Static Assets
+            If static/ files are modified:
+            - ✅ Logo files follow naming convention: logo-<id>.png
+            - ✅ Images are optimized (reasonable file sizes)
+            - ✅ CSS follows existing patterns and .scss-lint.yml
+            
+            ### 6. Documentation
+            If README.md, CONTRIBUTING.md, or CODE_OF_CONDUCT.md changed:
+            - ✅ Changes are clear and accurate
+            - ✅ Links are valid
+            - ✅ Formatting is correct
+            
+            ### 7. Branch & Workflow
+            - ✅ PR targets 'dev' branch (not main)
+            - ✅ Commit messages are clear
+            - ⚠️ Flag direct merges or attempts to bypass review
+            
+            ## Output Format:
+            
+            Organize feedback into sections:
+            
+            ### ✅ Approved Items
+            List what looks good
+            
+            ### ⚠️ Issues Found
+            For each issue:
+            - **File**: [filename]
+            - **Line**: [line number if applicable]
+            - **Issue**: [clear description]
+            - **Fix**: [specific fix recommendation]
+            - **Severity**: Critical / High / Medium / Low
+            
+            ### 💡 Suggestions
+            Optional improvements that aren't required
+            
+            ### 📋 Checklist for Author
+            - [ ] Item 1
+            - [ ] Item 2
+            
+            Be specific, constructive, and helpful. Reference the CLAUDE-RedHat.md file guidelines.
+          
+          claude_args: |
+            --max-turns 12
+            --model claude-sonnet-4-20250514
+      
+      - name: Validate JSON if changed
+        if: contains(github.event.pull_request.changed_files, 'data/')
+        run: |
+          echo "Validating JSON files..."
+          python3 -m json.tool data/projects.json > /dev/null && echo "✅ projects.json is valid" || echo "❌ projects.json is invalid"
+          python3 -m json.tool data/featured.json > /dev/null && echo "✅ featured.json is valid" || echo "❌ featured.json is invalid"
