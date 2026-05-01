@@ -1856,6 +1856,16 @@
     "lowercaseName": "foreman project"
   },
   {
+    "projectName": "Forklift",
+    "projectDescription": "Toolkit for migrating VMs from VMware, OVA, oVirt and OpenStack to KubeVirt",
+    "projectRepository": "https://github.com/kubev2v/forklift",
+    "projectWebsite": "https://kubev2v.github.io/forklift-documentation/documentation/index.html",
+    "category": "Development",
+    "twitterHandle": "",
+    "twitterURL": "",
+    "lowercaseName": "forklift"
+  },
+  {
     "projectName": "freeipa",
     "projectDescription": "An integrated Identity and Authentication solution for Linux/UNIX networked environments",
     "projectRepository": "https://github.com/freeipa/",
