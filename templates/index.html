@@ -44,22 +44,23 @@
                             </a>
                         </li>
                         {% endif %}
-                        {% if feature.website %}
-                        <li>
-                            <a href="{{ feature.twitter }}" aria-label="{{ feature.name }} x account">
-                                <rh-icon set="social" icon="x" aria-label="X"></rh-icon>
-                                Account
-                            </a>
-                        </li>
+                        {% if feature.twitter %}
+                             <li>
+                                <a href="{{ feature.twitter }}" aria-label="{{ feature.name }} x account">
+                                    <rh-icon set="social" icon="x" aria-label="X"></rh-icon>
+                                    Account
+                                </a>
+                            </li>
                         {% endif %}
-                        {% if feature.website %}
-                        <li>
+
+                        {% if feature.github %}
+                            <li>
                             <a href="{{ feature.github }}" aria-label="{{ feature.name }} GitHub repo">
-                                <rh-icon set="social" icon="github" aria-label="GitHub"></rh-icon>
-                                Repo
+                            <rh-icon set="social" icon="github" aria-label="GitHub"></rh-icon>
+                          Repo
                             </a>
-                        </li>
-                        {% endif %}
+                            </li>
+                        {% endif %} 
                     </ul>
                     {% endif %}
                 </rh-card>
