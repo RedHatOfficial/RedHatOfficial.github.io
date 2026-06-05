@@ -398,6 +398,16 @@
     "lowercaseName": "byteman"
   },
   {
+    "projectName": "Caikit",
+    "projectDescription": "An AI toolkit that enables users to manage models through a set of developer-friendly APIs with a focus on model runtime abstraction",
+    "projectRepository": "https://github.com/caikit/caikit",
+    "projectWebsite": "https://caikit.readthedocs.io/",
+    "category": "AI/ML",
+    "twitterHandle": "",
+    "twitterURL": "",
+    "lowercaseName": "caikit"
+  },
+  {
     "projectName": "Candlepin",
     "projectDescription": "Subscription and entitlement management",
     "projectRepository": "https://github.com/candlepin",
