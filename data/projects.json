@@ -1545,6 +1545,16 @@
     "lowercaseName": "knative"
   },
   {
+    "projectName": "Konveyor",
+    "projectDescription": "An open source project for application modernization, providing analysis and transformation tools to re-platform and refactor legacy applications for Kubernetes",
+    "projectRepository": "https://github.com/konveyor",
+    "projectWebsite": "https://www.konveyor.io/",
+    "category": "Development",
+    "twitterHandle": "",
+    "twitterURL": "",
+    "lowercaseName": "konveyor"
+  },
+  {
     "projectName": "kpatch",
     "projectDescription": "A Linux dynamic kernel patching infrastructure",
     "projectRepository": "https://github.com/dynup/kpatch",
