@@ -1752,6 +1752,16 @@
     "lowercaseName": "linux-system-roles"
   },
   {
+    "projectName": "llm-compressor",
+    "projectDescription": "Transformers-compatible library for applying various compression algorithms to LLMs for optimized deployment with vLLM",
+    "projectRepository": "https://github.com/vllm-project/llm-compressor",
+    "projectWebsite": "https://github.com/vllm-project/llm-compressor",
+    "category": "AI/ML",
+    "twitterHandle": "",
+    "twitterURL": "",
+    "lowercaseName": "llm-compressor"
+  },
+  {
     "projectName": "Maistra",
     "projectDescription": "Service mesh for OpenShift based on Istio.",
     "projectRepository": "https://github.com/maistra",
