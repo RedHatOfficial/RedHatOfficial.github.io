@@ -3067,6 +3067,16 @@
     "lowercaseName": "teiid"
   },
   {
+    "projectName": "Tekton",
+    "projectDescription": "A cloud-native framework for creating CI/CD pipelines as Kubernetes custom resources",
+    "projectRepository": "https://github.com/tektoncd",
+    "projectWebsite": "https://tekton.dev/",
+    "category": "Development",
+    "twitterHandle": "",
+    "twitterURL": "",
+    "lowercaseName": "tekton"
+  },
+  {
     "projectName": "Tendrl",
     "projectDescription": "Unified Storage Manager",
     "projectRepository": "https://github.com/Tendrl",
