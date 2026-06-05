@@ -1820,6 +1820,16 @@
     "lowercaseName": "medik8s"
   },
   {
+    "projectName": "MicroShift",
+    "projectDescription": "A small form factor OpenShift/Kubernetes optimized for edge computing",
+    "projectRepository": "https://github.com/openshift/microshift",
+    "projectWebsite": "https://microshift.io/",
+    "category": "Platform",
+    "twitterHandle": "",
+    "twitterURL": "",
+    "lowercaseName": "microshift"
+  },
+  {
     "projectName": "Minishift",
     "projectDescription": "Run Openshift Locally",
     "projectRepository": "https://github.com/minishift/minishift",
