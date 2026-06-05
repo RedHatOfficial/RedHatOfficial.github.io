@@ -1966,6 +1966,16 @@
     "lowercaseName": "okd"
   },
   {
+    "projectName": "Open Data Hub",
+    "projectDescription": "An open source AI/ML platform for building, deploying, and managing intelligent applications on OpenShift",
+    "projectRepository": "https://github.com/opendatahub-io",
+    "projectWebsite": "https://opendatahub.io/",
+    "category": "AI/ML",
+    "twitterHandle": "",
+    "twitterURL": "",
+    "lowercaseName": "open data hub"
+  },
+  {
     "projectName": "Open Practice Library",
     "projectDescription": "Community of like-minded people who are dedicated to openly sharing practices used to perform product discovery and delivery.",
     "projectRepository": "https://github.com/openpracticelibrary/openpracticelibrary",
