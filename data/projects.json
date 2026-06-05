@@ -2775,6 +2775,16 @@
     "lowercaseName": "rpm packaging guide"
   },
   {
+    "projectName": "rpm-ostree",
+    "projectDescription": "A hybrid image and package system for atomic upgrades and package layering on immutable Linux systems",
+    "projectRepository": "https://github.com/coreos/rpm-ostree",
+    "projectWebsite": "https://coreos.github.io/rpm-ostree/",
+    "category": "Platform",
+    "twitterHandle": "",
+    "twitterURL": "",
+    "lowercaseName": "rpm-ostree"
+  },
+  {
     "projectName": "Rsyslog",
     "projectDescription": "a Rocket-fast SYStem for LOG processing",
     "projectRepository": "https://github.com/rsyslog",
