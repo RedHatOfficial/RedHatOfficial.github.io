@@ -2096,6 +2096,16 @@
     "lowercaseName": "opentracing"
   },
   {
+    "projectName": "Operator Framework",
+    "projectDescription": "An open source toolkit to manage Kubernetes native applications, called Operators, in an effective, automated, and scalable way",
+    "projectRepository": "https://github.com/operator-framework",
+    "projectWebsite": "https://operatorframework.io/",
+    "category": "Development",
+    "twitterHandle": "",
+    "twitterURL": "",
+    "lowercaseName": "operator framework"
+  },
+  {
     "projectName": "ophicleide",
     "projectDescription": "The Ophicleide Word2vec application",
     "projectRepository": "https://github.com/ophicleide",
