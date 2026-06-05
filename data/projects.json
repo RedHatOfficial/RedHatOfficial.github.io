@@ -2016,6 +2016,16 @@
     "lowercaseName": "okd"
   },
   {
+    "projectName": "Open Cluster Management",
+    "projectDescription": "A community-driven project for multi-cluster and multi-cloud management of Kubernetes clusters",
+    "projectRepository": "https://github.com/open-cluster-management-io",
+    "projectWebsite": "https://open-cluster-management.io/",
+    "category": "Operations",
+    "twitterHandle": "",
+    "twitterURL": "",
+    "lowercaseName": "open cluster management"
+  },
+  {
     "projectName": "Open Data Hub",
     "projectDescription": "An open source AI/ML platform for building, deploying, and managing intelligent applications on OpenShift",
     "projectRepository": "https://github.com/opendatahub-io",
