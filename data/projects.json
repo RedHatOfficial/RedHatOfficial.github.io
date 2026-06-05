@@ -682,6 +682,16 @@
     "lowercaseName": "cri-o"
   },
   {
+    "projectName": "crun",
+    "projectDescription": "A fast and lightweight fully featured OCI runtime and C library for running containers",
+    "projectRepository": "https://github.com/containers/crun",
+    "projectWebsite": "https://github.com/containers/crun",
+    "category": "Development",
+    "twitterHandle": "",
+    "twitterURL": "",
+    "lowercaseName": "crun"
+  },
+  {
     "projectName": "Cryostat",
     "projectDescription": "JFR management for JVMs in the cloud",
     "projectRepository": "https://github.com/cryostatio",
