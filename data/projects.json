@@ -3132,6 +3132,16 @@
     "lowercaseName": "transtats"
   },
   {
+    "projectName": "TrustyAI",
+    "projectDescription": "An open source AI explainability toolkit providing fairness, monitoring, and transparency for AI/ML models",
+    "projectRepository": "https://github.com/trustyai-explainability",
+    "projectWebsite": "https://trustyai.io/",
+    "category": "AI/ML",
+    "twitterHandle": "",
+    "twitterURL": "",
+    "lowercaseName": "trustyai"
+  },
+  {
     "projectName": "Tuned",
     "projectDescription": "Tuning profile delivery mechanism for Linux",
     "projectRepository": "https://github.com/redhat-performance/tuned",
