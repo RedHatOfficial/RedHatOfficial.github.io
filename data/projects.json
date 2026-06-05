@@ -1555,6 +1555,16 @@
     "lowercaseName": "knative"
   },
   {
+    "projectName": "Konflux",
+    "projectDescription": "A cloud-native software factory for building, testing, and releasing trusted software artifacts with integrated supply chain security",
+    "projectRepository": "https://github.com/konflux-ci",
+    "projectWebsite": "https://konflux-ci.dev/",
+    "category": "Development",
+    "twitterHandle": "",
+    "twitterURL": "",
+    "lowercaseName": "konflux"
+  },
+  {
     "projectName": "Konveyor",
     "projectDescription": "An open source project for application modernization, providing analysis and transformation tools to re-platform and refactor legacy applications for Kubernetes",
     "projectRepository": "https://github.com/konveyor",
