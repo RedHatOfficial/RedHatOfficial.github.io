@@ -1859,6 +1859,16 @@
     "lowercaseName": "mod_cluster"
   },
   {
+    "projectName": "Model Registry",
+    "projectDescription": "A central interface for ML model developers to index and manage models, versions, and ML artifacts metadata across the MLOps lifecycle",
+    "projectRepository": "https://github.com/kubeflow/model-registry",
+    "projectWebsite": "https://www.kubeflow.org/docs/components/model-registry/overview/",
+    "category": "AI/ML",
+    "twitterHandle": "",
+    "twitterURL": "",
+    "lowercaseName": "model registry"
+  },
+  {
     "projectName": "ModeShape",
     "projectDescription": "A hierarchical, transactional, and consistent data store",
     "projectRepository": "https://github.com/ModeShape",
