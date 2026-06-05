@@ -1563,6 +1563,16 @@
     "lowercaseName": "kroxylicious"
   },
   {
+    "projectName": "KServe",
+    "projectDescription": "Standardized distributed generative and predictive AI inference platform for scalable multi-framework deployment on Kubernetes",
+    "projectRepository": "https://github.com/kserve/kserve",
+    "projectWebsite": "https://kserve.github.io/website/",
+    "category": "AI/ML",
+    "twitterHandle": "",
+    "twitterURL": "",
+    "lowercaseName": "kserve"
+  },
+  {
     "projectName": "Kuadrant",
     "projectDescription": "Securely expose & consume k8s services with Kuadrant",
     "projectRepository": "https://github.com/kuadrant",
