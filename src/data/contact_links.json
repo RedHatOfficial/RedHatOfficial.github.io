@@ -1,0 +1,22 @@
+[
+  {
+    "label": "Email",
+    "href": "mailto:osaipo@redhat.com",
+    "icon": { "set": "standard", "icon": "email" }
+  },
+  {
+    "label": "Youtube",
+    "href": "https://www.youtube.com/redhatopen",
+    "icon": { "set": "social", "icon": "youtube" }
+  },
+  {
+    "label": "X",
+    "href": "https://x.com/redhatopen",
+    "icon": { "set": "social", "icon": "x" }
+  },
+  {
+    "label": "BlueSky",
+    "href": "https://bsky.app/profile/redhatopen.bsky.social",
+    "icon": { "set": "custom", "src": "bluesky-icon.png" }
+  }
+]

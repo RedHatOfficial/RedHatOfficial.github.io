@@ -1,0 +1,28 @@
+[
+  
+  {
+    "label": "Home",
+    "href": "/",
+    "external": false
+  },
+  {
+    "label": "About",
+    "href": "/about.html",
+    "external": false
+  },
+  {
+    "label": "Projects",
+    "href": "/projects.html",
+    "external": false
+  },
+  {
+    "label": "Stewardships",
+    "href": "/stewardships.html",
+    "external": false
+  },
+  {
+    "label": "Blog",
+    "href": "https://www.redhat.com/en/blog/channel/open-source-communities",
+    "external": true
+  }
+]

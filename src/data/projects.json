@@ -1,0 +1,969 @@
+[
+  {
+    "name": "8ra",
+    "href": "https://www.8ra.com/",
+    "category": "Telco",
+    "featured": false,
+    "logo": "8ra.svg",
+    "description": "An initiative under the European IPCEI-CIS focused on building a sovereign, federated European cloud and edge computing infrastructure for telecommunications and enterprise services."
+  },
+  {
+    "name": "Akrites",
+    "href": "https://akrites.org/",
+    "category": "Security",
+    "featured": true,
+    "logo": "akrites.svg",
+    "description": "An open-source initiative under the Linux Foundation designed to harden critical open-source software by coordinating vulnerability remediation and disclosure."
+  },
+  {
+    "name": "Anaconda",
+    "href": "https://github.com/rhinstaller/anaconda",
+    "category": "Operating System Foundation",
+    "featured": false,
+    "logo": "anaconda.png",
+    "description": "The system installer used by Fedora, Red Hat Enterprise Linux, and CentOS to install and configure the operating system."
+  },
+  {
+    "name": "Ansible Builder",
+    "href": "https://github.com/ansible/ansible-builder",
+    "category": "Automation",
+    "featured": false,
+    "logo": "ansible-builder.svg",
+    "description": "An open-source tool that automates the process of building customized Ansible Execution Environments packaged as container images."
+  },
+  {
+    "name": "Ansible Core",
+    "href": "https://github.com/ansible/ansible",
+    "category": "Automation",
+    "featured": true,
+    "logo": "ansible-core.svg",
+    "description": "An open-source automation engine for IT tasks such as configuration management, application deployment, and provisioning."
+  },
+  {
+    "name": "Anuket",
+    "href": "https://anuket.io/",
+    "category": "Telco",
+    "featured": false,
+    "logo": "anuket.svg",
+    "description": "An open-source LF Networking project providing standardized reference infrastructure models and conformance frameworks for telecommunications network functions."
+  },
+  {
+    "name": "Apicurio Registry",
+    "href": "https://github.com/Apicurio/apicurio-registry",
+    "category": "Cloud-Native Orchestration & Containers",
+    "featured": false,
+    "logo": "apicurio-registry.svg",
+    "description": "Apicurio Registry is an open-source project focused on Cloud-Native Orchestration & Containers."
+  },
+  {
+    "name": "Argo CD",
+    "href": "https://github.com/argoproj/argo-cd",
+    "category": "Cloud-Native Orchestration & Containers",
+    "featured": false,
+    "logo": "argo-cd.svg",
+    "description": "Declarative GitOps"
+  },
+  {
+    "name": "ArtifactHUB",
+    "href": "https://github.com/artifacthub/hub",
+    "category": "Cloud-Native Orchestration & Containers",
+    "featured": false,
+    "logo": "artifacthub.svg",
+    "description": "ArtifactHUB is an open-source project focused on Cloud-Native Orchestration & Containers."
+  },
+  {
+    "name": "Asago",
+    "href": "https://asago.ai/",
+    "category": "AI Stack",
+    "featured": false,
+    "logo": "asago.svg",
+    "description": "An open-source AI safety project focused on AI stack security and collaboration."
+  },
+  {
+    "name": "Autoware",
+    "href": "https://autoware.org/",
+    "category": "Automotive",
+    "featured": false,
+    "logo": "autoware.svg",
+    "description": "An open-source software framework designed for autonomous driving applications."
+  },
+  {
+    "name": "AWX",
+    "href": "https://github.com/ansible/awx",
+    "category": "Automation",
+    "featured": false,
+    "logo": "awx.svg",
+    "description": "An open-source web-based user interface, REST API, and task engine that provides control over Ansible projects, serving as the upstream open-source project for Red Hat Ansible Automation Platform controller."
+  },
+  {
+    "name": "Backstage",
+    "href": "https://github.com/backstage/backstage",
+    "category": "Cloud-Native Orchestration & Containers",
+    "featured": false,
+    "logo": "backstage.svg",
+    "description": "Open platform for building developer portals"
+  },
+  {
+    "name": "bootc",
+    "href": "https://github.com/containers/bootc",
+    "category": "Operating System Foundation",
+    "featured": true,
+    "logo": "bootc.svg",
+    "description": "An open-source tool for transactional, in-place operating system updates and deployments using OCI container images."
+  },
+  {
+    "name": "Bpfman",
+    "href": "https://github.com/bpfman/bpfman",
+    "category": "Cloud-Native Orchestration & Containers",
+    "featured": false,
+    "logo": "bpfman.svg",
+    "description": "eBPF Program Management built for Linux and Kubernetes"
+  },
+  {
+    "name": "Buildah",
+    "href": "https://github.com/podman-container-tools/buildah",
+    "category": "Cloud-Native Orchestration & Containers",
+    "featured": false,
+    "logo": "buildah.png",
+    "description": "A tool that facilitates building OCI images."
+  },
+  {
+    "name": "Buildpacks",
+    "href": "https://github.com/buildpacks/pack",
+    "category": "Cloud-Native Orchestration & Containers",
+    "featured": false,
+    "logo": "buildpacks.svg",
+    "description": "CLI for building apps"
+  },
+  {
+    "name": "CAMARA",
+    "href": "https://camaraproject.org/",
+    "category": "Telco",
+    "featured": false,
+    "logo": "camara.png",
+    "description": "An open-source Linux Foundation project that defines and standardizes telco network APIs to simplify access to mobile network capabilities for developers."
+  },
+  {
+    "name": "Carvel",
+    "href": "https://carvel.dev/",
+    "category": "Cloud-Native Orchestration & Containers",
+    "featured": false,
+    "logo": "carvel.svg",
+    "description": "Carvel is an open-source project focused on Cloud-Native Orchestration & Containers."
+  },
+  {
+    "name": "CentOS",
+    "href": "https://www.centos.org/",
+    "category": "Operating System Foundation",
+    "featured": true,
+    "logo": "centos-stream.svg",
+    "description": "An open-source Linux distribution that serves as a continuously delivered upstream preview for upcoming Red Hat Enterprise Linux releases."
+  },
+  {
+    "name": "cert-manager",
+    "href": "https://github.com/cert-manager/cert-manager",
+    "category": "Cloud-Native Orchestration & Containers",
+    "featured": false,
+    "logo": "cert-manager.svg",
+    "description": "cert-manager is an open-source project focused on Cloud-Native Orchestration & Containers."
+  },
+  {
+    "name": "Cilium",
+    "href": "https://github.com/cilium/cilium",
+    "category": "Security",
+    "featured": false,
+    "logo": "cilium.svg"
+  },
+  {
+    "name": "Clair",
+    "href": "https://github.com/quay/clair",
+    "category": "Cloud-Native Orchestration & Containers",
+    "featured": false,
+    "logo": "clair.png",
+    "description": "An open-source project for the static analysis of vulnerabilities in application containers."
+  },
+  {
+    "name": "CloudEvents",
+    "href": "https://github.com/cloudevents/spec",
+    "category": "Cloud-Native Orchestration & Containers",
+    "featured": false,
+    "logo": "cloudevents.svg",
+    "description": "Specification for defining event data"
+  },
+  {
+    "name": "ComposeFS",
+    "href": "https://github.com/composefs/composefs",
+    "category": "Cloud-Native Orchestration & Containers",
+    "featured": false,
+    "logo": null,
+    "description": "The composefs project combines several underlying Linux kernel features to provide a very flexible mechanism that supports read-only mountable filesystem trees, stacking on top of an underlying 'lower' Linux filesystem."
+  },
+  {
+    "name": "Confidential Containers",
+    "href": "https://github.com/confidential-containers/confidential-containers",
+    "category": "Cloud-Native Orchestration & Containers",
+    "featured": false,
+    "logo": "confidential-containers.svg",
+    "description": "Confidential Containers is an open-source project focused on Cloud-Native Orchestration & Containers."
+  },
+  {
+    "name": "Container Network Interface (CNI)",
+    "href": "https://github.com/containernetworking/cni",
+    "category": "Cloud-Native Orchestration & Containers",
+    "featured": false,
+    "logo": "cni.svg",
+    "description": "Networking plugins"
+  },
+  {
+    "name": "containerd",
+    "href": "https://github.com/containerd/containerd",
+    "category": "Cloud-Native Orchestration & Containers",
+    "featured": false,
+    "logo": "containerd.svg",
+    "description": "Container runtime"
+  },
+  {
+    "name": "Contour",
+    "href": "https://github.com/projectcontour/contour",
+    "category": "Cloud-Native Orchestration & Containers",
+    "featured": false,
+    "logo": "contour.svg",
+    "description": "Kubernetes ingress controller using envoy proxy"
+  },
+  {
+    "name": "Controller runtime",
+    "href": "https://github.com/kubernetes-sigs/controller-runtime",
+    "category": "Cloud-Native Orchestration & Containers",
+    "featured": false,
+    "logo": "controller-runtime.png",
+    "description": "Controller runtime is an open-source project focused on Cloud-Native Orchestration & Containers."
+  },
+  {
+    "name": "Coraza",
+    "href": "https://github.com/corazawaf/coraza",
+    "category": "Security",
+    "featured": false,
+    "logo": "coraza.png",
+    "description": "An open-source, enterprise-grade Web Application Firewall designed to protect applications and APIs."
+  },
+  {
+    "name": "CoreDNS",
+    "href": "https://github.com/coredns/coredns",
+    "category": "Cloud-Native Orchestration & Containers",
+    "featured": false,
+    "logo": "coredns.svg",
+    "description": "DNS server written in Go"
+  },
+  {
+    "name": "CRI-O",
+    "href": "https://github.com/cri-o/cri-o",
+    "category": "Cloud-Native Orchestration & Containers",
+    "featured": false,
+    "logo": "crio.svg",
+    "description": "Secure container runtime"
+  },
+  {
+    "name": "Crossplane",
+    "href": "https://github.com/crossplane/crossplane",
+    "category": "Cloud-Native Orchestration & Containers",
+    "featured": false,
+    "logo": "crossplane.svg",
+    "description": "Framework for building cloud native control planes"
+  },
+  {
+    "name": "crun",
+    "href": "https://github.com/containers/crun",
+    "category": "Operating System Foundation",
+    "featured": false,
+    "logo": "crun.svg",
+    "description": "A fast and lightweight fully featured Open Container Initiative (OCI) container runtime written in C."
+  },
+  {
+    "name": "Dapr",
+    "href": "https://github.com/dapr/dapr",
+    "category": "Cloud-Native Orchestration & Containers",
+    "featured": false,
+    "logo": "dapr.svg",
+    "description": "Dapr is an open-source project focused on Cloud-Native Orchestration & Containers."
+  },
+  {
+    "name": "Devfile",
+    "href": "https://devfile.io/",
+    "category": "Cloud-Native Orchestration & Containers",
+    "featured": false,
+    "logo": "devfile.svg",
+    "description": "Devfile is an open-source project focused on Cloud-Native Orchestration & Containers."
+  },
+  {
+    "name": "Docling",
+    "href": "https://github.com/docling-project/docling",
+    "category": "AI Stack",
+    "featured": false,
+    "logo": "docling.svg",
+    "description": "An open-source document processing library that parses diverse formats for generative AI applications."
+  },
+  {
+    "name": "Dragonfly",
+    "href": "https://github.com/dragonflyoss/dragonfly",
+    "category": "Cloud-Native Orchestration & Containers",
+    "featured": false,
+    "logo": "dragonfly.svg",
+    "description": "Dragonfly is an open-source project focused on Cloud-Native Orchestration & Containers."
+  },
+  {
+    "name": "Eclipse SDV",
+    "href": "https://sdv.eclipse.org/",
+    "category": "Automotive",
+    "featured": false,
+    "logo": "eclipse-sdv.svg",
+    "description": "An open-source initiative focused on creating software-defined vehicle technologies and platform frameworks."
+  },
+  {
+    "name": "Emerging LF project around autonomous driving",
+    "href": null,
+    "category": "Automotive",
+    "featured": false,
+    "logo": null,
+    "description": "An emerging open-source initiative under the Linux Foundation focused on developing open software stacks and standards for autonomous driving systems."
+  },
+  {
+    "name": "Envoy",
+    "href": "https://github.com/envoyproxy/envoy",
+    "category": "Cloud-Native Orchestration & Containers",
+    "featured": false,
+    "logo": "envoy.svg",
+    "description": "High-performance proxy"
+  },
+  {
+    "name": "etcd",
+    "href": "https://github.com/etcd-io/etcd",
+    "category": "Cloud-Native Orchestration & Containers",
+    "featured": false,
+    "logo": "etcd.svg",
+    "description": "Key value database"
+  },
+  {
+    "name": "External Secrets Operator",
+    "href": "https://github.com/external-secrets/external-secrets",
+    "category": "Cloud-Native Orchestration & Containers",
+    "featured": false,
+    "logo": "external-secrets-operator.svg",
+    "description": "synchronize secrets for external APIs to k8s"
+  },
+  {
+    "name": "Falco",
+    "href": "https://github.com/falcosecurity/falco",
+    "category": "Cloud-Native Orchestration & Containers",
+    "featured": false,
+    "logo": "falco.svg",
+    "description": "Runtime security monitoring"
+  },
+  {
+    "name": "Fedora",
+    "href": "https://www.fedoraproject.org/",
+    "category": "Operating System Foundation",
+    "featured": true,
+    "logo": "fedora.svg",
+    "description": "An open-source Linux distribution project that serves as the upstream foundation for Red Hat Enterprise Linux."
+  },
+  {
+    "name": "Flatcar",
+    "href": "https://github.com/flatcar/flatcar",
+    "category": "Cloud-Native Orchestration & Containers",
+    "featured": false,
+    "logo": "flatcar.svg",
+    "description": "A community Linux distribution designed for container workloads, with high security and low maintenance"
+  },
+  {
+    "name": "Gittuf",
+    "href": "https://github.com/gittuf/gittuf",
+    "category": "Security",
+    "featured": false,
+    "logo": "gittuf.png",
+    "description": "An open-source security layer for Git repositories that provides security controls and protection for software supply chains."
+  },
+  {
+    "name": "gRPC",
+    "href": "https://github.com/grpc/grpc",
+    "category": "Cloud-Native Orchestration & Containers",
+    "featured": false,
+    "logo": "grpc.svg",
+    "description": "Universal remote procedure call (RPC) framework."
+  },
+  {
+    "name": "gVisor",
+    "href": "https://github.com/google/gvisor",
+    "category": "Cloud-Native Orchestration & Containers",
+    "featured": false,
+    "logo": "gvisor.png",
+    "description": "gVisor is a sandboxing layer for running containers and agentic workloads efficiently and securely."
+  },
+  {
+    "name": "Helm",
+    "href": "https://github.com/helm/helm",
+    "category": "Cloud-Native Orchestration & Containers",
+    "featured": false,
+    "logo": "helm.svg",
+    "description": "Kubernetes package management"
+  },
+  {
+    "name": "in-toto",
+    "href": "https://github.com/in-toto/in-toto",
+    "category": "Cloud-Native Orchestration & Containers",
+    "featured": false,
+    "logo": "in-toto.svg",
+    "description": "in-toto is an open-source project focused on Cloud-Native Orchestration & Containers."
+  },
+  {
+    "name": "Istio",
+    "href": "https://github.com/istio/istio",
+    "category": "Cloud-Native Orchestration & Containers",
+    "featured": false,
+    "logo": "istio.svg",
+    "description": "Manage traffic flow across microservices"
+  },
+  {
+    "name": "KEDA",
+    "href": "https://github.com/kedacore/keda",
+    "category": "Cloud-Native Orchestration & Containers",
+    "featured": false,
+    "logo": "keda.svg",
+    "description": "Events driven autoscaler"
+  },
+  {
+    "name": "Kepler",
+    "href": "https://github.com/sustainable-computing-io/kepler",
+    "category": "Cloud-Native Orchestration & Containers",
+    "featured": false,
+    "logo": "kepler.svg",
+    "description": "estimate workload energy consumption using eBPF and export to prometheus"
+  },
+  {
+    "name": "Keycloak",
+    "href": "https://github.com/keycloak/keycloak",
+    "category": "Cloud-Native Orchestration & Containers",
+    "featured": false,
+    "logo": "keycloak.svg",
+    "description": "Identity and Access Management"
+  },
+  {
+    "name": "Keylime",
+    "href": "https://github.com/keylime/keylime",
+    "category": "Security",
+    "featured": false,
+    "logo": "keylime.svg",
+    "description": "An open-source remote boot attestation and runtime integrity measurement system designed to secure cloud and edge workloads using TPM hardware."
+  },
+  {
+    "name": "Knative",
+    "href": "https://github.com/knative/serving",
+    "category": "Cloud-Native Orchestration & Containers",
+    "featured": false,
+    "logo": "knative.svg",
+    "description": "Build serverless and event driven applications"
+  },
+  {
+    "name": "Konflux",
+    "href": "https://github.com/konflux-ci",
+    "category": "Cloud-Native Orchestration & Containers",
+    "featured": false,
+    "logo": "konflux.svg",
+    "description": "Konflux is an open-source, cloud-native build platform designed to securely build, test, and deploy software artifacts using Kubernetes and Tekton."
+  },
+  {
+    "name": "Konveyor",
+    "href": "https://konveyor.io/",
+    "category": "Cloud-Native Orchestration & Containers",
+    "featured": false,
+    "logo": "konveyor.svg",
+    "description": "Konveyor is an open-source project focused on Cloud-Native Orchestration & Containers."
+  },
+  {
+    "name": "Korrel8r",
+    "href": "https://github.com/korrel8r/korrel8r",
+    "category": "Cloud-Native Orchestration & Containers",
+    "featured": false,
+    "logo": "korrel8r.png",
+    "description": "Korrel8r is an open-source project focused on Cloud-Native Orchestration & Containers."
+  },
+  {
+    "name": "Krkn",
+    "href": "https://github.com/krkn-chaos/krkn",
+    "category": "Cloud-Native Orchestration & Containers",
+    "featured": false,
+    "logo": "krkn.svg",
+    "description": "Chaos testing tool for Kubernetes to identify bottlenecks and improve resilience and performance under failure conditions."
+  },
+  {
+    "name": "Kruize",
+    "href": "https://github.com/kruize/autotune",
+    "category": "Cloud-Native Orchestration & Containers",
+    "featured": false,
+    "logo": "kruize.png",
+    "description": "Kruiz is an open-source project focused on Cloud-Native Orchestration & Containers."
+  },
+  {
+    "name": "KServe",
+    "href": "https://github.com/kserve/kserve",
+    "category": "AI Stack",
+    "featured": false,
+    "logo": "k-serve.svg",
+    "description": "An open-source, highly scalable AI inference platform designed for deploying generative and predictive model workloads on Kubernetes."
+  },
+  {
+    "name": "Kuadrant",
+    "href": "https://kuadrant.io/",
+    "category": "Cloud-Native Orchestration & Containers",
+    "featured": false,
+    "logo": "kuadrant.svg",
+    "description": "Gateways play a pivotal role in application connectivity. With Kuadrant, platform engineers and application developers can easily scale, load-balance, and protect their services and infrastructure using its powerful policy APIs."
+  },
+  {
+    "name": "Kube-Burner",
+    "href": "https://github.com/kube-burner/kube-burner",
+    "category": "Cloud-Native Orchestration & Containers",
+    "featured": false,
+    "logo": "kube-burner.svg",
+    "description": "Kubernetes performance and scale test orchestration framework written in golang"
+  },
+  {
+    "name": "Kube-Linter",
+    "href": "https://github.com/stackrox/kube-linter",
+    "category": "Cloud-Native Orchestration & Containers",
+    "featured": false,
+    "logo": "kube-linter.svg",
+    "description": "Kube-Linter is an open-source project focused on Cloud-Native Orchestration & Containers."
+  },
+  {
+    "name": "KubeArchive",
+    "href": "https://github.com/kubearchive/kubearchive",
+    "category": "Cloud-Native Orchestration & Containers",
+    "featured": false,
+    "logo": "kubearchive.png",
+    "description": "KubeArchive is an open-source project focused on Cloud-Native Orchestration & Containers."
+  },
+  {
+    "name": "Kubebuilder",
+    "href": "https://github.com/kubernetes-sigs/kubebuilder",
+    "category": "Cloud-Native Orchestration & Containers",
+    "featured": false,
+    "logo": "kubebuilder.svg",
+    "description": "Kubebuilder is an open-source project focused on Cloud-Native Orchestration & Containers."
+  },
+  {
+    "name": "Kubeflow",
+    "href": "https://github.com/kubeflow/kubeflow",
+    "category": "AI Stack",
+    "featured": false,
+    "logo": "kubeflow.svg",
+    "description": "An open-source machine learning platform designed to manage and deploy machine learning workflows on Kubernetes."
+  },
+  {
+    "name": "Kubernetes",
+    "href": "https://github.com/kubernetes/kubernetes",
+    "category": "Cloud-Native Orchestration & Containers",
+    "featured": true,
+    "logo": "kubernetes.svg",
+    "description": "An open-source container orchestration platform used for automating the deployment, scaling, and management of containerized applications."
+  },
+  {
+    "name": "Kubevirt",
+    "href": "https://kubevirt.io/",
+    "category": "Cloud-Native Orchestration & Containers",
+    "featured": false,
+    "logo": "kubevirt.svg",
+    "description": "An open-source virtualization technology built for Kubernetes that allows running and managing virtual machines alongside container workloads."
+  },
+  {
+    "name": "Kubewarden",
+    "href": "https://www.kubewarden.io/",
+    "category": "Cloud-Native Orchestration & Containers",
+    "featured": false,
+    "logo": "kubewarden.svg",
+    "description": "Kubewarden is an open-source project focused on Cloud-Native Orchestration & Containers."
+  },
+  {
+    "name": "Kyverno",
+    "href": "https://github.com/kyverno/kyverno",
+    "category": "Cloud-Native Orchestration & Containers",
+    "featured": false,
+    "logo": "kyverno.svg",
+    "description": "Kyverno is an open-source project focused on Cloud-Native Orchestration & Containers."
+  },
+  {
+    "name": "Linux Kernel (Hardware enablement)",
+    "href": "https://github.com/torvalds/linux",
+    "category": "Hardware",
+    "featured": false,
+    "logo": "tux.png",
+    "description": "An open-source core operating system kernel that provides foundational hardware support, device drivers, and system resource management."
+  },
+  {
+    "name": "llm-d",
+    "href": "https://llm-d.ai/",
+    "category": "AI Stack",
+    "featured": true,
+    "logo": "llm-d.svg",
+    "description": "An open-source project designed to optimize and scale large language model serving on Kubernetes and OpenShift clusters."
+  },
+  {
+    "name": "Metal3",
+    "href": "https://metal3.io/",
+    "category": "Cloud-Native Orchestration & Containers",
+    "featured": false,
+    "logo": "metal3.svg",
+    "description": "Bare metal provisioning"
+  },
+  {
+    "name": "MetalLB",
+    "href": "https://github.com/metallb/metallb",
+    "category": "Cloud-Native Orchestration & Containers",
+    "featured": false,
+    "logo": "metallb.svg",
+    "description": "Bare metal load balancer"
+  },
+  {
+    "name": "Microcks",
+    "href": "https://github.com/microcks/microcks",
+    "category": "Cloud-Native Orchestration & Containers",
+    "featured": false,
+    "logo": "microcks.svg",
+    "description": "The open source, cloud native tool for API Mocking and Testing. Microcks is a Cloud Native Computing Foundation Sandbox project \ud83d\ude80"
+  },
+  {
+    "name": "MLFlow",
+    "href": "https://github.com/mlflow/mlflow",
+    "category": "AI Stack",
+    "featured": false,
+    "logo": "mlflow.png",
+    "description": "An open-source platform for managing the end-to-end machine learning lifecycle, including tracking, evaluation, and model deployment."
+  },
+  {
+    "name": "modelpack",
+    "href": "https://github.com/modelpack/model-spec",
+    "category": "Cloud-Native Orchestration & Containers",
+    "featured": false,
+    "logo": "modelpack.svg",
+    "description": "modelpack is an open-source project focused on Cloud-Native Orchestration & Containers."
+  },
+  {
+    "name": "Nephio",
+    "href": "https://nephio.org/",
+    "category": "Telco",
+    "featured": false,
+    "logo": "nephio.svg",
+    "description": "An open-source Kubernetes-based project that delivers cloud-native network automation to simplify the deployment and management of telecom workloads."
+  },
+  {
+    "name": "Netobserv",
+    "href": "https://github.com/netobserv/netobserv-operator",
+    "category": "Cloud-Native Orchestration & Containers",
+    "featured": false,
+    "logo": "netobserv.png",
+    "description": "Netobserv is an open-source project focused on Cloud-Native Orchestration & Containers."
+  },
+  {
+    "name": "NMstate",
+    "href": "https://github.com/nmstate/nmstate",
+    "category": "Cloud-Native Orchestration & Containers",
+    "featured": false,
+    "logo": "nmstate.svg",
+    "description": "A declarative network configuration library and engine used to manage host networking states."
+  },
+  {
+    "name": "OCUDU",
+    "href": "https://ocudu.org/",
+    "category": "Telco",
+    "featured": false,
+    "logo": "ocudu.png",
+    "description": "An open-source 5G and beyond Centralized Unit (CU) and Distributed Unit (DU) project designed for commercial deployment and Open RAN infrastructure."
+  },
+  {
+    "name": "OGX",
+    "href": "https://github.com/ogx-ai/ogx",
+    "category": "AI Stack",
+    "featured": true,
+    "logo": "ogx.svg",
+    "description": "An open-source API server that provides OpenAI-compatible interfaces for running generative AI models across different environments."
+  },
+  {
+    "name": "OKD",
+    "href": "https://github.com/okd-project/okd",
+    "category": "Cloud-Native Orchestration & Containers",
+    "featured": false,
+    "logo": "okd.png",
+    "description": "An open-source community distribution of Kubernetes that serves as the upstream project for Red Hat OpenShift."
+  },
+  {
+    "name": "Open Cluster Management",
+    "href": "https://open-cluster-management.io/",
+    "category": "Cloud-Native Orchestration & Containers",
+    "featured": false,
+    "logo": "open-cluster-management.svg",
+    "description": "Multicluster and multicloud management"
+  },
+  {
+    "name": "Open Policy Agent (OPA)",
+    "href": "https://github.com/open-policy-agent/opa",
+    "category": "Cloud-Native Orchestration & Containers",
+    "featured": false,
+    "logo": "open-policy-agent.svg",
+    "description": "General purpose policy agent"
+  },
+  {
+    "name": "OpenBMC",
+    "href": "https://github.com/openbmc/openbmc",
+    "category": "Hardware",
+    "featured": false,
+    "logo": "openbmc.png",
+    "description": "An open-source firmware stack designed for Baseboard Management Controllers (BMCs) hosted by the Linux Foundation."
+  },
+  {
+    "name": "OpenShell",
+    "href": "https://github.com/NVIDIA/OpenShell",
+    "category": "AI Stack",
+    "featured": false,
+    "logo": "openshell.png",
+    "description": "OpenShell provides secure, policy-enforced sandboxed runtimes for autonomous AI agents."
+  },
+  {
+    "name": "OpenTelemetry",
+    "href": "https://opentelemetry.io/",
+    "category": "Cloud-Native Orchestration & Containers",
+    "featured": false,
+    "logo": "opentelemetry.svg",
+    "description": "Observability framework (metrics, logs, traces)"
+  },
+  {
+    "name": "Operator Framework",
+    "href": "https://operatorframework.io/",
+    "category": "Cloud-Native Orchestration & Containers",
+    "featured": false,
+    "logo": "operator-framework.svg",
+    "description": "Platform and application package management and automation"
+  },
+  {
+    "name": "OSbuild",
+    "href": "https://github.com/osbuild",
+    "category": "Operating System Foundation",
+    "featured": false,
+    "logo": "osbuild.svg",
+    "description": "An open-source pipeline-based build system designed for creating operating system artifacts and images."
+  },
+  {
+    "name": "oscal-compass",
+    "href": "https://github.com/oscal-compass",
+    "category": "Cloud-Native Orchestration & Containers",
+    "featured": false,
+    "logo": "oscal-compass.svg",
+    "description": "oscal-compass is an open-source project focused on Cloud-Native Orchestration & Containers."
+  },
+  {
+    "name": "OVN-Kubernetes",
+    "href": "https://github.com/ovn-kubernetes/ovn-kubernetes",
+    "category": "Cloud-Native Orchestration & Containers",
+    "featured": false,
+    "logo": "ovn-kubernetes.svg",
+    "description": "OVN-Kubernetes (Open Virtual Networking - Kubernetes) is an open-source project that provides a robust networking solution for Kubernetes clusters with OVN (Open Virtual Networking) and Open vSwitch (Open Virtual Switch) at its core. It is a Kubernetes networking conformant plugin written according to the CNI (Container Network Interface) specifications."
+  },
+  {
+    "name": "Perses",
+    "href": "https://github.com/perses/perses",
+    "category": "Cloud-Native Orchestration & Containers",
+    "featured": false,
+    "logo": "perses.svg",
+    "description": "Perses is a dashboard tool to visualize observability data from Prometheus/Thanos/Jaeger."
+  },
+  {
+    "name": "Podman Container tools",
+    "href": "https://github.com/podman-container-tools/podman",
+    "category": "Cloud-Native Orchestration & Containers",
+    "featured": false,
+    "logo": "podman.svg",
+    "description": "Podman: A tool for managing OCI containers and pods."
+  },
+  {
+    "name": "Praxis",
+    "href": "https://github.com/praxis-proxy/praxis",
+    "category": "AI Stack",
+    "featured": false,
+    "logo": null,
+    "description": "An open-source framework built on JAX for training large-scale neural network models."
+  },
+  {
+    "name": "Project Hummingbird",
+    "href": "https://gitlab.com/redhat/hummingbird/containers",
+    "category": "Operating System Foundation",
+    "featured": true,
+    "logo": "project-hummingbird.svg",
+    "description": "An open-source initiative that provides a collection of minimal, hardened, and secure container images with a reduced attack surface."
+  },
+  {
+    "name": "Project Margo",
+    "href": "https://margo.org",
+    "category": "Edge Computing",
+    "featured": false,
+    "logo": "margo.svg",
+    "description": "An open-source Linux Foundation project that defines a unified interoperability standard for edge computing in industrial environments."
+  },
+  {
+    "name": "Project Quay",
+    "href": "https://github.com/quay/quay",
+    "category": "Cloud-Native Orchestration & Containers",
+    "featured": false,
+    "logo": "quay.png",
+    "description": "An open-source container image registry designed to store, build, and deploy container images securely."
+  },
+  {
+    "name": "Prometheus",
+    "href": "https://github.com/prometheus/prometheus",
+    "category": "Cloud-Native Orchestration & Containers",
+    "featured": false,
+    "logo": "prometheus.svg",
+    "description": "Systems monitoring and alerting"
+  },
+  {
+    "name": "Protobom",
+    "href": "https://github.com/protobom/protobom",
+    "category": "Security",
+    "featured": false,
+    "logo": "protobom.svg",
+    "description": "An open-source library and command-line tool for reading, writing, and converting Software Bill of Materials (SBOM) documents across formats."
+  },
+  {
+    "name": "Pulp",
+    "href": "https://github.com/pulp/pulpcore",
+    "category": "Automation",
+    "featured": false,
+    "logo": "pulp.png",
+    "description": "An open-source repository management system that enables users to manage, organize, and distribute software packages and content."
+  },
+  {
+    "name": "PyTorch",
+    "href": "https://github.com/pytorch/pytorch",
+    "category": "AI Stack",
+    "featured": true,
+    "logo": "pytorch.png",
+    "description": "An open-source machine learning framework primarily used for deep learning and artificial intelligence applications."
+  },
+  {
+    "name": "Rook",
+    "href": "https://github.com/rook/rook",
+    "category": "Cloud-Native Orchestration & Containers",
+    "featured": false,
+    "logo": "rook.svg",
+    "description": "Storage orchestrator"
+  },
+  {
+    "name": "SEAPATH",
+    "href": "https://lfenergy.org/projects/seapath/",
+    "category": "Edge Computing",
+    "featured": false,
+    "logo": "seapath.svg",
+    "description": "An open-source real-time virtualization platform designed for digital substation automation systems in electrical grids."
+  },
+  {
+    "name": "Open Workflow Specification",
+    "href": "https://github.com/open-workflow-specification",
+    "category": "Cloud-Native Orchestration & Containers",
+    "featured": false,
+    "logo": "open-workflow-specification.svg",
+    "description": "Serverless Workflows is an open-source project focused on Cloud-Native Orchestration & Containers."
+  },
+  {
+    "name": "Shipwright",
+    "href": "https://github.com/shipwright-io/build",
+    "category": "Cloud-Native Orchestration & Containers",
+    "featured": false,
+    "logo": "shipwright.svg",
+    "description": "Shipwright - a framework for building container images on Kubernetes"
+  },
+  {
+    "name": "Sigstore",
+    "href": "https://github.com/sigstore/sigstore",
+    "category": "Security",
+    "featured": false,
+    "logo": "sigstore.png",
+    "description": "An open-source project designed to improve software supply chain security through digital signing, verification, and provenance tracking."
+  },
+  {
+    "name": "SPIFFE",
+    "href": "https://github.com/spiffe/spiffe",
+    "category": "Cloud-Native Orchestration & Containers",
+    "featured": false,
+    "logo": "spiffe.svg",
+    "description": "SPIFFE is an open-source project focused on Cloud-Native Orchestration & Containers."
+  },
+  {
+    "name": "SPIRE",
+    "href": "https://github.com/spiffe/spire",
+    "category": "Cloud-Native Orchestration & Containers",
+    "featured": false,
+    "logo": "spire.svg",
+    "description": "SPIFFE runtime environment"
+  },
+  {
+    "name": "SSSD",
+    "href": "https://github.com/SSSD/sssd",
+    "category": "Operating System Foundation",
+    "featured": false,
+    "logo": "sssd.svg",
+    "description": "A system daemon that manages identity, authentication, and authorization for centrally managed Linux systems."
+  },
+  {
+    "name": "Stackrox",
+    "href": "https://github.com/stackrox/stackrox",
+    "category": "Cloud-Native Orchestration & Containers",
+    "featured": false,
+    "logo": "stackrox.svg",
+    "description": "An open-source Kubernetes-native security platform that provides container and cluster security, compliance monitoring, and runtime threat detection."
+  },
+  {
+    "name": "Strimzi",
+    "href": "https://github.com/strimzi/strimzi-kafka-operator",
+    "category": "Cloud-Native Orchestration & Containers",
+    "featured": false,
+    "logo": "strimzi.svg",
+    "description": "Apache Kafka"
+  },
+  {
+    "name": "Sylva",
+    "href": "https://sylvaproject.org/",
+    "category": "Telco",
+    "featured": false,
+    "logo": "sylva.svg",
+    "description": "An open-source software framework under Linux Foundation Europe designed to provide a production-grade telco and edge cloud stack."
+  },
+  {
+    "name": "Tekton",
+    "href": "https://github.com/tektoncd/pipeline",
+    "category": "Cloud-Native Orchestration & Containers",
+    "featured": false,
+    "logo": "tekton.png",
+    "description": "An open-source, Kubernetes-native framework for building continuous integration and continuous delivery (CI/CD) systems."
+  },
+  {
+    "name": "Thanos",
+    "href": "https://github.com/thanos-io/thanos",
+    "category": "Cloud-Native Orchestration & Containers",
+    "featured": false,
+    "logo": "thanos.svg",
+    "description": "Global query view and long term storage for Prometheus"
+  },
+  {
+    "name": "urunc",
+    "href": "https://github.com/urunc-dev/urunc",
+    "category": "Cloud-Native Orchestration & Containers",
+    "featured": false,
+    "logo": "urunc.svg",
+    "description": "urunc is an open-source project focused on Cloud-Native Orchestration & Containers."
+  },
+  {
+    "name": "vLLM",
+    "href": "https://github.com/vllm-project/vllm",
+    "category": "AI Stack",
+    "featured": true,
+    "logo": "vllm.svg",
+    "description": "An open-source, high-throughput, and memory-efficient serving and inference engine for large language models."
+  }
+]
