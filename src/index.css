@@ -492,7 +492,7 @@ layer(tokens);
 
   /* ---- Stats.jsx (was component-styles/Stats.css) ---- */
   .stats-container {
-    @media (max-width: 1300px) {
+    @media (max-width: 769px) {
       padding-inline: var(--rh-space-lg);
       aspect-ratio: auto;
       flex-direction: column;
@@ -557,7 +557,7 @@ layer(tokens);
     padding: 0;
     list-style: none;
     transform: scale(1.2);
-    @media (max-width: 1300px) {
+    @media (max-width: 769px) {
       position: relative;
       transform: none;
       inline-size: 100%;
@@ -610,7 +610,7 @@ layer(tokens);
       font-size: 10.7cqw;
     }
 
-    @media (max-width: 1300px) {
+    @media (max-width: 769px) {
       inset-inline-start: 2%;
       inset-block-start: 8%;
       inline-size: 60%;
@@ -639,7 +639,7 @@ layer(tokens);
       font-size: 8.7cqw;
     }
 
-    @media (max-width: 1300px) {
+    @media (max-width: 769px) {
       inset-inline-end: 30%;
       inset-block-start: 5%;
       inline-size: 14%;
@@ -668,7 +668,7 @@ layer(tokens);
       font-size: 9cqw;
     }
 
-    @media (max-width: 1300px) {
+    @media (max-width: 769px) {
       inset-inline-end: 22%;
       inset-block-end: 12%;
       inline-size: 24%;
@@ -701,7 +701,7 @@ layer(tokens);
     text-align: end;
     margin-inline-end: min(8vw, 154px);
 
-    @media screen and (max-width: 1300px) {
+    @media screen and (max-width: 769px) {
       margin-inline-start: 0;
       margin-inline-end: 0;
       text-align: start;
@@ -731,7 +731,7 @@ layer(tokens);
     font-size: clamp(0.95rem, 2.8125cqw, 1.125rem);
   }
 
-  @media screen and (max-width: 1300px) {
+  @media screen and (max-width: 769px) {
     .stats-scale-copy h1 {
       text-wrap: balance;
     }
@@ -753,7 +753,7 @@ layer(tokens);
     justify-content: center;
 
     
-    @media (max-width: 1300px) {
+    @media (max-width: 769px) {
       aspect-ratio: auto;
       min-block-size: 70vh;
     }
@@ -788,7 +788,7 @@ layer(tokens);
       margin-block-start: -55%;
     }
 
-    @media (max-width: 1300px) {
+    @media (max-width: 769px) {
       max-inline-size: none;
       margin-inline-start: 0;
       margin-block-start: 0;
@@ -831,7 +831,7 @@ layer(tokens);
     gap: var(--rh-space-md);
     inset-block-start: -40%;
 
-    @media (max-width: 1300px) {
+    @media (max-width: 769px) {
       inset-block-start: 0;
     }
   }
@@ -910,7 +910,7 @@ layer(tokens);
     min-height: 480px;
     clip-path: inset(-100vmax 0 0 0);
 
-    @media screen and (max-width: 1300px) {
+    @media screen and (max-width: 769px) {
       padding-inline: var(--rh-space-lg);
       padding-block: var(--rh-space-4xl);
     }
@@ -954,7 +954,7 @@ layer(tokens);
     inset-block-end: 18vw;
     translate: -50% 50%;
 
-    @media (max-width: 1300px) {
+    @media (max-width: 769px) {
       position: relative;
       inset-inline-start: 0;
       inset-block-end: 0;
@@ -1073,15 +1073,15 @@ layer(tokens);
     border-radius: 50%;
     content: url(../src/assets/images/shutterstock_1008711622_FullHD.jpeg);
 
-    @media screen and (max-width: 1300px) {
+    @media screen and (max-width: 769px) {
       display: none;
     }
   }
 
   .contact-icon-bubble {
     position: absolute;
-    inset-inline-start: 59%;
-    inset-block-start: -10%;
+    inset-inline-start: 57vw;
+    inset-block-start: -12vw;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1093,15 +1093,11 @@ layer(tokens);
       var(--rh-color-interactive-secondary-default-on-dark)
     );
 
-    @media screen and (min-width: 1919px) {
-      inset-block-start: -60%;
-    }
-
-    @media screen and (min-width: 1800px) {
+    @media screen and (max-width: 1920px) {
       inset-block-start: -30%;
     }
 
-    @media screen and (max-width: 1300px) {
+    @media screen and (max-width: 769px) {
       display: none;
     }
   }
