@@ -22,6 +22,41 @@ layer(tokens);
     var(--rh-color-white)
   );
   color-scheme: light;
+
+  /* ---- the 1920 x 1080 reference comp --------------------------------
+     Every proportion in this file is authored against a 1920-wide
+     viewport, and the vw coefficients are chosen so they resolve to their
+     intended pixel value at exactly that width: 7.8125vw is 150px, 8vw is
+     154px, 3.75vw is 72px. clamp() ceilings then stop the comp growing
+     past its reference size on wider monitors, and clamp() floors keep it
+     usable on smaller ones.
+
+     To add a value later: take the pixel size you want at 1920 and divide
+     by 19.2 to get the vw coefficient, or write calc(<px> * var(--u)).
+
+     Never size something by jumping it at a breakpoint. Breakpoints are
+     for layout changes only -- a row becoming a column, a grid dropping a
+     track. Anything that is merely "bigger here, smaller there" is a
+     clamp(), so it eases between the two instead of snapping at one
+     pixel and sitting frozen either side of it. */
+  --design-w: 1920;
+  --u: calc(100vw / var(--design-w)); /* calc(72 * var(--u)) == 72px at 1920 */
+
+  /* ---- breakpoints ----------------------------------------------------
+     Media queries cannot read custom properties, so these are documented
+     here and written literally throughout the file. There are two:
+
+       1024px   the composition gives way to the stacked layout
+        600px   multi-column grids collapse to a single column
+
+     Plus 1200px and 900px for the dense project/stewardship tile grids,
+     which genuinely need more than two steps.
+
+     These replaced thirteen: 1920, 1800, 1200, 992, 900, 786 (a typo for
+     768), 769, 768, 600, 599, 575, 427 and 393. Most of those existed to
+     patch up sizing that now scales continuously, and the 427/393 pair
+     were corrections for the percentage-margin bug described on
+     .stewardship-copy rather than design decisions. */
 }
 
 :root[data-theme="dark"] {
@@ -29,11 +64,16 @@ layer(tokens);
 }
 
 @layer base {
+  /* The root font size drives every rem on the page, which includes all of
+     the --rh-space-* tokens, so it sets the scale of nearly everything.
+     It used to be 100% with a jump to 80% below 1800px: every piece of
+     type and spacing on the site shrank by a fifth the moment the window
+     crossed that single pixel, then sat frozen at 80% all the way down to
+     a phone, so a 1799px window and a 1281px one were styled identically
+     and neither matched the 1920 comp. Interpolate instead -- 16px at the
+     1920 reference, easing down to a 14px floor at 768px. */
   html {
-    font-size: 100%;
-    @media screen and (max-width: 1800px) {
-      font-size: 80%;
-    }
+    font-size: clamp(14px, calc(12.67px + 0.1736vw), 16px);
   }
 
   rh-navigation-primary,
@@ -236,12 +276,16 @@ layer(tokens);
     padding: clamp(1.5rem, 7.8125vw, 150px);
     align-items: center;
 
-    @media screen and (max-height: 852px) {
-      display: flex;
+    /* The aspect box makes this section width/1.92 tall, so it outgrows the
+       window exactly when the window is itself wider than 1.92:1. Ask that
+       question directly instead of approximating it with max-height: 852px,
+       which was one particular phone's height and caught laptops by
+       accident -- a 1280x800 window matched it and collapsed the section. */
+    @media (min-aspect-ratio: 1920 / 1000) {
       height: fit-content;
     }
 
-    @media (max-width: 768px) and (orientation: portrait) {
+    @media (max-width: 1024px) {
       aspect-ratio: auto;
       height: auto;
       min-height: var(--app-vh, 100svh);
@@ -492,60 +536,78 @@ layer(tokens);
 
   /* ---- Stats.jsx (was component-styles/Stats.css) ---- */
   .stats-container {
-    @media (max-width: 769px) {
+    @media (max-width: 1024px) {
       padding-inline: var(--rh-space-lg);
+      padding-block-start: 0;
       aspect-ratio: auto;
       flex-direction: column;
       align-items: stretch;
     }
-
-    @media (max-width: 768px) and (orientation: portrait) {
-      padding-block-start: 0;
-    }
   }
+
+  /* ---- the grey background bubbles -------------------------------------
+     Welcome, Stats and ContactUs all share one shape, and all of them are
+     anchored by their centre rather than their edges:
+
+       inset-inline-start / inset-block-start place the centre
+       translate: -50% -50%  pulls the box back onto that point
+
+     Inset percentages resolve against the containing block's width for the
+     inline axis and its height for the block axis, which is what the
+     placement actually means. The bubbles used to be positioned with
+     percentage margins instead, and a percentage margin -- on every side,
+     including margin-block-start -- resolves against the container's
+     *width*. Vertical placement was therefore being driven by viewport
+     width, which is why these needed a fresh correction at 1800px, then
+     769px, then 427px, then 393px, each one patching the previous.
+
+     Sizes interpolate with clamp() rather than jumping at a breakpoint.
+     The middle term is the straight line joining the bubble's wide-viewport
+     proportion (measured at 1024px) to its narrow one (measured at 400px),
+     so all three terms agree at those two widths and clamp() hands back the
+     plain proportion outside the band while easing between them inside it. */
+     
   .stats-stewardships-big-bubble {
     position: absolute;
     z-index: 1;
     border-radius: 50%;
-    inline-size: 65%;
-    inset-inline-start: 40vw;
-    inset-block-start: 5vw;
+    inline-size: 70%;
     aspect-ratio: 1;
     background: light-dark(
       var(--rh-color-surface-light),
       var(--rh-color-surface-dark)
     );
+    inset-inline-start: 70%;
+    inset-block-start: 75%;
+    translate: -50% -50%;
 
-    @media (max-width: 768px) and (orientation: portrait) {
-      display: block;
-      inline-size: 150%;
-      margin-inline-start: -65%;
-      margin-block-start: 400%;
+    @media (max-width: 1024px) {
+      /* 85vw wide -> 240vw narrow */
+      inline-size: clamp(85vw, calc(1017px - 14.36vw), 240vw);
+      inset-inline-start: 50%;
+      inset-block-start: 95%;
     }
   }
 
   .stats-stewardships-big-bubble-2 {
-    display: hidden;
+    display: none;
 
-    @media (max-width: 768px) and (orientation: portrait) {
+    
+    @media (max-width: 1024px) {
       display: block;
       position: absolute;
       z-index: 1;
       border-radius: 50%;
-      inline-size: 300%;
-      inset-inline-start: -75%;
-      inset-block-start: 10%;
       aspect-ratio: 1;
       background: light-dark(
         var(--rh-color-surface-light),
         var(--rh-color-surface-dark)
       );
+      inline-size: clamp(110vw, calc(751px + 12.17vw), 200vw);
+      inset-inline-start: 50%;
+      inset-block-start: 24%;
+      translate: -50% -50%;
     }
-
-    @media (max-width: 427px) and (orientation: portrait) {
-      inline-size: 250%;
-    }
-
   }
 
   .stat-cluster {
@@ -557,15 +619,11 @@ layer(tokens);
     padding: 0;
     list-style: none;
     transform: scale(1.2);
-    @media (max-width: 769px) {
+
+    @media (max-width: 1024px) {
       position: relative;
-      transform: none;
-      inline-size: 100%;
-      margin-block-end: var(--rh-space-3xl);
-      aspect-ratio: 4 / 3;
-    }
-    @media (max-width: 768px) and (orientation: portrait) {
       inset-inline-start: 7%;
+      inline-size: 100%;
       aspect-ratio: auto;
       min-height: var(--app-vh, 100svh);
       margin-block-end: 0;
@@ -610,18 +668,12 @@ layer(tokens);
       font-size: 10.7cqw;
     }
 
-    @media (max-width: 769px) {
-      inset-inline-start: 2%;
-      inset-block-start: 8%;
-      inline-size: 60%;
-    }
-
-    @media (max-width: 768px) and (orientation: portrait) {
+    @media (max-width: 1024px) {
       inset-inline-start: -20%;
       inset-inline-end: auto;
       inset-block-start: 50%;
       inline-size: 120%;
-      transform: translateY(-50%);
+      translate: 0 -50%;
     }
   }
 
@@ -639,18 +691,12 @@ layer(tokens);
       font-size: 8.7cqw;
     }
 
-    @media (max-width: 769px) {
-      inset-inline-end: 30%;
-      inset-block-start: 5%;
-      inline-size: 14%;
-    }
-
-    @media (max-width: 768px) and (orientation: portrait) {
+    @media (max-width: 1024px) {
       inset-inline-start: auto;
       inset-inline-end: 0%;
-      inset-block-start: 45%;
+      inset-block-start: 28%;
       inline-size: 35%;
-      transform: translateY(calc(-50% - 32vw));
+      translate: 0 -50%;
     }
   }
 
@@ -668,19 +714,13 @@ layer(tokens);
       font-size: 9cqw;
     }
 
-    @media (max-width: 769px) {
-      inset-inline-end: 22%;
-      inset-block-end: 12%;
-      inline-size: 24%;
-    }
-
-    @media (max-width: 768px) and (orientation: portrait) {
+    @media (max-width: 1024px) {
       inset-inline-start: auto;
       inset-inline-end: -4%;
-      inset-block-start: 55%;
+      inset-block-start: 72%;
       inset-block-end: auto;
       inline-size: 50%;
-      transform: translateY(calc(-50% + 34vw));
+      translate: 0 -50%;
 
       strong {
         font-size: clamp(2rem, 9vw, 2.75rem);
@@ -701,24 +741,22 @@ layer(tokens);
     text-align: end;
     margin-inline-end: min(8vw, 154px);
 
-    @media screen and (max-width: 769px) {
-      margin-inline-start: 0;
-      margin-inline-end: 0;
-      text-align: start;
-      max-inline-size: none;
-    }
-
-    @media (max-width: 768px) and (orientation: portrait) {
-      min-height: var(--app-vh, 100svh);
+    @media (max-width: 1024px) {
       display: flex;
       flex-direction: column;
       justify-content: center;
-      padding: 10%;
+      min-height: var(--app-vh, 100svh);
+      margin-inline: 0;
+      text-align: start;
+      max-inline-size: none;
+      padding: clamp(1rem, 5vw, 2.5rem);
     }
   }
 
   .stats-scale-copy h1 {
-    font-size: clamp(1.75rem, 5.625cqw, 2.25rem);
+    /* The floor is what renders below ~768px, where the cqw term has fallen
+       out of range; the ceiling is the 1920 reference. */
+    font-size: clamp(1.375rem, 5.625cqw, 2.25rem);
   }
 
   .stats-headline-line {
@@ -728,10 +766,10 @@ layer(tokens);
 
   .stats-scale-copy p {
     text-align: end;
-    font-size: clamp(0.95rem, 2.8125cqw, 1.125rem);
+    font-size: clamp(0.875rem, 2.8125cqw, 1.125rem);
   }
 
-  @media screen and (max-width: 769px) {
+  @media (max-width: 1024px) {
     .stats-scale-copy h1 {
       text-wrap: balance;
     }
@@ -752,59 +790,49 @@ layer(tokens);
     align-items: center;
     justify-content: center;
 
-    
-    @media (max-width: 769px) {
-      aspect-ratio: auto;
-      min-block-size: 70vh;
+    @media (min-aspect-ratio: 1920 / 1000) {
+      height: fit-content;
     }
 
-    @media (max-width: 768px) and (orientation: portrait) {
+    @media (max-width: 1024px) {
       aspect-ratio: auto;
       min-height: var(--app-vh, 100svh);
+      /* Top-align the copy instead of centring it, so there is no empty
+         band above it in the stacked layout. */
+      align-items: start;
+      padding-block-start: 0;
     }
   }
 
   .stewardship-copy {
-    position: relative;
+    position: absolute;
     z-index: 2;
     max-inline-size: min(34rem, 32vw);
     inline-size: 100%;
-    margin-inline-start: 50%;
-    margin-block-start: -48%;
     text-align: center;
-    padding: var(--rh-space-2xl);
+    /* --rh-space-* tokens are fixed px, so this was a flat 32px at every
+       size and ate a quarter of a phone's width. 32px at the reference,
+       halving on small screens. */
+    padding: clamp(1rem, 1.67vw, 2rem);
     container-type: inline-size;
+    inset-inline-start: 71.09%;
+    inset-block-start: 11.12%;
+    translate: -50% -50%;
 
     h1 {
-      font-size: clamp(1.75rem, 7.5cqw, 2.25rem);
+      font-size: clamp(1.375rem, 7.5cqw, 2.25rem);
     }
 
     p {
-      font-size: clamp(0.85rem, 3.75cqw, 1.125rem);
+      font-size: clamp(0.875rem, 3.75cqw, 1.125rem);
     }
 
-    @media (max-width: 1800px) {
-      margin-inline-start: 52%;
-      margin-block-start: -55%;
-    }
-
-    @media (max-width: 769px) {
+    /* Stacked, it returns to normal flow and the section centres it. */
+    @media (max-width: 1024px) {
+      position: relative;
+      inset: auto;
+      translate: none;
       max-inline-size: none;
-      margin-inline-start: 0;
-      margin-block-start: 0;
-    }
-
-    @media (max-width: 768px) and (orientation: portrait) {
-      margin-inline-start: 0;
-      margin-block-start: -110%;
-    }
-
-    @media (max-width: 427px) and (orientation: portrait) {
-      margin-block-start: -220%;
-    }
-
-    @media (max-width: 393px) and (orientation: portrait) {
-      margin-block-start: -150%;
     }
   }
 
@@ -815,6 +843,13 @@ layer(tokens);
     justify-content: center;
     gap: var(--rh-space-lg);
     margin-block-start: var(--rh-space-xl);
+
+    /* Keep the pair on one line rather than letting them stack. The
+       buttons shrink to fit instead of wrapping. */
+    @media (max-width: 1024px) {
+      flex-wrap: nowrap;
+      gap: var(--rh-space-md);
+    }
   }
 
   .transparent-logo-veil {
@@ -831,18 +866,16 @@ layer(tokens);
     gap: var(--rh-space-md);
     inset-block-start: -40%;
 
-    @media (max-width: 769px) {
+    @media (max-width: 1024px) {
       inset-block-start: 0;
     }
   }
 
   .logo-row {
     overflow: hidden;
-    padding-block: var(--rh-space-lg);
-
-    @media screen and (max-width: 1800px) {
-      padding-block: var(--rh-space-xs);
-    }
+    /* 16px at the 1920 reference, easing down to 4px rather than dropping
+       there the moment the window passed 1800px */
+    padding-block: clamp(4px, 0.833vw, 16px);
   }
 
   .logo-row-track {
@@ -867,22 +900,27 @@ layer(tokens);
     white-space: nowrap;
   }
 
+  /* The logo wall is a background texture, so the marks are sized off the
+     reference rather than pinned: at 1920 these still resolve to the
+     original 72 / 52 / 120 / 300px, but they scale down with the viewport
+     instead of staying full size on a phone, where a single 300px-wide
+     logo used to span most of the screen. */
   .logo-tile-mark {
     margin: 10%;
-    block-size: 72px;
+    block-size: clamp(36px, 3.75vw, 72px);
     flex-shrink: 0;
   }
 
   span.logo-tile-mark {
-    inline-size: 52px;
+    inline-size: clamp(26px, 2.71vw, 52px);
     border-radius: var(--rh-border-radius-default, 4px);
     background: light-dark(var(--rh-color-gray-30), var(--rh-color-gray-70));
   }
 
   img.logo-tile-mark {
     inline-size: auto;
-    min-inline-size: 120px;
-    max-inline-size: 300px;
+    min-inline-size: clamp(60px, 6.25vw, 120px);
+    max-inline-size: clamp(150px, 15.625vw, 300px);
     object-fit: contain;
   }
 
@@ -907,29 +945,21 @@ layer(tokens);
     z-index: 6;
     display: flex;
     align-items: center;
-    min-height: 480px;
+    min-height: clamp(360px, 25vw, 480px);
     clip-path: inset(-100vmax 0 0 0);
 
-    @media screen and (max-width: 769px) {
+    @media (max-width: 1024px) {
+      justify-content: center;
+      min-height: var(--app-vh, 100svh);
       padding-inline: var(--rh-space-lg);
       padding-block: var(--rh-space-4xl);
-    }
-
-    @media (max-width: 768px) {
-      justify-content: center;
-    }
-
-    @media (max-width: 768px) and (orientation: portrait) {
-      min-height: var(--app-vh, 100svh);
     }
   }
 
   .contact-bubble {
     position: absolute;
     z-index: 0;
-    inset-inline-start: -10vw;
-    inset-block-end: -35vw;
-    inline-size: 74vw;
+    inline-size: 74%;
     aspect-ratio: 1;
     border-radius: 50%;
     background: light-dark(
@@ -937,11 +967,17 @@ layer(tokens);
       var(--rh-color-surface-dark)
     );
     pointer-events: none;
+    inset-inline-start: 27%;
+    inset-block-start: 92%;
+    translate: -50% -50%;
 
-    @media (max-width: 768px) and (orientation: portrait) {
-      inline-size: 200%;
-      margin-inline-start: -55%;
-      margin-block-start: 25%;
+    /* .contact-content leaves absolute positioning and centres in the
+       section here, so the bubble comes up to meet it. */
+    @media (max-width: 1024px) {
+      /* 74vw wide -> 200vw narrow */
+      inline-size: clamp(74vw, calc(827px - 6.77vw), 200vw);
+      inset-inline-start: 40%;
+      inset-block-start: 62%;
     }
   }
 
@@ -950,14 +986,13 @@ layer(tokens);
     text-align: center;
     z-index: 1;
     max-inline-size: 26rem;
-    inset-inline-start: 29vw;
-    inset-block-end: 18vw;
-    translate: -50% 50%;
+    inset-inline-start: 29%;
+    inset-block-start: 28%;
+    translate: -50% -50%;
 
-    @media (max-width: 769px) {
+    @media (max-width: 1024px) {
       position: relative;
-      inset-inline-start: 0;
-      inset-block-end: 0;
+      inset: auto;
       max-inline-size: none;
       translate: none;
     }
@@ -1018,7 +1053,9 @@ layer(tokens);
     align-items: center;
     justify-content: center;
     aspect-ratio: 1;
-    inline-size: 56px;
+    /* 56px at the reference, with a 44px floor so it stays a usable touch
+       target once the viewport gets small */
+    inline-size: clamp(44px, 2.92vw, 56px);
     border-radius: 50%;
     background: var(--rh-color-brand-red);
     color: var(--rh-color-white, #fff);
@@ -1026,7 +1063,7 @@ layer(tokens);
       ease background-color 0.2s,
       ease box-shadow 0.2s,
       ease transform 0.2s;
-    --rh-icon-size: 30px;
+    --rh-icon-size: clamp(24px, 1.5625vw, 30px);
 
     img {
       inline-size: var(--rh-icon-size);
@@ -1065,23 +1102,21 @@ layer(tokens);
   .contact-photo {
     position: absolute;
     z-index: 0;
-    inset-inline-end: -6vw;
-    inset-block-start: 60%;
-    transform: translateY(-50%);
-    inline-size: 50vw;
+    inline-size: 50%;
     aspect-ratio: 1;
     border-radius: 50%;
     content: url(../src/assets/images/shutterstock_1008711622_FullHD.jpeg);
+    inset-inline-start: 81%;
+    inset-block-start: 60%;
+    translate: -50% -50%;
 
-    @media screen and (max-width: 769px) {
+    @media (max-width: 1024px) {
       display: none;
     }
   }
 
   .contact-icon-bubble {
     position: absolute;
-    inset-inline-start: 57vw;
-    inset-block-start: -12vw;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1092,12 +1127,14 @@ layer(tokens);
       var(--rh-color-surface-lightest),
       var(--rh-color-interactive-secondary-default-on-dark)
     );
+    /* The vw-based offsets this replaces needed a max-width: 1920px rule to
+       correct them, which meant the one viewport the comp was drawn at was
+       also the only one where the uncorrected value applied. */
+    inset-inline-start: 61.5%;
+    inset-block-start: -12%;
+    translate: -50% -50%;
 
-    @media screen and (max-width: 1920px) {
-      inset-block-start: -30%;
-    }
-
-    @media screen and (max-width: 769px) {
+    @media (max-width: 1024px) {
       display: none;
     }
   }
@@ -1117,12 +1154,17 @@ layer(tokens);
     display: inline-flex;
     align-items: center;
     justify-content: center;
+    /* All three of these were fixed sizes -- the --rh-space-* tokens are
+       px, and body-text-md only tracked the root font. At the 1920
+       reference they still resolve to 6px / 24px / 16px; below it they
+       ease down so a pair of buttons fits on one line on a phone. */
     padding-block: var(--rh-space-sm);
-    padding-inline: var(--rh-space-xl);
+    padding-inline: clamp(0.75rem, 1.25vw, 1.5rem);
     border-radius: 8px;
     font-family: var(--rh-font-family-heading);
-    font-size: var(--rh-font-size-body-text-md);
+    font-size: clamp(13px, calc(11px + 0.26vw), 16px);
     font-weight: var(--rh-font-weight-heading-medium);
+    white-space: nowrap;
     text-decoration: none;
     border: var(--rh-border-width-md, 2px) solid transparent;
     transition:
