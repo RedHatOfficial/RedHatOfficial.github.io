@@ -105,7 +105,7 @@
   },
   {
     "name": "bootc",
-    "href": "https://github.com/containers/bootc",
+    "href": "https://github.com/bootc-dev/bootc",
     "category": "Operating System Foundation",
     "featured": true,
     "logo": "bootc.svg",

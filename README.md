@@ -55,7 +55,7 @@ Open an issue in _this_ repo, and the owners of the RedHatOfficial organization 
 
 ## Changing the Featured list
 
-To modify the featured projects, submit a pull request modifying your project at `/src/data/projects` by setting the `featured` tag to `true`.
+To modify the featured projects, submit a pull request modifying your project at `/src/data/projects.json` by setting the `featured` tag to `true`.
 
 Upon review, the site maintainers will merge the PR or change the content as requested. No direct merges will be accepted.
 
