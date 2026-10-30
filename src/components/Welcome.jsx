@@ -11,7 +11,7 @@ function Welcome() {
           Community-powered innovation.
         </h1>
         <p>We connect people, knowledge, and communities to help drive innovation in AI and beyond.</p>
-        <a className="btn-cta btn-cta-primary" href="/about.html">
+        <a className="btn-cta btn-cta-primary" href={`${import.meta.env.BASE_URL}about.html`}>
           Learn more
         </a>
       </div>

@@ -29,8 +29,8 @@ createRoot(document.getElementById("root")).render(
           <p>
             We contribute to the upstream projects powering AI, hybrid cloud,
             Linux, automation, security, and more. By collaborating with
-            communities, we build better technology for Red Hat’s product
-            portfolio and the broader open source ecosystem.
+            communities, we build better technology for <a href="https://www.redhat.com/en/products">Red Hat’s product
+            portfolio</a> and the broader open source ecosystem.
           </p>
         </div>
 

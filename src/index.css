@@ -22,41 +22,6 @@ layer(tokens);
     var(--rh-color-white)
   );
   color-scheme: light;
-
-  /* ---- the 1920 x 1080 reference comp --------------------------------
-     Every proportion in this file is authored against a 1920-wide
-     viewport, and the vw coefficients are chosen so they resolve to their
-     intended pixel value at exactly that width: 7.8125vw is 150px, 8vw is
-     154px, 3.75vw is 72px. clamp() ceilings then stop the comp growing
-     past its reference size on wider monitors, and clamp() floors keep it
-     usable on smaller ones.
-
-     To add a value later: take the pixel size you want at 1920 and divide
-     by 19.2 to get the vw coefficient, or write calc(<px> * var(--u)).
-
-     Never size something by jumping it at a breakpoint. Breakpoints are
-     for layout changes only -- a row becoming a column, a grid dropping a
-     track. Anything that is merely "bigger here, smaller there" is a
-     clamp(), so it eases between the two instead of snapping at one
-     pixel and sitting frozen either side of it. */
-  --design-w: 1920;
-  --u: calc(100vw / var(--design-w)); /* calc(72 * var(--u)) == 72px at 1920 */
-
-  /* ---- breakpoints ----------------------------------------------------
-     Media queries cannot read custom properties, so these are documented
-     here and written literally throughout the file. There are two:
-
-       1024px   the composition gives way to the stacked layout
-        600px   multi-column grids collapse to a single column
-
-     Plus 1200px and 900px for the dense project/stewardship tile grids,
-     which genuinely need more than two steps.
-
-     These replaced thirteen: 1920, 1800, 1200, 992, 900, 786 (a typo for
-     768), 769, 768, 600, 599, 575, 427 and 393. Most of those existed to
-     patch up sizing that now scales continuously, and the 427/393 pair
-     were corrections for the percentage-margin bug described on
-     .stewardship-copy rather than design decisions. */
 }
 
 :root[data-theme="dark"] {
@@ -64,28 +29,11 @@ layer(tokens);
 }
 
 @layer base {
-  /* The root font size drives every rem on the page, which includes all of
-     the --rh-space-* tokens, so it sets the scale of nearly everything.
-     It used to be 100% with a jump to 80% below 1800px: every piece of
-     type and spacing on the site shrank by a fifth the moment the window
-     crossed that single pixel, then sat frozen at 80% all the way down to
-     a phone, so a 1799px window and a 1281px one were styled identically
-     and neither matched the 1920 comp. Interpolate instead -- 16px at the
-     1920 reference, easing down to a 14px floor at 768px. */
   html {
-    font-size: clamp(14px, calc(12.67px + 0.1736vw), 16px);
-  }
-
-  rh-navigation-primary,
-  rh-footer-universal {
-    font-size: 16px;
-    --rh-font-size-body-text-xs: 12px;
-    --rh-font-size-body-text-sm: 14px;
-    --rh-font-size-body-text-md: 16px;
-    --rh-font-size-body-text-lg: 18px;
-    --rh-font-size-heading-sm: 20px;
-    --rh-font-size-heading-md: 28px;
-    --rh-font-size-heading-lg: 36px;
+    font-size: 112.5%;
+    @media screen and (max-width: 1500px) {
+      font-size: 80%;
+    }
   }
 
   body {
@@ -102,20 +50,15 @@ layer(tokens);
   }
   h1 {
     font-family: var(--rh-font-family-heading);
-    font-weight: var(--rh-font-weight-heading-medium);
-    line-height: var(--rh-line-height-heading);
-    color: var(--rh-color-text-primary);
-    margin-block-end: var(--rh-space-lg);
     font-size: var(--rh-font-size-heading-lg);
-  }
-
-  h2 {
-    font-family: var(--rh-font-family-heading);
     font-weight: var(--rh-font-weight-heading-medium);
     line-height: var(--rh-line-height-heading);
     color: var(--rh-color-text-primary);
     margin-block-end: var(--rh-space-lg);
-    font-size: var(--rh-font-size-heading-md);
+
+    @media screen and (max-width: 1920px) {
+      font-size: var(--rh-font-size-heading-md);
+    }
   }
 
   a {
@@ -205,7 +148,6 @@ layer(tokens);
    setup (index.css is loaded once in main.jsx), so keep selectors scoped
    to each component's root id/class to avoid cross-component collisions.
    ========================================================================== */
-
 @layer components {
   /* ---- Nav.jsx (was component-styles/Nav.css) ---- */
   rh-navigation-primary {
@@ -276,19 +218,9 @@ layer(tokens);
     padding: clamp(1.5rem, 7.8125vw, 150px);
     align-items: center;
 
-    /* The aspect box makes this section width/1.92 tall, so it outgrows the
-       window exactly when the window is itself wider than 1.92:1. Ask that
-       question directly instead of approximating it with max-height: 852px,
-       which was one particular phone's height and caught laptops by
-       accident -- a 1280x800 window matched it and collapsed the section. */
-    @media (min-aspect-ratio: 1920 / 1000) {
+    @media screen and (max-height: 852px) {
+      display: flex;
       height: fit-content;
-    }
-
-    @media (max-width: 1024px) {
-      aspect-ratio: auto;
-      height: auto;
-      min-height: var(--app-vh, 100svh);
     }
   }
 
@@ -312,10 +244,6 @@ layer(tokens);
     @media (max-width: 768px) {
       display: none;
     }
-
-    @media (max-width: 768px) and (orientation: portrait) {
-      display: block;
-    }
   }
 
   .hero-project-big-bubble {
@@ -333,13 +261,6 @@ layer(tokens);
     @media (max-width: 768px) {
       display: none;
     }
-
-    @media (max-width: 768px) and (orientation: portrait) {
-      display: block;
-      inline-size: 218%;
-      margin-inline-start: -60%;
-      margin-block-start: 25%;
-    }
   }
 
   .hero-photo-bubbles {
@@ -347,10 +268,6 @@ layer(tokens);
     border-radius: 50%;
     inline-size: 25.5%;
     aspect-ratio: 1;
-
-    @media (max-width: 768px) and (orientation: portrait) {
-      display: none;
-    }
   }
 
   .hero-photo-a {
@@ -387,10 +304,6 @@ layer(tokens);
     aspect-ratio: 1;
     inline-size: 9%;
     --rh-icon-size: 50%;
-
-    @media (max-width: 768px) and (orientation: portrait) {
-      display: none;
-    }
   }
 
   .hero-icon-a {
@@ -417,10 +330,6 @@ layer(tokens);
         margin-bottom: 0;
       }
     }
-
-    @media (max-width: 768px) and (orientation: portrait) {
-      aspect-ratio: auto;
-    }
   }
 
   #explore-projects {
@@ -432,14 +341,6 @@ layer(tokens);
     @media (max-width: 768px) {
       padding-inline: var(--rh-space-lg);
     }
-
-    @media (max-width: 768px) and (orientation: portrait) {
-      min-height: var(--app-vh, 100svh);
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      padding: 10%;
-    }
   }
 
   .explore-projects-intro {
@@ -449,9 +350,9 @@ layer(tokens);
     margin-block-end: var(--rh-space-3xl);
   }
 
-  .explore-projects-intro h1 {
+  .explore-projects-intro h2 {
     font-family: var(--rh-font-family-heading);
-    font-size: var(--rh-font-size-heading-lg, 2.25rem);
+    font-size: var(--rh-font-size-heading-md, 1.75rem);
     font-weight: var(--rh-font-weight-heading-medium);
     color: var(--rh-color-text-primary);
     margin-block-end: var(--rh-space-md);
@@ -477,18 +378,16 @@ layer(tokens);
     width: max-content;
   }
 
-  @media (hover: hover) and (pointer: fine) {
-    .project-carousel-track {
-      animation: project-carousel-scroll var(--carousel-duration, 24s) linear
-        infinite;
-    }
-
-    .project-carousel:hover .project-carousel-track {
-      animation-play-state: paused;
-    }
+  .project-carousel-track {
+    animation: project-carousel-scroll var(--carousel-duration, 24s) linear
+      infinite;
   }
 
-  @media (hover: none), (pointer: coarse) {
+  .project-carousel:hover .project-carousel-track {
+    animation-play-state: paused;
+  }
+
+  @media (any-hover: none) and (any-pointer: coarse) and (max-width: 1024px) {
     .project-carousel {
       overflow-x: auto;
       scroll-snap-type: x mandatory;
@@ -497,11 +396,22 @@ layer(tokens);
     }
 
     .project-carousel-track {
+      animation: none;
       padding-inline-start: calc(50vw - var(--project-card-width) / 2);
     }
 
     .project-card {
       scroll-snap-align: center;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .project-carousel-track {
+      animation: none;
+    }
+
+    .project-carousel {
+      overflow-x: auto;
     }
   }
 
@@ -516,6 +426,7 @@ layer(tokens);
       var(--rh-color-surface-lightest),
       var(--rh-color-interactive-secondary-default-on-dark)
     );
+    /* box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); */
     text-decoration: none;
   }
 
@@ -536,98 +447,58 @@ layer(tokens);
 
   /* ---- Stats.jsx (was component-styles/Stats.css) ---- */
   .stats-container {
-    @media (max-width: 1024px) {
+    position: relative;
+    z-index: 1;
+    aspect-ratio: 1920 / 1000;
+    padding-block: var(--rh-space-4xl);
+    padding-inline: var(--rh-space-2xl);
+    display: flex;
+    align-items: center;
+
+    @media (max-width: 768px) {
       padding-inline: var(--rh-space-lg);
-      padding-block-start: 0;
+      padding-top: 0;
       aspect-ratio: auto;
       flex-direction: column;
       align-items: stretch;
     }
   }
-
-  /* ---- the grey background bubbles -------------------------------------
-     Welcome, Stats and ContactUs all share one shape, and all of them are
-     anchored by their centre rather than their edges:
-
-       inset-inline-start / inset-block-start place the centre
-       translate: -50% -50%  pulls the box back onto that point
-
-     Inset percentages resolve against the containing block's width for the
-     inline axis and its height for the block axis, which is what the
-     placement actually means. The bubbles used to be positioned with
-     percentage margins instead, and a percentage margin -- on every side,
-     including margin-block-start -- resolves against the container's
-     *width*. Vertical placement was therefore being driven by viewport
-     width, which is why these needed a fresh correction at 1800px, then
-     769px, then 427px, then 393px, each one patching the previous.
-
-     Sizes interpolate with clamp() rather than jumping at a breakpoint.
-     The middle term is the straight line joining the bubble's wide-viewport
-     proportion (measured at 1024px) to its narrow one (measured at 400px),
-     so all three terms agree at those two widths and clamp() hands back the
-     plain proportion outside the band while easing between them inside it. */
-     
-  .stats-stewardships-big-bubble {
+  .stats-memberships-big-bubble {
     position: absolute;
     z-index: 1;
     border-radius: 50%;
-    inline-size: 70%;
+    inline-size: 74%;
     aspect-ratio: 1;
     background: light-dark(
       var(--rh-color-surface-light),
       var(--rh-color-surface-dark)
     );
-    inset-inline-start: 70%;
-    inset-block-start: 75%;
-    translate: -50% -50%;
+    inset-inline-start: 38.5%;
+    inset-block-start: -20%;
+    clip-path: inset(0 16.89% 0 0);
 
-    @media (max-width: 1024px) {
-      /* 85vw wide -> 240vw narrow */
-      inline-size: clamp(85vw, calc(1017px - 14.36vw), 240vw);
-      inset-inline-start: 50%;
-      inset-block-start: 95%;
-    }
-  }
-
-  .stats-stewardships-big-bubble-2 {
-    display: none;
-
-    
-    @media (max-width: 1024px) {
-      display: block;
-      position: absolute;
-      z-index: 1;
-      border-radius: 50%;
-      aspect-ratio: 1;
-      background: light-dark(
-        var(--rh-color-surface-light),
-        var(--rh-color-surface-dark)
-      );
-      inline-size: clamp(110vw, calc(751px + 12.17vw), 200vw);
-      inset-inline-start: 50%;
-      inset-block-start: 24%;
-      translate: -50% -50%;
+    @media (max-width: 768px) {
+      display: none;
     }
   }
 
   .stat-cluster {
     position: absolute;
     z-index: 1;
-    inline-size: 50vw;
+    inset-inline-start: 0vw;
+    inset-block-start: -17vw;
+    inline-size: 60vw;
     aspect-ratio: 1;
     margin: 0;
     padding: 0;
     list-style: none;
     transform: scale(1.2);
-
-    @media (max-width: 1024px) {
-      position: relative;
-      inset-inline-start: 7%;
+    @media (max-width: 768px) {
+      position: static;
+      transform: none;
       inline-size: 100%;
-      aspect-ratio: auto;
-      min-height: var(--app-vh, 100svh);
-      margin-block-end: 0;
-      transform: translateY(-8vh);
+      margin-block-end: var(--rh-space-3xl);
+      aspect-ratio: 4 / 3;
     }
   }
 
@@ -641,7 +512,6 @@ layer(tokens);
     text-align: center;
     color: var(--rh-color-white, #fff);
     font-family: var(--rh-font-family-heading);
-    container-type: inline-size;
   }
 
   .stat-circle strong {
@@ -655,131 +525,111 @@ layer(tokens);
   }
 
   .stat-years {
-    inset-inline-start: 2%;
-    inset-block-start: 10%;
-    inline-size: 65%;
+    inset-inline-start: 0;
+    inset-block-start: 8%;
+    inline-size: 70%;
     aspect-ratio: 1;
     background: var(--rh-color-brand-red);
 
     strong {
-      font-size: 32cqw;
+      font-size: clamp(2rem, 14.0625vw, 15rem);
+      @media screen and (max-width: 768px) {
+        font-size: 7rem;
+      }
     }
     span {
-      font-size: 10.7cqw;
+      font-size: clamp(0.9rem, 4.6875vw, 5rem);
+      @media screen and (max-width: 768px) {
+        font-size: 2.5rem;
+      }
     }
 
-    @media (max-width: 1024px) {
-      inset-inline-start: -20%;
-      inset-inline-end: auto;
-      inset-block-start: 50%;
-      inline-size: 120%;
-      translate: 0 -50%;
+    @media screen and (max-width: 1920px) {
+      inset-inline-start: 2%;
+      inset-block-start: 10%;
+      inline-size: 65%;
+
+      @media (max-width: 768px) {
+        inline-size: 80%;
+      }
     }
   }
 
   .stat-projects {
     inset-inline-end: 32%;
     inset-block-start: 7%;
-    inline-size: 16%;
+    inline-size: 15%;
     aspect-ratio: 1;
     background: color-mix(in srgb, var(--rh-color-brand-red) 55%, white);
 
-    strong {
-      font-size: 17.4cqw;
-    }
-    span {
-      font-size: 8.7cqw;
+    @media (max-width: 768px) {
+      inline-size: 80%;
     }
 
-    @media (max-width: 1024px) {
-      inset-inline-start: auto;
-      inset-inline-end: 0%;
-      inset-block-start: 28%;
-      inline-size: 35%;
-      translate: 0 -50%;
+    strong {
+      font-size: clamp(0.6rem, 1.875vw, 2rem);
+    }
+    span {
+      font-size: clamp(0.4rem, 0.9375vw, 1rem);
+    }
+
+    @media screen and (max-width: 1920px) {
+      inset-inline-end: 32%;
+      inset-block-start: 7%;
+      inline-size: 16%;
     }
   }
 
   .stat-contributors {
-    inset-inline-end: 27%;
-    inset-block-end: 25%;
-    inline-size: 25%;
+    inset-inline-end: 29%;
+    inset-block-end: 27%;
+    inline-size: 28%;
     aspect-ratio: 1;
     background: color-mix(in srgb, var(--rh-color-brand-red) 55%, white);
 
     strong {
-      font-size: 18.1cqw;
+      font-size: clamp(0.75rem, 3.125vw, 3.25rem);
     }
     span {
-      font-size: 9cqw;
+      font-size: clamp(0.5rem, 1.5625vw, 1.625rem);
     }
 
-    @media (max-width: 1024px) {
-      inset-inline-start: auto;
-      inset-inline-end: -4%;
-      inset-block-start: 72%;
-      inset-block-end: auto;
-      inline-size: 50%;
-      translate: 0 -50%;
-
-      strong {
-        font-size: clamp(2rem, 9vw, 2.75rem);
-      }
-      span {
-        font-size: clamp(0.9rem, 3.9vw, 1.2rem);
-      }
+    @media screen and (max-width: 1920px) {
+      inset-inline-end: 27%;
+      inset-block-end: 25%;
+      inline-size: 25%;
     }
   }
 
   .stats-scale-copy {
     position: relative;
     z-index: 2;
-    margin-inline-start: auto;
+    margin-inline-start: 70%;
+    margin-block-start: -40%;
     inline-size: 100%;
-    container-type: inline-size;
-    max-inline-size: min(40rem, 40vw);
+    max-inline-size: 30rem;
     text-align: end;
-    margin-inline-end: min(8vw, 154px);
 
-    @media (max-width: 1024px) {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      min-height: var(--app-vh, 100svh);
-      margin-inline: 0;
+    @media screen and (max-width: 1920px) {
+      margin-inline-start: 65%;
+      margin-block-start: -35%;
+      margin-inline-end: 8vw;
+
+      @media screen and (max-width: 1800px) {
+        margin-inline-start: 60%;
+      }
+    }
+
+    @media screen and (max-width: 768px) {
+      margin-inline-start: 0;
+      margin-block-start: 0;
+      margin-inline-end: 0;
       text-align: start;
       max-inline-size: none;
-      padding: clamp(1rem, 5vw, 2.5rem);
     }
   }
 
-  .stats-scale-copy h1 {
-    /* The floor is what renders below ~768px, where the cqw term has fallen
-       out of range; the ceiling is the 1920 reference. */
-    font-size: clamp(1.375rem, 5.625cqw, 2.25rem);
-  }
-
-  .stats-headline-line {
-    display: block;
-    text-align: end;
-  }
-
-  .stats-scale-copy p {
-    text-align: end;
-    font-size: clamp(0.875rem, 2.8125cqw, 1.125rem);
-  }
-
-  @media (max-width: 1024px) {
-    .stats-scale-copy h1 {
-      text-wrap: balance;
-    }
-
-    .stats-headline-line {
-      white-space: normal;
-    }
-  }
-
-  /* ---- Stewardship.jsx ---- */
+  /* ---- Stewardship.jsx (was component-styles/Stewardship.css) ---- */
   .stewardship-container {
     position: relative;
     padding-block: var(--rh-space-4xl);
@@ -789,93 +639,45 @@ layer(tokens);
     padding: clamp(1.5rem, 7.8125vw, 150px);
     align-items: center;
     justify-content: center;
-
-    @media (min-aspect-ratio: 1920 / 1000) {
-      height: fit-content;
-    }
-
-    @media (max-width: 1024px) {
-      aspect-ratio: auto;
-      min-height: var(--app-vh, 100svh);
-      /* Top-align the copy instead of centring it, so there is no empty
-         band above it in the stacked layout. */
-      align-items: start;
-      padding-block-start: 0;
-    }
   }
 
   .stewardship-copy {
-    position: absolute;
+    position: relative;
     z-index: 2;
-    max-inline-size: min(34rem, 32vw);
-    inline-size: 100%;
+    max-inline-size: 34rem;
+    margin-inline-start: 57%;
+    margin-block-start: -55%;
     text-align: center;
-    /* --rh-space-* tokens are fixed px, so this was a flat 32px at every
-       size and ate a quarter of a phone's width. 32px at the reference,
-       halving on small screens. */
-    padding: clamp(1rem, 1.67vw, 2rem);
-    container-type: inline-size;
-    inset-inline-start: 71.09%;
-    inset-block-start: 11.12%;
-    translate: -50% -50%;
-
-    h1 {
-      font-size: clamp(1.375rem, 7.5cqw, 2.25rem);
-    }
+    padding: var(--rh-space-2xl);
 
     p {
-      font-size: clamp(0.875rem, 3.75cqw, 1.125rem);
+      font-size: clamp(0.85rem, 1.0547vw, 1.125rem);
     }
 
-    /* Stacked, it returns to normal flow and the section centres it. */
-    @media (max-width: 1024px) {
-      position: relative;
-      inset: auto;
-      translate: none;
-      max-inline-size: none;
+    @media screen and (max-width: 1920px) {
+      margin-inline-start: 59%;
+      margin-block-start: -60%;
     }
-  }
-
-  .stewardship-actions {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    gap: var(--rh-space-lg);
-    margin-block-start: var(--rh-space-xl);
-
-    /* Keep the pair on one line rather than letting them stack. The
-       buttons shrink to fit instead of wrapping. */
-    @media (max-width: 1024px) {
-      flex-wrap: nowrap;
-      gap: var(--rh-space-md);
-    }
-  }
-
-  .transparent-logo-veil {
-    display: contents;
   }
 
   .logo-wall {
     position: absolute;
     inset: 0;
-    z-index: -1;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: var(--rh-space-md);
-    inset-block-start: -40%;
+    gap: var(--rh-space-xl);
+    inset-block-start: -60%;
 
-    @media (max-width: 1024px) {
-      inset-block-start: 0;
+    @media screen and (max-width: 1920px) {
+      inset-block-start: -40%;
+      gap: var(--rh-space-md);
     }
   }
 
   .logo-row {
     overflow: hidden;
-    /* 16px at the 1920 reference, easing down to 4px rather than dropping
-       there the moment the window passed 1800px */
-    padding-block: clamp(4px, 0.833vw, 16px);
+    padding-block: var(--rh-space-lg);
   }
 
   .logo-row-track {
@@ -900,27 +702,21 @@ layer(tokens);
     white-space: nowrap;
   }
 
-  /* The logo wall is a background texture, so the marks are sized off the
-     reference rather than pinned: at 1920 these still resolve to the
-     original 72 / 52 / 120 / 300px, but they scale down with the viewport
-     instead of staying full size on a phone, where a single 300px-wide
-     logo used to span most of the screen. */
   .logo-tile-mark {
     margin: 10%;
-    block-size: clamp(36px, 3.75vw, 72px);
+    block-size: 72px;
     flex-shrink: 0;
   }
 
   span.logo-tile-mark {
-    inline-size: clamp(26px, 2.71vw, 52px);
+    inline-size: 52px;
     border-radius: var(--rh-border-radius-default, 4px);
     background: light-dark(var(--rh-color-gray-30), var(--rh-color-gray-70));
   }
 
   img.logo-tile-mark {
     inline-size: auto;
-    min-inline-size: clamp(60px, 6.25vw, 120px);
-    max-inline-size: clamp(150px, 15.625vw, 300px);
+    max-inline-size: 300px;
     object-fit: contain;
   }
 
@@ -929,7 +725,7 @@ layer(tokens);
       transform: translateX(0);
     }
     to {
-      transform: translateX(-50%);
+      transform: translateX(-25%);
     }
   }
 
@@ -945,21 +741,33 @@ layer(tokens);
     z-index: 6;
     display: flex;
     align-items: center;
-    min-height: clamp(360px, 25vw, 480px);
+    min-height: 480px;
     clip-path: inset(-100vmax 0 0 0);
+    padding-block: var(--rh-space-4xl);
+    padding-inline: var(--rh-space-2xl);
 
-    @media (max-width: 1024px) {
-      justify-content: center;
-      min-height: var(--app-vh, 100svh);
-      padding-inline: var(--rh-space-lg);
-      padding-block: var(--rh-space-4xl);
+    @media screen and (max-width: 1920px) {
+      padding-top: 15%;
+
+      @media screen and (max-width: 1800px) {
+        padding-bottom: 5%;
+        padding-top: 10%;
+
+        @media screen and (max-width: 768px) {
+          padding-inline: var(--rh-space-lg);
+          padding-top: var(--rh-space-4xl);
+          padding-bottom: var(--rh-space-4xl);
+        }
+      }
     }
   }
 
   .contact-bubble {
     position: absolute;
     z-index: 0;
-    inline-size: 74%;
+    inset-inline-start: -10vw;
+    inset-block-end: -35vw;
+    inline-size: 74vw;
     aspect-ratio: 1;
     border-radius: 50%;
     background: light-dark(
@@ -967,34 +775,18 @@ layer(tokens);
       var(--rh-color-surface-dark)
     );
     pointer-events: none;
-    inset-inline-start: 27%;
-    inset-block-start: 92%;
-    translate: -50% -50%;
-
-    /* .contact-content leaves absolute positioning and centres in the
-       section here, so the bubble comes up to meet it. */
-    @media (max-width: 1024px) {
-      /* 74vw wide -> 200vw narrow */
-      inline-size: clamp(74vw, calc(827px - 6.77vw), 200vw);
-      inset-inline-start: 40%;
-      inset-block-start: 62%;
-    }
   }
 
   .contact-content {
-    position: absolute;
-    text-align: center;
+    position: relative;
     z-index: 1;
     max-inline-size: 26rem;
-    inset-inline-start: 29%;
-    inset-block-start: 28%;
-    translate: -50% -50%;
+    inset-inline-start: 16vw;
+    inset-block-end: 8vw;
+    text-align: center;
 
-    @media (max-width: 1024px) {
-      position: relative;
-      inset: auto;
-      max-inline-size: none;
-      translate: none;
+    @media screen and (max-width: 1920px) {
+      inset-block-end: 3vw;
     }
   }
 
@@ -1004,48 +796,29 @@ layer(tokens);
     padding: 0;
     display: flex;
     flex-direction: row;
-    align-items: center;
     flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
     gap: var(--rh-space-lg);
   }
 
-  .contact-link {
-    position: relative;
+  .contact-list a {
     display: flex;
     align-items: center;
     border-radius: 50%;
     color: var(--rh-color-text-primary);
     text-decoration: none;
-  }
+    transition: ease scale 0.2s;
 
-  .contact-link:focus-visible {
-    outline: var(--rh-border-width-md, 2px) solid var(--rh-color-text-primary);
-    outline-offset: 4px;
-  }
+    &:hover {
+      scale: 1.08;
+    }
 
-  .contact-link::after {
-    content: attr(data-label);
-    position: absolute;
-    inset-block-end: calc(100% + var(--rh-space-sm));
-    inset-inline-start: 50%;
-    translate: -50% 4px;
-    padding-block: var(--rh-space-xs, 4px);
-    padding-inline: var(--rh-space-md);
-    border-radius: 999px;
-    background: light-dark(
-      var(--rh-color-surface-darkest),
-      var(--rh-color-surface-lightest)
-    );
-    color: light-dark(var(--rh-color-white, #fff), var(--rh-color-gray-95));
-    font-family: var(--rh-font-family-heading);
-    font-size: var(--rh-font-size-body-text-sm);
-    line-height: 1.4;
-    white-space: nowrap;
-    opacity: 0;
-    pointer-events: none;
-    transition:
-      ease opacity 0.2s,
-      ease translate 0.2s;
+    &:focus-visible {
+      outline: var(--rh-border-width-md, 2px) solid
+        var(--rh-color-text-primary);
+      outline-offset: 4px;
+    }
   }
 
   .contact-icon-list {
@@ -1053,17 +826,11 @@ layer(tokens);
     align-items: center;
     justify-content: center;
     aspect-ratio: 1;
-    /* 56px at the reference, with a 44px floor so it stays a usable touch
-       target once the viewport gets small */
-    inline-size: clamp(44px, 2.92vw, 56px);
+    inline-size: 50px;
     border-radius: 50%;
     background: var(--rh-color-brand-red);
     color: var(--rh-color-white, #fff);
-    transition:
-      ease background-color 0.2s,
-      ease box-shadow 0.2s,
-      ease transform 0.2s;
-    --rh-icon-size: clamp(24px, 1.5625vw, 30px);
+    --rh-icon-size: 32px;
 
     img {
       inline-size: var(--rh-icon-size);
@@ -1072,75 +839,56 @@ layer(tokens);
     }
   }
 
-  .contact-link:focus-visible .contact-icon-list {
-    background: light-dark(
-      var(--rh-color-brand-red-dark),
-      var(--rh-color-brand-red-light)
-    );
-  }
-
-  @media (hover: hover) {
-    .contact-link:hover .contact-icon-list {
-      background: light-dark(
-        var(--rh-color-brand-red-dark),
-        var(--rh-color-brand-red-light)
-      );
-    }
-  }
-
-  @media (prefers-reduced-motion: reduce) {
-    .contact-icon-list,
-    .contact-link::after {
-      transition: none;
-    }
-
-    .contact-link:hover .contact-icon-list {
-      transform: none;
-    }
-  }
-
   .contact-photo {
     position: absolute;
     z-index: 0;
-    inline-size: 50%;
+    inset-inline-end: -6vw;
+    inset-block-start: 50%;
+    transform: translateY(-50%);
+    inline-size: 50vw;
     aspect-ratio: 1;
     border-radius: 50%;
     content: url(../src/assets/images/shutterstock_1008711622_FullHD.jpeg);
-    inset-inline-start: 81%;
-    inset-block-start: 60%;
-    translate: -50% -50%;
 
-    @media (max-width: 1024px) {
-      display: none;
+    @media screen and (max-width: 1920px) {
+      inset-block-start: 60%;
+      @media screen and (max-width: 768px) {
+        display: none;
+      }
     }
   }
 
   .contact-icon-bubble {
     position: absolute;
+    inset-inline-start: 62%;
+    inset-block-start: -80%;
     display: flex;
     align-items: center;
     justify-content: center;
     aspect-ratio: 1;
     border-radius: 50%;
-    inline-size: 9%;
+    inline-size: 7%;
     background: light-dark(
       var(--rh-color-surface-lightest),
       var(--rh-color-interactive-secondary-default-on-dark)
     );
-    /* The vw-based offsets this replaces needed a max-width: 1920px rule to
-       correct them, which meant the one viewport the comp was drawn at was
-       also the only one where the uncorrected value applied. */
-    inset-inline-start: 61.5%;
-    inset-block-start: -12%;
-    translate: -50% -50%;
 
-    @media (max-width: 1024px) {
-      display: none;
+    @media screen and (max-width: 1920px) {
+      inline-size: 9%;
+      inset-inline-start: 59%;
+      inset-block-start: 0vw;
+      @media screen and (max-width: 768px) {
+        display: none;
+      }
     }
   }
 
   .contact-send-icon {
-    inline-size: 50%;
+    inline-size: 80px;
+
+    @media screen and (max-width: 1920px) {
+      inline-size: 50%;
+    }
   }
 
   /* ---- Footer.jsx ---- */
@@ -1149,33 +897,166 @@ layer(tokens);
     z-index: 1;
   }
 
-  /* ---- shared CTA buttons (Welcome.jsx, Projects.jsx, Stewardship.jsx, AboutHero.jsx) ---- */
+  /* ---- Portrait mobile: full-viewport home sections ----
+     Welcome, Projects, the Stats bubbles, the Stats text, Membership
+     (copy + logo wall together), and Contact us each take up one full
+     screen. Declared last so it wins over the desktop/landscape rules
+     above at equal specificity. */
+  @media (max-width: 768px) and (orientation: portrait) {
+    .hero-container {
+      aspect-ratio: auto;
+      height: auto;
+      min-height: var(--app-vh, 100svh);
+    }
+
+    .projects-container {
+      aspect-ratio: auto;
+    }
+
+    #explore-projects {
+      min-height: var(--app-vh, 100svh);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 10%;
+    }
+
+    .stats-container {
+      aspect-ratio: auto;
+    }
+
+    .stat-cluster {
+      position: relative;
+      min-height: var(--app-vh, 100svh);
+      margin-block-end: 0;
+    }
+
+    /* Size/position the bubbles off viewport width (not the tall 100svh
+       section) and center the cluster vertically via top:50% + transform,
+       so they stay tightly overlapped like the desktop version regardless
+       of how tall the full-screen section ends up being. */
+    .stat-years {
+      inset-inline-start: -20%;
+      inset-inline-end: auto;
+      inset-block-start: 50%;
+      inline-size: 120%;
+      transform: translateY(-50%);
+
+      strong {
+        font-size: 10rem;
+      }
+      span {
+        font-size: 5rem;
+      }
+    }
+
+    .stat-projects {
+      inset-inline-start: auto;
+      inset-inline-end: 0%;
+      inset-block-start: 45%;
+      inline-size: 35%;
+      transform: translateY(calc(-50% - 32vw));
+
+      strong {
+        font-size: 2rem;
+      }
+      span {
+        font-size: 1rem;
+      }
+    }
+
+    .stat-contributors {
+      inset-inline-start: auto;
+      inset-inline-end: -10%;
+      inset-block-start: 55%;
+      inset-block-end: auto;
+      inline-size: 50%;
+      transform: translateY(calc(-50% + 34vw));
+
+      strong {
+        font-size: 2.75rem;
+      }
+      span {
+        font-size: 1.2rem;
+      }
+    }
+
+    .stats-scale-copy {
+      min-height: var(--app-vh, 100svh);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 10%;
+    }
+
+    .stewardship-container {
+      aspect-ratio: auto;
+      min-height: var(--app-vh, 100svh);
+    }
+
+    .stewardship-copy {
+      margin-inline-start: 0;
+      margin-block-start: -110%;
+    }
+
+    .logo-wall {
+      inset-block-start: 0;
+    }
+
+    #contact-us {
+      min-height: var(--app-vh, 100svh);
+    }
+
+    /* Grey decorative bubbles — hidden on mobile elsewhere in this file;
+       re-enabled here so they're easy to find and tweak (size/position/etc)
+       for the new full-screen portrait layout. */
+    .hero-bubble-group {
+      display: block;
+    }
+
+    .hero-photo-bubbles,
+    .icon-bubbles {
+      display: none;
+    }
+
+    .hero-project-big-bubble {
+      display: block;
+      inline-size: 218%;
+      margin-inline-start: -60%;
+      margin-block-start: 25%;
+    }
+
+    .stats-memberships-big-bubble {
+      display: block;
+      inline-size: 240%;
+      margin-inline-start: -110%;
+      margin-block-start: 250%;
+    }
+
+    .contact-bubble {
+      inline-size: 180%;
+      margin-inline-start: -55%;
+      margin-block-start: 25%;
+    }
+  }
+
+  /* ---- shared CTA buttons (Welcome.jsx, Projects.jsx, Membership.jsx, AboutHero.jsx) ---- */
   .btn-cta {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    /* All three of these were fixed sizes -- the --rh-space-* tokens are
-       px, and body-text-md only tracked the root font. At the 1920
-       reference they still resolve to 6px / 24px / 16px; below it they
-       ease down so a pair of buttons fits on one line on a phone. */
     padding-block: var(--rh-space-sm);
-    padding-inline: clamp(0.75rem, 1.25vw, 1.5rem);
+    padding-inline: var(--rh-space-xl);
     border-radius: 8px;
     font-family: var(--rh-font-family-heading);
-    font-size: clamp(13px, calc(11px + 0.26vw), 16px);
+    font-size: var(--rh-font-size-body-text-md);
     font-weight: var(--rh-font-weight-heading-medium);
-    white-space: nowrap;
     text-decoration: none;
     border: var(--rh-border-width-md, 2px) solid transparent;
     transition:
       ease background-color 0.2s,
       ease color 0.2s,
       ease border-color 0.2s;
-  }
-
-  .btn-cta:focus-visible {
-    outline: var(--rh-border-width-md, 2px) solid var(--rh-color-text-primary);
-    outline-offset: 3px;
   }
 
   .btn-cta-primary {
@@ -1214,7 +1095,7 @@ layer(tokens);
 
   .about-section-intro h1 {
     font-family: var(--rh-font-family-heading);
-    font-size: var(--rh-font-size-heading-lg, 2.25rem);
+    font-size: var(--rh-font-size-heading-md, 1.75rem);
     font-weight: var(--rh-font-weight-heading-medium);
     color: var(--rh-color-text-primary);
     margin-block-end: var(--rh-space-md);
@@ -1307,10 +1188,24 @@ layer(tokens);
   }
 
   .about-hero-photo-a {
-    inline-size: 40%;
+    inline-size: 30%;
     content: url(../src/assets/images/0007_RHSunnyvale-0874_FullHD.jpeg);
-    inset-inline-start: 55%;
-    inset-block-start: 13%;
+    inset-inline-start: 47%;
+    inset-block-start: 20%;
+  }
+
+  .about-hero-photo-b {
+    background: color-mix(in srgb, var(--rh-color-brand-red) 55%, white);
+    inset-inline-end: -2%;
+    inset-block-start: -2%;
+    clip-path: inset(0 7.84% 0 0);
+  }
+
+  .about-hero-photo-c {
+    background-color: var(--rh-color-brand-red);
+    inset-inline-end: -1%;
+    inset-block-start: 54%;
+    clip-path: inset(0 3.92% 0 0);
   }
 
   /* ---- AboutWhatWeDo.jsx ---- */
@@ -1918,10 +1813,6 @@ layer(tokens);
     aspect-ratio: 1;
     inset-inline-start: -22vw;
     inset-block-start: -12vw;
-    @media screen and (max-width: 768px) {
-      inline-size: 150vw;
-      inset-block-start: -30vw;
-    }
   }
 
   .all-projects-bg-bubble-b {
@@ -1929,9 +1820,6 @@ layer(tokens);
     aspect-ratio: 1;
     inset-inline-end: -16vw;
     inset-block-end: -10vw;
-    @media screen and (max-width: 768px) {
-      inline-size: 100vw;
-    }
   }
 
   .all-projects-intro {

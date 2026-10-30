@@ -1,5 +1,4 @@
 import stewardshipLogos from "../data/stewardships.json";
-import projectLogos from "../data/projects.json";
 
 const logoModules = import.meta.glob("../assets/logos/*", {
   eager: true,
@@ -13,7 +12,6 @@ const logoUrls = Object.fromEntries(
 );
 
 const stewardshipsWithLogos = stewardshipLogos.filter((s) => s.logo);
-const projectsWithLogos = projectLogos.filter((s) => s.logo);
 
 function shuffle(list) {
   const result = [...list];
@@ -47,35 +45,24 @@ const rowDirections = ["left", "right", "left", "right", "left"];
 function Stewardship() {
   const rows = rowDirections.map((direction) => ({
     direction,
-    logos: shuffle([...stewardshipsWithLogos, ...projectsWithLogos]),
+    logos: shuffle(stewardshipsWithLogos),
   }));
 
   return (
     <section className="stewardship-container" aria-labelledby="h-stewardship">
       <div className="container stewardship-copy">
-        <h1 id="h-stewardship">Open source moves forward together.</h1>
+        <h1 id="h-stewardship">Stewardship</h1>
         <p>
-          Through contributions to thousands of open source projects and
-          partnerships across the ecosystem, we help advance AI, cloud, Linux,
-          automation, security, and more—building technology that is resilient,
-          secure, and sustainable.
+          We believe in shared stewardship, partnering across the open source
+          ecosystem to build resilient, secure, and sustainable technology
+          together.
         </p>
-
-        <div className="stewardship-actions">
-          <a
-            className="btn-cta btn-cta-primary"
-            href={`${import.meta.env.BASE_URL}projects.html`}
-          >
-            Where we build
-          </a>
-
-          <a
-            className="btn-cta btn-cta-primary"
-            href={`${import.meta.env.BASE_URL}stewardships.html`}
-          >
-            Where we steward
-          </a>
-        </div>
+        <a
+          className="btn-cta btn-cta-primary"
+          href={`${import.meta.env.BASE_URL}stewardships.html`}
+        >
+          Where we steward
+        </a>
       </div>
       <div className="transparent-logo-veil">
         <div className="logo-wall" aria-hidden="true">
