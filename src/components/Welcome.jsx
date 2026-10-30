@@ -8,7 +8,7 @@ function Welcome() {
         <h1>
           Open source expertise.
           <br />
-          Community-powered innovation.
+          30+ years of community-powered innovation.
         </h1>
         <p>We connect people, knowledge, and communities to help drive innovation in AI and beyond.</p>
         <a className="btn-cta btn-cta-primary" href={`${import.meta.env.BASE_URL}about.html`}>
