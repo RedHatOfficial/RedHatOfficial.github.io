@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   id="send"
+   width="32"
+   height="32"
+   version="1.1"
+   viewBox="0 0 32 32"
+   sodipodi:docname="rh-ui-icon-send(1).svg"
+   inkscape:version="1.4.4 (dcaf3e7, 2026-05-05)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="9.1923881"
+     inkscape:cx="9.6275308"
+     inkscape:cy="22.573024"
+     inkscape:window-width="2560"
+     inkscape:window-height="1382"
+     inkscape:window-x="1440"
+     inkscape:window-y="533"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="send" />
+  <!-- Generator: Adobe Illustrator 30.5.1, SVG Export Plug-In . SVG Version: 2.1.4 Build 3)  -->
+  <defs
+     id="defs1">
+    <style
+       id="style1">
+      .st0 {
+        fill: none;
+      }
+
+      .st1 {
+        fill: #151515;
+      }
+    </style>
+  </defs>
+  <rect
+     id="transparent_rectangle"
+     class="st0"
+     width="32"
+     height="32" />
+  <path
+     id="icon"
+     class="st1"
+     d="M30.40723,15.08643L3.39746,3.05664c-.34473-.15381-.74512-.1001-1.03613.13623-.29297.23682-.42773.61768-.34961.98535l2.51562,11.82178-2.51562,11.81152c-.07812.36719.05664.74805.34863.98535.18164.14648.4043.22266.62988.22266.1377,0,.27637-.02832.40625-.08594l27.00977-12.02002c.36133-.16064.59375-.51855.59375-.91357s-.23242-.75293-.59277-.91357ZM4.37695,26.30762l1.98273-9.30762h10.64032c.55273,0,1-.44775,1-1s-.44727-1-1-1H6.3598l-1.98285-9.31738,23.16406,10.31689L4.37695,26.30762Z"
+     style="fill:#ee0000;fill-opacity:1" />
+</svg>

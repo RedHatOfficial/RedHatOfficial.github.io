@@ -1,0 +1,300 @@
+[
+  {
+    "name": "Agentic AI Foundation (AAIF)",
+    "href": "https://aaif.io/",
+    "logo": "agentic-ai-foundation.svg"
+  },
+  {
+    "name": "AI Sweden",
+    "href": "https://www.ai.se/",
+    "logo": "ai-sweden.png"
+  },
+  {
+    "name": "AI-Ran Alliance",
+    "href": "https://ai-ran.org/",
+    "logo": "ai-ran.png"
+  },
+  {
+    "name": "Apache Software Foundation",
+    "href": "https://www.apache.org/",
+    "logo": "apache-software-foundation.svg"
+  },
+  {
+    "name": "Autoware Foundation",
+    "href": "https://autoware.org/",
+    "logo": "autoware.svg"
+  },
+  {
+    "name": "Broadband Forum",
+    "href": "https://www.broadband-forum.org/",
+    "logo": "broadband-forum.png"
+  },
+  {
+    "name": "Cloud Native Computing Foundation (CNCF)",
+    "href": "https://www.cncf.io/",
+    "logo": "cncf.png"
+  },
+  {
+    "name": "Confidential Computing Consortium (CCC)",
+    "href": "https://confidentialcomputing.io/",
+    "logo": "ccc.svg"
+  },
+  {
+    "name": "CoreCollective",
+    "href": "https://corecollective.dev/",
+    "logo": "corecollective.svg"
+  },
+  {
+    "name": "CoSAI",
+    "href": "https://www.coalitionforsecureai.org/",
+    "logo": "cosai.png"
+  },
+  { "name": "COSS.fi", "href": "https://coss.fi/", "logo": "coss-fi.png" },
+  {
+    "name": "COVESA",
+    "href": "https://www.covesa.global/",
+    "logo": "covesa.png"
+  },
+  { "name": "CUNA", "href": "https://www.cuna.org/", "logo": "cuna.svg" },
+  { "name": "DIN", "href": "https://www.din.de/", "logo": "din.svg" },
+  { "name": "DPDK", "href": "https://www.dpdk.org/", "logo": "dpdk.svg" },
+  { "name": "e4s", "href": "https://www.e4salliance.com/", "logo": "e4s-alliance.png" },
+  {
+    "name": "Eclipse Foundation",
+    "href": "https://www.eclipse.org/",
+    "logo": "eclipse-foundation.png"
+  },
+  {
+    "name": "Eclipse ASCIIDoc Working Group",
+    "href": "https://asciidoc-wg.eclipse.org/",
+    "logo": "eclipse-asciidoc.svg"
+  },
+  {
+    "name": "Eclipse Cloud Development (ECD) Tools Working Group",
+    "href": "https://ecdtools.eclipse.org/",
+    "logo": "eclipse-ecd-tools.svg"
+  },
+  {
+    "name": "Eclipse IoT Working Group",
+    "href": "https://iot.eclipse.org/",
+    "logo": "eclipse-iot.svg"
+  },
+  {
+    "name": "Eclipse Jakarta",
+    "href": "https://jakarta.ee/",
+    "logo": "eclipse-jakarta.svg"
+  },
+  {
+    "name": "Eclipse Open Regulatory Compliance (ORC) Working Group",
+    "href": "https://projects.eclipse.org/working-group/eclipse-open-regulatory-compliance-working-group",
+    "logo": "eclipse-incubation.png"
+  },
+  {
+    "name": "Eclipse Software-Defined Vehicle (SDV) Working Group",
+    "href": "https://eclipsesdv.org/",
+    "logo": "eclipse-sdv.svg"
+  },
+  { "name": "Edge", "href": "https://www.lfedge.org/", "logo": "edge.svg" },
+  { "name": "ELISA Fund", "href": "https://elisa.tech/", "logo": "elisa.svg" },
+  {
+    "name": "ETSI - European Telecom Standards",
+    "href": "https://www.etsi.org/",
+    "logo": "etsi.png"
+  },
+  {
+    "name": "Fintech Open Source Foundation (FINOS)",
+    "href": "https://www.finos.org/",
+    "logo": "finos.png"
+  },
+  {
+    "name": "GNOME Foundation",
+    "href": "https://www.gnome.org/",
+    "logo": "gnome.svg"
+  },
+  { "name": "GSMA", "href": "https://www.gsma.com/", "logo": "gsma.svg" },
+  {
+    "name": "InnerSource Commons",
+    "href": "https://innersourcecommons.org/",
+    "logo": "innersource-commons.png"
+  },
+  {
+    "name": "Internet Security Research Group (ISRG), Let's Encrypt",
+    "href": "https://www.abetterinternet.org/",
+    "logo": "isrg.svg"
+  },
+  {
+    "name": "IOWN Global Forum",
+    "href": "https://iowngf.org/",
+    "logo": "iown-gf.svg"
+  },
+  { "name": "JasPar", "href": "https://www.jaspar.jp/en", "logo": "jaspar.svg" },
+  {
+    "name": "KernelCI Initiative",
+    "href": "https://kernelci.org/",
+    "logo": "kernelci.svg"
+  },
+  {
+    "name": "Khronos Group",
+    "href": "https://www.khronos.org/",
+    "logo": "khronos.svg"
+  },
+  {
+    "name": "LF Energy",
+    "href": "https://www.lfenergy.org/",
+    "logo": "lf-energy.svg"
+  },
+  {
+    "name": "Linux Foundation",
+    "href": "https://www.linuxfoundation.org/",
+    "logo": "linux-foundation.png"
+  },
+  {
+    "name": "Margo",
+    "href": "https://margo.org/",
+    "logo": "margo.svg"
+  },
+  {
+    "name": "MLCommons (MLC)",
+    "href": "https://mlcommons.org/",
+    "logo": "mlc.svg"
+  },
+  { "name": "NetDev", "href": "https://github.com/linux-netdev/foundation", "logo": "linux-netdev.svg" },
+  {
+    "name": "Networking Platinum",
+    "href": "https://lfnetworking.org/",
+    "logo": "lf-networking.svg"
+  },
+  {
+    "name": "O-RAN Alliance",
+    "href": "https://www.o-ran.org/",
+    "logo": "o-ran.svg"
+  },
+  {
+    "name": "O3DE (Open 3D Engine)",
+    "href": "https://o3de.org/",
+    "logo": "o3de.svg"
+  },
+  {
+    "name": "OASIS",
+    "href": "https://www.oasis-open.org/",
+    "logo": "oasis.png"
+  },
+  {
+    "name": "OCUDU",
+    "href": "https://ocudu.org/",
+    "logo": "ocudu.png"
+  },
+  {
+    "name": "Open Air Interface",
+    "href": "https://openairinterface.org/",
+    "logo": "openairinterface.png"
+  },
+  {
+    "name": "Open Container Initiative (OCI)",
+    "href": "https://opencontainers.org/",
+    "logo": "oci.svg"
+  },
+  {
+    "name": "Open Secure AI Alliance",
+    "href": "https://secureaialliance.org/",
+    "logo": "osaia.svg"
+  },
+  {
+    "name": "Open Source Initiative (OSI)",
+    "href": "https://opensource.org/",
+    "logo": "osi.png"
+  },
+  {
+    "name": "Open Source Robotics Alliance (OSRA)",
+    "href": "https://osralliance.org/",
+    "logo": "osra.svg"
+  },
+  {
+    "name": "OpenClaw",
+    "href": "https://www.openclaw.org/",
+    "logo": "openclaw.svg"
+  },
+  {
+    "name": "OpenHW",
+    "href": "https://www.openhwgroup.org/",
+    "logo": "openhw.png"
+  },
+  {
+    "name": "OpenInfra Foundation",
+    "href": "https://openinfra.dev/",
+    "logo": "openinfra.svg"
+  },
+  {
+    "name": "OpenJS Foundation",
+    "href": "https://openjsf.org/",
+    "logo": "openjsf.svg"
+  },
+  {
+    "name": "OpenSSF",
+    "href": "https://openssf.org/",
+    "logo": "openssf.svg"
+  },
+  {
+    "name": "OPI",
+    "href": "https://opiproject.org/",
+    "logo": "opi.svg"
+  },
+  {
+    "name": "AI Network Alliance (AINA)",
+    "href": "https://www.oria.or.kr/",
+    "logo": "aina.svg"
+  },
+  {
+    "name": "OWASP Stewardship",
+    "href": "https://owasp.org/",
+    "logo": "owasp.svg"
+  },
+  {
+    "name": "Project Akrites",
+    "href": "https://akrites.org/",
+    "logo": "akrites.svg"
+  },
+  {
+    "name": "Python Software Foundation",
+    "href": "https://www.python.org/psf/",
+    "logo": "psf.png"
+  },
+  {
+    "name": "Real Time Linux (Premier)",
+    "href": "https://realtime-linux.org/",
+    "logo": "rtl.svg"
+  },
+  { "name": "RISE", "href": "https://riseproject.dev/", "logo": "rise.svg" },
+  {
+    "name": "SCTE•ISBE Standards Program (Society of Cable Telecommunications Engineers Inc.)",
+    "href": "https://www.scte.org/",
+    "logo": "scte.png"
+  },
+  {
+    "name": "SOAFEE",
+    "href": "https://www.soafee.io/",
+    "logo": "soafee.svg"
+  },
+  {
+    "name": "SPEC Open Systems Group Stewardship",
+    "href": "https://www.spec.org/osg/",
+    "logo": "spec-osg.png"
+  },
+  {
+    "name": "Streaming Video Technology Alliance (SVTA)",
+    "href": "https://www.svta.org/",
+    "logo": "svta.png"
+  },
+  { "name": "Sylva", "href": "https://sylvaproject.org/", "logo": "sylva.svg" },
+  {
+    "name": "TM Forum",
+    "href": "https://www.tmforum.org/",
+    "logo": "tmforum.svg"
+  },
+  {
+    "name": "Transaction Processing Performance Council (TPPC)",
+    "href": "http://www.tpc.org/",
+    "logo": "tpc.png"
+  },
+  { "name": "UEFI", "href": "https://uefi.org/", "logo": "uefi.svg" }
+]

@@ -6,32 +6,32 @@ We’ve put together a comprehensive list of the projects hosted on GitHub in wh
 
 To add or modify projects to the list on [https://redhatofficial.github.io](https://redhatofficial.github.io), either submit a pull request or create an issue in the [repo](https://github.com/RedHatOfficial/RedHatOfficial.github.io). Upon review, the site maintainers will merge the PR or change the content as requested. No direct merges will be accepted.
 
-All projects are stored in the `/data` directory in the `projects.json` file within the dev branch of this repo. Try to add your project alphabetically (just to make the file easier to search) and create a new object in the JSON that has:
+All projects are stored in the `/src/data` directory in the `projects.json` file within the dev branch of this repo. Try to add your project alphabetically (just to make the file easier to search) and create a new object in the JSON that has:
 
 ```js
 {
-  "projectName": "Foo Project",
-  "projectDescription": "Lorem ipsum.",
-  "projectRepository": "https://github.com/foo",
-  "projectWebsite": "http://foo.github.io",
-  "category": "Development",
-  "twitterHandle": "",
-  "twitterURL": "",
-  "lowercaseName": "foo project"
-}
+    "name": "PROJECT-NAME",
+    "href": "WWW.PROJECT-SITE-OR-GITHUB.COM",
+    "category": "CATEGORY",
+    "featured": false,
+    "logo": "PROJECT-LOGO.svg",
+    "description": "DESCRIPTION OF THE PROJECT"
+  },
 ```
 
-Be sure to include at _least_ the `projectName`, `projectRepository`, and `category`.
+Be sure to include at _least_ the `name`, `href`, `category`, and `logo`. 
 
 Current categories include:
 
-- Development
-- Documentation
-- Middleware
-- Operations
-- Organizations
-- Platform
-- Storage
+- AI Stack
+- Automation
+- Automotive
+- Cloud-Native Orchestration & Containers
+- Edge Computing
+- Hardware
+- Operating System Foundation
+- Security
+- Telco
 
 ### Criteria for adding projects to the page
 
@@ -55,21 +55,7 @@ Open an issue in _this_ repo, and the owners of the RedHatOfficial organization 
 
 ## Changing the Featured list
 
-To modify the featured projects, submit a pull request modifying the `/data/featured.json` file within the `dev` branch. You need to replace one of the featured projects rather than adding to the file.
-
-In addition, you need to replace the logo in the `static/img` directory. The naming convention is important; you must name the image file as `logo-<logo>.png`, with `logo` here referencing the value in the `featured.json` file entry. So, for example, given the following entry:
-
-```json
-{
-  "name": "CentOS Project",
-  "logo": "centos",
-  "github": "https://github.com/CentOS",
-  "twitter": "https://twitter.com/CentOSProject",
-  "website": "https://www.centos.org/",
-  "description": "A solid, predictable base to build upon, with extensive resources to build, test, release, and maintain code."
-}
-```
-The image would be `logo-centos.png`.
+To modify the featured projects, submit a pull request modifying your project at `/src/data/projects.json` by setting the `featured` tag to `true`.
 
 Upon review, the site maintainers will merge the PR or change the content as requested. No direct merges will be accepted.
 
@@ -84,29 +70,28 @@ cd RedHatOfficial.github.io
 
 ### Building and running locally
 
-To build and run this project in your local dev environment, first install [Zola](https://www.getzola.org/documentation/getting-started/installation/). Then, run
+To build and run this project in your local dev environment, first install [NodeJS](https://nodejs.org/en). Then, run
 
 ```bash
-zola --config config.dev.toml serve
+npm install
+npm run dev
 ```
 
-Go to the URL for the webserver (likely `localhost:1111`) to explore the site.
+Go to the URL for the webserver (likely `localhost:5713`) to explore the site.
 
 ### Configuration note
 
 There are two config files:
 
-- `config.toml` — For use in production. Sets CDN to redhatstatic.com
-- `config.dev.toml` — For use in local development. Sets CDN to jsDelivr
+- `package.json` — Defines a project's metadata, configuration, scripts, and general dependency requirements using semantic version ranges.
+- `package-lock.json` — Locks the exact resolved versions, nested dependency tree, and integrity hashes of every installed package to guarantee identical, reproducible installs across all environments.
 
-Any changes done in `config.toml` must be duplicated in `config.dev.toml` (and vice versa).
+Any changes done in `package.json` must be duplicated in `package-lock.json` (and vice versa).
 
 
 ## Built with
 
-This project is build and run using [Zola](https://www.getzola.org/), a Rust-based static site generator.
-
-Under the hood, Zola uses [Tera](https://keats.github.io/tera/) for templating.
+This project is build and run using [React](https://react.dev/), a JavaScript-based static site generator as well as [Vite](https://vite.dev/) for building the site.
 
 This project also uses the [Red Hat Design System](https://ux.redhat.com/).
 
