@@ -1,7 +1,7 @@
 function Stats() {
   return (
     <section className="stats-container" aria-labelledby="h-stats-scale">
-      <span className="stats-memberships-big-bubble"></span>
+      <span className="stats-stewardships-big-bubble"></span>
       <ul className="stat-cluster">
         <li className="stat-circle stat-years">
           <strong>30</strong>

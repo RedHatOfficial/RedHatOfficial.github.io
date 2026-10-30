@@ -463,7 +463,7 @@ layer(tokens);
       align-items: stretch;
     }
   }
-  .stats-memberships-big-bubble {
+  .stats-stewardships-big-bubble {
     position: absolute;
     z-index: 1;
     border-radius: 50%;
@@ -898,7 +898,7 @@ layer(tokens);
   }
 
   /* ---- Portrait mobile: full-viewport home sections ----
-     Welcome, Projects, the Stats bubbles, the Stats text, Membership
+     Welcome, Projects, the Stats bubbles, the Stats text, Stewardship
      (copy + logo wall together), and Contact us each take up one full
      screen. Declared last so it wins over the desktop/landscape rules
      above at equal specificity. */
@@ -1026,7 +1026,7 @@ layer(tokens);
       margin-block-start: 25%;
     }
 
-    .stats-memberships-big-bubble {
+    .stats-stewardships-big-bubble {
       display: block;
       inline-size: 240%;
       margin-inline-start: -110%;
@@ -1040,7 +1040,7 @@ layer(tokens);
     }
   }
 
-  /* ---- shared CTA buttons (Welcome.jsx, Projects.jsx, Membership.jsx, AboutHero.jsx) ---- */
+  /* ---- shared CTA buttons (Welcome.jsx, Projects.jsx, Stewardship.jsx, AboutHero.jsx) ---- */
   .btn-cta {
     display: inline-flex;
     align-items: center;
