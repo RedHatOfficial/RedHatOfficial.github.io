@@ -14,7 +14,7 @@ function AboutHero() {
             <a className="btn-cta btn-cta-primary" href={`${import.meta.env.BASE_URL}projects.html`}>
               Explore our upstream portfolio
             </a>
-            <a className="btn-cta btn-cta-secondary" href={`${import.meta.env.BASE_URL}#contact-us`}>
+            <a className="btn-cta btn-cta-secondary" href="mailto:osaipo@redhat.com">
               Get in touch
             </a>
           </div>
