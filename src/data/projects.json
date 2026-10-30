@@ -235,7 +235,7 @@
     "href": "https://github.com/kubernetes-sigs/controller-runtime",
     "category": "Cloud-Native Orchestration & Containers",
     "featured": false,
-    "logo": "controller-runtime.png",
+    "logo": null,
     "description": "Controller runtime is an open-source project focused on Cloud-Native Orchestration & Containers."
   },
   {
@@ -794,8 +794,8 @@
     "name": "Project Hummingbird",
     "href": "https://gitlab.com/redhat/hummingbird/containers",
     "category": "Operating System Foundation",
-    "featured": true,
-    "logo": "project-hummingbird.svg",
+    "featured": false,
+    "logo": null,
     "description": "An open-source initiative that provides a collection of minimal, hardened, and secure container images with a reduced attack surface."
   },
   {
