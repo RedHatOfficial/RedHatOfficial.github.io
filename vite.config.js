@@ -5,7 +5,7 @@ import babel from '@rolldown/plugin-babel'
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: '/jchitas-RedHatOfficial.github.io/',
+  base: '/',
   server: {
     host: true,
   },
