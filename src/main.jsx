@@ -1,7 +1,6 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css'
-import './viewportHeight.js'
 import Nav from './components/Nav.jsx'
 import Welcome from './components/Welcome.jsx'
 import Projects from './components/Projects.jsx'

@@ -22,6 +22,39 @@ layer(tokens);
     var(--rh-color-white)
   );
   color-scheme: light;
+
+  --ref-root: 18;
+  --scale: tan(atan2(100vw, 1920px));
+  --u: calc(100vw / 1920);
+  --root-font-size: calc(var(--ref-root) * var(--u));
+
+  --rh-space-xs: calc(4 * var(--u));
+  --rh-space-sm: calc(6 * var(--u));
+  --rh-space-md: calc(8 * var(--u));
+  --rh-space-lg: calc(16 * var(--u));
+  --rh-space-xl: calc(24 * var(--u));
+  --rh-space-2xl: calc(32 * var(--u));
+  --rh-space-3xl: calc(48 * var(--u));
+  --rh-space-4xl: calc(64 * var(--u));
+  --rh-space-5xl: calc(80 * var(--u));
+  --rh-space-6xl: calc(96 * var(--u));
+  --rh-space-7xl: calc(128 * var(--u));
+
+  --rh-border-width-sm: calc(1 * var(--u));
+  --rh-border-width-md: calc(2 * var(--u));
+  --rh-border-width-lg: calc(3 * var(--u));
+  --rh-border-radius-default: calc(3 * var(--u));
+  --rh-border-radius-pill: calc(64 * var(--u));
+}
+
+/* Mobile scales off a 440px reference, capped at 1.15x (~505px) so the phone
+   layout stops growing on tablets and the extra width becomes side gutter. */
+@media (max-width: 768px) {
+  :root {
+    --ref-root: 12.8;
+    --scale: min(1.15, tan(atan2(100vw, 440px)));
+    --u: min(1.15px, calc(100vw / 440));
+  }
 }
 
 :root[data-theme="dark"] {
@@ -30,10 +63,7 @@ layer(tokens);
 
 @layer base {
   html {
-    font-size: 112.5%;
-    @media screen and (max-width: 1500px) {
-      font-size: 80%;
-    }
+    font-size: var(--root-font-size);
   }
 
   body {
@@ -50,22 +80,18 @@ layer(tokens);
   }
   h1 {
     font-family: var(--rh-font-family-heading);
-    font-size: var(--rh-font-size-heading-lg);
+    font-size: var(--rh-font-size-heading-md);
     font-weight: var(--rh-font-weight-heading-medium);
     line-height: var(--rh-line-height-heading);
     color: var(--rh-color-text-primary);
     margin-block-end: var(--rh-space-lg);
-
-    @media screen and (max-width: 1920px) {
-      font-size: var(--rh-font-size-heading-md);
-    }
   }
 
   a {
     color: var(--rh-color-interactive-primary-default);
     text-decoration-line: underline;
     text-decoration-style: dashed;
-    text-decoration-thickness: 1px;
+    text-decoration-thickness: calc(1 * var(--u));
     text-decoration-color: light-dark(
       var(--rh-color-gray-50),
       var(--rh-color-gray-40)
@@ -149,6 +175,46 @@ layer(tokens);
    to each component's root id/class to avoid cross-component collisions.
    ========================================================================== */
 @layer components {
+  /* rh-navigation-primary and rh-footer-universal size themselves from px and
+     container queries inside their shadow roots, so they are scaled whole with
+     `zoom` and their tokens reset to reference-pixel values inside. */
+  rh-navigation-primary,
+  rh-footer-universal {
+    zoom: var(--scale);
+
+    --u: 1px;
+    --rh-space-xs: 4px;
+    --rh-space-sm: 6px;
+    --rh-space-md: 8px;
+    --rh-space-lg: 16px;
+    --rh-space-xl: 24px;
+    --rh-space-2xl: 32px;
+    --rh-space-3xl: 48px;
+    --rh-space-4xl: 64px;
+    --rh-space-5xl: 80px;
+    --rh-space-6xl: 96px;
+    --rh-space-7xl: 128px;
+
+    --rh-border-width-sm: 1px;
+    --rh-border-width-md: 2px;
+    --rh-border-width-lg: 3px;
+    --rh-border-radius-default: 3px;
+    --rh-border-radius-pill: 64px;
+
+    --rh-font-size-body-text-xs: calc(0.75 * var(--ref-root) * 1px);
+    --rh-font-size-body-text-sm: calc(0.875 * var(--ref-root) * 1px);
+    --rh-font-size-body-text-md: calc(1 * var(--ref-root) * 1px);
+    --rh-font-size-body-text-lg: calc(1.125 * var(--ref-root) * 1px);
+    --rh-font-size-body-text-xl: calc(1.25 * var(--ref-root) * 1px);
+    --rh-font-size-body-text-2xl: calc(1.5 * var(--ref-root) * 1px);
+    --rh-font-size-heading-xs: calc(1.25 * var(--ref-root) * 1px);
+    --rh-font-size-heading-sm: calc(1.5 * var(--ref-root) * 1px);
+    --rh-font-size-heading-md: calc(1.75 * var(--ref-root) * 1px);
+    --rh-font-size-heading-lg: calc(2.25 * var(--ref-root) * 1px);
+    --rh-font-size-heading-xl: calc(2.5 * var(--ref-root) * 1px);
+    --rh-font-size-heading-2xl: calc(3 * var(--ref-root) * 1px);
+  }
+
   /* ---- Nav.jsx (was component-styles/Nav.css) ---- */
   rh-navigation-primary {
     position: sticky !important;
@@ -215,17 +281,20 @@ layer(tokens);
     z-index: 0;
     width: 100%;
     aspect-ratio: 1920 / 1000;
-    padding: clamp(1.5rem, 7.8125vw, 150px);
+    padding: calc(150 * var(--u));
     align-items: center;
 
-    @media screen and (max-height: 852px) {
-      display: flex;
-      height: fit-content;
+    @media screen and (max-width: 768px) {
+      padding: calc(34.375 * var(--u));
     }
   }
 
   .hero-content {
-    width: clamp(280px, 28.645vw, 550px);
+    width: calc(550 * var(--u));
+
+    @media screen and (max-width: 768px) {
+      width: calc(280 * var(--u));
+    }
     z-index: 2;
     text-align: left;
 
@@ -323,12 +392,10 @@ layer(tokens);
     width: 100%;
     aspect-ratio: 1920 / 1000;
     align-items: center;
+    margin-bottom: 10rem;
 
-    @media screen and (max-width: 1920px) {
-      margin-bottom: 10rem;
-      @media screen and (max-width: 786px) {
-        margin-bottom: 0;
-      }
+    @media screen and (max-width: 768px) {
+      margin-bottom: 0;
     }
   }
 
@@ -365,7 +432,11 @@ layer(tokens);
   }
 
   .project-carousel {
-    --project-card-width: clamp(220px, 27.9166vw, 536px);
+    --project-card-width: calc(536 * var(--u));
+
+    @media screen and (max-width: 768px) {
+      --project-card-width: calc(220 * var(--u));
+    }
     width: 100vw;
     margin-inline: calc(50% - 50vw);
     padding-top: 1.5%;
@@ -420,14 +491,18 @@ layer(tokens);
     align-items: center;
     justify-content: center;
     inline-size: var(--project-card-width);
-    block-size: clamp(134px, 17.03125vw, 327px);
-    border-radius: 24px;
+    block-size: calc(327 * var(--u));
+    border-radius: calc(24 * var(--u));
     background: light-dark(
       var(--rh-color-surface-lightest),
       var(--rh-color-interactive-secondary-default-on-dark)
     );
     /* box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); */
     text-decoration: none;
+
+    @media screen and (max-width: 768px) {
+      block-size: calc(134 * var(--u));
+    }
   }
 
   .project-card-logo {
@@ -525,32 +600,27 @@ layer(tokens);
   }
 
   .stat-years {
-    inset-inline-start: 0;
-    inset-block-start: 8%;
-    inline-size: 70%;
+    inset-inline-start: 2%;
+    inset-block-start: 10%;
+    inline-size: 65%;
     aspect-ratio: 1;
     background: var(--rh-color-brand-red);
 
     strong {
-      font-size: clamp(2rem, 14.0625vw, 15rem);
-      @media screen and (max-width: 768px) {
-        font-size: 7rem;
-      }
+      font-size: 15rem;
     }
     span {
-      font-size: clamp(0.9rem, 4.6875vw, 5rem);
-      @media screen and (max-width: 768px) {
-        font-size: 2.5rem;
-      }
+      font-size: 5rem;
     }
 
-    @media screen and (max-width: 1920px) {
-      inset-inline-start: 2%;
-      inset-block-start: 10%;
-      inline-size: 65%;
+    @media screen and (max-width: 768px) {
+      inline-size: 80%;
 
-      @media (max-width: 768px) {
-        inline-size: 80%;
+      strong {
+        font-size: 7rem;
+      }
+      span {
+        font-size: 2.5rem;
       }
     }
   }
@@ -558,67 +628,46 @@ layer(tokens);
   .stat-projects {
     inset-inline-end: 32%;
     inset-block-start: 7%;
-    inline-size: 15%;
+    inline-size: 16%;
     aspect-ratio: 1;
     background: color-mix(in srgb, var(--rh-color-brand-red) 55%, white);
+
+    strong {
+      font-size: 2rem;
+    }
+    span {
+      font-size: 1rem;
+    }
 
     @media (max-width: 768px) {
       inline-size: 80%;
     }
-
-    strong {
-      font-size: clamp(0.6rem, 1.875vw, 2rem);
-    }
-    span {
-      font-size: clamp(0.4rem, 0.9375vw, 1rem);
-    }
-
-    @media screen and (max-width: 1920px) {
-      inset-inline-end: 32%;
-      inset-block-start: 7%;
-      inline-size: 16%;
-    }
   }
 
   .stat-contributors {
-    inset-inline-end: 29%;
-    inset-block-end: 27%;
-    inline-size: 28%;
+    inset-inline-end: 27%;
+    inset-block-end: 25%;
+    inline-size: 25%;
     aspect-ratio: 1;
     background: color-mix(in srgb, var(--rh-color-brand-red) 55%, white);
 
     strong {
-      font-size: clamp(0.75rem, 3.125vw, 3.25rem);
+      font-size: 3.25rem;
     }
     span {
-      font-size: clamp(0.5rem, 1.5625vw, 1.625rem);
-    }
-
-    @media screen and (max-width: 1920px) {
-      inset-inline-end: 27%;
-      inset-block-end: 25%;
-      inline-size: 25%;
+      font-size: 1.625rem;
     }
   }
 
   .stats-scale-copy {
     position: relative;
     z-index: 2;
-    margin-inline-start: 70%;
-    margin-block-start: -40%;
+    margin-inline-start: 65%;
+    margin-block-start: -35%;
+    margin-inline-end: 8vw;
     inline-size: 100%;
     max-inline-size: 30rem;
     text-align: end;
-
-    @media screen and (max-width: 1920px) {
-      margin-inline-start: 65%;
-      margin-block-start: -35%;
-      margin-inline-end: 8vw;
-
-      @media screen and (max-width: 1800px) {
-        margin-inline-start: 60%;
-      }
-    }
 
     @media screen and (max-width: 768px) {
       margin-inline-start: 0;
@@ -632,31 +681,33 @@ layer(tokens);
   /* ---- Stewardship.jsx (was component-styles/Stewardship.css) ---- */
   .stewardship-container {
     position: relative;
-    padding-block: var(--rh-space-4xl);
     display: flex;
     width: 100%;
     aspect-ratio: 1920 / 1000;
-    padding: clamp(1.5rem, 7.8125vw, 150px);
+    padding: calc(150 * var(--u));
     align-items: center;
     justify-content: center;
+
+    @media screen and (max-width: 768px) {
+      padding: calc(34.375 * var(--u));
+    }
   }
 
   .stewardship-copy {
     position: relative;
     z-index: 2;
     max-inline-size: 34rem;
-    margin-inline-start: 57%;
-    margin-block-start: -55%;
+    margin-inline-start: 59%;
+    margin-block-start: -60%;
     text-align: center;
     padding: var(--rh-space-2xl);
 
     p {
-      font-size: clamp(0.85rem, 1.0547vw, 1.125rem);
-    }
+      font-size: 1.125rem;
 
-    @media screen and (max-width: 1920px) {
-      margin-inline-start: 59%;
-      margin-block-start: -60%;
+      @media screen and (max-width: 768px) {
+        font-size: 0.85rem;
+      }
     }
   }
 
@@ -666,13 +717,8 @@ layer(tokens);
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: var(--rh-space-xl);
-    inset-block-start: -60%;
-
-    @media screen and (max-width: 1920px) {
-      inset-block-start: -40%;
-      gap: var(--rh-space-md);
-    }
+    gap: var(--rh-space-md);
+    inset-block-start: -40%;
   }
 
   .logo-row {
@@ -704,19 +750,19 @@ layer(tokens);
 
   .logo-tile-mark {
     margin: 10%;
-    block-size: 72px;
+    block-size: calc(72 * var(--u));
     flex-shrink: 0;
   }
 
   span.logo-tile-mark {
-    inline-size: 52px;
+    inline-size: calc(52 * var(--u));
     border-radius: var(--rh-border-radius-default, 4px);
     background: light-dark(var(--rh-color-gray-30), var(--rh-color-gray-70));
   }
 
   img.logo-tile-mark {
     inline-size: auto;
-    max-inline-size: 300px;
+    max-inline-size: calc(300 * var(--u));
     object-fit: contain;
   }
 
@@ -741,24 +787,16 @@ layer(tokens);
     z-index: 6;
     display: flex;
     align-items: center;
-    min-height: 480px;
+    min-height: calc(480 * var(--u));
     clip-path: inset(-100vmax 0 0 0);
     padding-block: var(--rh-space-4xl);
     padding-inline: var(--rh-space-2xl);
+    padding-top: 15%;
 
-    @media screen and (max-width: 1920px) {
-      padding-top: 15%;
-
-      @media screen and (max-width: 1800px) {
-        padding-bottom: 5%;
-        padding-top: 10%;
-
-        @media screen and (max-width: 768px) {
-          padding-inline: var(--rh-space-lg);
-          padding-top: var(--rh-space-4xl);
-          padding-bottom: var(--rh-space-4xl);
-        }
-      }
+    @media screen and (max-width: 768px) {
+      padding-inline: var(--rh-space-lg);
+      padding-top: var(--rh-space-4xl);
+      padding-bottom: var(--rh-space-4xl);
     }
   }
 
@@ -777,16 +815,26 @@ layer(tokens);
     pointer-events: none;
   }
 
+  /* Centred on the centroid of the grey bubble's visible area — the circle
+     minus what the viewport edge, the footer and the photo cut away. */
   .contact-content {
     position: relative;
     z-index: 1;
     max-inline-size: 26rem;
     inset-inline-start: 16vw;
-    inset-block-end: 8vw;
+    inset-block-end: 3vw;
     text-align: center;
 
-    @media screen and (max-width: 1920px) {
-      inset-block-end: 3vw;
+    @media screen and (min-width: 769px) {
+      position: absolute;
+      inset-inline-start: 28.06vw;
+      inset-block-start: 7.32vw;
+      inset-block-end: auto;
+      translate: -50% -50%;
+
+      h1 {
+        font-size: var(--rh-font-size-heading-xl);
+      }
     }
   }
 
@@ -817,7 +865,7 @@ layer(tokens);
     &:focus-visible {
       outline: var(--rh-border-width-md, 2px) solid
         var(--rh-color-text-primary);
-      outline-offset: 4px;
+      outline-offset: calc(4 * var(--u));
     }
   }
 
@@ -826,16 +874,21 @@ layer(tokens);
     align-items: center;
     justify-content: center;
     aspect-ratio: 1;
-    inline-size: 50px;
+    inline-size: calc(50 * var(--u));
     border-radius: 50%;
     background: var(--rh-color-brand-red);
     color: var(--rh-color-white, #fff);
-    --rh-icon-size: 32px;
+    --rh-icon-size: calc(32 * var(--u));
 
     img {
       inline-size: var(--rh-icon-size);
       block-size: var(--rh-icon-size);
       object-fit: contain;
+    }
+
+    @media screen and (min-width: 769px) {
+      inline-size: calc(76 * var(--u));
+      --rh-icon-size: calc(44 * var(--u));
     }
   }
 
@@ -843,52 +896,41 @@ layer(tokens);
     position: absolute;
     z-index: 0;
     inset-inline-end: -6vw;
-    inset-block-start: 50%;
+    inset-block-start: 60%;
     transform: translateY(-50%);
     inline-size: 50vw;
     aspect-ratio: 1;
     border-radius: 50%;
     content: url(../src/assets/images/shutterstock_1008711622_FullHD.jpeg);
 
-    @media screen and (max-width: 1920px) {
-      inset-block-start: 60%;
-      @media screen and (max-width: 768px) {
-        display: none;
-      }
+    @media screen and (max-width: 768px) {
+      display: none;
     }
   }
 
+  /* -7.35vw puts the bubble's midpoint on the photo circle's edge. */
   .contact-icon-bubble {
     position: absolute;
-    inset-inline-start: 62%;
-    inset-block-start: -80%;
+    inset-inline-start: 59%;
+    inset-block-start: -7.35vw;
     display: flex;
     align-items: center;
     justify-content: center;
     aspect-ratio: 1;
     border-radius: 50%;
-    inline-size: 7%;
+    inline-size: 9%;
     background: light-dark(
       var(--rh-color-surface-lightest),
       var(--rh-color-interactive-secondary-default-on-dark)
     );
 
-    @media screen and (max-width: 1920px) {
-      inline-size: 9%;
-      inset-inline-start: 59%;
-      inset-block-start: 0vw;
-      @media screen and (max-width: 768px) {
-        display: none;
-      }
+    @media screen and (max-width: 768px) {
+      display: none;
     }
   }
 
   .contact-send-icon {
-    inline-size: 80px;
-
-    @media screen and (max-width: 1920px) {
-      inline-size: 50%;
-    }
+    inline-size: 50%;
   }
 
   /* ---- Footer.jsx ---- */
@@ -902,11 +944,50 @@ layer(tokens);
      (copy + logo wall together), and Contact us each take up one full
      screen. Declared last so it wins over the desktop/landscape rules
      above at equal specificity. */
+  /* Past the 1.15x cap the phone layout stops growing, so pin every section
+     to the capped design width and let the leftover become side gutter.
+     At or below the cap this is exactly 100vw, so nothing changes there. */
+  @media (max-width: 768px) {
+    .page-content > :not(rh-navigation-primary, rh-footer-universal) {
+      inline-size: calc(440 * var(--u));
+      margin-inline: auto;
+    }
+
+    .project-carousel,
+    .about-tag-carousel {
+      inline-size: calc(440 * var(--u));
+      margin-inline: calc(50% - 220 * var(--u));
+    }
+
+    /* The logo wall is sized for a 1920 canvas; at 440 a 300u-wide mark is
+       two thirds of the screen. */
+    .logo-row {
+      padding-block: calc(8 * var(--u));
+    }
+
+    .logo-row-track {
+      gap: calc(20 * var(--u));
+    }
+
+    .logo-tile-mark {
+      margin: calc(8 * var(--u));
+      block-size: calc(36 * var(--u));
+    }
+
+    img.logo-tile-mark {
+      max-inline-size: calc(110 * var(--u));
+    }
+
+    span.logo-tile-mark {
+      inline-size: calc(26 * var(--u));
+    }
+  }
+
   @media (max-width: 768px) and (orientation: portrait) {
     .hero-container {
       aspect-ratio: auto;
       height: auto;
-      min-height: var(--app-vh, 100svh);
+      min-height: calc(906 * var(--u));
     }
 
     .projects-container {
@@ -914,11 +995,10 @@ layer(tokens);
     }
 
     #explore-projects {
-      min-height: var(--app-vh, 100svh);
       display: flex;
       flex-direction: column;
       justify-content: center;
-      padding: 10%;
+      padding: calc(44 * var(--u));
     }
 
     .stats-container {
@@ -927,20 +1007,15 @@ layer(tokens);
 
     .stat-cluster {
       position: relative;
-      min-height: var(--app-vh, 100svh);
+      inset: auto;
+      block-size: calc(620 * var(--u));
       margin-block-end: 0;
     }
 
-    /* Size/position the bubbles off viewport width (not the tall 100svh
-       section) and center the cluster vertically via top:50% + transform,
-       so they stay tightly overlapped like the desktop version regardless
-       of how tall the full-screen section ends up being. */
     .stat-years {
-      inset-inline-start: -20%;
-      inset-inline-end: auto;
-      inset-block-start: 50%;
-      inline-size: 120%;
-      transform: translateY(-50%);
+      inset: calc(45 * var(--u)) auto auto calc(-82 * var(--u));
+      inline-size: calc(490 * var(--u));
+      transform: none;
 
       strong {
         font-size: 10rem;
@@ -951,11 +1026,9 @@ layer(tokens);
     }
 
     .stat-projects {
-      inset-inline-start: auto;
-      inset-inline-end: 0%;
-      inset-block-start: 45%;
-      inline-size: 35%;
-      transform: translateY(calc(-50% - 32vw));
+      inset: calc(30 * var(--u)) auto auto calc(265 * var(--u));
+      inline-size: calc(143 * var(--u));
+      transform: none;
 
       strong {
         font-size: 2rem;
@@ -966,12 +1039,9 @@ layer(tokens);
     }
 
     .stat-contributors {
-      inset-inline-start: auto;
-      inset-inline-end: -10%;
-      inset-block-start: 55%;
-      inset-block-end: auto;
-      inline-size: 50%;
-      transform: translateY(calc(-50% + 34vw));
+      inset: calc(386 * var(--u)) auto auto calc(245 * var(--u));
+      inline-size: calc(204 * var(--u));
+      transform: none;
 
       strong {
         font-size: 2.75rem;
@@ -982,29 +1052,38 @@ layer(tokens);
     }
 
     .stats-scale-copy {
-      min-height: var(--app-vh, 100svh);
       display: flex;
       flex-direction: column;
       justify-content: center;
-      padding: 10%;
+      padding: calc(44 * var(--u));
     }
 
+    /* Copy stacks above the logo wall rather than floating over it, and
+       bubble 2 is sandwiched between them: wall, then bubble (it lives in
+       .stats-container at z-index 1), then copy. */
     .stewardship-container {
       aspect-ratio: auto;
-      min-height: var(--app-vh, 100svh);
+      block-size: auto;
+      display: block;
+      padding: calc(44 * var(--u)) 0;
     }
 
     .stewardship-copy {
-      margin-inline-start: 0;
-      margin-block-start: -110%;
+      position: relative;
+      z-index: 4;
+      inset: auto;
+      translate: none;
+      inline-size: auto;
+      max-inline-size: none;
+      margin: 0;
+      padding: 0 calc(44 * var(--u));
     }
 
     .logo-wall {
-      inset-block-start: 0;
-    }
-
-    #contact-us {
-      min-height: var(--app-vh, 100svh);
+      position: relative;
+      z-index: auto;
+      inset: auto;
+      margin-block-start: calc(32 * var(--u));
     }
 
     /* Grey decorative bubbles — hidden on mobile elsewhere in this file;
@@ -1019,18 +1098,23 @@ layer(tokens);
       display: none;
     }
 
+    /* Circumcircles of the text they wrap: hero copy + projects copy, and
+       stats copy + stewardship copy. Re-derive these if that copy changes. */
     .hero-project-big-bubble {
       display: block;
-      inline-size: 218%;
-      margin-inline-start: -60%;
-      margin-block-start: 25%;
+      inline-size: calc(881 * var(--u));
+      inset-inline-start: calc(-225.5 * var(--u));
+      inset-block-start: calc(290.5 * var(--u));
+      margin: 0;
     }
 
     .stats-stewardships-big-bubble {
       display: block;
-      inline-size: 240%;
-      margin-inline-start: -110%;
-      margin-block-start: 250%;
+      inline-size: calc(635 * var(--u));
+      inset-inline-start: calc(-97.5 * var(--u));
+      inset-block-start: calc(596 * var(--u));
+      margin: 0;
+      clip-path: none;
     }
 
     .contact-bubble {
@@ -1047,7 +1131,7 @@ layer(tokens);
     justify-content: center;
     padding-block: var(--rh-space-sm);
     padding-inline: var(--rh-space-xl);
-    border-radius: 8px;
+    border-radius: calc(8 * var(--u));
     font-family: var(--rh-font-family-heading);
     font-size: var(--rh-font-size-body-text-md);
     font-weight: var(--rh-font-weight-heading-medium);
@@ -1110,7 +1194,7 @@ layer(tokens);
     display: flex;
     align-items: center;
     justify-content: center;
-    inline-size: 56px;
+    inline-size: calc(56 * var(--u));
     aspect-ratio: 1;
     border-radius: 50%;
     background: light-dark(
@@ -1119,7 +1203,7 @@ layer(tokens);
     );
     color: light-dark(white, var(--rh-color-brand-red));
     flex-shrink: 0;
-    --rh-icon-size: 28px;
+    --rh-icon-size: calc(28 * var(--u));
   }
 
   /* ---- AboutHero.jsx (shares .hero-container/.hero-content layout with Welcome.jsx) ---- */
@@ -1224,7 +1308,7 @@ layer(tokens);
     max-inline-size: 76rem;
     margin-inline: auto;
 
-    @media (max-width: 992px) {
+    @media (max-width: 768px) {
       grid-template-columns: repeat(2, 1fr);
     }
 
@@ -1238,12 +1322,12 @@ layer(tokens);
     flex-direction: column;
     gap: var(--rh-space-md);
     padding: var(--rh-space-xl);
-    border-radius: 16px;
+    border-radius: calc(16 * var(--u));
     background: light-dark(
       var(--rh-color-white, #fff),
       var(--rh-color-interactive-secondary-default-on-light)
     );
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 calc(1 * var(--u)) calc(3 * var(--u)) rgba(0, 0, 0, 0.08);
   }
 
   .about-card h3 {
@@ -1298,7 +1382,7 @@ layer(tokens);
     margin-inline: auto;
     justify-items: center;
 
-    @media (max-width: 900px) {
+    @media (max-width: 768px) {
       grid-template-columns: 1fr;
     }
   }
@@ -1310,13 +1394,13 @@ layer(tokens);
     align-items: center;
     justify-content: center;
     inline-size: 100%;
-    max-inline-size: 320px;
+    max-inline-size: calc(320 * var(--u));
     aspect-ratio: 1;
     border-radius: 50%;
     overflow: hidden;
     text-align: center;
     background: var(--bubble-color);
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 calc(1 * var(--u)) calc(3 * var(--u)) rgba(0, 0, 0, 0.08);
     cursor: default;
     transition:
       ease transform 0.2s,
@@ -1333,8 +1417,8 @@ layer(tokens);
 
   .about-principle:hover,
   .about-principle:focus-visible {
-    transform: translateY(-4px) scale(1.03);
-    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
+    transform: translateY(calc(-4 * var(--u))) scale(1.03);
+    box-shadow: 0 calc(12 * var(--u)) calc(24 * var(--u)) rgba(0, 0, 0, 0.12);
     outline: none;
   }
 
@@ -1435,13 +1519,13 @@ layer(tokens);
       var(--rh-color-white, #fff),
       var(--rh-color-interactive-secondary-default-on-light)
     );
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 calc(1 * var(--u)) calc(3 * var(--u)) rgba(0, 0, 0, 0.08);
     font-family: var(--rh-font-family-heading);
     font-size: var(--rh-font-size-heading-sm, 1.125rem);
     font-weight: var(--rh-font-weight-heading-medium);
     color: var(--rh-color-text-primary);
     white-space: nowrap;
-    --rh-icon-size: 28px;
+    --rh-icon-size: calc(28 * var(--u));
   }
 
   .about-tag rh-icon {
@@ -1485,18 +1569,18 @@ layer(tokens);
       var(--rh-color-surface-dark),
       var(--rh-color-surface-light)
     );
-    --timeline-card-width: 220px;
-    --timeline-gap-width: 32px;
-    --timeline-dot-size: 14px;
+    --timeline-card-width: calc(220 * var(--u));
+    --timeline-gap-width: calc(32 * var(--u));
+    --timeline-dot-size: calc(14 * var(--u));
 
-    border-radius: 24px;
+    border-radius: calc(24 * var(--u));
     background: light-dark(
       var(--rh-color-white, #fff),
       var(--rh-color-interactive-secondary-default-on-light)
     );
     box-shadow:
-      0 1px 3px rgba(0, 0, 0, 0.08),
-      0 1px 12px rgba(0, 0, 0, 0.06);
+      0 calc(1 * var(--u)) calc(3 * var(--u)) rgba(0, 0, 0, 0.08),
+      0 calc(1 * var(--u)) calc(12 * var(--u)) rgba(0, 0, 0, 0.06);
   }
 
   .timeline-desktop {
@@ -1531,7 +1615,7 @@ layer(tokens);
     flex-direction: column;
     justify-content: space-between;
     flex: 0 0 auto;
-    inline-size: 180px;
+    inline-size: calc(180 * var(--u));
     padding-inline: var(--rh-space-lg);
     padding-block: calc(var(--rh-space-4xl) + var(--rh-space-lg))
       var(--rh-space-4xl);
@@ -1593,7 +1677,7 @@ layer(tokens);
     justify-self: center;
     align-self: stretch;
     inline-size: 0;
-    border-inline-start: 2px dashed
+    border-inline-start: calc(2 * var(--u)) dashed
       light-dark(var(--rh-color-gray-60), var(--rh-color-gray-50));
     opacity: 0.6;
   }
@@ -1601,7 +1685,7 @@ layer(tokens);
   .timeline-axis-line {
     grid-column: 1 / -1;
     inline-size: 100%;
-    block-size: 2px;
+    block-size: calc(2 * var(--u));
   }
 
   .timeline-axis-line-top {
@@ -1639,13 +1723,13 @@ layer(tokens);
   .timeline-card {
     inline-size: 100%;
     padding: var(--rh-space-md);
-    border-radius: 12px;
+    border-radius: calc(12 * var(--u));
     background: light-dark(
       var(--rh-color-surface-lightest, #fff),
       var(--rh-color-surface-dark)
     );
-    border: 1px solid transparent;
-    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.06);
+    border: calc(1 * var(--u)) solid transparent;
+    box-shadow: 0 calc(1 * var(--u)) calc(2 * var(--u)) rgba(0, 0, 0, 0.06);
   }
 
   .timeline-node-top .timeline-card {
@@ -1685,7 +1769,7 @@ layer(tokens);
   }
 
   .timeline-connector {
-    inline-size: 2px;
+    inline-size: calc(2 * var(--u));
     block-size: var(--rh-space-lg);
     background: var(--timeline-top-color);
   }
@@ -1699,17 +1783,14 @@ layer(tokens);
     block-size: var(--timeline-dot-size);
     border-radius: 50%;
     background: var(--timeline-top-color);
-    box-shadow: 0 0 0 4px
+    box-shadow: 0 0 0 calc(4 * var(--u))
       color-mix(in srgb, var(--timeline-top-color) 25%, transparent);
     flex-shrink: 0;
-    @media screen and (max-height: 768px) {
-      margin-right: 5%;
-    }
   }
 
   .timeline-node-bottom .timeline-dot {
     background: var(--timeline-bottom-color);
-    box-shadow: 0 0 0 4px
+    box-shadow: 0 0 0 calc(4 * var(--u))
       color-mix(in srgb, var(--timeline-bottom-color) 25%, transparent);
   }
 
@@ -1760,9 +1841,9 @@ layer(tokens);
   .timeline-mobile-items::before {
     content: "";
     position: absolute;
-    inset-block: 4px;
-    inset-inline-start: calc(var(--timeline-dot-size) / 2 - 1px);
-    border-inline-start: 2px dashed
+    inset-block: calc(4 * var(--u));
+    inset-inline-start: calc(var(--timeline-dot-size) / 2 - 1 * var(--u));
+    border-inline-start: calc(2 * var(--u)) dashed
       light-dark(var(--rh-color-gray-60), var(--rh-color-gray-50));
     opacity: 0.6;
   }
@@ -1862,7 +1943,7 @@ layer(tokens);
       var(--rh-color-surface-lightest, #fff),
       var(--rh-color-interactive-secondary-default-on-light)
     );
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 calc(1 * var(--u)) calc(3 * var(--u)) rgba(0, 0, 0, 0.08);
 
     input {
       inline-size: 100%;
@@ -1893,7 +1974,7 @@ layer(tokens);
       var(--rh-color-surface-lightest, #fff),
       var(--rh-color-surface-darkest)
     );
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 calc(1 * var(--u)) calc(3 * var(--u)) rgba(0, 0, 0, 0.08);
     color: var(--rh-color-text-primary);
     cursor: pointer;
     font-size: var(--rh-font-size-body-text-md);
@@ -1907,14 +1988,14 @@ layer(tokens);
     display: flex;
     flex-direction: column;
     gap: var(--rh-space-sm);
-    min-inline-size: 240px;
+    min-inline-size: calc(240 * var(--u));
     padding: var(--rh-space-lg);
-    border-radius: 12px;
+    border-radius: calc(12 * var(--u));
     background: light-dark(
       var(--rh-color-surface-lightest, #fff),
       var(--rh-color-surface-darkest)
     );
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 calc(10 * var(--u)) calc(25 * var(--u)) rgba(0, 0, 0, 0.15);
   }
 
   .all-projects-filter-option {
@@ -1927,8 +2008,8 @@ layer(tokens);
 
   .all-projects-category-dot {
     display: inline-block;
-    inline-size: 10px;
-    block-size: 10px;
+    inline-size: calc(10 * var(--u));
+    block-size: calc(10 * var(--u));
     border-radius: 50%;
     flex-shrink: 0;
   }
@@ -1940,11 +2021,7 @@ layer(tokens);
     grid-template-columns: repeat(5, 1fr);
     gap: var(--rh-space-lg);
 
-    @media (max-width: 1200px) {
-      grid-template-columns: repeat(4, 1fr);
-    }
-
-    @media (max-width: 900px) {
+    @media (max-width: 768px) {
       grid-template-columns: repeat(3, 1fr);
     }
 
@@ -1956,11 +2033,7 @@ layer(tokens);
   #all-stewardships .all-projects-grid {
     grid-template-columns: repeat(6, 1fr);
 
-    @media (max-width: 1200px) {
-      grid-template-columns: repeat(4, 1fr);
-    }
-
-    @media (max-width: 900px) {
+    @media (max-width: 768px) {
       grid-template-columns: repeat(3, 1fr);
     }
 
@@ -1976,13 +2049,13 @@ layer(tokens);
     justify-content: center;
     aspect-ratio: 1;
     padding: var(--rh-space-lg);
-    border-radius: 16px;
+    border-radius: calc(16 * var(--u));
     overflow: hidden;
     background: light-dark(
       var(--rh-color-surface-lightest),
       var(--rh-color-interactive-secondary-default-on-dark)
     );
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 calc(1 * var(--u)) calc(3 * var(--u)) rgba(0, 0, 0, 0.08);
     text-decoration: none;
     transition:
       ease transform 0.2s,
@@ -1991,8 +2064,8 @@ layer(tokens);
 
   a.project-tile:hover,
   a.project-tile:focus-visible {
-    transform: translateY(-4px) scale(1.03);
-    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
+    transform: translateY(calc(-4 * var(--u))) scale(1.03);
+    box-shadow: 0 calc(12 * var(--u)) calc(24 * var(--u)) rgba(0, 0, 0, 0.12);
   }
 
   .project-tile-disabled {
