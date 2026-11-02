@@ -1272,24 +1272,10 @@ layer(tokens);
   }
 
   .about-hero-photo-a {
-    inline-size: 30%;
+    inline-size: 40%;
     content: url(../src/assets/images/0007_RHSunnyvale-0874_FullHD.jpeg);
-    inset-inline-start: 47%;
-    inset-block-start: 20%;
-  }
-
-  .about-hero-photo-b {
-    background: color-mix(in srgb, var(--rh-color-brand-red) 55%, white);
-    inset-inline-end: -2%;
-    inset-block-start: -2%;
-    clip-path: inset(0 7.84% 0 0);
-  }
-
-  .about-hero-photo-c {
-    background-color: var(--rh-color-brand-red);
-    inset-inline-end: -1%;
-    inset-block-start: 54%;
-    clip-path: inset(0 3.92% 0 0);
+    inset-inline-start: 52%;
+    inset-block-start: 15%;
   }
 
   /* ---- AboutWhatWeDo.jsx ---- */
