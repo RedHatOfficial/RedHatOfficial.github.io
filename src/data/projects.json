@@ -319,14 +319,6 @@
     "description": "An open-source initiative focused on creating software-defined vehicle technologies and platform frameworks."
   },
   {
-    "name": "Emerging LF project around autonomous driving",
-    "href": null,
-    "category": "Automotive",
-    "featured": false,
-    "logo": null,
-    "description": "An emerging open-source initiative under the Linux Foundation focused on developing open software stacks and standards for autonomous driving systems."
-  },
-  {
     "name": "Envoy",
     "href": "https://github.com/envoyproxy/envoy",
     "category": "Cloud-Native Orchestration & Containers",
@@ -787,7 +779,7 @@
     "href": "https://github.com/praxis-proxy/praxis",
     "category": "AI Stack",
     "featured": false,
-    "logo": null,
+    "logo": "praxis.svg",
     "description": "An open-source framework built on JAX for training large-scale neural network models."
   },
   {
