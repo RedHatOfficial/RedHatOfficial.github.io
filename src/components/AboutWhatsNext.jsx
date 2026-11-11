@@ -2,19 +2,19 @@ const principles = [
   {
     title: 'Verifiable',
     lead: 'Build in the open',
-    description: 'Open development makes AI technologies easier to inspect, test and evaluate',
+    description: 'Open development makes AI technologies easier to inspect, test, and evaluate',
   },
   {
     title: 'Adaptable',
     lead: 'Keep your choices open',
     description:
-      'Open technology gives organizations the freedom to evolve their stack, models and infrastructure',
+      'Open technology gives organizations the freedom to evolve their stack, models, and infrastructure',
   },
   {
     title: 'Resilient',
     lead: 'Build together',
     description:
-      'Open standards, shared expertise and distributed stewardship create stronger technology ecosystems',
+      'Open standards, shared expertise, and distributed stewardship create stronger technology ecosystems',
   },
 ]
 
@@ -26,7 +26,7 @@ function AboutWhatsNext() {
         <h1 id="h-about-whats-next">Open source powers what&rsquo;s next in AI</h1>
         <p>
           AI is becoming foundational infrastructure. We believe that infrastructure should
-          remain open, inspectable and adaptable&mdash;so organizations can innovate without
+          remain open, inspectable, and adaptable&mdash;so organizations can innovate without
           surrendering control of the technology underneath.
         </p>
       </div>

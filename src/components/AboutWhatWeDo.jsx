@@ -4,17 +4,17 @@ const disciplines = [
   {
     title: 'Architect',
     icon: 'blueprint',
-    description: 'Community strategy, governance, ecosystem design and contributor networks.',
+    description: 'Community strategy, governance, ecosystem design, and contributor networks.',
   },
   {
     title: 'Analyze',
     icon: 'analyze',
-    description: 'Data, contribution intelligence, ecosystem health and strategic insights.',
+    description: 'Data, contribution intelligence, ecosystem health, and strategic insights.',
   },
   {
     title: 'Operate',
     icon: 'settings',
-    description: 'Program operations, foundations, working groups and community infrastructure.',
+    description: 'Program operations, foundations, working groups, and community infrastructure.',
   },
   {
     title: 'Lead',
@@ -31,7 +31,7 @@ function AboutWhatWeDo() {
         <h1 id="h-about-what-we-do">Community is our product</h1>
         <p>
           Our work isn&rsquo;t measured in products we ship. It&rsquo;s measured in communities we
-          strengthen, standards we influence, contributors we enable and technologies we help
+          strengthen, standards we influence, contributors we enable, and technologies we help
           move forward.
         </p>
       </div>
