@@ -7,7 +7,7 @@ function AboutHero() {
         <div className="hero-content about-hero-content">
           <h1 id="h-about-hero">We build upstream.</h1>
           <p>
-            We help open source communities build the technologies, standards and
+            We help open source communities build the technologies, standards, and
             ecosystems that power tomorrow’s enterprise.
           </p>
           <div className="about-hero-actions">

@@ -19,11 +19,11 @@
       "milestones": [
         { "year": "1995", "axis": "bottom", "text": "Bob Young merges ACC Corp with Marc Ewing's business, forming Red Hat Software." },
         { "year": "1998", "axis": "top", "text": "Red Hat establishes the Red Hat Center for Open Source to advocate for public domain resources and intellectual property reform." },
-        { "year": "1999", "axis": "top", "text": "Launches the Red Hat Certified Engineer (RHCE) program, establishing the industry's first standard for open-source technical credentials." },
+        { "year": "1999", "axis": "top", "text": "Launches the Red Hat Certified Engineer (RHCE) program, establishing the industry's first standard for open source technical credentials." },
         { "year": "1999 (Aug 11)", "axis": "bottom", "text": "Red Hat goes public (IPO) on Wall Street." },
         { "year": "1999 (Nov)", "axis": "bottom", "text": "Red Hat acquires Cygnus Solutions for $674 million." }
       ]
-    },
+    },ƒ
     {
       "range": "2000 – 2004",
       "title": "Enterprise platform pivot and Fedora upstream",
@@ -41,14 +41,14 @@
         { "year": "2005", "axis": "bottom", "text": "Hosts the inaugural annual Red Hat Summit in New Orleans." },
         { "year": "2006", "axis": "bottom", "text": "Acquires JBoss, expanding Red Hat's portfolio into enterprise Java middleware." },
         { "year": "2008", "axis": "bottom", "text": "Acquires Qumranet, bringing KVM (Kernel-based Virtual Machine) technology natively into Linux." },
-        { "year": "2009", "axis": "top", "text": "Co-founds Open Source for America to advocate for open-source adoption within the Federal Government." }
+        { "year": "2009", "axis": "top", "text": "Co-founds Open Source for America to advocate for open source adoption within the Federal Government." }
       ]
     },
     {
       "range": "2010 – 2014",
       "title": "Pivoting to cloud and standardizing the OSPO",
       "milestones": [
-        { "year": "2010", "axis": "top", "text": "Launches opensource.com to write about open-source methodologies across business and technology." },
+        { "year": "2010", "axis": "top", "text": "Launches opensource.com to write about open source methodologies across business and technology." },
         { "year": "2011", "axis": "bottom", "text": "Launches CloudForms and OpenShift Platform-as-a-Service (PaaS)." },
         { "year": "2012", "axis": "top", "text": "Formally structures the Open Source and Standards (OSAS) team to centralize community stewardship." },
         { "year": "2014", "axis": "bottom", "text": "Sponsors the CentOS Project and hires its core developers." },
@@ -71,7 +71,7 @@
       "milestones": [
         { "year": "2022", "axis": "bottom", "text": "Launches RHEL 9 to optimize hybrid multi-cloud and edge infrastructure deployments." },
         { "year": "2024", "axis": "bottom", "text": "Red Hat launches Red Hat Enterprise Linux AI (RHEL AI) and packages indemnified IBM Granite LLMs." },
-        { "year": "2024", "axis": "top", "text": "Launches the InstructLab project in collaboration with IBM Research, enabling community-driven open-source LLM model alignment." }
+        { "year": "2024", "axis": "top", "text": "Launches the InstructLab project in collaboration with IBM Research, enabling community-driven open source LLM model alignment." }
       ]
     },
     {
@@ -82,7 +82,7 @@
         { "year": "Late 2025", "axis": "bottom", "text": "Releases Red Hat AI 3, introducing distributed AI inference and agentic AI platforms." },
         { "year": "Early 2026", "axis": "top", "text": "Joins the Linux Foundation's Agentic AI Foundation (AAIF) as a Gold Member to integrate Model Context Protocol (MCP) standards." },
         { "year": "May 2026", "axis": "bottom", "text": "Launches Red Hat AI 3.4 and Red Hat Desktop for local AI agent environments at Red Hat Summit." },
-        { "year": "May 2026", "axis": "top", "text": "Red Hat and IBM initiate Project Lightwell, a $5 billion engineering program deploying AI systems to defend open-source supply chains." },
+        { "year": "May 2026", "axis": "top", "text": "Red Hat and IBM initiate Project Lightwell, a $5 billion engineering program deploying AI systems to defend open source supply chains." },
         { "year": "Jun 2026", "axis": "top", "text": "Launches Project Akrites alongside tech leaders to secure upstream repositories against AI-generated security exploits." }
       ]
     }
