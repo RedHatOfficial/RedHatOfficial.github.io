@@ -45,10 +45,10 @@ function AboutWhatWeDo() {
             <h3>{discipline.title}</h3>
             <p>{discipline.description}</p>
           </div>
-        ))}
+        ) )
+        }
       </div>
     </section>
   )
 }
-
 export default AboutWhatWeDo
